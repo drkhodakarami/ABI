@@ -27,6 +27,39 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Dust.ALUMITE);
         SimpleItem(ModItems.Dust.ARDITE);
         SimpleItem(ModItems.Dust.BERYLLIUM);
+        SimpleItem(ModItems.Dust.BLUTONIUM);
+        SimpleItem(ModItems.Dust.BORON);
+        SimpleItem(ModItems.Dust.BRASS);
+        SimpleItem(ModItems.Dust.BRONZE);
+        SimpleItem(ModItems.Dust.COBALT);
+        SimpleItem(ModItems.Dust.CONDUCTIVE_IRON);
+        SimpleItem(ModItems.Dust.CONSTANTAN);
+        SimpleItem(ModItems.Dust.COPPER);
+        SimpleItem(ModItems.Dust.CRUDE_STEEL);
+        SimpleItem(ModItems.Dust.CYANIDE);
+        SimpleItem(ModItems.Dust.DARK_STEEL);
+        SimpleItem(ModItems.Dust.DAWN_STONE);
+        SimpleItem(ModItems.Dust.DEMONICUM);
+        SimpleItem(ModItems.Dust.DRACONIUM);
+        SimpleItem(ModItems.Dust.ELECTRICAL_STEEL);
+        SimpleItem(ModItems.Dust.ELECTRUM);
+        SimpleItem(ModItems.Dust.ENCHANTIUM);
+        SimpleItem(ModItems.Dust.END_STEEL);
+        SimpleItem(ModItems.Dust.ENDERITE);
+        SimpleItem(ModItems.Dust.ENERGETIC_SILVER);
+        SimpleItem(ModItems.Dust.GOLD);
+        SimpleItem(ModItems.Dust.GRAPHITE);
+        SimpleItem(ModItems.Dust.INVAR);
+        SimpleItem(ModItems.Dust.IRIDIUM);
+        SimpleItem(ModItems.Dust.IRON);
+        SimpleItem(ModItems.Dust.LEAD);
+        SimpleItem(ModItems.Dust.LITHIUM);
+        SimpleItem(ModItems.Dust.LUDICRITE);
+        SimpleItem(ModItems.Dust.MAGNESIUM);
+        SimpleItem(ModItems.Dust.MANGANESE);
+        SimpleItem(ModItems.Dust.STEEL);
+        SimpleItem(ModItems.Dust.TIN);
+        SimpleItem(ModItems.Dust.YELLORIUM);
         //</editor-fold>
 
         //<editor-fold desc="GEAR">

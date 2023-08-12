@@ -27,6 +27,106 @@ public class ModItems
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
 
+
+        public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BORON = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.BORON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.BRASS, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRONZE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONDUCTIVE_IRON = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.CONDUCTIVE_IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COPPER = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DARK_STEEL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.DARK_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRICAL_STEEL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.ELECTRICAL_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> END_STEEL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.END_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENDERITE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.ENDERITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GOLD = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INVAR = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRON = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LEAD = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LITHIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.LITHIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MANGANESE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> TIN = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
+
         public static void initialize(){}
     }
 
@@ -46,6 +146,105 @@ public class ModItems
 
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.GEAR + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BORON = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.BORON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.BRASS, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRONZE = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONDUCTIVE_IRON = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.CONDUCTIVE_IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COPPER = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DARK_STEEL = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.DARK_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRICAL_STEEL = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.ELECTRICAL_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> END_STEEL = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.END_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENDERITE = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.ENDERITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GOLD = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INVAR = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRON = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LEAD = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LITHIUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.LITHIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MANGANESE = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> TIN = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.GEAR + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
     }
@@ -67,6 +266,105 @@ public class ModItems
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BORON = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.BORON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.BRASS, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRONZE = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONDUCTIVE_IRON = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.CONDUCTIVE_IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
+
+        //public static final RegistryObject<Item> COPPER = ITEMS.register(
+        //        Reference.Names.INGOT + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DARK_STEEL = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.DARK_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRICAL_STEEL = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.ELECTRICAL_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> END_STEEL = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.END_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENDERITE = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.ENDERITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
+
+        //public static final RegistryObject<Item> GOLD = ITEMS.register(
+        //        Reference.Names.INGOT + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INVAR = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
+
+        //public static final RegistryObject<Item> IRON = ITEMS.register(
+        //        Reference.Names.INGOT + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LEAD = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LITHIUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.LITHIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MANGANESE = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> TIN = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.INGOT + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
+
         public static void initialize(){}
     }
 
@@ -86,6 +384,105 @@ public class ModItems
 
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.NUGGET + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BORON = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.BORON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.BRASS, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRONZE = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONDUCTIVE_IRON = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.CONDUCTIVE_IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COPPER = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DARK_STEEL = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.DARK_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRICAL_STEEL = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.ELECTRICAL_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> END_STEEL = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.END_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENDERITE = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.ENDERITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
+
+        //public static final RegistryObject<Item> GOLD = ITEMS.register(
+        //       Reference.Names.NUGGET + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INVAR = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
+
+        //public static final RegistryObject<Item> IRON = ITEMS.register(
+        //        Reference.Names.NUGGET + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LEAD = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LITHIUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.LITHIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MANGANESE = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> TIN = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.NUGGET + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
     }
@@ -107,6 +504,105 @@ public class ModItems
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.PLATE + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BORON = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.BORON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.BRASS, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRONZE = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONDUCTIVE_IRON = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.CONDUCTIVE_IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COPPER = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DARK_STEEL = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.DARK_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRICAL_STEEL = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.ELECTRICAL_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> END_STEEL = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.END_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENDERITE = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.ENDERITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GOLD = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INVAR = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRON = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LEAD = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LITHIUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.LITHIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MANGANESE = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> TIN = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.PLATE + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
+
         public static void initialize(){}
     }
 
@@ -127,7 +623,111 @@ public class ModItems
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
 
-        public static void initialize(){}
+        public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BORON = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.BORON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.BRASS, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRONZE = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONDUCTIVE_IRON = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.CONDUCTIVE_IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
+
+        //public static final RegistryObject<Item> COPPER = ITEMS.register(
+        //        Reference.Names.RAW + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DARK_STEEL = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.DARK_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRICAL_STEEL = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.ELECTRICAL_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> END_STEEL = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.END_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENDERITE = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.ENDERITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
+
+        //public static final RegistryObject<Item> GOLD = ITEMS.register(
+        //        Reference.Names.RAW + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INVAR = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
+
+        //public static final RegistryObject<Item> IRON = ITEMS.register(
+        //        Reference.Names.RAW + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LEAD = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LITHIUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.LITHIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MANGANESE = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> TIN = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.RAW + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
+
+        public static void initialize()
+        {
+            //Items.RAW_COPPER
+            //Items.RAW_GOLD
+            //Items.RAW_IRON
+        }
     }
 
     public static class Reinforced
@@ -146,6 +746,105 @@ public class ModItems
 
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.REINFORCED + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BORON = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.BORON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.BRASS, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRONZE = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONDUCTIVE_IRON = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.CONDUCTIVE_IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COPPER = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DARK_STEEL = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.DARK_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRICAL_STEEL = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.ELECTRICAL_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> END_STEEL = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.END_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENDERITE = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.ENDERITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GOLD = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INVAR = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRON = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LEAD = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LITHIUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.LITHIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MANGANESE = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> TIN = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.REINFORCED + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
     }
@@ -166,6 +865,105 @@ public class ModItems
 
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.ROD + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BORON = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.BORON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.BRASS, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRONZE = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONDUCTIVE_IRON = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.CONDUCTIVE_IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COPPER = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DARK_STEEL = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.DARK_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRICAL_STEEL = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.ELECTRICAL_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> END_STEEL = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.END_STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENDERITE = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.ENDERITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GOLD = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INVAR = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> IRON = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LEAD = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LITHIUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.LITHIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> MANGANESE = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> TIN = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.ROD + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
     }

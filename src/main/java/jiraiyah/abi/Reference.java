@@ -31,7 +31,7 @@ public class Reference
         public static final String CYANIDE = "cyanide";
         public static final String DARK_STEEL = "dark_steel";
         public static final String DAWN_STONE = "dawn_stone";
-        public static final String DEMONICUM = "demonicum";
+        public static final String DEMONIUM = "demonium";
         public static final String DIAMOND = "diamond";
         public static final String DRACONIUM = "draconium";
         public static final String ELECTRICAL_STEEL = "electrical_steel";
