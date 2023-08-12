@@ -1,0 +1,61 @@
+{
+  "creativetab.abi_dust_tab": "Dusts",
+  "creativetab.abi_gear_tab": "Gears",
+  "creativetab.abi_ingot_tab": "Ingots",
+  "creativetab.abi_nugget_tab": "Nuggets",
+  "creativetab.abi_plate_tab": "Plates",
+  "creativetab.abi_raw_tab": "Raws",
+  "creativetab.abi_reinforced_tab": "Reinforces",
+  "creativetab.abi_rod_tab": "Rods",
+  "creativetab.abi_tool_tab": "Tools",
+
+  "item.abi.dust_aluminium": "Aluminium Dust",
+  "item.abi.dust_aluminium_brass": "Aluminium Brass Dust",
+  "item.abi.dust_alumite": "Alumite Dust",
+  "item.abi.dust_ardite": "Ardite Dust",
+  "item.abi.dust_beryllium": "Beryllium Dust",
+
+  "item.abi.gear_aluminium": "Aluminium Gear",
+  "item.abi.gear_aluminium_brass": "Aluminium Brass Gear",
+  "item.abi.gear_alumite": "Alumite Gear",
+  "item.abi.gear_ardite": "Ardite Gear",
+  "item.abi.gear_beryllium": "Beryllium Gear",
+
+  "item.abi.ingot_aluminium": "Aluminium Ingot",
+  "item.abi.ingot_aluminium_brass": "Aluminium Brass Ingot",
+  "item.abi.ingot_alumite": "Alumite Ingot",
+  "item.abi.ingot_ardite": "Ardite Ingot",
+  "item.abi.ingot_beryllium": "Beryllium Ingot",
+
+  "item.abi.nugget_aluminium": "Aluminium Nugget",
+  "item.abi.nugget_aluminium_brass": "Aluminium Brass Nugget",
+  "item.abi.nugget_alumite": "Alumite Nugget",
+  "item.abi.nugget_ardite": "Ardite Nugget",
+  "item.abi.nugget_beryllium": "Beryllium Nugget",
+
+  "item.abi.plate_aluminium": "Aluminium Plate",
+  "item.abi.plate_aluminium_brass": "Aluminium Brass Plate",
+  "item.abi.plate_alumite": "Alumite Plate",
+  "item.abi.plate_ardite": "Ardite Plate",
+  "item.abi.plate_beryllium": "Beryllium Plate",
+
+  "item.abi.raw_aluminium": "Raw Aluminium",
+  "item.abi.raw_aluminium_brass": "Raw Aluminium Brass",
+  "item.abi.raw_alumite": "Raw Alumite",
+  "item.abi.raw_ardite": "Raw Ardite",
+  "item.abi.raw_beryllium": "Raw Beryllium",
+
+  "item.abi.reinforced_aluminium": "Reinforced Aluminium",
+  "item.abi.reinforced_aluminium_brass": "Reinforced Aluminium Brass",
+  "item.abi.reinforced_alumite": "Reinforced Alumite",
+  "item.abi.reinforced_ardite": "Reinforced Ardite",
+  "item.abi.reinforced_beryllium": "Reinforced Beryllium",
+
+  "item.abi.rod_aluminium": "Aluminium Rod",
+  "item.abi.rod_aluminium_brass": "Aluminium Brass Rod",
+  "item.abi.rod_alumite": "Alumite Rod",
+  "item.abi.rod_ardite": "Ardite Rod",
+  "item.abi.rod_beryllium": "Beryllium Rod",
+
+  "item.abi.tool_spanner": "Spanner"
+}
