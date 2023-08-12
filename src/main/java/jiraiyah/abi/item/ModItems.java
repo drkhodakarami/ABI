@@ -1,6 +1,7 @@
 package jiraiyah.abi.item;
 
 import jiraiyah.abi.Reference;
+import jiraiyah.abi.item.custom.*;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,7 +27,6 @@ public class ModItems
 
         public static final RegistryObject<Item> BERYLLIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.BERYLLIUM, () -> new Item(new Item.Properties()));
-
 
         public static final RegistryObject<Item> BLUTONIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.BLUTONIUM, () -> new Item(new Item.Properties()));
@@ -287,9 +287,6 @@ public class ModItems
         public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
 
-        //public static final RegistryObject<Item> COPPER = ITEMS.register(
-        //        Reference.Names.INGOT + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
-
         public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
 
@@ -326,9 +323,6 @@ public class ModItems
         public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
 
-        //public static final RegistryObject<Item> GOLD = ITEMS.register(
-        //        Reference.Names.INGOT + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
-
         public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
 
@@ -337,9 +331,6 @@ public class ModItems
 
         public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
-
-        //public static final RegistryObject<Item> IRON = ITEMS.register(
-        //        Reference.Names.INGOT + Reference.Names.IRON, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> LEAD = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
@@ -445,9 +436,6 @@ public class ModItems
         public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
                 Reference.Names.NUGGET + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
 
-        //public static final RegistryObject<Item> GOLD = ITEMS.register(
-        //       Reference.Names.NUGGET + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
-
         public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
                 Reference.Names.NUGGET + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
 
@@ -456,9 +444,6 @@ public class ModItems
 
         public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
                 Reference.Names.NUGGET + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
-
-        //public static final RegistryObject<Item> IRON = ITEMS.register(
-        //        Reference.Names.NUGGET + Reference.Names.IRON, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> LEAD = ITEMS.register(
                 Reference.Names.NUGGET + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
@@ -970,8 +955,40 @@ public class ModItems
 
     public static class Tool
     {
+        public static final RegistryObject<Item> AUGMENT = ITEMS.register(
+                Reference.Names.TOOL + Reference.Names.AUGMENT, () -> new Augment(new Item.Properties()));
+
+        public static final RegistryObject<Item> CUTTER = ITEMS.register(
+                Reference.Names.TOOL + Reference.Names.CUTTER, () -> new Cutter(new Item.Properties()));
+
+        public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register(
+                Reference.Names.TOOL + Reference.Names.DOWSING, () -> new DowsingRod(new Item.Properties()));
+
+        public static final RegistryObject<Item> ENGINEER_HELMET = ITEMS.register(
+                Reference.Names.ENGINEER_HELMET, () -> new EngineerHelmet(new Item.Properties()));
+
+        public static final RegistryObject<Item> KNIFE = ITEMS.register(
+                Reference.Names.TOOL + Reference.Names.KNIFE, () -> new Knife(new Item.Properties()));
+
         public static final RegistryObject<Item> SPANNER = ITEMS.register(
-                Reference.Names.TOOL + Reference.Names.SPANNER, () -> new Item(new Item.Properties()));
+                Reference.Names.TOOL + Reference.Names.SPANNER, () -> new Spanner(new Item.Properties()));
+
+        public static final RegistryObject<Item> TUNER = ITEMS.register(
+                Reference.Names.TOOL + Reference.Names.TUNER, () -> new Tuner(new Item.Properties()));
+
+        public static final RegistryObject<Item> WRENCH = ITEMS.register(
+                Reference.Names.TOOL + Reference.Names.WRENCH, () -> new Wrench(new Item.Properties()));
+
+        public static void initialize(){}
+    }
+
+    public static class Gem
+    {
+        public static final RegistryObject<Item> RUBY = ITEMS.register(
+                Reference.Names.GEM + Reference.Names.RUBY, () -> new Augment(new Item.Properties()));
+
+        public static final RegistryObject<Item> SAPPHIRE = ITEMS.register(
+                Reference.Names.GEM + Reference.Names.SAPPHIRE, () -> new Augment(new Item.Properties()));
 
         public static void initialize(){}
     }
@@ -986,6 +1003,7 @@ public class ModItems
         Raw.initialize();
         Reinforced.initialize();
         Rod.initialize();
+        Gem.initialize();
         Tool.initialize();
     }
 }

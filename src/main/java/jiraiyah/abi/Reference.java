@@ -54,6 +54,9 @@ public class Reference
         public static final String TIN = "tin";
         public static final String YELLORIUM = "yellorium";
 
+        public static final String RUBY = "ruby";
+        public static final String SAPPHIRE = "sapphire";
+
         public static final String AUGMENT = "augment";
         public static final String AUGMENT_ACTIVE = "augment_active";
         public static final String CUTTER = "cutter";
@@ -76,6 +79,7 @@ public class Reference
         public static final String REINFORCED = "reinforced_";
         public static final String ROD = "rod_";
         public static final String TOOL = "tool_";
+        public static final String GEM = "gem_";
 
         public static final String OVERWORLD = "overworld_";
         public static final String DEEPSLATE = "deepslate_";
