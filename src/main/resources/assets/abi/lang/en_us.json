@@ -9,6 +9,7 @@
   "creativetab.abi_rod_tab": "Rods",
   "creativetab.abi_tool_tab": "Tools",
   "creativetab.abi_gem_tab": "Gems",
+  "creativetab.abi_armor_tab": "Armors",
 
   "item.abi.dust_aluminium": "Aluminium Dust",
   "item.abi.dust_aluminium_brass": "Aluminium Brass Dust",
@@ -319,6 +320,11 @@
 
   "item.abi.gem_ruby": "Ruby",
   "item.abi.gem_sapphire": "Sapphire",
+  "item.abi.gem_shard_ruby": "Ruby Shard",
+  "item.abi.gem_shard_sapphire": "Sapphire Shard",
+  "item.abi.gem_shard_diamond": "Diamond Shard",
+  "item.abi.gem_shard_emerald": "Emerald Shard",
+  "item.abi.gem_shard_quartz": "Quartz Shard",
 
   "item.abi.tool_augment": "Augment",
   "item.abi.tool_cutter": "Cutter",
@@ -327,6 +333,30 @@
   "item.abi.tool_spanner": "Spanner",
   "item.abi.tool_tuner": "Tuner",
   "item.abi.tool_wrench": "Wrench",
+
+  "item.abi.engineer_helmet": "Engineer Helmet",
+
+  "item.abi.ruby_helmet": "Ruby Helmet",
+  "item.abi.ruby_chestplate": "Ruby Chest Plate",
+  "item.abi.ruby_leggings": "Ruby Leggings",
+  "item.abi.ruby_boots": "Ruby Boots",
+
+  "item.abi.ruby_sword": "Ruby Sword",
+  "item.abi.ruby_axe": "Ruby Axe",
+  "item.abi.ruby_pickaxe": "Ruby Pickaxe",
+  "item.abi.ruby_shovel": "Ruby Shovel",
+  "item.abi.ruby_hoe": "Ruby Hoe",
+
+  "item.abi.sapphire_helmet": "Sapphire Helmet",
+  "item.abi.sapphire_chestplate": "Sapphire Chest Plate",
+  "item.abi.sapphire_leggings": "Sapphire Leggings",
+  "item.abi.sapphire_boots": "Sapphire Boots",
+
+  "item.abi.sapphire_sword": "Sapphire Sword",
+  "item.abi.sapphire_axe": "Sapphire Axe",
+  "item.abi.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.abi.sapphire_shovel": "Sapphire Shovel",
+  "item.abi.sapphire_hoe": "Sapphire Hoe",
 
   "tooltip.abi.augment.tooltip.normal": "",
   "tooltip.abi.augment.tooltip.shift": "",

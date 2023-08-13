@@ -2,7 +2,7 @@ package jiraiyah.abi.item;
 
 import jiraiyah.abi.Reference;
 import jiraiyah.abi.item.custom.*;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -127,6 +127,13 @@ public class ModItems
         public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
+        // Diamond
+        // Quartz
+        // Prismarine
+        // Emerald
+        // Ruby
+        // Sapphire
+
         public static void initialize(){}
     }
 
@@ -245,6 +252,13 @@ public class ModItems
 
         public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
                 Reference.Names.GEAR + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
+
+        // Diamond
+        // Quartz
+        // Prismarine
+        // Emerald
+        // Ruby
+        // Sapphire
 
         public static void initialize(){}
     }
@@ -964,9 +978,6 @@ public class ModItems
         public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register(
                 Reference.Names.TOOL + Reference.Names.DOWSING, () -> new DowsingRod(new Item.Properties()));
 
-        public static final RegistryObject<Item> ENGINEER_HELMET = ITEMS.register(
-                Reference.Names.ENGINEER_HELMET, () -> new EngineerHelmet(new Item.Properties()));
-
         public static final RegistryObject<Item> KNIFE = ITEMS.register(
                 Reference.Names.TOOL + Reference.Names.KNIFE, () -> new Knife(new Item.Properties()));
 
@@ -979,6 +990,40 @@ public class ModItems
         public static final RegistryObject<Item> WRENCH = ITEMS.register(
                 Reference.Names.TOOL + Reference.Names.WRENCH, () -> new Wrench(new Item.Properties()));
 
+        //<editor-fold desc="RUBY TOOLS">
+        public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register(Reference.Names.RUBY + Reference.Names.SWORD,
+                () -> new SwordItem(ModTiers.RUBY, 3, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register(Reference.Names.RUBY + Reference.Names.PICKAXE,
+                () -> new PickaxeItem(ModTiers.RUBY, 1, -2.8F, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register(Reference.Names.RUBY + Reference.Names.SHOVEL,
+                () -> new ShovelItem(ModTiers.RUBY, 1, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_AXE = ITEMS.register(Reference.Names.RUBY + Reference.Names.AXE,
+                () -> new AxeItem(ModTiers.RUBY, 6, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_HOE = ITEMS.register(Reference.Names.RUBY + Reference.Names.HOE,
+                () -> new HoeItem(ModTiers.RUBY, 0, 0.0F, new Item.Properties()));
+
+        public static final RegistryObject<Item> RUBY_BOW = ITEMS.register(Reference.Names.RUBY + Reference.Names.BOW,
+                () -> new RubyBow(new Item.Properties().durability(500)));
+        //</editor-fold>
+
+        //<editor-fold desc="RUBY TOOLS">
+        public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.SWORD,
+                () -> new SwordItem(ModTiers.SAPPHIRE, 3, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.PICKAXE,
+                () -> new PickaxeItem(ModTiers.SAPPHIRE, 1, -2.8F, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_SHOVEL = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.SHOVEL,
+                () -> new ShovelItem(ModTiers.SAPPHIRE, 1, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.AXE,
+                () -> new AxeItem(ModTiers.SAPPHIRE, 6, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.HOE,
+                () -> new HoeItem(ModTiers.SAPPHIRE, 0, 0.0F, new Item.Properties()));
+
+        public static final RegistryObject<Item> SAPPHIRE_BOW = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.BOW,
+                () -> new SapphireBow(new Item.Properties().durability(500)));
+        //</editor-fold>
+
+        /* SAPPHIRE TOOLS */
+
         public static void initialize(){}
     }
 
@@ -987,8 +1032,55 @@ public class ModItems
         public static final RegistryObject<Item> RUBY = ITEMS.register(
                 Reference.Names.GEM + Reference.Names.RUBY, () -> new Augment(new Item.Properties()));
 
+        public static final RegistryObject<Item> RUBY_SHARD = ITEMS.register(
+                Reference.Names.GEM + Reference.Names.SHARD + Reference.Names.RUBY, () -> new Augment(new Item.Properties()));
+
         public static final RegistryObject<Item> SAPPHIRE = ITEMS.register(
                 Reference.Names.GEM + Reference.Names.SAPPHIRE, () -> new Augment(new Item.Properties()));
+
+        public static final RegistryObject<Item> SAPPHIRE_SHARD = ITEMS.register(
+                Reference.Names.GEM + Reference.Names.SHARD + Reference.Names.SAPPHIRE, () -> new Augment(new Item.Properties()));
+
+        // SHARD ==>
+        public static final RegistryObject<Item> DIAMOND_SHARD = ITEMS.register(
+                Reference.Names.GEM + Reference.Names.SHARD + Reference.Names.DIAMOND, () -> new Augment(new Item.Properties()));
+        // Diamond
+        public static final RegistryObject<Item> QUARTZ_SHARD = ITEMS.register(
+                Reference.Names.GEM + Reference.Names.SHARD + Reference.Names.QUARTZ, () -> new Augment(new Item.Properties()));
+        // Quartz
+        public static final RegistryObject<Item> EMERALD_SHARD = ITEMS.register(
+                Reference.Names.GEM + Reference.Names.SHARD + Reference.Names.EMERALD, () -> new Augment(new Item.Properties()));
+        // Emerald
+
+        public static void initialize(){}
+    }
+
+    public static class Armor
+    {
+        public static final RegistryObject<Item> ENGINEER_HELMET = ITEMS.register(Reference.Names.ENGINEER + Reference.Names.HELMET,
+                () -> new ModArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()));
+
+        //<editor-fold desc="RUBY">
+        public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register(Reference.Names.RUBY + Reference.Names.HELMET,
+                () -> new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register(Reference.Names.RUBY + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register(Reference.Names.RUBY + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register(Reference.Names.RUBY + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
+        //</editor-fold>
+
+        //<editor-fold desc="SAPPHIRE">
+        public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.HELMET,
+                () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+        //</editor-fold>
 
         public static void initialize(){}
     }
@@ -1005,5 +1097,6 @@ public class ModItems
         Rod.initialize();
         Gem.initialize();
         Tool.initialize();
+        Armor.initialize();
     }
 }

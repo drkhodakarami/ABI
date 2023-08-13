@@ -404,8 +404,17 @@ public class CreativeTabs
                     .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.GEM + "tab"))
                     .displayItems((parameters, output) ->
                     {
+                        output.accept(Items.DIAMOND);
+                        output.accept(Items.EMERALD);
                         output.accept(ModItems.Gem.RUBY.get());
                         output.accept(ModItems.Gem.SAPPHIRE.get());
+                        output.accept(Items.QUARTZ);
+                        output.accept(ModItems.Gem.DIAMOND_SHARD.get());
+                        output.accept(ModItems.Gem.EMERALD_SHARD.get());
+                        output.accept(Items.PRISMARINE_SHARD);
+                        output.accept(ModItems.Gem.QUARTZ_SHARD.get());
+                        output.accept(ModItems.Gem.RUBY_SHARD.get());
+                        output.accept(ModItems.Gem.SAPPHIRE_SHARD.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TOOL = CREATIVE_MODE_TABS.register(
@@ -419,10 +428,43 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.AUGMENT.get());
                         output.accept(ModItems.Tool.CUTTER.get());
                         output.accept(ModItems.Tool.DOWSING_ROD.get());
-                        output.accept(ModItems.Tool.ENGINEER_HELMET.get());
                         output.accept(ModItems.Tool.KNIFE.get());
                         output.accept(ModItems.Tool.SPANNER.get());
                         output.accept(ModItems.Tool.TUNER.get());
                         output.accept(ModItems.Tool.WRENCH.get());
+
+                        output.accept(ModItems.Tool.RUBY_SWORD.get());
+                        output.accept(ModItems.Tool.RUBY_AXE.get());
+                        output.accept(ModItems.Tool.RUBY_PICKAXE.get());
+                        output.accept(ModItems.Tool.RUBY_SHOVEL.get());
+                        output.accept(ModItems.Tool.RUBY_HOE.get());
+                        output.accept(ModItems.Tool.RUBY_BOW.get());
+
+                        output.accept(ModItems.Tool.SAPPHIRE_SWORD.get());
+                        output.accept(ModItems.Tool.SAPPHIRE_AXE.get());
+                        output.accept(ModItems.Tool.SAPPHIRE_PICKAXE.get());
+                        output.accept(ModItems.Tool.SAPPHIRE_SHOVEL.get());
+                        output.accept(ModItems.Tool.SAPPHIRE_HOE.get());
+                        output.accept(ModItems.Tool.SAPPHIRE_BOW.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> ARMOR = CREATIVE_MODE_TABS.register(
+            Reference.MODID + "_" + Reference.Names.ARMOR + "tab", () -> CreativeModeTab.builder()
+                    .withTabsAfter(CreativeModeTabs.BUILDING_BLOCKS)
+                    .withTabsBefore(CreativeTabs.TOOL.getId())
+                    .icon(() -> ModItems.Armor.ENGINEER_HELMET.get().getDefaultInstance())
+                    .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.TOOL + "tab"))
+                    .displayItems((parameters, output) ->
+                    {
+                        output.accept(ModItems.Armor.ENGINEER_HELMET.get());
+                        output.accept(ModItems.Armor.RUBY_HELMET.get());
+                        output.accept(ModItems.Armor.RUBY_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.RUBY_LEGGINGS.get());
+                        output.accept(ModItems.Armor.RUBY_BOOTS.get());
+
+                        output.accept(ModItems.Armor.SAPPHIRE_HELMET.get());
+                        output.accept(ModItems.Armor.SAPPHIRE_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.SAPPHIRE_LEGGINGS.get());
+                        output.accept(ModItems.Armor.SAPPHIRE_BOOTS.get());
                     }).build());
 }

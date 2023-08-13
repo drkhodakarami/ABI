@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-12T21:26:24.7984615	Item Models: abi
+// 1.20.1	2023-08-13T17:30:39.096981	Item Models: abi
 f27610369f5871b83830237b65bb49a1dfa389ca assets/abi/models/item/dust_aluminium.json
 2bf0f44c5e4fcffe5884f83a5f6f5b07b86074ba assets/abi/models/item/dust_aluminium_brass.json
 47c40d4d13928be990bf7ed4d5cd96ecbc8c061a assets/abi/models/item/dust_alumite.json
@@ -37,7 +37,7 @@ bcede39f6f0b3ce231da379377547099e7b53813 assets/abi/models/item/dust_lead.json
 2bd86ec8658e9fc1c4be62c318404071a9866a1c assets/abi/models/item/dust_steel.json
 8dc3df2a7270b9be2ffd818a8156d5b18ea20db6 assets/abi/models/item/dust_tin.json
 c94e3cde11884edfbd0498c4aa0a7e89fccc8059 assets/abi/models/item/dust_yellorium.json
-52de4e3e45851857baf69f3f1cc3b517e365fed9 assets/abi/models/item/engineer_helmet.json
+990f746c5cec4d027583468fe476778b9e9df678 assets/abi/models/item/engineer_helmet.json
 680d274e370f624de6b87e46b71b29b20ba30f6d assets/abi/models/item/gear_aluminium.json
 1181bc6eaaae5fa6d9a5fa4829f70aef6976d4db assets/abi/models/item/gear_aluminium_brass.json
 1a65d8cf2523e70c56c00b1ac9899f59f7dfb0d8 assets/abi/models/item/gear_alumite.json
@@ -78,6 +78,11 @@ c2350b8c68c3e68433218c12a38d9bbaf476392e assets/abi/models/item/gear_steel.json
 8ebeb44fbfb970cbc2442293c74916da722d2072 assets/abi/models/item/gear_yellorium.json
 8324d09dda857b26c59c6fa47c7cb986f26ae14e assets/abi/models/item/gem_ruby.json
 290a3d1e7a5a3978bc1b6ab886ba358c23a0d3cc assets/abi/models/item/gem_sapphire.json
+8c4858320ec47a57717d1f17ff8a670d7e234739 assets/abi/models/item/gem_shard_diamond.json
+d4cd14b35b91857000d91192bcc6be6b8511b26f assets/abi/models/item/gem_shard_emerald.json
+8d3ca33e415831edc0dadc49c819bbb06fa2cf6d assets/abi/models/item/gem_shard_quartz.json
+6bf182a96ad12f094714ce2539147827de8bf983 assets/abi/models/item/gem_shard_ruby.json
+93134620cf0aedbdff0aaab7622701d5b621414e assets/abi/models/item/gem_shard_sapphire.json
 47bac8d38dc12d5ae45930e2be57f8bca5b8b756 assets/abi/models/item/ingot_aluminium.json
 d5b8dd31e18abbbf84ca2669041d2be9b870621a assets/abi/models/item/ingot_aluminium_brass.json
 23f90084f2b6e8bbd0f6f962d1948796244efdb9 assets/abi/models/item/ingot_alumite.json
@@ -298,6 +303,15 @@ db2880dc832f03280e7aa9f6c5bdacb51541bed6 assets/abi/models/item/rod_ludicrite.js
 2d18c374303a6f560859d4fa87f4e7b278b6a7a2 assets/abi/models/item/rod_steel.json
 0899d268dd4fe2b5a2399279a0fe587b38c4e494 assets/abi/models/item/rod_tin.json
 e265cd8e650e764f6e4e0679840d0388b975e7d7 assets/abi/models/item/rod_yellorium.json
+665c242d465dc7979e7df4c41a5e4f3a77b36c1f assets/abi/models/item/ruby_boots.json
+91e4c914fd6f33fe5a2525c81bbfd6219882c717 assets/abi/models/item/ruby_bow.json
+d4e10d17f66cfc1fda9f450c5e4a1949b6cdaaff assets/abi/models/item/ruby_chestplate.json
+719c9073fcdb24a05bb3df4438a70847f7e79eae assets/abi/models/item/ruby_helmet.json
+237cc8f61d1b324683b6bf7584bcfb0216693dbc assets/abi/models/item/ruby_leggings.json
+1ddb55278d7da4f9dfd21ecbaaac3b62014f6dd3 assets/abi/models/item/sapphire_boots.json
+4dbe6438c844c8f7710883166398a147a9740d32 assets/abi/models/item/sapphire_chestplate.json
+4472b3aa900bc1c0e9ec56470a38b1f4c5a9a627 assets/abi/models/item/sapphire_helmet.json
+23ab0e5358d72309c1f19f4398fd81aad8bb825c assets/abi/models/item/sapphire_leggings.json
 d8389529863586d64111602bfee621d9d4324a38 assets/abi/models/item/tool_augment.json
 9f1e15f9202c60ca95552e404bc3b82882b69fb2 assets/abi/models/item/tool_cutter.json
 44064612e48fc055a24004c6d4c38cba2cca72de assets/abi/models/item/tool_dowsing_rod.json

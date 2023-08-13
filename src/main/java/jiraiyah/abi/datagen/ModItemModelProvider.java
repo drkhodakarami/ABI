@@ -5,7 +5,6 @@ import jiraiyah.abi.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -345,17 +344,38 @@ public class ModItemModelProvider extends ItemModelProvider
         //<editor-fold desc="GEMS">
         SimpleItem(ModItems.Gem.RUBY);
         SimpleItem(ModItems.Gem.SAPPHIRE);
+
+        SimpleItem(ModItems.Gem.DIAMOND_SHARD);
+        SimpleItem(ModItems.Gem.EMERALD_SHARD);
+        SimpleItem(ModItems.Gem.QUARTZ_SHARD);
+        SimpleItem(ModItems.Gem.RUBY_SHARD);
+        SimpleItem(ModItems.Gem.SAPPHIRE_SHARD);
+        //</editor-fold>
+
+        //<editor-fold desc="ARMOR">
+        SimpleItem(ModItems.Armor.ENGINEER_HELMET, true);
+
+        SimpleItem(ModItems.Armor.RUBY_HELMET);
+        SimpleItem(ModItems.Armor.RUBY_CHESTPLATE);
+        SimpleItem(ModItems.Armor.RUBY_LEGGINGS);
+        SimpleItem(ModItems.Armor.RUBY_BOOTS);
+
+        SimpleItem(ModItems.Armor.SAPPHIRE_HELMET);
+        SimpleItem(ModItems.Armor.SAPPHIRE_CHESTPLATE);
+        SimpleItem(ModItems.Armor.SAPPHIRE_LEGGINGS);
+        SimpleItem(ModItems.Armor.SAPPHIRE_BOOTS);
         //</editor-fold>
 
         //<editor-fold desc="TOOL">
         SimpleItem(ModItems.Tool.AUGMENT, true);
         SimpleItem(ModItems.Tool.CUTTER, true);
         SimpleItem(ModItems.Tool.DOWSING_ROD, true);
-        SimpleItem(ModItems.Tool.ENGINEER_HELMET, true);
         SimpleItem(ModItems.Tool.KNIFE, true);
         SimpleItem(ModItems.Tool.SPANNER, true);
         SimpleItem(ModItems.Tool.TUNER, true);
         SimpleItem(ModItems.Tool.WRENCH, true);
+
+        SimpleItem(ModItems.Tool.RUBY_BOW, true);
         //</editor-fold>
     }
 
@@ -414,7 +434,13 @@ public class ModItemModelProvider extends ItemModelProvider
                     .texture("layer0",
                             Reference.Location("item/rod/" + item.getId().getPath()));
 
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.TOOL))
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.TOOL) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.BOW) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.SWORD) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.AXE) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.PICKAXE) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.SHOVEL) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.HOE))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/tool/" + item.getId().getPath()));
@@ -423,6 +449,23 @@ public class ModItemModelProvider extends ItemModelProvider
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/gem/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.HELMET))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/armor/" + item.getId().getPath()));
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.CHEST_PLATE))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/armor/" + item.getId().getPath()));
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.LEGGINGS))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/armor/" + item.getId().getPath()));
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.BOOTS))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/armor/" + item.getId().getPath()));
 
         return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                 .texture("layer0",

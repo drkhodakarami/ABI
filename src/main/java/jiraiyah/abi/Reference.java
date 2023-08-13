@@ -32,7 +32,6 @@ public class Reference
         public static final String DARK_STEEL = "dark_steel";
         public static final String DAWN_STONE = "dawn_stone";
         public static final String DEMONIUM = "demonium";
-        public static final String DIAMOND = "diamond";
         public static final String DRACONIUM = "draconium";
         public static final String ELECTRICAL_STEEL = "electrical_steel";
         public static final String ELECTRUM = "electrum";
@@ -50,10 +49,18 @@ public class Reference
         public static final String LUDICRITE = "ludicrite";
         public static final String MAGNESIUM = "magnesium";
         public static final String MANGANESE = "manganese";
+        public static final String NETHERITE = "netherite";
+        public static final String NICKEL = "nickel";
         public static final String STEEL = "steel";
+        public static final String SULFUR = "sulfur";
         public static final String TIN = "tin";
         public static final String YELLORIUM = "yellorium";
 
+        public static final String DIAMOND = "diamond";
+        public static final String EMERALD = "emerald";
+        public static final String LAPIS = "lapis";
+        public static final String PRISMARINE = "prismarine";
+        public static final String QUARTZ = "quartz";
         public static final String RUBY = "ruby";
         public static final String SAPPHIRE = "sapphire";
 
@@ -62,7 +69,7 @@ public class Reference
         public static final String CUTTER = "cutter";
         public static final String KNIFE = "knife";
         public static final String DOWSING = "dowsing_rod";
-        public static final String ENGINEER_HELMET = "engineer_helmet";
+        public static final String ENGINEER = "engineer";
         public static final String SPANNER = "spanner";
         public static final String TUNER = "tuner";
         public static final String TUNER_ACTIVE = "tuner_active";
@@ -80,6 +87,8 @@ public class Reference
         public static final String ROD = "rod_";
         public static final String TOOL = "tool_";
         public static final String GEM = "gem_";
+        public static final String SHARD = "shard_";
+        public static final String ARMOR = "armor_";
 
         public static final String OVERWORLD = "overworld_";
         public static final String DEEPSLATE = "deepslate_";
@@ -87,5 +96,17 @@ public class Reference
         public static final String NETHER = "nether_";
 
         public static final String CREATIVE_TAB = "creativetab.";
+        
+        public static final String HELMET = "_helmet";
+        public static final String CHEST_PLATE = "_chestplate";
+        public static final String LEGGINGS = "_leggings";
+        public static final String BOOTS = "_boots";
+
+        public static final String SWORD = "_sword";
+        public static final String PICKAXE = "_pickaxe";
+        public static final String SHOVEL = "_shovel";
+        public static final String AXE = "_axe";
+        public static final String HOE = "_hoe";
+        public static final String BOW = "_bow";
     }
 }

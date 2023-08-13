@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "abi:item/engineer_helmet"
+    "layer0": "abi:item/armor/engineer_helmet"
   }
 }

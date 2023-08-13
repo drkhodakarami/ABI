@@ -1,0 +1,9 @@
+// 1.20.1	2023-08-13T18:12:52.0411721	Tags for minecraft:item mod id vanilla
+cf1de4bb747bbec20932c28c1b246bc47467ba7c data/forge/tags/items/gems.json
+2db53efdaf22d8a690024acd786d300af3121afc data/forge/tags/items/gems/ruby.json
+90752361776154e799b8c37fd7ab2c33537b6ea0 data/forge/tags/items/gems/sapphire.json
+3cab2b6fade22edb7a1f0bc6f78e892efc2907a2 data/forge/tags/items/gems/shard_diamond.json
+1e9d6cd62aa5c69727b874a2825bc916777d87de data/forge/tags/items/gems/shard_emerald.json
+bf8979af921c347bebb5d8ddd3900ee1f3685187 data/forge/tags/items/gems/shard_quartz.json
+f7b710ef7051c8bf9e2e60254b734d06bafe1d0a data/forge/tags/items/gems/shard_ruby.json
+d7f579ac78f8e5a8fe013501625d4323a40de8cf data/forge/tags/items/gems/shard_sapphire.json
