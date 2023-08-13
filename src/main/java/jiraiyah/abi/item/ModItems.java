@@ -64,7 +64,7 @@ public class ModItems
         public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+        public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
@@ -127,12 +127,6 @@ public class ModItems
         public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
-        // Diamond
-        // Quartz
-        // Prismarine
-        // Emerald
-        // Ruby
-        // Sapphire
 
         public static void initialize(){}
     }
@@ -190,7 +184,7 @@ public class ModItems
         public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
                 Reference.Names.GEAR + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+        public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.GEAR + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
@@ -253,13 +247,6 @@ public class ModItems
         public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
                 Reference.Names.GEAR + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
-        // Diamond
-        // Quartz
-        // Prismarine
-        // Emerald
-        // Ruby
-        // Sapphire
-
         public static void initialize(){}
     }
 
@@ -313,7 +300,7 @@ public class ModItems
         public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+        public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
@@ -426,7 +413,7 @@ public class ModItems
         public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
                 Reference.Names.NUGGET + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+        public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.NUGGET + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
@@ -539,7 +526,7 @@ public class ModItems
         public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
                 Reference.Names.PLATE + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+        public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.PLATE + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
@@ -643,9 +630,6 @@ public class ModItems
         public static final RegistryObject<Item> CONSTANTAN = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.CONSTANTAN, () -> new Item(new Item.Properties()));
 
-        //public static final RegistryObject<Item> COPPER = ITEMS.register(
-        //        Reference.Names.RAW + Reference.Names.COPPER, () -> new Item(new Item.Properties()));
-
         public static final RegistryObject<Item> CRUDE_STEEL = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.CRUDE_STEEL, () -> new Item(new Item.Properties()));
 
@@ -658,7 +642,7 @@ public class ModItems
         public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+        public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
@@ -682,9 +666,6 @@ public class ModItems
         public static final RegistryObject<Item> ENERGETIC_SILVER = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.ENERGETIC_SILVER, () -> new Item(new Item.Properties()));
 
-        //public static final RegistryObject<Item> GOLD = ITEMS.register(
-        //        Reference.Names.RAW + Reference.Names.GOLD, () -> new Item(new Item.Properties()));
-
         public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
 
@@ -693,9 +674,6 @@ public class ModItems
 
         public static final RegistryObject<Item> IRIDIUM = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.IRIDIUM, () -> new Item(new Item.Properties()));
-
-        //public static final RegistryObject<Item> IRON = ITEMS.register(
-        //        Reference.Names.RAW + Reference.Names.IRON, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> LEAD = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
@@ -782,7 +760,7 @@ public class ModItems
         public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
                 Reference.Names.REINFORCED + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+        public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.REINFORCED + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
@@ -901,7 +879,7 @@ public class ModItems
         public static final RegistryObject<Item> DAWN_STONE = ITEMS.register(
                 Reference.Names.ROD + Reference.Names.DAWN_STONE, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> DEMONICUM = ITEMS.register(
+        public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.ROD + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
@@ -1006,7 +984,7 @@ public class ModItems
                 () -> new RubyBow(new Item.Properties().durability(500)));
         //</editor-fold>
 
-        //<editor-fold desc="RUBY TOOLS">
+        //<editor-fold desc="SAPPHIRE TOOLS">
         public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.SWORD,
                 () -> new SwordItem(ModTiers.SAPPHIRE, 3, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.PICKAXE,
@@ -1021,8 +999,6 @@ public class ModItems
         public static final RegistryObject<Item> SAPPHIRE_BOW = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.BOW,
                 () -> new SapphireBow(new Item.Properties().durability(500)));
         //</editor-fold>
-
-        /* SAPPHIRE TOOLS */
 
         public static void initialize(){}
     }

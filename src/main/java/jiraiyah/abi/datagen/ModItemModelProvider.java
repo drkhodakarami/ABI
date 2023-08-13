@@ -39,7 +39,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Dust.CYANIDE);
         SimpleItem(ModItems.Dust.DARK_STEEL);
         SimpleItem(ModItems.Dust.DAWN_STONE);
-        SimpleItem(ModItems.Dust.DEMONICUM);
+        SimpleItem(ModItems.Dust.DEMONIUM);
         SimpleItem(ModItems.Dust.DRACONIUM);
         SimpleItem(ModItems.Dust.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Dust.ELECTRUM);
@@ -80,7 +80,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Gear.CYANIDE);
         SimpleItem(ModItems.Gear.DARK_STEEL);
         SimpleItem(ModItems.Gear.DAWN_STONE);
-        SimpleItem(ModItems.Gear.DEMONICUM);
+        SimpleItem(ModItems.Gear.DEMONIUM);
         SimpleItem(ModItems.Gear.DRACONIUM);
         SimpleItem(ModItems.Gear.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Gear.ELECTRUM);
@@ -120,7 +120,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Ingot.CYANIDE);
         SimpleItem(ModItems.Ingot.DARK_STEEL);
         SimpleItem(ModItems.Ingot.DAWN_STONE);
-        SimpleItem(ModItems.Ingot.DEMONICUM);
+        SimpleItem(ModItems.Ingot.DEMONIUM);
         SimpleItem(ModItems.Ingot.DRACONIUM);
         SimpleItem(ModItems.Ingot.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Ingot.ELECTRUM);
@@ -159,7 +159,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Nugget.CYANIDE);
         SimpleItem(ModItems.Nugget.DARK_STEEL);
         SimpleItem(ModItems.Nugget.DAWN_STONE);
-        SimpleItem(ModItems.Nugget.DEMONICUM);
+        SimpleItem(ModItems.Nugget.DEMONIUM);
         SimpleItem(ModItems.Nugget.DRACONIUM);
         SimpleItem(ModItems.Nugget.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Nugget.ELECTRUM);
@@ -198,7 +198,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Plate.CYANIDE);
         SimpleItem(ModItems.Plate.DARK_STEEL);
         SimpleItem(ModItems.Plate.DAWN_STONE);
-        SimpleItem(ModItems.Plate.DEMONICUM);
+        SimpleItem(ModItems.Plate.DEMONIUM);
         SimpleItem(ModItems.Plate.DRACONIUM);
         SimpleItem(ModItems.Plate.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Plate.ELECTRUM);
@@ -238,7 +238,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Raw.CYANIDE);
         SimpleItem(ModItems.Raw.DARK_STEEL);
         SimpleItem(ModItems.Raw.DAWN_STONE);
-        SimpleItem(ModItems.Raw.DEMONICUM);
+        SimpleItem(ModItems.Raw.DEMONIUM);
         SimpleItem(ModItems.Raw.DRACONIUM);
         SimpleItem(ModItems.Raw.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Raw.ELECTRUM);
@@ -277,7 +277,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Reinforced.CYANIDE);
         SimpleItem(ModItems.Reinforced.DARK_STEEL);
         SimpleItem(ModItems.Reinforced.DAWN_STONE);
-        SimpleItem(ModItems.Reinforced.DEMONICUM);
+        SimpleItem(ModItems.Reinforced.DEMONIUM);
         SimpleItem(ModItems.Reinforced.DRACONIUM);
         SimpleItem(ModItems.Reinforced.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Reinforced.ELECTRUM);
@@ -318,7 +318,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Rod.CYANIDE);
         SimpleItem(ModItems.Rod.DARK_STEEL);
         SimpleItem(ModItems.Rod.DAWN_STONE);
-        SimpleItem(ModItems.Rod.DEMONICUM);
+        SimpleItem(ModItems.Rod.DEMONIUM);
         SimpleItem(ModItems.Rod.DRACONIUM);
         SimpleItem(ModItems.Rod.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Rod.ELECTRUM);

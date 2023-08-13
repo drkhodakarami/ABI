@@ -109,4 +109,66 @@ public class Reference
         public static final String HOE = "_hoe";
         public static final String BOW = "_bow";
     }
+
+    public static class Tags
+    {
+        public static class Forge
+        {
+            public static class Blocks
+            {
+                public static final String BARRELS = "barrels/";
+                public static final String CHESTS = "chests/";
+                public static final String COBBLESTONE = "cobblestone/";
+                public static final String FENCE_GATES = "fence_gates/";
+                public static final String FENCES = "fences/";
+                public static final String GLASS = "glass/";
+                public static final String GLASS_PANES = "glass_panes/";
+                public static final String ORE_BEARING_GROUND = "ore_bearing_ground/";
+                public static final String SAND = "sand/";
+                public static final String STORAGE_BLOCKS = "storage_blocks/";
+            }
+
+            public static class Items
+            {
+                public static final String ARMORS = "armors/";
+                public static final String BARRELS = "barrels/";
+                public static final String CHESTS = "chests/";
+                public static final String COBBLESTONES = "cobblestones/";
+                public static final String CROPS = "crops/";
+                public static final String DUST = "dusts/";
+                public static final String DYES = "dyes/";
+                public static final String FENCE_GATES = "fence_gates/";
+                public static final String FENCES = "fences/";
+                public static final String GEMS = "gems/";
+                public static final String GLASS = "glass/";
+                public static final String GLASS_PANES = "glass_panes/";
+                public static final String INGOTS = "ingots/";
+                public static final String NUGGETS = "nuggets/";
+                public static final String ORE_BEARING_GROUND = "ore_bearing_ground/";
+                public static final String ORE_IN_GROUND = "ore_in_ground/";
+                public static final String ORE_RATES = "ore_rates/";
+                public static final String ORES = "ores/";
+                public static final String RAW_MATERIALS = "raw_materials/";
+                public static final String RODS = "rods/";
+                public static final String SAND = "sand/";
+                public static final String SEEDS = "seeds/";
+                public static final String STORAGE_BLOCKS = "storage_blocks/";
+                public static final String TOOLS = "tools/";
+            }
+
+            public static final String ENTITY_TYPES = "entity_types/";
+            public static final String FLUIDS = "fluids/";
+            public static final String WORLDGEN = "worldgen/";
+            public static final String IS_COLD = "biome/is_cold/";
+            public static final String IS_DENSE = "biome/is_dense/";
+            public static final String IS_DRY = "biome/is_dry/";
+            public static final String IS_HOT = "biome/is_hot/";
+            public static final String IS_SPARSE = "biome/is_sparse/";
+            public static final String IS_WET = "biome/is_wet/";
+        }
+
+        public static final String GEAR = "gears/";
+        public static final String PLATE = "plates/";
+        public static final String REINFORCED = "reinforced/";
+    }
 }

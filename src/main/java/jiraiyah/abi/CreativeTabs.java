@@ -37,7 +37,7 @@ public class CreativeTabs
                         output.accept(ModItems.Dust.CYANIDE.get());
                         output.accept(ModItems.Dust.DARK_STEEL.get());
                         output.accept(ModItems.Dust.DAWN_STONE.get());
-                        output.accept(ModItems.Dust.DEMONICUM.get());
+                        output.accept(ModItems.Dust.DEMONIUM.get());
                         output.accept(ModItems.Dust.DRACONIUM.get());
                         output.accept(ModItems.Dust.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Dust.ELECTRUM.get());
@@ -85,7 +85,7 @@ public class CreativeTabs
                         output.accept(ModItems.Gear.CYANIDE.get());
                         output.accept(ModItems.Gear.DARK_STEEL.get());
                         output.accept(ModItems.Gear.DAWN_STONE.get());
-                        output.accept(ModItems.Gear.DEMONICUM.get());
+                        output.accept(ModItems.Gear.DEMONIUM.get());
                         output.accept(ModItems.Gear.DRACONIUM.get());
                         output.accept(ModItems.Gear.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Gear.ELECTRUM.get());
@@ -133,7 +133,7 @@ public class CreativeTabs
                         output.accept(ModItems.Ingot.CYANIDE.get());
                         output.accept(ModItems.Ingot.DARK_STEEL.get());
                         output.accept(ModItems.Ingot.DAWN_STONE.get());
-                        output.accept(ModItems.Ingot.DEMONICUM.get());
+                        output.accept(ModItems.Ingot.DEMONIUM.get());
                         output.accept(ModItems.Ingot.DRACONIUM.get());
                         output.accept(ModItems.Ingot.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Ingot.ELECTRUM.get());
@@ -181,7 +181,7 @@ public class CreativeTabs
                         output.accept(ModItems.Nugget.CYANIDE.get());
                         output.accept(ModItems.Nugget.DARK_STEEL.get());
                         output.accept(ModItems.Nugget.DAWN_STONE.get());
-                        output.accept(ModItems.Nugget.DEMONICUM.get());
+                        output.accept(ModItems.Nugget.DEMONIUM.get());
                         output.accept(ModItems.Nugget.DRACONIUM.get());
                         output.accept(ModItems.Nugget.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Nugget.ELECTRUM.get());
@@ -229,7 +229,7 @@ public class CreativeTabs
                         output.accept(ModItems.Plate.CYANIDE.get());
                         output.accept(ModItems.Plate.DARK_STEEL.get());
                         output.accept(ModItems.Plate.DAWN_STONE.get());
-                        output.accept(ModItems.Plate.DEMONICUM.get());
+                        output.accept(ModItems.Plate.DEMONIUM.get());
                         output.accept(ModItems.Plate.DRACONIUM.get());
                         output.accept(ModItems.Plate.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Plate.ELECTRUM.get());
@@ -277,7 +277,7 @@ public class CreativeTabs
                         output.accept(ModItems.Raw.CYANIDE.get());
                         output.accept(ModItems.Raw.DARK_STEEL.get());
                         output.accept(ModItems.Raw.DAWN_STONE.get());
-                        output.accept(ModItems.Raw.DEMONICUM.get());
+                        output.accept(ModItems.Raw.DEMONIUM.get());
                         output.accept(ModItems.Raw.DRACONIUM.get());
                         output.accept(ModItems.Raw.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Raw.ELECTRUM.get());
@@ -325,7 +325,7 @@ public class CreativeTabs
                         output.accept(ModItems.Reinforced.CYANIDE.get());
                         output.accept(ModItems.Reinforced.DARK_STEEL.get());
                         output.accept(ModItems.Reinforced.DAWN_STONE.get());
-                        output.accept(ModItems.Reinforced.DEMONICUM.get());
+                        output.accept(ModItems.Reinforced.DEMONIUM.get());
                         output.accept(ModItems.Reinforced.DRACONIUM.get());
                         output.accept(ModItems.Reinforced.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Reinforced.ELECTRUM.get());
@@ -373,7 +373,7 @@ public class CreativeTabs
                         output.accept(ModItems.Rod.CYANIDE.get());
                         output.accept(ModItems.Rod.DARK_STEEL.get());
                         output.accept(ModItems.Rod.DAWN_STONE.get());
-                        output.accept(ModItems.Rod.DEMONICUM.get());
+                        output.accept(ModItems.Rod.DEMONIUM.get());
                         output.accept(ModItems.Rod.DRACONIUM.get());
                         output.accept(ModItems.Rod.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Rod.ELECTRUM.get());
