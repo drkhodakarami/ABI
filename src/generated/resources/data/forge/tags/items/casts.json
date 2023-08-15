@@ -1,0 +1,12 @@
+{
+  "values": [
+    "#forge:casts/blank",
+    "#forge:casts/blank_reinforced",
+    "#forge:casts/gear",
+    "#forge:casts/gem",
+    "#forge:casts/hammer",
+    "#forge:casts/handle",
+    "#forge:casts/ingot",
+    "#forge:casts/nugget"
+  ]
+}

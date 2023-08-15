@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#forge:tools/augment",
+    "#forge:tools/cutter",
+    "#forge:tools/dowsing_rod",
+    "#forge:tools/knife",
+    "#forge:tools/spanner",
+    "#forge:tools/tuner",
+    "#forge:tools/wrench"
+  ]
+}

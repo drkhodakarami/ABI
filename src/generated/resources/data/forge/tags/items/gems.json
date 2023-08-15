@@ -1,0 +1,12 @@
+{
+  "values": [
+    "#forge:gems/ruby",
+    "#forge:gems/sapphire",
+    "#forge:gems/shard_sapphire",
+    "#forge:gems/shard_diamond",
+    "#forge:gems/shard_emerald",
+    "#forge:gems/shard_quartz",
+    "#forge:gems/shard_ruby",
+    "#forge:gems/shard_sapphire"
+  ]
+}
