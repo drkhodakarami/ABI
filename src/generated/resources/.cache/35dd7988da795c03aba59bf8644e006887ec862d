@@ -1,4 +1,12 @@
-// 1.20.1	2023-08-13T17:30:39.096981	Item Models: abi
+// 1.20.1	2023-08-15T15:35:38.9480762	Item Models: abi
+b64f560ef194f42c7a4eb899bd4770fe5f3fc65e assets/abi/models/item/cast_blank.json
+c1ec548f21adb2616755f0fc08a4132dc8fd5c1b assets/abi/models/item/cast_blank_reinforced.json
+239ee6095781101599345f2a01c5cd2e0ff840b4 assets/abi/models/item/cast_gear.json
+23a9230977c6488e70d36812ffe7965176290fb6 assets/abi/models/item/cast_gem.json
+a7653e0799ff3e94e704258879955b15e449d249 assets/abi/models/item/cast_hammer.json
+e10819c54b30ac509b04e553cf90d5163b139279 assets/abi/models/item/cast_handle.json
+63f310bdd6fe671e9c092126e8955d232e646b4c assets/abi/models/item/cast_ingot.json
+f4790c584c47dbbf6bed6ba79c5bf3c4d33f206c assets/abi/models/item/cast_nugget.json
 f27610369f5871b83830237b65bb49a1dfa389ca assets/abi/models/item/dust_aluminium.json
 2bf0f44c5e4fcffe5884f83a5f6f5b07b86074ba assets/abi/models/item/dust_aluminium_brass.json
 47c40d4d13928be990bf7ed4d5cd96ecbc8c061a assets/abi/models/item/dust_alumite.json

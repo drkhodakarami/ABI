@@ -42,6 +42,7 @@ public class ModTags
         public static final TagKey<Item> RODS = forgeTag("rods");
         public static final TagKey<Item> TOOLS = forgeTag("tools");
         public static final TagKey<Item> GEMS = forgeTag("gems");
+        public static final TagKey<Item> CASTS = forgeTag("casts");
         //</editor-fold>
 
         public static class Dusts
@@ -396,6 +397,18 @@ public class ModTags
                 public static final TagKey<Item> RUBY = forgeTag(Reference.Tags.Forge.Items.GEMS + Reference.Names.SHARD + Reference.Names.RUBY);
                 public static final TagKey<Item> SAPPHIRE = forgeTag(Reference.Tags.Forge.Items.GEMS + Reference.Names.SHARD + Reference.Names.SAPPHIRE);
             }
+        }
+
+        public static class Casts
+        {
+            public static final TagKey<Item> BLANK = forgeTag(Reference.Tags.Forge.Items.CASTS + Reference.Names.CAST_BLANK);
+            public static final TagKey<Item> BLANK_REINFORCED = forgeTag(Reference.Tags.Forge.Items.CASTS + Reference.Names.CAST_BLANK_REINFORCED);
+            public static final TagKey<Item> GEAR = forgeTag(Reference.Tags.Forge.Items.CASTS + Reference.Names.CAST_GEAR);
+            public static final TagKey<Item> GEM = forgeTag(Reference.Tags.Forge.Items.CASTS + Reference.Names.CAST_GEM);
+            public static final TagKey<Item> HAMMER = forgeTag(Reference.Tags.Forge.Items.CASTS + Reference.Names.CAST_HAMMER);
+            public static final TagKey<Item> HANDLE = forgeTag(Reference.Tags.Forge.Items.CASTS + Reference.Names.CAST_HANDLE);
+            public static final TagKey<Item> INGOT = forgeTag(Reference.Tags.Forge.Items.CASTS + Reference.Names.CAST_INGOT);
+            public static final TagKey<Item> NUGGET = forgeTag(Reference.Tags.Forge.Items.CASTS + Reference.Names.CAST_NUGGET);
         }
 
         //<editor-fold desc="HELPER METHODS">

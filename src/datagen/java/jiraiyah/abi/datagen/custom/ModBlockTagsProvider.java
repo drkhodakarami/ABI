@@ -1,4 +1,4 @@
-package jiraiyah.abi.datagen;
+package jiraiyah.abi.datagen.custom;
 
 import jiraiyah.abi.Reference;
 import net.minecraft.core.HolderLookup;

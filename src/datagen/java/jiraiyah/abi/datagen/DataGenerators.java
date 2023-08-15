@@ -1,7 +1,7 @@
-package jiraiyah.abi.zlib.datagen;
+package jiraiyah.abi.datagen;
 
 import jiraiyah.abi.Reference;
-import jiraiyah.abi.datagen.*;
+import jiraiyah.abi.datagen.custom.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

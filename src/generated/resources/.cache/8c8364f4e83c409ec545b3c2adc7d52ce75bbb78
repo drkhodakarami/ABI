@@ -1,4 +1,13 @@
-// 1.20.1	2023-08-13T20:07:00.0520804	Tags for minecraft:item mod id vanilla
+// 1.20.1	2023-08-15T15:35:38.9390823	Tags for minecraft:item mod id vanilla
+e73f2f67f6654a1a7b2799ba84658f8518567c97 data/forge/tags/items/casts.json
+4bccca04e180224b642814d2c7eb51541872de4f data/forge/tags/items/casts/blank.json
+9258b969e4aaaceeb73bfb8b7de104015d8d9e83 data/forge/tags/items/casts/blank_reinforced.json
+aa11f0f877fb201eb3f204b9e7dd91066185ec4b data/forge/tags/items/casts/gear.json
+609992b2ace7b1156968fa7736cd68157fc761aa data/forge/tags/items/casts/gem.json
+c317bb924cb2d52a0377e06fddec3f5a2695c413 data/forge/tags/items/casts/hammer.json
+02e4637ecb50c60dbb596f4133d5ce351fca78fe data/forge/tags/items/casts/handle.json
+d9a62c3178e1e2f73a638cfa219956f0bcd57201 data/forge/tags/items/casts/ingot.json
+8124de49c70dfd327d90dec090df70a61f2568e2 data/forge/tags/items/casts/nugget.json
 930eaa54f7534706d434f17b8705226bb36cc8f2 data/forge/tags/items/dusts.json
 3cbc0e0da64c5a1a0da90bd1d0130aa2ec2ef360 data/forge/tags/items/dusts/aluminium.json
 f14296dcdbe48deb6aed39ddc200d1c72593fea1 data/forge/tags/items/dusts/aluminium_brass.json

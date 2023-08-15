@@ -1,4 +1,4 @@
-package jiraiyah.abi.zlib.datagen;
+package jiraiyah.abi.datagen;
 
 import jiraiyah.abi.Reference;
 import jiraiyah.abi.worldgen.ModConfiguredFeatures;

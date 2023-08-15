@@ -1,4 +1,4 @@
-package jiraiyah.abi.datagen;
+package jiraiyah.abi.datagen.custom;
 
 import jiraiyah.abi.Reference;
 import jiraiyah.abi.item.ModItems;
@@ -377,6 +377,17 @@ public class ModItemModelProvider extends ItemModelProvider
 
         SimpleItem(ModItems.Tool.RUBY_BOW, true);
         //</editor-fold>
+
+        //<editor-fold desc="CAST">
+        SimpleItem(ModItems.Cast.BLANK);
+        SimpleItem(ModItems.Cast.BLANK_REINFORCED);
+        SimpleItem(ModItems.Cast.GEAR);
+        SimpleItem(ModItems.Cast.GEM);
+        SimpleItem(ModItems.Cast.HAMMER);
+        SimpleItem(ModItems.Cast.HANDLE);
+        SimpleItem(ModItems.Cast.INGOT);
+        SimpleItem(ModItems.Cast.NUGGET);
+        //</editor-fold>
     }
 
     //<editor-fold desc="HELPER METHODS">
@@ -394,46 +405,39 @@ public class ModItemModelProvider extends ItemModelProvider
 
     private ItemModelBuilder SimpleItem(RegistryObject<Item> item, boolean handheld)
     {
+        //<editor-fold desc="ITEM SPECIAL SUBFOLDERS">
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.DUST))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/dust/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.GEAR))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/gear/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.INGOT))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/ingot/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.NUGGET))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/nugget/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.PLATE))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/plate/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.RAW))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/raw/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.REINFORCED))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/reinforced/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.ROD))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/rod/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.TOOL) ||
            item.getId().getPath().toLowerCase().contains(Reference.Names.BOW) ||
            item.getId().getPath().toLowerCase().contains(Reference.Names.SWORD) ||
@@ -444,12 +448,10 @@ public class ModItemModelProvider extends ItemModelProvider
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/tool/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.GEM))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/gem/" + item.getId().getPath()));
-
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.HELMET))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
@@ -466,6 +468,11 @@ public class ModItemModelProvider extends ItemModelProvider
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/armor/" + item.getId().getPath()));
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.CAST))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/cast/" + item.getId().getPath()));
+        //</editor-fold>
 
         return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                 .texture("layer0",

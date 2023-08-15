@@ -1,6 +1,6 @@
-package jiraiyah.abi.zlib.datagen;
+package jiraiyah.abi.datagen;
 
-import jiraiyah.abi.datagen.ModBlockLootTables;
+import jiraiyah.abi.datagen.custom.ModBlockLootTables;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;

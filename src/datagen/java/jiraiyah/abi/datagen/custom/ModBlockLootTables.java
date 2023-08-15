@@ -1,4 +1,4 @@
-package jiraiyah.abi.datagen;
+package jiraiyah.abi.datagen.custom;
 
 import jiraiyah.abi.block.ModBlocks;
 import net.minecraft.data.loot.BlockLootSubProvider;

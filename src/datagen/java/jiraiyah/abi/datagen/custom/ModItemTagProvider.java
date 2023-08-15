@@ -1,4 +1,4 @@
-package jiraiyah.abi.datagen;
+package jiraiyah.abi.datagen.custom;
 
 import jiraiyah.abi.Reference;
 import jiraiyah.abi.item.ModItems;
@@ -693,6 +693,28 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.QUARTZ);
         tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.RUBY);
         tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.SAPPHIRE);
+        //</editor-fold>
+
+        //<editor-fold desc="CASTS">
+        tag(ModTags.Items.Casts.BLANK).add(ModItems.Cast.BLANK.get());
+        tag(ModTags.Items.Casts.BLANK_REINFORCED).add(ModItems.Cast.BLANK_REINFORCED.get());
+        tag(ModTags.Items.Casts.GEAR).add(ModItems.Cast.GEAR.get());
+        tag(ModTags.Items.Casts.GEM).add(ModItems.Cast.GEM.get());
+        tag(ModTags.Items.Casts.HAMMER).add(ModItems.Cast.HAMMER.get());
+        tag(ModTags.Items.Casts.HANDLE).add(ModItems.Cast.HANDLE.get());
+        tag(ModTags.Items.Casts.INGOT).add(ModItems.Cast.INGOT.get());
+        tag(ModTags.Items.Casts.NUGGET).add(ModItems.Cast.NUGGET.get());
+
+        TagKey<Item> casts = tag("casts");
+
+        tag(casts).addTags(ModTags.Items.Casts.BLANK);
+        tag(casts).addTags(ModTags.Items.Casts.BLANK_REINFORCED);
+        tag(casts).addTags(ModTags.Items.Casts.GEAR);
+        tag(casts).addTags(ModTags.Items.Casts.GEM);
+        tag(casts).addTags(ModTags.Items.Casts.HAMMER);
+        tag(casts).addTags(ModTags.Items.Casts.HANDLE);
+        tag(casts).addTags(ModTags.Items.Casts.INGOT);
+        tag(casts).addTags(ModTags.Items.Casts.NUGGET);
         //</editor-fold>
     }
 

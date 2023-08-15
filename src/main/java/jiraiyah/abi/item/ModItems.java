@@ -1061,6 +1061,35 @@ public class ModItems
         public static void initialize(){}
     }
 
+    public static class Cast
+    {
+        public static final RegistryObject<Item> BLANK = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_BLANK, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BLANK_REINFORCED = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_BLANK_REINFORCED, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GEAR = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_GEAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GEM = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_GEM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> HAMMER = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_HAMMER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> HANDLE = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_HANDLE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INGOT = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_INGOT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> NUGGET = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_NUGGET, () -> new Item(new Item.Properties()));
+
+        public static void initialize(){}
+    }
+
     public static void initialize()
     {
         Dust.initialize();
@@ -1074,5 +1103,6 @@ public class ModItems
         Gem.initialize();
         Tool.initialize();
         Armor.initialize();
+        Cast.initialize();
     }
 }

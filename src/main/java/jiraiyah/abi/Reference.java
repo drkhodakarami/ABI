@@ -108,6 +108,22 @@ public class Reference
         public static final String AXE = "_axe";
         public static final String HOE = "_hoe";
         public static final String BOW = "_bow";
+
+        public static final String CAST = "cast_";
+        public static final String CAST_AXE = "axe";
+        public static final String CAST_BLANK = "blank";
+        public static final String CAST_BLANK_REINFORCED = "blank_reinforced";
+        public static final String CAST_GEAR = "gear";
+        public static final String CAST_GEM = "gem";
+        public static final String CAST_HAMMER = "hammer";
+        public static final String CAST_HANDLE = "handle";
+        public static final String CAST_INGOT = "ingot";
+        public static final String CAST_NUGGET = "nugget";
+        public static final String CAST_PICKAXE = "pickaxe";
+        public static final String CAST_PLATE = "plate";
+        public static final String CAST_ROD = "rod";
+        public static final String CAST_SWORD = "sword";
+
     }
 
     public static class Tags
@@ -154,6 +170,7 @@ public class Reference
                 public static final String SEEDS = "seeds/";
                 public static final String STORAGE_BLOCKS = "storage_blocks/";
                 public static final String TOOLS = "tools/";
+                public static final String CASTS = "casts/";
             }
 
             public static final String ENTITY_TYPES = "entity_types/";
