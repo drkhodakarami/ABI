@@ -38,7 +38,6 @@ sourceSets {
     gametest {
         java {
             srcDir "src/gametest/java"
-            exclude "ca/teamdman/sfm/compat" // disable until the mods update
         }
         compileClasspath += main.output
 //        runtimeClasspath += sourceSets.main.output
@@ -54,6 +53,8 @@ minecraft {
     runs {
         // applies to all the run configs below
         configureEach {
+            workingDirectory project.file("run/${it.name}")
+
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
             // "SCAN": For mods scan.
@@ -65,90 +66,63 @@ minecraft {
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
+
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                    //source sourceSets.gametest
+                }
+            }
         }
 
         client {
-            workingDirectory project.file('run')
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
 
             // Ensure mixin dependencies play nice
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            //property 'mixin.env.remapRefMap', 'true'
+            //property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
             // https://github.com/ChiefArug/ThermalSysteams/blob/main/build.gradle#L27
             // https://discord.com/channels/313125603924639766/983834532904042537/1089449308048343090
-            jvmArgs '-XX:+AllowEnhancedClassRedefinition', '-XX:+IgnoreUnrecognizedVMOptions', '-XX:+AllowRedefinitionToAddDeleteMethods'
+            //jvmArgs '-XX:+AllowEnhancedClassRedefinition', '-XX:+IgnoreUnrecognizedVMOptions', '-XX:+AllowRedefinitionToAddDeleteMethods'
 
-            mods {
-                "${mod_id}" {
-                    source sourceSets.main
-                    source sourceSets.gametest
-                }
-            }
+
         }
 
         server {
-            workingDirectory project.file('runServer')
 
             property 'forge.enabledGameTestNamespaces', mod_id
             args '--nogui'
 
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            //property 'mixin.env.remapRefMap', 'true'
+            //property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
-            jvmArgs '-XX:+AllowEnhancedClassRedefinition', '-XX:+IgnoreUnrecognizedVMOptions', '-XX:+AllowRedefinitionToAddDeleteMethods'
-
-            mods {
-                "${mod_id}" {
-                    source sourceSets.main
-                    source sourceSets.gametest
-                }
-            }
+            //jvmArgs '-XX:+AllowEnhancedClassRedefinition', '-XX:+IgnoreUnrecognizedVMOptions', '-XX:+AllowRedefinitionToAddDeleteMethods'
         }
 
         // This run config launches GameTestServer and runs all registered gametests, then exits.
         // By default, the server will crash when no gametests are provided.
         // The gametest system is also enabled by default for other run configs under the /test command.
         gameTestServer {
-            workingDirectory project.file('runGameTest')
-
             property 'forge.enabledGameTestNamespaces', mod_id
 
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            //property 'mixin.env.remapRefMap', 'true'
+            //property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
-            jvmArgs '-XX:+AllowEnhancedClassRedefinition', '-XX:+IgnoreUnrecognizedVMOptions', '-XX:+AllowRedefinitionToAddDeleteMethods'
-
-            mods {
-                "${mod_id}" {
-                    source sourceSets.main
-                    source sourceSets.gametest
-                }
-            }
+            //jvmArgs '-XX:+AllowEnhancedClassRedefinition', '-XX:+IgnoreUnrecognizedVMOptions', '-XX:+AllowRedefinitionToAddDeleteMethods'
         }
 
         data {
-            // example of overriding the workingDirectory set in configureEach above
-            workingDirectory project.file('run-data')
 
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            //property 'mixin.env.remapRefMap', 'true'
+            //property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
-            jvmArgs '-XX:+AllowEnhancedClassRedefinition', '-XX:+IgnoreUnrecognizedVMOptions', '-XX:+AllowRedefinitionToAddDeleteMethods'
+            //jvmArgs '-XX:+AllowEnhancedClassRedefinition', '-XX:+IgnoreUnrecognizedVMOptions', '-XX:+AllowRedefinitionToAddDeleteMethods'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
-
-            ideaModule "${project.name}.datagen"
-
-            mods {
-                "${mod_id}" {
-                    source sourceSets.main
-                    source sourceSets.datagen
-                }
-            }
         }
     }
 }
@@ -168,9 +142,6 @@ configurations {
     extendConfigurations(implementation, gametestImplementation, testImplementation, datagenImplementation)
     extendConfigurations(compileOnly, gametestCompileOnly, testCompileOnly, datagenCompileOnly)
     extendConfigurations(runtimeOnly, gametestRuntimeOnly, testRuntimeOnly, datagenRuntimeOnly)
-//    testImplementation.extendsFrom(minecraft)
-//    gametestImplementation.extendsFrom(minecraft)
-//    datagenImplementation.extendsFrom(minecraft)
 }
 
 static void extendConfigurations(Configuration base, Configuration... configurations) {
