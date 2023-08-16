@@ -82,6 +82,8 @@ public class ModTags
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.LUDICRITE);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.MANGANESE);
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.NICKEL);
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.SILVER);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.STEEL);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.TIN);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.YELLORIUM);
@@ -124,6 +126,8 @@ public class ModTags
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.GEAR + Reference.Names.LUDICRITE);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.GEAR + Reference.Names.MANGANESE);
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.GEAR + Reference.Names.NICKEL);
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.GEAR + Reference.Names.SILVER);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.GEAR + Reference.Names.STEEL);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.GEAR + Reference.Names.TIN);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.YELLORIUM);
@@ -163,6 +167,8 @@ public class ModTags
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.Forge.Items.INGOTS + Reference.Names.LUDICRITE);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.Forge.Items.INGOTS + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.Forge.Items.INGOTS + Reference.Names.MANGANESE);
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.Forge.Items.INGOTS + Reference.Names.NICKEL);
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.Forge.Items.INGOTS + Reference.Names.SILVER);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.Forge.Items.INGOTS + Reference.Names.STEEL);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.Forge.Items.INGOTS + Reference.Names.TIN);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.Forge.Items.INGOTS + Reference.Names.YELLORIUM);
@@ -203,6 +209,8 @@ public class ModTags
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.Forge.Items.NUGGETS + Reference.Names.LUDICRITE);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.Forge.Items.NUGGETS + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.Forge.Items.NUGGETS + Reference.Names.MANGANESE);
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.Forge.Items.NUGGETS + Reference.Names.NICKEL);
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.Forge.Items.NUGGETS + Reference.Names.SILVER);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.Forge.Items.NUGGETS + Reference.Names.STEEL);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.Forge.Items.NUGGETS + Reference.Names.TIN);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.Forge.Items.NUGGETS + Reference.Names.YELLORIUM);
@@ -245,6 +253,8 @@ public class ModTags
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.PLATE + Reference.Names.LUDICRITE);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.PLATE + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.PLATE + Reference.Names.MANGANESE);
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.PLATE + Reference.Names.NICKEL);
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.PLATE + Reference.Names.SILVER);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.PLATE + Reference.Names.STEEL);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.PLATE + Reference.Names.TIN);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.PLATE + Reference.Names.YELLORIUM);
@@ -284,6 +294,8 @@ public class ModTags
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.Forge.Items.RAW_MATERIALS + Reference.Names.LUDICRITE);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.Forge.Items.RAW_MATERIALS + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.Forge.Items.RAW_MATERIALS + Reference.Names.MANGANESE);
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.Forge.Items.RAW_MATERIALS + Reference.Names.NICKEL);
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.Forge.Items.RAW_MATERIALS + Reference.Names.SILVER);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.Forge.Items.RAW_MATERIALS + Reference.Names.STEEL);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.Forge.Items.RAW_MATERIALS + Reference.Names.TIN);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.Forge.Items.RAW_MATERIALS + Reference.Names.YELLORIUM);
@@ -326,6 +338,8 @@ public class ModTags
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.REINFORCED + Reference.Names.LUDICRITE);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.REINFORCED + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.REINFORCED + Reference.Names.MANGANESE);
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.REINFORCED + Reference.Names.NICKEL);
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.REINFORCED + Reference.Names.SILVER);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.REINFORCED + Reference.Names.STEEL);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.REINFORCED + Reference.Names.TIN);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.REINFORCED + Reference.Names.YELLORIUM);
@@ -368,6 +382,8 @@ public class ModTags
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.Forge.Items.RODS + Reference.Names.LUDICRITE);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.Forge.Items.RODS + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.Forge.Items.RODS + Reference.Names.MANGANESE);
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.Forge.Items.RODS + Reference.Names.NICKEL);
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.Forge.Items.RODS + Reference.Names.SILVER);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.Forge.Items.RODS + Reference.Names.STEEL);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.Forge.Items.RODS + Reference.Names.TIN);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.Forge.Items.RODS + Reference.Names.YELLORIUM);

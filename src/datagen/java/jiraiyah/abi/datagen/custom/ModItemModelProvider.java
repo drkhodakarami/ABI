@@ -57,7 +57,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Dust.LUDICRITE);
         SimpleItem(ModItems.Dust.MAGNESIUM);
         SimpleItem(ModItems.Dust.MANGANESE);
+        SimpleItem(ModItems.Dust.NICKEL);
         SimpleItem(ModItems.Dust.STEEL);
+        SimpleItem(ModItems.Dust.SILVER);
         SimpleItem(ModItems.Dust.TIN);
         SimpleItem(ModItems.Dust.YELLORIUM);
         //</editor-fold>
@@ -98,7 +100,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Gear.LUDICRITE);
         SimpleItem(ModItems.Gear.MAGNESIUM);
         SimpleItem(ModItems.Gear.MANGANESE);
+        SimpleItem(ModItems.Gear.NICKEL);
         SimpleItem(ModItems.Gear.STEEL);
+        SimpleItem(ModItems.Gear.SILVER);
         SimpleItem(ModItems.Gear.TIN);
         SimpleItem(ModItems.Gear.YELLORIUM);
         //</editor-fold>
@@ -136,7 +140,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Ingot.LUDICRITE);
         SimpleItem(ModItems.Ingot.MAGNESIUM);
         SimpleItem(ModItems.Ingot.MANGANESE);
+        SimpleItem(ModItems.Ingot.NICKEL);
         SimpleItem(ModItems.Ingot.STEEL);
+        SimpleItem(ModItems.Ingot.SILVER);
         SimpleItem(ModItems.Ingot.TIN);
         SimpleItem(ModItems.Ingot.YELLORIUM);
         //</editor-fold>
@@ -175,7 +181,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Nugget.LUDICRITE);
         SimpleItem(ModItems.Nugget.MAGNESIUM);
         SimpleItem(ModItems.Nugget.MANGANESE);
+        SimpleItem(ModItems.Nugget.NICKEL);
         SimpleItem(ModItems.Nugget.STEEL);
+        SimpleItem(ModItems.Nugget.SILVER);
         SimpleItem(ModItems.Nugget.TIN);
         SimpleItem(ModItems.Nugget.YELLORIUM);
         //</editor-fold>
@@ -216,7 +224,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Plate.LUDICRITE);
         SimpleItem(ModItems.Plate.MAGNESIUM);
         SimpleItem(ModItems.Plate.MANGANESE);
+        SimpleItem(ModItems.Plate.NICKEL);
         SimpleItem(ModItems.Plate.STEEL);
+        SimpleItem(ModItems.Plate.SILVER);
         SimpleItem(ModItems.Plate.TIN);
         SimpleItem(ModItems.Plate.YELLORIUM);
         //</editor-fold>
@@ -254,7 +264,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Raw.LUDICRITE);
         SimpleItem(ModItems.Raw.MAGNESIUM);
         SimpleItem(ModItems.Raw.MANGANESE);
+        SimpleItem(ModItems.Raw.NICKEL);
         SimpleItem(ModItems.Raw.STEEL);
+        SimpleItem(ModItems.Raw.SILVER);
         SimpleItem(ModItems.Raw.TIN);
         SimpleItem(ModItems.Raw.YELLORIUM);
         //</editor-fold>
@@ -295,6 +307,8 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Reinforced.LUDICRITE);
         SimpleItem(ModItems.Reinforced.MAGNESIUM);
         SimpleItem(ModItems.Reinforced.MANGANESE);
+        SimpleItem(ModItems.Reinforced.NICKEL);
+        SimpleItem(ModItems.Reinforced.SILVER);
         SimpleItem(ModItems.Reinforced.STEEL);
         SimpleItem(ModItems.Reinforced.TIN);
         SimpleItem(ModItems.Reinforced.YELLORIUM);
@@ -336,6 +350,8 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Rod.LUDICRITE);
         SimpleItem(ModItems.Rod.MAGNESIUM);
         SimpleItem(ModItems.Rod.MANGANESE);
+        SimpleItem(ModItems.Rod.NICKEL);
+        SimpleItem(ModItems.Rod.SILVER);
         SimpleItem(ModItems.Rod.STEEL);
         SimpleItem(ModItems.Rod.TIN);
         SimpleItem(ModItems.Rod.YELLORIUM);
@@ -375,7 +391,96 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Tool.TUNER, true);
         SimpleItem(ModItems.Tool.WRENCH, true);
 
+        SimpleItem(ModItems.Tool.BRONZE_SWORD, true);
+        SimpleItem(ModItems.Tool.BRONZE_PICKAXE, true);
+        SimpleItem(ModItems.Tool.BRONZE_SHOVEL, true);
+        SimpleItem(ModItems.Tool.BRONZE_AXE, true);
+        SimpleItem(ModItems.Tool.BRONZE_HOE, true);
+        SimpleItem(ModItems.Tool.BRONZE_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.CONSTANTAN_SWORD, true);
+        SimpleItem(ModItems.Tool.CONSTANTAN_PICKAXE, true);
+        SimpleItem(ModItems.Tool.CONSTANTAN_SHOVEL, true);
+        SimpleItem(ModItems.Tool.CONSTANTAN_AXE, true);
+        SimpleItem(ModItems.Tool.CONSTANTAN_HOE, true);
+        SimpleItem(ModItems.Tool.CONSTANTAN_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.COPPER_SWORD, true);
+        SimpleItem(ModItems.Tool.COPPER_PICKAXE, true);
+        SimpleItem(ModItems.Tool.COPPER_SHOVEL, true);
+        SimpleItem(ModItems.Tool.COPPER_AXE, true);
+        SimpleItem(ModItems.Tool.COPPER_HOE, true);
+        SimpleItem(ModItems.Tool.COPPER_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.DIAMOND_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.ELECTRUM_SWORD, true);
+        SimpleItem(ModItems.Tool.ELECTRUM_PICKAXE, true);
+        SimpleItem(ModItems.Tool.ELECTRUM_SHOVEL, true);
+        SimpleItem(ModItems.Tool.ELECTRUM_AXE, true);
+        SimpleItem(ModItems.Tool.ELECTRUM_HOE, true);
+        SimpleItem(ModItems.Tool.ELECTRUM_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.GOLD_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.INVAR_SWORD, true);
+        SimpleItem(ModItems.Tool.INVAR_PICKAXE, true);
+        SimpleItem(ModItems.Tool.INVAR_SHOVEL, true);
+        SimpleItem(ModItems.Tool.INVAR_AXE, true);
+        SimpleItem(ModItems.Tool.INVAR_HOE, true);
+        SimpleItem(ModItems.Tool.INVAR_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.IRON_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.LEAD_SWORD, true);
+        SimpleItem(ModItems.Tool.LEAD_PICKAXE, true);
+        SimpleItem(ModItems.Tool.LEAD_SHOVEL, true);
+        SimpleItem(ModItems.Tool.LEAD_AXE, true);
+        SimpleItem(ModItems.Tool.LEAD_HOE, true);
+        SimpleItem(ModItems.Tool.LEAD_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.NETHERITE_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.NICKEL_SWORD, true);
+        SimpleItem(ModItems.Tool.NICKEL_PICKAXE, true);
+        SimpleItem(ModItems.Tool.NICKEL_SHOVEL, true);
+        SimpleItem(ModItems.Tool.NICKEL_AXE, true);
+        SimpleItem(ModItems.Tool.NICKEL_HOE, true);
+        SimpleItem(ModItems.Tool.NICKEL_HAMMER, true);
+
         SimpleItem(ModItems.Tool.RUBY_BOW, true);
+        SimpleItem(ModItems.Tool.RUBY_SWORD, true);
+        SimpleItem(ModItems.Tool.RUBY_PICKAXE, true);
+        SimpleItem(ModItems.Tool.RUBY_SHOVEL, true);
+        SimpleItem(ModItems.Tool.RUBY_AXE, true);
+        SimpleItem(ModItems.Tool.RUBY_HOE, true);
+        SimpleItem(ModItems.Tool.RUBY_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.SAPPHIRE_BOW, true);
+        SimpleItem(ModItems.Tool.SAPPHIRE_SWORD, true);
+        SimpleItem(ModItems.Tool.SAPPHIRE_PICKAXE, true);
+        SimpleItem(ModItems.Tool.SAPPHIRE_SHOVEL, true);
+        SimpleItem(ModItems.Tool.SAPPHIRE_AXE, true);
+        SimpleItem(ModItems.Tool.SAPPHIRE_HOE, true);
+        SimpleItem(ModItems.Tool.SAPPHIRE_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.SILVER_SWORD, true);
+        SimpleItem(ModItems.Tool.SILVER_PICKAXE, true);
+        SimpleItem(ModItems.Tool.SILVER_SHOVEL, true);
+        SimpleItem(ModItems.Tool.SILVER_AXE, true);
+        SimpleItem(ModItems.Tool.SILVER_HOE, true);
+        SimpleItem(ModItems.Tool.SILVER_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.STONE_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.TIN_SWORD, true);
+        SimpleItem(ModItems.Tool.TIN_PICKAXE, true);
+        SimpleItem(ModItems.Tool.TIN_SHOVEL, true);
+        SimpleItem(ModItems.Tool.TIN_AXE, true);
+        SimpleItem(ModItems.Tool.TIN_HOE, true);
+        SimpleItem(ModItems.Tool.TIN_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.WOOD_HAMMER, true);
         //</editor-fold>
 
         //<editor-fold desc="CAST">
@@ -410,64 +515,67 @@ public class ModItemModelProvider extends ItemModelProvider
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/dust/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.GEAR))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/gear/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.INGOT))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/ingot/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.NUGGET))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/nugget/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.PLATE))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/plate/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.RAW))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/raw/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.REINFORCED))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/reinforced/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.ROD))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/rod/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.TOOL) ||
            item.getId().getPath().toLowerCase().contains(Reference.Names.BOW) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.SWORD) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.AXE) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.PICKAXE) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.SHOVEL) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.HOE))
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.SWORD) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.AXE) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.PICKAXE) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.SHOVEL) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.HOE) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.HAMMER) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/tool/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.GEM))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/gem/" + item.getId().getPath()));
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.HELMET))
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.HELMET) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.CHEST_PLATE) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.LEGGINGS) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.BOOTS))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/armor/" + item.getId().getPath()));
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.CHEST_PLATE))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/armor/" + item.getId().getPath()));
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.LEGGINGS))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/armor/" + item.getId().getPath()));
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.BOOTS))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/armor/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.CAST))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",

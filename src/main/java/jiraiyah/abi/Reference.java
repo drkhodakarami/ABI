@@ -51,10 +51,13 @@ public class Reference
         public static final String MANGANESE = "manganese";
         public static final String NETHERITE = "netherite";
         public static final String NICKEL = "nickel";
+        public static final String SILVER = "silver";
         public static final String STEEL = "steel";
+        public static final String STONE = "stone";
         public static final String SULFUR = "sulfur";
         public static final String TIN = "tin";
         public static final String YELLORIUM = "yellorium";
+        public static final String WOOD = "wood";
 
         public static final String DIAMOND = "diamond";
         public static final String EMERALD = "emerald";
@@ -107,6 +110,7 @@ public class Reference
         public static final String SHOVEL = "_shovel";
         public static final String AXE = "_axe";
         public static final String HOE = "_hoe";
+        public static final String HAMMER = "_hammer";
         public static final String BOW = "_bow";
 
         public static final String CAST = "cast_";
@@ -123,7 +127,6 @@ public class Reference
         public static final String CAST_PLATE = "plate";
         public static final String CAST_ROD = "rod";
         public static final String CAST_SWORD = "sword";
-
     }
 
     public static class Tags

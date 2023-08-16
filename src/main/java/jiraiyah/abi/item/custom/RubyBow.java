@@ -20,7 +20,7 @@ public class RubyBow extends ProjectileWeaponItem implements Vanishable
     public static final int MAX_DRAW_DURATION = 20;
     public static final int DEFAULT_RANGE = 15;
 
-    public static final float ANIMATION_DURATION_DIVIDER = 10F;
+    public static final float ANIMATION_DURATION_DIVIDER = 5F;
 
     public RubyBow(Properties pProperties)
     {
@@ -133,6 +133,6 @@ public class RubyBow extends ProjectileWeaponItem implements Vanishable
     }
 
     public int getDefaultProjectileRange() {
-        return 15;
+        return DEFAULT_RANGE;
     }
 }

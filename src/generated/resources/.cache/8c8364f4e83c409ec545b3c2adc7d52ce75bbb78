@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-15T18:26:20.0492847	Tags for minecraft:item mod id vanilla
+// 1.20.1	2023-08-16T13:02:47.024461	Tags for minecraft:item mod id vanilla
 e73f2f67f6654a1a7b2799ba84658f8518567c97 data/forge/tags/items/casts.json
 4bccca04e180224b642814d2c7eb51541872de4f data/forge/tags/items/casts/blank.json
 9258b969e4aaaceeb73bfb8b7de104015d8d9e83 data/forge/tags/items/casts/blank_reinforced.json
@@ -8,7 +8,7 @@ c317bb924cb2d52a0377e06fddec3f5a2695c413 data/forge/tags/items/casts/hammer.json
 02e4637ecb50c60dbb596f4133d5ce351fca78fe data/forge/tags/items/casts/handle.json
 d9a62c3178e1e2f73a638cfa219956f0bcd57201 data/forge/tags/items/casts/ingot.json
 8124de49c70dfd327d90dec090df70a61f2568e2 data/forge/tags/items/casts/nugget.json
-930eaa54f7534706d434f17b8705226bb36cc8f2 data/forge/tags/items/dusts.json
+010beeb379a2d04214385296fb6157bc3c448b0d data/forge/tags/items/dusts.json
 3cbc0e0da64c5a1a0da90bd1d0130aa2ec2ef360 data/forge/tags/items/dusts/aluminium.json
 f14296dcdbe48deb6aed39ddc200d1c72593fea1 data/forge/tags/items/dusts/aluminium_brass.json
 b89cf7c99b2a198db9ca8f545365d5ff01bcb46c data/forge/tags/items/dusts/alumite.json
@@ -44,10 +44,12 @@ b43385623ff7803174d3f23b5645eae4bf1d0731 data/forge/tags/items/dusts/lead.json
 4865bff9e585023917bc613dcd611c7a170e105a data/forge/tags/items/dusts/ludicrite.json
 8b8bcfaf025cb3ce8b24e0dea3d25a9390797d72 data/forge/tags/items/dusts/magnesium.json
 89481d7d1d7789fc514a99c1bea05031061fdb85 data/forge/tags/items/dusts/manganese.json
+6e4d41c47b69ff8c834767ad088c88b5a25eaa83 data/forge/tags/items/dusts/nickel.json
+f8e851d14c8ecdb49865b279e1ef066baf3d8b2b data/forge/tags/items/dusts/silver.json
 ca86f3c029d0aa6903bdebf5fa3babbaac6b4bfe data/forge/tags/items/dusts/steel.json
 30d0e7c3a0fb34027ab05695d67b9c6153a680c7 data/forge/tags/items/dusts/tin.json
 4b5832279baa4eb22d168e5d8731d2af3f1de42e data/forge/tags/items/dusts/yellorium.json
-6d1d9523bc080e68f4c50e992e6b26a61943b2ee data/forge/tags/items/gears.json
+7009ad2f3f4453b0b7a64b373f17830d92cc9aad data/forge/tags/items/gears.json
 ce744a815f49956b3a5252bd79e4a2ccd82f5694 data/forge/tags/items/gears/aluminium.json
 9d829676f170998484a466c4b14bec0af5fa4ad4 data/forge/tags/items/gears/aluminium_brass.json
 d746a965168ebc6b8d6f4de738a2aa822eceaecf data/forge/tags/items/gears/alumite.json
@@ -83,6 +85,8 @@ e6adb13e64e3e5e82381a88fcf5d107769f57b08 data/forge/tags/items/gears/lead.json
 2bf9c2f550c7f7b10cceffcfcdc5220cfa5b54b1 data/forge/tags/items/gears/ludicrite.json
 0931bf154b66887dd3b25fa0aedc8b047d684aba data/forge/tags/items/gears/magnesium.json
 0b05cead5c8cfdd72b1281df1632defb919483a1 data/forge/tags/items/gears/manganese.json
+7096abfb8d892601329bd045d078e84d44be90a6 data/forge/tags/items/gears/nickel.json
+fd4b99db2e773e7ae3e70e227f9ffd7f3d0e391f data/forge/tags/items/gears/silver.json
 a302894d1defb8a183fbe21dc469a13b40940b64 data/forge/tags/items/gears/steel.json
 e08fe7a4743af51a805a0e8518371bfe48fa1ec0 data/forge/tags/items/gears/tin.json
 316390f2e996a715bb2781d6157c971b9f3b49a4 data/forge/tags/items/gears/yellorium.json
@@ -94,7 +98,7 @@ cf1de4bb747bbec20932c28c1b246bc47467ba7c data/forge/tags/items/gems.json
 bf8979af921c347bebb5d8ddd3900ee1f3685187 data/forge/tags/items/gems/shard_quartz.json
 f7b710ef7051c8bf9e2e60254b734d06bafe1d0a data/forge/tags/items/gems/shard_ruby.json
 d7f579ac78f8e5a8fe013501625d4323a40de8cf data/forge/tags/items/gems/shard_sapphire.json
-4c7dd1d776205ff6e145eec38394cf5329969cc5 data/forge/tags/items/ingots.json
+8bda5fa0d59e11ec5a5248ba1610975ca113319f data/forge/tags/items/ingots.json
 a449fc137f9f5129f96ef50324a49739959667dd data/forge/tags/items/ingots/aluminium.json
 0b9784cb78f44fc63ebd543fe922022166c4790f data/forge/tags/items/ingots/aluminium_brass.json
 c307338aa97845579a905e7bccea7da3f46e6b47 data/forge/tags/items/ingots/alumite.json
@@ -127,10 +131,12 @@ d834d7a5f7df316910c00dff9722eb1fcf1026f5 data/forge/tags/items/ingots/lead.json
 3aade9ef2c3c82ad974d9810801096d3edd4639b data/forge/tags/items/ingots/ludicrite.json
 71a5954749bb1eebc1d9bbd2ec309eed4141d291 data/forge/tags/items/ingots/magnesium.json
 17610a3b5da3321be4471b1db0595b74bda9e688 data/forge/tags/items/ingots/manganese.json
+00202860fa52da615be221840a561c4ece5ec8ab data/forge/tags/items/ingots/nickel.json
+a3542d4ddba142aba51c3a19d901edd6d7a1cd33 data/forge/tags/items/ingots/silver.json
 e16f5ba9e7d8005481868ce120d6163b746e8492 data/forge/tags/items/ingots/steel.json
 62de03ab6218d528f07653008eaf1b541f512c64 data/forge/tags/items/ingots/tin.json
 66ca76bef67e3bcd3c24e01ddded109e9c15db31 data/forge/tags/items/ingots/yellorium.json
-0ce4e32cebb97d29d9262d1c17200e6bd73b2c74 data/forge/tags/items/nuggets.json
+931118448a293b9c5f7b89f2bf3b25b1e1338f92 data/forge/tags/items/nuggets.json
 8f74680c595c3e59545c7d887a7a2b139b256e0f data/forge/tags/items/nuggets/aluminium.json
 90d98adff8285a564bcda9fa26d512c0e560db58 data/forge/tags/items/nuggets/aluminium_brass.json
 ffaf0eb07bcfdd665888ec47a8ab5e43e81012ff data/forge/tags/items/nuggets/alumite.json
@@ -164,10 +170,12 @@ a984f3549d37560f389f3fd5dee79550b425dca4 data/forge/tags/items/nuggets/invar.jso
 683af3dc379de8a2b66647f7f753db125f04a343 data/forge/tags/items/nuggets/ludicrite.json
 3a28983bdd56c262caad009d720eac67bec23667 data/forge/tags/items/nuggets/magnesium.json
 b7edd110e143b10237164eb819b48fa6af281efb data/forge/tags/items/nuggets/manganese.json
+47425c96a2565402185013534b2ec1a8b21663c4 data/forge/tags/items/nuggets/nickel.json
+3bbd7e718b4827d0e2c816fb63e4354f5550b0b1 data/forge/tags/items/nuggets/silver.json
 1865103bea78322abc99fe243017c3192bcee46a data/forge/tags/items/nuggets/steel.json
 89c3b15697ac50d3f802d1cba6f0cf3f7c35f5d3 data/forge/tags/items/nuggets/tin.json
 35f8febabe243d2a190c31ff0787c7159f4c5a43 data/forge/tags/items/nuggets/yellorium.json
-ad8f8282abeea57a986b006ff710f4ecbf6351d0 data/forge/tags/items/plates.json
+f19a58a480c2fae61bb08fc8e18d8277fddfbb30 data/forge/tags/items/plates.json
 8f76c559438b8942308d671cf2b9b878363a4bda data/forge/tags/items/plates/aluminium.json
 1c73952ecb51176a8651b7e0703b2721ea60b67a data/forge/tags/items/plates/aluminium_brass.json
 dd9d31d4ae1aeafff1c97f3cd3d44483473d3e18 data/forge/tags/items/plates/alumite.json
@@ -203,10 +211,12 @@ d6de728f9fdf6ebc2ea50abcebe73e4e650912ee data/forge/tags/items/plates/lead.json
 7acef45bd09d7a6e0d6325007d21414a308eda16 data/forge/tags/items/plates/ludicrite.json
 a484ac94f2eebd3f2f6692519e3c4d541b7815a5 data/forge/tags/items/plates/magnesium.json
 526cd65131d8a0cab0fcd2356afe93010ec95fbe data/forge/tags/items/plates/manganese.json
+c089d955485c3c5386a079a9270cfbd082bf8092 data/forge/tags/items/plates/nickel.json
+4bcb0349947c54a655c74d75bc46fc07fdc1e317 data/forge/tags/items/plates/silver.json
 c251846b0fc6e1f98cc5fce650678559b0aff5a2 data/forge/tags/items/plates/steel.json
 f1ddd50af4c04d49f272e93d6d516eb483866115 data/forge/tags/items/plates/tin.json
 4ae0759967b4451b8b0089c4a77a2c38ec1ce0f4 data/forge/tags/items/plates/yellorium.json
-68e0083013e3d9e2fd60373af3f9c027815b4d57 data/forge/tags/items/raw_materials.json
+a235a1f800465f27af3c73dea78654f3dec42969 data/forge/tags/items/raw_materials.json
 0b07deff7bddb58c49d7712ef3595336df3e1d97 data/forge/tags/items/raw_materials/aluminium.json
 dd909f570dc0f4cd992cc6faa9e8d906c1064712 data/forge/tags/items/raw_materials/aluminium_brass.json
 fff06d1042aa50e48b64357e018f0d0b8557f53d data/forge/tags/items/raw_materials/alumite.json
@@ -239,10 +249,12 @@ b61803829e41f386de458c7598b4ca0d83bb13f3 data/forge/tags/items/raw_materials/inv
 cee8f825dee9f365b706e637f37eaa69cef18c95 data/forge/tags/items/raw_materials/ludicrite.json
 be5d018086d4c9bad828f5cfe5b11d7020c4e27e data/forge/tags/items/raw_materials/magnesium.json
 13d646cd2acaac137c25592da56430651de040d2 data/forge/tags/items/raw_materials/manganese.json
+3a074746a2cc4d93af73480581aa6e8b70a7730e data/forge/tags/items/raw_materials/nickel.json
+2a41852b21a89dd8f2c00c041747b978281e7fa5 data/forge/tags/items/raw_materials/silver.json
 29704aea9b5a374be1a2f2f9892dc2e3c7b18857 data/forge/tags/items/raw_materials/steel.json
 0bc4a7e32bd0ae3bef3a0359c6546a2409d5f838 data/forge/tags/items/raw_materials/tin.json
 36f97c25ee24a59b50435961a2e15eb607295fa6 data/forge/tags/items/raw_materials/yellorium.json
-90872be8ca93065b7197e2a630311a66f246b611 data/forge/tags/items/reinforced.json
+474b7aded7ce74c95c88233ad2e78182dd2a8243 data/forge/tags/items/reinforced.json
 c899299c004f0be3223ab5458ac8513236c5e0e4 data/forge/tags/items/reinforced/aluminium.json
 c575560bc47b345c3d0dacbb17649fd073d90012 data/forge/tags/items/reinforced/aluminium_brass.json
 595979ae7611926382e025a0178aecb1bf3864c6 data/forge/tags/items/reinforced/alumite.json
@@ -278,10 +290,12 @@ b53c6a6bce48a0939b64b9b67755de117f97528a data/forge/tags/items/reinforced/lead.j
 6dd9deba393ef76f3058403d908169ad98c249e9 data/forge/tags/items/reinforced/ludicrite.json
 f1b4b741bcef6e4b445d9a3359c887ae2901a8d5 data/forge/tags/items/reinforced/magnesium.json
 3519c1f4987ea1801b5b1ebd99a3f284a4a43e6d data/forge/tags/items/reinforced/manganese.json
+e953aeefd94f4c2cef3a4837a5c49dab2d876203 data/forge/tags/items/reinforced/nickel.json
+4027d8e9ac40985f4a4a8ac6699d9b17d5095b35 data/forge/tags/items/reinforced/silver.json
 794a1ad8a8444ed6adad1ac0ab465898f36e34f4 data/forge/tags/items/reinforced/steel.json
 2abd435be5a4573ae217441c98c379f03174c588 data/forge/tags/items/reinforced/tin.json
 987fad17fc7bc7fa47f461ce2e7b579b6be426d5 data/forge/tags/items/reinforced/yellorium.json
-45e88ac3cf37a249622837838b1b00b89ee1a5cc data/forge/tags/items/rods.json
+f16eaa77e0e1f22951edce6e6f7ab89e0bc29f11 data/forge/tags/items/rods.json
 b9b516a31de7e8a085014b354717d4ffe39cc6c7 data/forge/tags/items/rods/aluminium.json
 5a1695311f2ddf78b1d697b8be73031ba91895a8 data/forge/tags/items/rods/aluminium_brass.json
 9ce30f32c4371293b628f5b3f333388c2b4234b5 data/forge/tags/items/rods/alumite.json
@@ -317,6 +331,8 @@ fc4f7f01e1df1b6f870491d552904701aeaad387 data/forge/tags/items/rods/invar.json
 0bfb448accb1e350d23d2c82909766069de76685 data/forge/tags/items/rods/ludicrite.json
 789c0f8bd84dc5f25521384a42d6a2907593ca55 data/forge/tags/items/rods/magnesium.json
 ab67e5780654d1738ceace949ac9c74a7572534b data/forge/tags/items/rods/manganese.json
+dc46de4369afecfac281ebb3a077df320cf2a46f data/forge/tags/items/rods/nickel.json
+2c884b7570fa4308d7ee637977592b4f0321b6bf data/forge/tags/items/rods/silver.json
 bc179c6a3efa4decc727894dcbbdaa3fd062ba71 data/forge/tags/items/rods/steel.json
 ba6d38f6222cf9e00ab5e74a9e070a57ab402274 data/forge/tags/items/rods/tin.json
 50883dea5536e7c80100e2f40666e26d4d300760 data/forge/tags/items/rods/yellorium.json

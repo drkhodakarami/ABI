@@ -20,7 +20,7 @@ public class SapphireBow extends ProjectileWeaponItem implements Vanishable
     public static final int MAX_DRAW_DURATION = 20;
     public static final int DEFAULT_RANGE = 15;
 
-    public static final float ANIMATION_DURATION_DIVIDER = 10F;
+    public static final float ANIMATION_DURATION_DIVIDER = 5F;
 
     public SapphireBow(Properties pProperties)
     {

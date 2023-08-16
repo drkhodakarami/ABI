@@ -63,6 +63,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Dusts.LUDICRITE).add(ModItems.Dust.LUDICRITE.get());
         tag(ModTags.Items.Dusts.MAGNESIUM).add(ModItems.Dust.MAGNESIUM.get());
         tag(ModTags.Items.Dusts.MANGANESE).add(ModItems.Dust.MANGANESE.get());
+        tag(ModTags.Items.Dusts.NICKEL).add(ModItems.Dust.NICKEL.get());
+        tag(ModTags.Items.Dusts.SILVER).add(ModItems.Dust.SILVER.get());
         tag(ModTags.Items.Dusts.STEEL).add(ModItems.Dust.STEEL.get());
         tag(ModTags.Items.Dusts.TIN).add(ModItems.Dust.TIN.get());
         tag(ModTags.Items.Dusts.YELLORIUM).add(ModItems.Dust.YELLORIUM.get());
@@ -102,6 +104,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.LUDICRITE);
         tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.MAGNESIUM);
         tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.MANGANESE);
+        tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.NICKEL);
+        tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.SILVER);
         tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.STEEL);
         tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.TIN);
         tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.YELLORIUM);
@@ -143,6 +147,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Gears.LUDICRITE).add(ModItems.Gear.LUDICRITE.get());
         tag(ModTags.Items.Gears.MAGNESIUM).add(ModItems.Gear.MAGNESIUM.get());
         tag(ModTags.Items.Gears.MANGANESE).add(ModItems.Gear.MANGANESE.get());
+        tag(ModTags.Items.Gears.NICKEL).add(ModItems.Gear.NICKEL.get());
+        tag(ModTags.Items.Gears.SILVER).add(ModItems.Gear.SILVER.get());
         tag(ModTags.Items.Gears.STEEL).add(ModItems.Gear.STEEL.get());
         tag(ModTags.Items.Gears.TIN).add(ModItems.Gear.TIN.get());
         tag(ModTags.Items.Gears.YELLORIUM).add(ModItems.Gear.YELLORIUM.get());
@@ -184,6 +190,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(gears).addTags(ModTags.Items.Gears.LUDICRITE);
         tag(gears).addTags(ModTags.Items.Gears.MAGNESIUM);
         tag(gears).addTags(ModTags.Items.Gears.MANGANESE);
+        tag(gears).addTags(ModTags.Items.Gears.NICKEL);
+        tag(gears).addTags(ModTags.Items.Gears.SILVER);
         tag(gears).addTags(ModTags.Items.Gears.STEEL);
         tag(gears).addTags(ModTags.Items.Gears.TIN);
         tag(gears).addTags(ModTags.Items.Gears.YELLORIUM);
@@ -222,6 +230,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Ingots.LUDICRITE).add(ModItems.Ingot.LUDICRITE.get());
         tag(ModTags.Items.Ingots.MAGNESIUM).add(ModItems.Ingot.MAGNESIUM.get());
         tag(ModTags.Items.Ingots.MANGANESE).add(ModItems.Ingot.MANGANESE.get());
+        tag(ModTags.Items.Ingots.NICKEL).add(ModItems.Ingot.NICKEL.get());
+        tag(ModTags.Items.Ingots.SILVER).add(ModItems.Ingot.SILVER.get());
         tag(ModTags.Items.Ingots.STEEL).add(ModItems.Ingot.STEEL.get());
         tag(ModTags.Items.Ingots.TIN).add(ModItems.Ingot.TIN.get());
         tag(ModTags.Items.Ingots.YELLORIUM).add(ModItems.Ingot.YELLORIUM.get());
@@ -258,6 +268,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.LUDICRITE);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.MAGNESIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.MANGANESE);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.NICKEL);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.SILVER);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.STEEL);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.TIN);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.YELLORIUM);
@@ -297,6 +309,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Nuggets.LUDICRITE).add(ModItems.Nugget.LUDICRITE.get());
         tag(ModTags.Items.Nuggets.MAGNESIUM).add(ModItems.Nugget.MAGNESIUM.get());
         tag(ModTags.Items.Nuggets.MANGANESE).add(ModItems.Nugget.MANGANESE.get());
+        tag(ModTags.Items.Nuggets.NICKEL).add(ModItems.Nugget.NICKEL.get());
+        tag(ModTags.Items.Nuggets.SILVER).add(ModItems.Nugget.SILVER.get());
         tag(ModTags.Items.Nuggets.STEEL).add(ModItems.Nugget.STEEL.get());
         tag(ModTags.Items.Nuggets.TIN).add(ModItems.Nugget.TIN.get());
         tag(ModTags.Items.Nuggets.YELLORIUM).add(ModItems.Nugget.YELLORIUM.get());
@@ -334,6 +348,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.LUDICRITE);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.MAGNESIUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.MANGANESE);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.NICKEL);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.SILVER);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.STEEL);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.TIN);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.YELLORIUM);
@@ -375,6 +391,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Plates.LUDICRITE).add(ModItems.Plate.LUDICRITE.get());
         tag(ModTags.Items.Plates.MAGNESIUM).add(ModItems.Plate.MAGNESIUM.get());
         tag(ModTags.Items.Plates.MANGANESE).add(ModItems.Plate.MANGANESE.get());
+        tag(ModTags.Items.Plates.NICKEL).add(ModItems.Plate.NICKEL.get());
+        tag(ModTags.Items.Plates.SILVER).add(ModItems.Plate.SILVER.get());
         tag(ModTags.Items.Plates.STEEL).add(ModItems.Plate.STEEL.get());
         tag(ModTags.Items.Plates.TIN).add(ModItems.Plate.TIN.get());
         tag(ModTags.Items.Plates.YELLORIUM).add(ModItems.Plate.YELLORIUM.get());
@@ -416,6 +434,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(plates).addTags(ModTags.Items.Plates.LUDICRITE);
         tag(plates).addTags(ModTags.Items.Plates.MAGNESIUM);
         tag(plates).addTags(ModTags.Items.Plates.MANGANESE);
+        tag(plates).addTags(ModTags.Items.Plates.NICKEL);
+        tag(plates).addTags(ModTags.Items.Plates.SILVER);
         tag(plates).addTags(ModTags.Items.Plates.STEEL);
         tag(plates).addTags(ModTags.Items.Plates.TIN);
         tag(plates).addTags(ModTags.Items.Plates.YELLORIUM);
@@ -454,6 +474,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Raw.LUDICRITE).add(ModItems.Raw.LUDICRITE.get());
         tag(ModTags.Items.Raw.MAGNESIUM).add(ModItems.Raw.MAGNESIUM.get());
         tag(ModTags.Items.Raw.MANGANESE).add(ModItems.Raw.MANGANESE.get());
+        tag(ModTags.Items.Raw.NICKEL).add(ModItems.Raw.NICKEL.get());
+        tag(ModTags.Items.Raw.SILVER).add(ModItems.Raw.SILVER.get());
         tag(ModTags.Items.Raw.STEEL).add(ModItems.Raw.STEEL.get());
         tag(ModTags.Items.Raw.TIN).add(ModItems.Raw.TIN.get());
         tag(ModTags.Items.Raw.YELLORIUM).add(ModItems.Raw.YELLORIUM.get());
@@ -490,6 +512,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.LUDICRITE);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.MAGNESIUM);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.MANGANESE);
+        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.NICKEL);
+        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.SILVER);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.STEEL);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.TIN);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.YELLORIUM);
@@ -531,6 +555,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Reinforced.LUDICRITE).add(ModItems.Reinforced.LUDICRITE.get());
         tag(ModTags.Items.Reinforced.MAGNESIUM).add(ModItems.Reinforced.MAGNESIUM.get());
         tag(ModTags.Items.Reinforced.MANGANESE).add(ModItems.Reinforced.MANGANESE.get());
+        tag(ModTags.Items.Reinforced.NICKEL).add(ModItems.Reinforced.NICKEL.get());
+        tag(ModTags.Items.Reinforced.SILVER).add(ModItems.Reinforced.SILVER.get());
         tag(ModTags.Items.Reinforced.STEEL).add(ModItems.Reinforced.STEEL.get());
         tag(ModTags.Items.Reinforced.TIN).add(ModItems.Reinforced.TIN.get());
         tag(ModTags.Items.Reinforced.YELLORIUM).add(ModItems.Reinforced.YELLORIUM.get());
@@ -572,6 +598,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(reinforced).addTags(ModTags.Items.Reinforced.LUDICRITE);
         tag(reinforced).addTags(ModTags.Items.Reinforced.MAGNESIUM);
         tag(reinforced).addTags(ModTags.Items.Reinforced.MANGANESE);
+        tag(reinforced).addTags(ModTags.Items.Reinforced.NICKEL);
+        tag(reinforced).addTags(ModTags.Items.Reinforced.SILVER);
         tag(reinforced).addTags(ModTags.Items.Reinforced.STEEL);
         tag(reinforced).addTags(ModTags.Items.Reinforced.TIN);
         tag(reinforced).addTags(ModTags.Items.Reinforced.YELLORIUM);
@@ -613,6 +641,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Rod.LUDICRITE).add(ModItems.Rod.LUDICRITE.get());
         tag(ModTags.Items.Rod.MAGNESIUM).add(ModItems.Rod.MAGNESIUM.get());
         tag(ModTags.Items.Rod.MANGANESE).add(ModItems.Rod.MANGANESE.get());
+        tag(ModTags.Items.Rod.NICKEL).add(ModItems.Rod.NICKEL.get());
+        tag(ModTags.Items.Rod.SILVER).add(ModItems.Rod.SILVER.get());
         tag(ModTags.Items.Rod.STEEL).add(ModItems.Rod.STEEL.get());
         tag(ModTags.Items.Rod.TIN).add(ModItems.Rod.TIN.get());
         tag(ModTags.Items.Rod.YELLORIUM).add(ModItems.Rod.YELLORIUM.get());
@@ -652,6 +682,8 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.RODS).addTags(ModTags.Items.Rod.LUDICRITE);
         tag(Tags.Items.RODS).addTags(ModTags.Items.Rod.MAGNESIUM);
         tag(Tags.Items.RODS).addTags(ModTags.Items.Rod.MANGANESE);
+        tag(Tags.Items.RODS).addTags(ModTags.Items.Rod.NICKEL);
+        tag(Tags.Items.RODS).addTags(ModTags.Items.Rod.SILVER);
         tag(Tags.Items.RODS).addTags(ModTags.Items.Rod.STEEL);
         tag(Tags.Items.RODS).addTags(ModTags.Items.Rod.TIN);
         tag(Tags.Items.RODS).addTags(ModTags.Items.Rod.YELLORIUM);
