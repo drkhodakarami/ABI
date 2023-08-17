@@ -21,6 +21,70 @@ public class ModItemModelProvider extends ItemModelProvider
     @Override
     protected void registerModels()
     {
+        //<editor-fold desc="ARMOR">
+        SimpleItem(ModItems.Armor.ENGINEER_HELMET, true);
+
+        SimpleItem(ModItems.Armor.BRONZE_HELMET);
+        SimpleItem(ModItems.Armor.BRONZE_CHESTPLATE);
+        SimpleItem(ModItems.Armor.BRONZE_LEGGINGS);
+        SimpleItem(ModItems.Armor.BRONZE_BOOTS);
+
+        SimpleItem(ModItems.Armor.CONSTANTAN_HELMET);
+        SimpleItem(ModItems.Armor.CONSTANTAN_CHESTPLATE);
+        SimpleItem(ModItems.Armor.CONSTANTAN_LEGGINGS);
+        SimpleItem(ModItems.Armor.CONSTANTAN_BOOTS);
+
+        SimpleItem(ModItems.Armor.COPPER_HELMET);
+        SimpleItem(ModItems.Armor.COPPER_CHESTPLATE);
+        SimpleItem(ModItems.Armor.COPPER_LEGGINGS);
+        SimpleItem(ModItems.Armor.COPPER_BOOTS);
+
+        SimpleItem(ModItems.Armor.ELECTRUM_HELMET);
+        SimpleItem(ModItems.Armor.ELECTRUM_CHESTPLATE);
+        SimpleItem(ModItems.Armor.ELECTRUM_LEGGINGS);
+        SimpleItem(ModItems.Armor.ELECTRUM_BOOTS);
+
+        SimpleItem(ModItems.Armor.EMERALD_HELMET);
+        SimpleItem(ModItems.Armor.EMERALD_CHESTPLATE);
+        SimpleItem(ModItems.Armor.EMERALD_LEGGINGS);
+        SimpleItem(ModItems.Armor.EMERALD_BOOTS);
+
+        SimpleItem(ModItems.Armor.INVAR_HELMET);
+        SimpleItem(ModItems.Armor.INVAR_CHESTPLATE);
+        SimpleItem(ModItems.Armor.INVAR_LEGGINGS);
+        SimpleItem(ModItems.Armor.INVAR_BOOTS);
+
+        SimpleItem(ModItems.Armor.LEAD_HELMET);
+        SimpleItem(ModItems.Armor.LEAD_CHESTPLATE);
+        SimpleItem(ModItems.Armor.LEAD_LEGGINGS);
+        SimpleItem(ModItems.Armor.LEAD_BOOTS);
+
+        SimpleItem(ModItems.Armor.NICKEL_HELMET);
+        SimpleItem(ModItems.Armor.NICKEL_CHESTPLATE);
+        SimpleItem(ModItems.Armor.NICKEL_LEGGINGS);
+        SimpleItem(ModItems.Armor.NICKEL_BOOTS);
+
+        SimpleItem(ModItems.Armor.RUBY_HELMET);
+        SimpleItem(ModItems.Armor.RUBY_CHESTPLATE);
+        SimpleItem(ModItems.Armor.RUBY_LEGGINGS);
+        SimpleItem(ModItems.Armor.RUBY_BOOTS);
+
+        SimpleItem(ModItems.Armor.SAPPHIRE_HELMET);
+        SimpleItem(ModItems.Armor.SAPPHIRE_CHESTPLATE);
+        SimpleItem(ModItems.Armor.SAPPHIRE_LEGGINGS);
+        SimpleItem(ModItems.Armor.SAPPHIRE_BOOTS);
+
+        SimpleItem(ModItems.Armor.SILVER_HELMET);
+        SimpleItem(ModItems.Armor.SILVER_CHESTPLATE);
+        SimpleItem(ModItems.Armor.SILVER_LEGGINGS);
+        SimpleItem(ModItems.Armor.SILVER_BOOTS);
+
+        SimpleItem(ModItems.Armor.TIN_HELMET);
+        SimpleItem(ModItems.Armor.TIN_CHESTPLATE);
+        SimpleItem(ModItems.Armor.TIN_LEGGINGS);
+        SimpleItem(ModItems.Armor.TIN_BOOTS);
+        //</editor-fold>
+
         //<editor-fold desc="DUST">
         SimpleItem(ModItems.Dust.ALUMINIUM);
         SimpleItem(ModItems.Dust.ALUMINIUM_BRASS);
@@ -368,20 +432,6 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Gem.SAPPHIRE_SHARD);
         //</editor-fold>
 
-        //<editor-fold desc="ARMOR">
-        SimpleItem(ModItems.Armor.ENGINEER_HELMET, true);
-
-        SimpleItem(ModItems.Armor.RUBY_HELMET);
-        SimpleItem(ModItems.Armor.RUBY_CHESTPLATE);
-        SimpleItem(ModItems.Armor.RUBY_LEGGINGS);
-        SimpleItem(ModItems.Armor.RUBY_BOOTS);
-
-        SimpleItem(ModItems.Armor.SAPPHIRE_HELMET);
-        SimpleItem(ModItems.Armor.SAPPHIRE_CHESTPLATE);
-        SimpleItem(ModItems.Armor.SAPPHIRE_LEGGINGS);
-        SimpleItem(ModItems.Armor.SAPPHIRE_BOOTS);
-        //</editor-fold>
-
         //<editor-fold desc="TOOL">
         SimpleItem(ModItems.Tool.AUGMENT, true);
         SimpleItem(ModItems.Tool.CUTTER, true);
@@ -420,6 +470,13 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Tool.ELECTRUM_AXE, true);
         SimpleItem(ModItems.Tool.ELECTRUM_HOE, true);
         SimpleItem(ModItems.Tool.ELECTRUM_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.EMERALD_SWORD, true);
+        SimpleItem(ModItems.Tool.EMERALD_PICKAXE, true);
+        SimpleItem(ModItems.Tool.EMERALD_SHOVEL, true);
+        SimpleItem(ModItems.Tool.EMERALD_AXE, true);
+        SimpleItem(ModItems.Tool.EMERALD_HOE, true);
+        SimpleItem(ModItems.Tool.EMERALD_HAMMER, true);
 
         SimpleItem(ModItems.Tool.GOLD_HAMMER, true);
 
@@ -493,6 +550,104 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Cast.INGOT);
         SimpleItem(ModItems.Cast.NUGGET);
         //</editor-fold>
+
+        //<editor-fold desc="HEAD">
+        SimpleItem(ModItems.Head.BRONZE_AXE);
+        SimpleItem(ModItems.Head.BRONZE_HAMMER);
+        SimpleItem(ModItems.Head.BRONZE_HOE);
+        SimpleItem(ModItems.Head.BRONZE_PICKAXE);
+        SimpleItem(ModItems.Head.BRONZE_SHOVEL);
+        SimpleItem(ModItems.Head.BRONZE_SWORD);
+
+        SimpleItem(ModItems.Head.CONSTANTAN_AXE);
+        SimpleItem(ModItems.Head.CONSTANTAN_HAMMER);
+        SimpleItem(ModItems.Head.CONSTANTAN_HOE);
+        SimpleItem(ModItems.Head.CONSTANTAN_PICKAXE);
+        SimpleItem(ModItems.Head.CONSTANTAN_SHOVEL);
+        SimpleItem(ModItems.Head.CONSTANTAN_SWORD);
+
+        SimpleItem(ModItems.Head.COPPER_AXE);
+        SimpleItem(ModItems.Head.COPPER_HAMMER);
+        SimpleItem(ModItems.Head.COPPER_HOE);
+        SimpleItem(ModItems.Head.COPPER_PICKAXE);
+        SimpleItem(ModItems.Head.COPPER_SHOVEL);
+        SimpleItem(ModItems.Head.COPPER_SWORD);
+
+        SimpleItem(ModItems.Head.DIAMOND_HAMMER);
+
+        SimpleItem(ModItems.Head.ELECTRUM_AXE);
+        SimpleItem(ModItems.Head.ELECTRUM_HAMMER);
+        SimpleItem(ModItems.Head.ELECTRUM_HOE);
+        SimpleItem(ModItems.Head.ELECTRUM_PICKAXE);
+        SimpleItem(ModItems.Head.ELECTRUM_SHOVEL);
+        SimpleItem(ModItems.Head.ELECTRUM_SWORD);
+
+        SimpleItem(ModItems.Head.EMERALD_AXE);
+        SimpleItem(ModItems.Head.EMERALD_HAMMER);
+        SimpleItem(ModItems.Head.EMERALD_HOE);
+        SimpleItem(ModItems.Head.EMERALD_PICKAXE);
+        SimpleItem(ModItems.Head.EMERALD_SHOVEL);
+        SimpleItem(ModItems.Head.EMERALD_SWORD);
+
+        SimpleItem(ModItems.Head.GOLD_HAMMER);
+
+        SimpleItem(ModItems.Head.INVAR_AXE);
+        SimpleItem(ModItems.Head.INVAR_HAMMER);
+        SimpleItem(ModItems.Head.INVAR_HOE);
+        SimpleItem(ModItems.Head.INVAR_PICKAXE);
+        SimpleItem(ModItems.Head.INVAR_SHOVEL);
+        SimpleItem(ModItems.Head.INVAR_SWORD);
+
+        SimpleItem(ModItems.Head.IRON_HAMMER);
+
+        SimpleItem(ModItems.Head.LEAD_AXE);
+        SimpleItem(ModItems.Head.LEAD_HAMMER);
+        SimpleItem(ModItems.Head.LEAD_HOE);
+        SimpleItem(ModItems.Head.LEAD_PICKAXE);
+        SimpleItem(ModItems.Head.LEAD_SHOVEL);
+        SimpleItem(ModItems.Head.LEAD_SWORD);
+
+        SimpleItem(ModItems.Head.NETHERITE_HAMMER);
+
+        SimpleItem(ModItems.Head.NICKEL_AXE);
+        SimpleItem(ModItems.Head.NICKEL_HAMMER);
+        SimpleItem(ModItems.Head.NICKEL_HOE);
+        SimpleItem(ModItems.Head.NICKEL_PICKAXE);
+        SimpleItem(ModItems.Head.NICKEL_SHOVEL);
+        SimpleItem(ModItems.Head.NICKEL_SWORD);
+
+        SimpleItem(ModItems.Head.RUBY_AXE);
+        SimpleItem(ModItems.Head.RUBY_HAMMER);
+        SimpleItem(ModItems.Head.RUBY_HOE);
+        SimpleItem(ModItems.Head.RUBY_PICKAXE);
+        SimpleItem(ModItems.Head.RUBY_SHOVEL);
+        SimpleItem(ModItems.Head.RUBY_SWORD);
+
+        SimpleItem(ModItems.Head.SAPPHIRE_AXE);
+        SimpleItem(ModItems.Head.SAPPHIRE_HAMMER);
+        SimpleItem(ModItems.Head.SAPPHIRE_HOE);
+        SimpleItem(ModItems.Head.SAPPHIRE_PICKAXE);
+        SimpleItem(ModItems.Head.SAPPHIRE_SHOVEL);
+        SimpleItem(ModItems.Head.SAPPHIRE_SWORD);
+
+        SimpleItem(ModItems.Head.SILVER_AXE);
+        SimpleItem(ModItems.Head.SILVER_HAMMER);
+        SimpleItem(ModItems.Head.SILVER_HOE);
+        SimpleItem(ModItems.Head.SILVER_PICKAXE);
+        SimpleItem(ModItems.Head.SILVER_SHOVEL);
+        SimpleItem(ModItems.Head.SILVER_SWORD);
+
+        SimpleItem(ModItems.Head.STONE_HAMMER);
+
+        SimpleItem(ModItems.Head.TIN_AXE);
+        SimpleItem(ModItems.Head.TIN_HAMMER);
+        SimpleItem(ModItems.Head.TIN_HOE);
+        SimpleItem(ModItems.Head.TIN_PICKAXE);
+        SimpleItem(ModItems.Head.TIN_SHOVEL);
+        SimpleItem(ModItems.Head.TIN_SWORD);
+
+        SimpleItem(ModItems.Head.WOOD_HAMMER);
+        //</editor-fold>
     }
 
     //<editor-fold desc="HELPER METHODS">
@@ -553,12 +708,24 @@ public class ModItemModelProvider extends ItemModelProvider
 
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.TOOL) ||
            item.getId().getPath().toLowerCase().contains(Reference.Names.BOW) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.SWORD) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.AXE) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.PICKAXE) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.SHOVEL) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.HOE) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.HAMMER) && !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST)))
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.SWORD) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.AXE) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.PICKAXE) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.SHOVEL) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.HOE) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.HAMMER) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/tool/" + item.getId().getPath()));
@@ -580,6 +747,11 @@ public class ModItemModelProvider extends ItemModelProvider
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/cast/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/tool/head/" + item.getId().getPath()));
         //</editor-fold>
 
         return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))

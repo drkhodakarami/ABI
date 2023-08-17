@@ -466,6 +466,7 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.CONSTANTAN_AXE.get());
                         output.accept(ModItems.Tool.COPPER_AXE.get());
                         output.accept(ModItems.Tool.ELECTRUM_AXE.get());
+                        output.accept(ModItems.Tool.EMERALD_AXE.get());
                         output.accept(ModItems.Tool.INVAR_AXE.get());
                         output.accept(ModItems.Tool.LEAD_AXE.get());
                         output.accept(ModItems.Tool.NICKEL_AXE.get());
@@ -478,6 +479,7 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.CONSTANTAN_HAMMER.get());
                         output.accept(ModItems.Tool.COPPER_HAMMER.get());
                         output.accept(ModItems.Tool.ELECTRUM_HAMMER.get());
+                        output.accept(ModItems.Tool.EMERALD_HAMMER.get());
                         output.accept(ModItems.Tool.INVAR_HAMMER.get());
                         output.accept(ModItems.Tool.LEAD_HAMMER.get());
                         output.accept(ModItems.Tool.NICKEL_HAMMER.get());
@@ -490,6 +492,7 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.CONSTANTAN_HOE.get());
                         output.accept(ModItems.Tool.COPPER_HOE.get());
                         output.accept(ModItems.Tool.ELECTRUM_HOE.get());
+                        output.accept(ModItems.Tool.EMERALD_HOE.get());
                         output.accept(ModItems.Tool.INVAR_HOE.get());
                         output.accept(ModItems.Tool.LEAD_HOE.get());
                         output.accept(ModItems.Tool.NICKEL_HOE.get());
@@ -502,6 +505,7 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.CONSTANTAN_PICKAXE.get());
                         output.accept(ModItems.Tool.COPPER_PICKAXE.get());
                         output.accept(ModItems.Tool.ELECTRUM_PICKAXE.get());
+                        output.accept(ModItems.Tool.EMERALD_PICKAXE.get());
                         output.accept(ModItems.Tool.INVAR_PICKAXE.get());
                         output.accept(ModItems.Tool.LEAD_PICKAXE.get());
                         output.accept(ModItems.Tool.NICKEL_PICKAXE.get());
@@ -514,6 +518,7 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.CONSTANTAN_SHOVEL.get());
                         output.accept(ModItems.Tool.COPPER_SHOVEL.get());
                         output.accept(ModItems.Tool.ELECTRUM_SHOVEL.get());
+                        output.accept(ModItems.Tool.EMERALD_SHOVEL.get());
                         output.accept(ModItems.Tool.INVAR_SHOVEL.get());
                         output.accept(ModItems.Tool.LEAD_SHOVEL.get());
                         output.accept(ModItems.Tool.NICKEL_SHOVEL.get());
@@ -526,6 +531,7 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.CONSTANTAN_SWORD.get());
                         output.accept(ModItems.Tool.COPPER_SWORD.get());
                         output.accept(ModItems.Tool.ELECTRUM_SWORD.get());
+                        output.accept(ModItems.Tool.EMERALD_SWORD.get());
                         output.accept(ModItems.Tool.INVAR_SWORD.get());
                         output.accept(ModItems.Tool.LEAD_SWORD.get());
                         output.accept(ModItems.Tool.NICKEL_SWORD.get());
@@ -533,6 +539,90 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.SAPPHIRE_SWORD.get());
                         output.accept(ModItems.Tool.SILVER_SWORD.get());
                         output.accept(ModItems.Tool.TIN_SWORD.get());
+
+                        output.accept(ModItems.Head.BRONZE_AXE.get());
+                        output.accept(ModItems.Head.CONSTANTAN_AXE.get());
+                        output.accept(ModItems.Head.COPPER_AXE.get());
+                        output.accept(ModItems.Head.ELECTRUM_AXE.get());
+                        output.accept(ModItems.Head.EMERALD_AXE.get());
+                        output.accept(ModItems.Head.INVAR_AXE.get());
+                        output.accept(ModItems.Head.LEAD_AXE.get());
+                        output.accept(ModItems.Head.NICKEL_AXE.get());
+                        output.accept(ModItems.Head.RUBY_AXE.get());
+                        output.accept(ModItems.Head.SAPPHIRE_AXE.get());
+                        output.accept(ModItems.Head.SILVER_AXE.get());
+                        output.accept(ModItems.Head.TIN_AXE.get());
+
+                        output.accept(ModItems.Head.BRONZE_HAMMER.get());
+                        output.accept(ModItems.Head.CONSTANTAN_HAMMER.get());
+                        output.accept(ModItems.Head.COPPER_HAMMER.get());
+                        output.accept(ModItems.Head.DIAMOND_HAMMER.get());
+                        output.accept(ModItems.Head.ELECTRUM_HAMMER.get());
+                        output.accept(ModItems.Head.EMERALD_HAMMER.get());
+                        output.accept(ModItems.Head.GOLD_HAMMER.get());
+                        output.accept(ModItems.Head.INVAR_HAMMER.get());
+                        output.accept(ModItems.Head.IRON_HAMMER.get());
+                        output.accept(ModItems.Head.LEAD_HAMMER.get());
+                        output.accept(ModItems.Head.NETHERITE_HAMMER.get());
+                        output.accept(ModItems.Head.NICKEL_HAMMER.get());
+                        output.accept(ModItems.Head.RUBY_HAMMER.get());
+                        output.accept(ModItems.Head.SAPPHIRE_HAMMER.get());
+                        output.accept(ModItems.Head.SILVER_HAMMER.get());
+                        output.accept(ModItems.Head.STONE_HAMMER.get());
+                        output.accept(ModItems.Head.TIN_HAMMER.get());
+                        output.accept(ModItems.Head.WOOD_HAMMER.get());
+
+                        output.accept(ModItems.Head.BRONZE_HOE.get());
+                        output.accept(ModItems.Head.CONSTANTAN_HOE.get());
+                        output.accept(ModItems.Head.COPPER_HOE.get());
+                        output.accept(ModItems.Head.ELECTRUM_HOE.get());
+                        output.accept(ModItems.Head.EMERALD_HOE.get());
+                        output.accept(ModItems.Head.INVAR_HOE.get());
+                        output.accept(ModItems.Head.LEAD_HOE.get());
+                        output.accept(ModItems.Head.NICKEL_HOE.get());
+                        output.accept(ModItems.Head.RUBY_HOE.get());
+                        output.accept(ModItems.Head.SAPPHIRE_HOE.get());
+                        output.accept(ModItems.Head.SILVER_HOE.get());
+                        output.accept(ModItems.Head.TIN_HOE.get());
+
+                        output.accept(ModItems.Head.BRONZE_PICKAXE.get());
+                        output.accept(ModItems.Head.CONSTANTAN_PICKAXE.get());
+                        output.accept(ModItems.Head.COPPER_PICKAXE.get());
+                        output.accept(ModItems.Head.ELECTRUM_PICKAXE.get());
+                        output.accept(ModItems.Head.EMERALD_PICKAXE.get());
+                        output.accept(ModItems.Head.INVAR_PICKAXE.get());
+                        output.accept(ModItems.Head.LEAD_PICKAXE.get());
+                        output.accept(ModItems.Head.NICKEL_PICKAXE.get());
+                        output.accept(ModItems.Head.RUBY_PICKAXE.get());
+                        output.accept(ModItems.Head.SAPPHIRE_PICKAXE.get());
+                        output.accept(ModItems.Head.SILVER_PICKAXE.get());
+                        output.accept(ModItems.Head.TIN_PICKAXE.get());
+
+                        output.accept(ModItems.Head.BRONZE_SHOVEL.get());
+                        output.accept(ModItems.Head.CONSTANTAN_SHOVEL.get());
+                        output.accept(ModItems.Head.COPPER_SHOVEL.get());
+                        output.accept(ModItems.Head.ELECTRUM_SHOVEL.get());
+                        output.accept(ModItems.Head.EMERALD_SHOVEL.get());
+                        output.accept(ModItems.Head.INVAR_SHOVEL.get());
+                        output.accept(ModItems.Head.LEAD_SHOVEL.get());
+                        output.accept(ModItems.Head.NICKEL_SHOVEL.get());
+                        output.accept(ModItems.Head.RUBY_SHOVEL.get());
+                        output.accept(ModItems.Head.SAPPHIRE_SHOVEL.get());
+                        output.accept(ModItems.Head.SILVER_SHOVEL.get());
+                        output.accept(ModItems.Head.TIN_SHOVEL.get());
+
+                        output.accept(ModItems.Head.BRONZE_SWORD.get());
+                        output.accept(ModItems.Head.CONSTANTAN_SWORD.get());
+                        output.accept(ModItems.Head.COPPER_SWORD.get());
+                        output.accept(ModItems.Head.ELECTRUM_SWORD.get());
+                        output.accept(ModItems.Head.EMERALD_SWORD.get());
+                        output.accept(ModItems.Head.INVAR_SWORD.get());
+                        output.accept(ModItems.Head.LEAD_SWORD.get());
+                        output.accept(ModItems.Head.NICKEL_SWORD.get());
+                        output.accept(ModItems.Head.RUBY_SWORD.get());
+                        output.accept(ModItems.Head.SAPPHIRE_SWORD.get());
+                        output.accept(ModItems.Head.SILVER_SWORD.get());
+                        output.accept(ModItems.Head.TIN_SWORD.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ARMOR = CREATIVE_MODE_TABS.register(
@@ -545,6 +635,47 @@ public class CreativeTabs
                     .displayItems((parameters, output) ->
                     {
                         output.accept(ModItems.Armor.ENGINEER_HELMET.get());
+
+                        output.accept(ModItems.Armor.BRONZE_HELMET.get());
+                        output.accept(ModItems.Armor.BRONZE_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.BRONZE_LEGGINGS.get());
+                        output.accept(ModItems.Armor.BRONZE_BOOTS.get());
+
+                        output.accept(ModItems.Armor.CONSTANTAN_HELMET.get());
+                        output.accept(ModItems.Armor.CONSTANTAN_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.CONSTANTAN_LEGGINGS.get());
+                        output.accept(ModItems.Armor.CONSTANTAN_BOOTS.get());
+
+                        output.accept(ModItems.Armor.COPPER_HELMET.get());
+                        output.accept(ModItems.Armor.COPPER_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.COPPER_LEGGINGS.get());
+                        output.accept(ModItems.Armor.COPPER_BOOTS.get());
+
+                        output.accept(ModItems.Armor.ELECTRUM_HELMET.get());
+                        output.accept(ModItems.Armor.ELECTRUM_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.ELECTRUM_LEGGINGS.get());
+                        output.accept(ModItems.Armor.ELECTRUM_BOOTS.get());
+
+                        output.accept(ModItems.Armor.EMERALD_HELMET.get());
+                        output.accept(ModItems.Armor.EMERALD_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.EMERALD_LEGGINGS.get());
+                        output.accept(ModItems.Armor.EMERALD_BOOTS.get());
+
+                        output.accept(ModItems.Armor.INVAR_HELMET.get());
+                        output.accept(ModItems.Armor.INVAR_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.INVAR_LEGGINGS.get());
+                        output.accept(ModItems.Armor.INVAR_BOOTS.get());
+
+                        output.accept(ModItems.Armor.LEAD_HELMET.get());
+                        output.accept(ModItems.Armor.LEAD_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.LEAD_LEGGINGS.get());
+                        output.accept(ModItems.Armor.LEAD_BOOTS.get());
+
+                        output.accept(ModItems.Armor.NICKEL_HELMET.get());
+                        output.accept(ModItems.Armor.NICKEL_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.NICKEL_LEGGINGS.get());
+                        output.accept(ModItems.Armor.NICKEL_BOOTS.get());
+
                         output.accept(ModItems.Armor.RUBY_HELMET.get());
                         output.accept(ModItems.Armor.RUBY_CHESTPLATE.get());
                         output.accept(ModItems.Armor.RUBY_LEGGINGS.get());
@@ -554,5 +685,15 @@ public class CreativeTabs
                         output.accept(ModItems.Armor.SAPPHIRE_CHESTPLATE.get());
                         output.accept(ModItems.Armor.SAPPHIRE_LEGGINGS.get());
                         output.accept(ModItems.Armor.SAPPHIRE_BOOTS.get());
+
+                        output.accept(ModItems.Armor.SILVER_HELMET.get());
+                        output.accept(ModItems.Armor.SILVER_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.SILVER_LEGGINGS.get());
+                        output.accept(ModItems.Armor.SILVER_BOOTS.get());
+
+                        output.accept(ModItems.Armor.TIN_HELMET.get());
+                        output.accept(ModItems.Armor.TIN_CHESTPLATE.get());
+                        output.accept(ModItems.Armor.TIN_LEGGINGS.get());
+                        output.accept(ModItems.Armor.TIN_BOOTS.get());
                     }).build());
 }

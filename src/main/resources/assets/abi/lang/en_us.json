@@ -352,6 +352,46 @@
 
   "item.abi.engineer_helmet": "Engineer Helmet",
 
+  "item.abi.bronze_helmet": "Bronze Helmet",
+  "item.abi.bronze_chestplate": "Bronze Chest Plate",
+  "item.abi.bronze_leggings": "Bronze Leggings",
+  "item.abi.bronze_boots": "Bronze Boots",
+
+  "item.abi.constantan_helmet": "Constantan Helmet",
+  "item.abi.constantan_chestplate": "Constantan Chest Plate",
+  "item.abi.constantan_leggings": "Constantan Leggings",
+  "item.abi.constantan_boots": "Constantan Boots",
+
+  "item.abi.copper_helmet": "Copper Helmet",
+  "item.abi.copper_chestplate": "Copper Chest Plate",
+  "item.abi.copper_leggings": "Copper Leggings",
+  "item.abi.copper_boots": "Copper Boots",
+
+  "item.abi.electrum_helmet": "Electrum Helmet",
+  "item.abi.electrum_chestplate": "Electrum Chest Plate",
+  "item.abi.electrum_leggings": "Electrum Leggings",
+  "item.abi.electrum_boots": "Electrum Boots",
+
+  "item.abi.emerald_helmet": "Emerald Helmet",
+  "item.abi.emerald_chestplate": "Emerald Chest Plate",
+  "item.abi.emerald_leggings": "Emerald Leggings",
+  "item.abi.emerald_boots": "Emerald Boots",
+
+  "item.abi.invar_helmet": "Invar Helmet",
+  "item.abi.invar_chestplate": "Invar Chest Plate",
+  "item.abi.invar_leggings": "Invar Leggings",
+  "item.abi.invar_boots": "Invar Boots",
+
+  "item.abi.lead_helmet": "Lead Helmet",
+  "item.abi.lead_chestplate": "Lead Chest Plate",
+  "item.abi.lead_leggings": "Lead Leggings",
+  "item.abi.lead_boots": "Lead Boots",
+
+  "item.abi.nickel_helmet": "Nickel Helmet",
+  "item.abi.nickel_chestplate": "Nickel Chest Plate",
+  "item.abi.nickel_leggings": "Nickel Leggings",
+  "item.abi.nickel_boots": "Nickel Boots",
+
   "item.abi.ruby_helmet": "Ruby Helmet",
   "item.abi.ruby_chestplate": "Ruby Chest Plate",
   "item.abi.ruby_leggings": "Ruby Leggings",
@@ -361,6 +401,16 @@
   "item.abi.sapphire_chestplate": "Sapphire Chest Plate",
   "item.abi.sapphire_leggings": "Sapphire Leggings",
   "item.abi.sapphire_boots": "Sapphire Boots",
+
+  "item.abi.silver_helmet": "Silver Helmet",
+  "item.abi.silver_chestplate": "Silver Chest Plate",
+  "item.abi.silver_leggings": "Silver Leggings",
+  "item.abi.silver_boots": "Silver Boots",
+
+  "item.abi.tin_helmet": "Tin Helmet",
+  "item.abi.tin_chestplate": "Tin Chest Plate",
+  "item.abi.tin_leggings": "Tin Leggings",
+  "item.abi.tin_boots": "Tin Boots",
 
   "item.abi.ruby_bow": "Ruby Bow",
   "item.abi.sapphire_bow": "Sapphire Sword",
@@ -394,6 +444,13 @@
   "item.abi.electrum_shovel": "Electrum Shovel",
   "item.abi.electrum_hoe": "Electrum Hoe",
   "item.abi.electrum_hammer": "Electrum Hammer",
+
+  "item.abi.emerald_sword": "Emerald Sword",
+  "item.abi.emerald_axe": "Emerald Axe",
+  "item.abi.emerald_pickaxe": "Emerald Pickaxe",
+  "item.abi.emerald_shovel": "Emerald Shovel",
+  "item.abi.emerald_hoe": "Emerald Hoe",
+  "item.abi.emerald_hammer": "Emerald Hammer",
 
   "item.abi.gold_hammer": "Gold Hammer",
 
@@ -451,6 +508,102 @@
   "item.abi.tin_hammer": "Tin Hammer",
 
   "item.abi.wood_hammer": "Wood Hammer",
+
+  "item.abi.head_bronze_sword": "Bronze Sword Head",
+  "item.abi.head_bronze_axe": "Bronze Axe Head",
+  "item.abi.head_bronze_pickaxe": "Bronze Pickaxe Head",
+  "item.abi.head_bronze_shovel": "Bronze Shovel Head",
+  "item.abi.head_bronze_hoe": "Bronze Hoe Head",
+  "item.abi.head_bronze_hammer": "Bronze Hammer Head",
+
+  "item.abi.head_constantan_sword": "Constantan Sword Head",
+  "item.abi.head_constantan_axe": "Constantan Axe Head",
+  "item.abi.head_constantan_pickaxe": "Constantan Pickaxe Head",
+  "item.abi.head_constantan_shovel": "Constantan Shovel Head",
+  "item.abi.head_constantan_hoe": "Constantan Hoe Head",
+  "item.abi.head_constantan_hammer": "Constantan Hammer Head",
+
+  "item.abi.head_copper_sword": "Copper Sword Head",
+  "item.abi.head_copper_axe": "Copper Axe Head",
+  "item.abi.head_copper_pickaxe": "Copper Pickaxe Head",
+  "item.abi.head_copper_shovel": "Copper Shovel Head",
+  "item.abi.head_copper_hoe": "Copper Hoe Head",
+  "item.abi.head_copper_hammer": "Copper Hammer Head",
+
+  "item.abi.head_diamond_hammer": "Diamond Hammer Head",
+
+  "item.abi.head_electrum_sword": "Electrum Sword Head",
+  "item.abi.head_electrum_axe": "Electrum Axe Head",
+  "item.abi.head_electrum_pickaxe": "Electrum Pickaxe Head",
+  "item.abi.head_electrum_shovel": "Electrum Shovel Head",
+  "item.abi.head_electrum_hoe": "Electrum Hoe Head",
+  "item.abi.head_electrum_hammer": "Electrum Hammer Head",
+
+  "item.abi.head_emerald_sword": "Emerald Sword Head",
+  "item.abi.head_emerald_axe": "Emerald Axe Head",
+  "item.abi.head_emerald_pickaxe": "Emerald Pickaxe Head",
+  "item.abi.head_emerald_shovel": "Emerald Shovel Head",
+  "item.abi.head_emerald_hoe": "Emerald Hoe Head",
+  "item.abi.head_emerald_hammer": "Emerald Hammer Head",
+
+  "item.abi.head_gold_hammer": "Gold Hammer Head",
+
+  "item.abi.head_invar_sword": "Invar Sword Head",
+  "item.abi.head_invar_axe": "Invar Axe Head",
+  "item.abi.head_invar_pickaxe": "Invar Pickaxe Head",
+  "item.abi.head_invar_shovel": "Invar Shovel Head",
+  "item.abi.head_invar_hoe": "Invar Hoe Head",
+  "item.abi.head_invar_hammer": "Invar Hammer Head",
+
+  "item.abi.head_iron_hammer": "Iron Hammer Head",
+
+  "item.abi.head_lead_sword": "Lead Sword Head",
+  "item.abi.head_lead_axe": "Lead Axe Head",
+  "item.abi.head_lead_pickaxe": "Lead Pickaxe Head",
+  "item.abi.head_lead_shovel": "Lead Shovel Head",
+  "item.abi.head_lead_hoe": "Lead Hoe Head",
+  "item.abi.head_lead_hammer": "Lead Hammer Head",
+
+  "item.abi.head_netherite_hammer": "Netherite Hammer Head",
+
+  "item.abi.head_nickel_sword": "Nickel Sword Head",
+  "item.abi.head_nickel_axe": "Nickel Axe Head",
+  "item.abi.head_nickel_pickaxe": "Nickel Pickaxe Head",
+  "item.abi.head_nickel_shovel": "Nickel Shovel Head",
+  "item.abi.head_nickel_hoe": "Nickel Hoe Head",
+  "item.abi.head_nickel_hammer": "Nickel Hammer Head",
+
+  "item.abi.head_ruby_sword": "Ruby Sword Head",
+  "item.abi.head_ruby_axe": "Ruby Axe Head",
+  "item.abi.head_ruby_pickaxe": "Ruby Pickaxe Head",
+  "item.abi.head_ruby_shovel": "Ruby Shovel Head",
+  "item.abi.head_ruby_hoe": "Ruby Hoe Head",
+  "item.abi.head_ruby_hammer": "Ruby Hammer Head",
+
+  "item.abi.head_sapphire_sword": "Sapphire Sword Head",
+  "item.abi.head_sapphire_axe": "Sapphire Axe Head",
+  "item.abi.head_sapphire_pickaxe": "Sapphire Pickaxe Head",
+  "item.abi.head_sapphire_shovel": "Sapphire Shovel Head",
+  "item.abi.head_sapphire_hoe": "Sapphire Hoe Head",
+  "item.abi.head_sapphire_hammer": "Sapphire Hammer Head",
+
+  "item.abi.head_silver_sword": "Silver Sword Head",
+  "item.abi.head_silver_axe": "Silver Axe Head",
+  "item.abi.head_silver_pickaxe": "Silver Pickaxe Head",
+  "item.abi.head_silver_shovel": "Silver Shovel Head",
+  "item.abi.head_silver_hoe": "Silver Hoe Head",
+  "item.abi.head_silver_hammer": "Silver Hammer Head",
+
+  "item.abi.head_stone_hammer": "Stone Hammer Head",
+
+  "item.abi.head_tin_sword": "Tin Sword Head",
+  "item.abi.head_tin_axe": "Tin Axe Head",
+  "item.abi.head_tin_pickaxe": "Tin Pickaxe Head",
+  "item.abi.head_tin_shovel": "Tin Shovel Head",
+  "item.abi.head_tin_hoe": "Tin Hoe Head",
+  "item.abi.head_tin_hammer": "Tin Hammer Head",
+
+  "item.abi.head_wood_hammer": "Wood Hammer Head",
 
   "tooltip.abi.augment.tooltip.normal": "",
   "tooltip.abi.augment.tooltip.shift": "",

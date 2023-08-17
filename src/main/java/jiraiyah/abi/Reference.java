@@ -92,6 +92,8 @@ public class Reference
         public static final String GEM = "gem_";
         public static final String SHARD = "shard_";
         public static final String ARMOR = "armor_";
+        public static final String HEAD = "head_";
+        public static final String HAS = "has_";
 
         public static final String OVERWORLD = "overworld_";
         public static final String DEEPSLATE = "deepslate_";

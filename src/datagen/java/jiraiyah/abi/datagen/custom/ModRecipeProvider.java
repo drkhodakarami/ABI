@@ -1,12 +1,17 @@
 package jiraiyah.abi.datagen.custom;
 
 import jiraiyah.abi.Reference;
+import jiraiyah.abi.item.ModItems;
+import jiraiyah.abi.zlib.util.ModTags;
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import org.jetbrains.annotations.Nullable;
 
@@ -23,7 +28,512 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter)
     {
+        //<editor-fold desc="ROTTEN FLESH TO LEATHER">
+        simpleCookingRecipe(pWriter, "smoking", RecipeSerializer.SMOKING_RECIPE,
+                300, Items.ROTTEN_FLESH, Items.LEATHER, 0.15F);
+        simpleCookingRecipe(pWriter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING_RECIPE,
+                600, Items.ROTTEN_FLESH, Items.LEATHER, 0.15F);
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.ROTTEN_FLESH), RecipeCategory.MISC, Items.LEATHER,
+                        0.15F, 100)
+                .unlockedBy("has_rotten_flesh", has(Items.ROTTEN_FLESH))
+                .save(pWriter);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.ROTTEN_FLESH), RecipeCategory.MISC, Items.LEATHER,
+                        0.15F, 50)
+                .unlockedBy("has_rotten_flesh", has(Items.ROTTEN_FLESH))
+                .save(pWriter, getBlastingRecipeName(Items.LEATHER));
+        //</editor-fold>
 
+        //<editor-fold desc="BRONZE ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.BRONZE_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.BRONZE)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.BRONZE,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.BRONZE).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.BRONZE_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.BRONZE)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.BRONZE,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.BRONZE).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.BRONZE_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.BRONZE)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.BRONZE,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.BRONZE).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.BRONZE_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.BRONZE)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.BRONZE,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.BRONZE).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="CONSTANTAN ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.CONSTANTAN_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.CONSTANTAN)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.CONSTANTAN,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.CONSTANTAN).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.CONSTANTAN_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.CONSTANTAN)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.CONSTANTAN,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.CONSTANTAN).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.CONSTANTAN_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.CONSTANTAN)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.CONSTANTAN,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.CONSTANTAN).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.CONSTANTAN_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.CONSTANTAN)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.CONSTANTAN,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.CONSTANTAN).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="COPPER ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.COPPER_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.COPPER)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.COPPER,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.COPPER).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.COPPER_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.COPPER)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.COPPER,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.COPPER).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.COPPER_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.COPPER)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.COPPER,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.COPPER).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.COPPER_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.COPPER)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.COPPER,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.COPPER).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="ELECTRUM ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.ELECTRUM_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.ELECTRUM)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.ELECTRUM,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.ELECTRUM).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.ELECTRUM_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.ELECTRUM)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.ELECTRUM,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.ELECTRUM).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.ELECTRUM_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.ELECTRUM)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.ELECTRUM,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.ELECTRUM).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.ELECTRUM_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.ELECTRUM)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.ELECTRUM,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.ELECTRUM).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="EMERALD ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.EMERALD_BOOTS.get())
+                .define('A', Tags.Items.GEMS_EMERALD)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.EMERALD,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Tags.Items.GEMS_EMERALD).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.EMERALD_CHESTPLATE.get())
+                .define('A', Tags.Items.GEMS_EMERALD)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.EMERALD,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Tags.Items.GEMS_EMERALD).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.EMERALD_LEGGINGS.get())
+                .define('A', Tags.Items.GEMS_EMERALD)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.EMERALD,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Tags.Items.GEMS_EMERALD).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.EMERALD_HELMET.get())
+                .define('A', Tags.Items.GEMS_EMERALD)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.EMERALD,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Tags.Items.GEMS_EMERALD).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="INVAR ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.INVAR_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.INVAR)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.INVAR,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.INVAR).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.INVAR_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.INVAR)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.INVAR,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.INVAR).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.INVAR_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.INVAR)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.INVAR,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.INVAR).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.INVAR_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.INVAR)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.INVAR,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.INVAR).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="LEAD ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.LEAD_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.LEAD)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.LEAD,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.LEAD).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.LEAD_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.LEAD)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.LEAD,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.LEAD).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.LEAD_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.LEAD)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.LEAD,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.LEAD).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.LEAD_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.LEAD)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.LEAD,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.LEAD).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="NICKEL ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.NICKEL_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.NICKEL)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.NICKEL,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.NICKEL).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.NICKEL_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.NICKEL)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.NICKEL,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.NICKEL).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.NICKEL_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.NICKEL)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.NICKEL,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.NICKEL).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.NICKEL_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.NICKEL)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.NICKEL,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.NICKEL).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="RUBY ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.RUBY_BOOTS.get())
+                .define('A', ModTags.Items.Gems.RUBY)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.RUBY,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Gems.RUBY).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.RUBY_CHESTPLATE.get())
+                .define('A', ModTags.Items.Gems.RUBY)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.RUBY,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Gems.RUBY).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.RUBY_LEGGINGS.get())
+                .define('A', ModTags.Items.Gems.RUBY)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.RUBY,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Gems.RUBY).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.RUBY_HELMET.get())
+                .define('A', ModTags.Items.Gems.RUBY)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.RUBY,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Gems.RUBY).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="SAPPHIRE ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SAPPHIRE_BOOTS.get())
+                .define('A', ModTags.Items.Gems.SAPPHIRE)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.SAPPHIRE,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Gems.SAPPHIRE).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SAPPHIRE_CHESTPLATE.get())
+                .define('A', ModTags.Items.Gems.SAPPHIRE)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.SAPPHIRE,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Gems.SAPPHIRE).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SAPPHIRE_LEGGINGS.get())
+                .define('A', ModTags.Items.Gems.SAPPHIRE)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.SAPPHIRE,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Gems.SAPPHIRE).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SAPPHIRE_HELMET.get())
+                .define('A', ModTags.Items.Gems.SAPPHIRE)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.SAPPHIRE,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Gems.SAPPHIRE).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="SILVER ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SILVER_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.SILVER)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.SILVER,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.SILVER).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SILVER_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.SILVER)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.SILVER,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.SILVER).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SILVER_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.SILVER)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.SILVER,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.SILVER).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SILVER_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.SILVER)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.SILVER,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.SILVER).build()))
+                .save(pWriter);
+        //</editor-fold>
+
+        //<editor-fold desc="TIN ARMOR">
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.TIN_BOOTS.get())
+                .define('A', ModTags.Items.Reinforced.TIN)
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.TIN,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.TIN).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.TIN_CHESTPLATE.get())
+                .define('A', ModTags.Items.Reinforced.TIN)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.TIN,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.TIN).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.TIN_LEGGINGS.get())
+                .define('A', ModTags.Items.Reinforced.TIN)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.TIN,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.TIN).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.TIN_HELMET.get())
+                .define('A', ModTags.Items.Reinforced.TIN)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.TIN,
+                        inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.Reinforced.TIN).build()))
+                .save(pWriter);
+        //</editor-fold>
     }
 
     //<editor-fold desc="VANILLA REPLACEMENT HELPER METHODS">
