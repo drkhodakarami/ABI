@@ -20,6 +20,64 @@ public class ModBlockTagsProvider extends BlockTagsProvider
     @Override
     protected void addTags(HolderLookup.Provider pProvider)
     {
+        /*this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
 
+        /*this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
+
+        /*this.tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
+
+        /*this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
+
+        /*this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                    );*/
+
+        /*this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
+
+        /*this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
+
+        /*this.tag(Tags.Blocks.NEEDS_GOLD_TOOL)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
+
+        /*this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
+
+        /*this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
+                .add(
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get()
+                );*/
     }
 }

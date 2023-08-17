@@ -23,14 +23,21 @@ public class DataGenerators
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(true, new ModRecipeProvider(packOutput));
-        generator.addProvider(true, ModLootTableProvider.Create(packOutput));
-        generator.addProvider(true, new ModBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(true, new ModItemModelProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(),
+                new ModRecipeProvider(packOutput));
+        generator.addProvider(event.includeServer(),
+                ModLootTableProvider.Create(packOutput));
+        generator.addProvider(event.includeServer(),
+                new ModWorldGenProvider(packOutput, lookupProvider));
 
-        ModBlockTagsProvider blockTags = new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper);
-        generator.addProvider(true, blockTags);
-        generator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider, blockTags.contentsGetter()));
+        ModBlockTagsProvider blockTagsProvider = generator.addProvider(event.includeServer(),
+                new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeServer(),
+                new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeClient(),
+                new ModBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(),
+                new ModItemModelProvider(packOutput, existingFileHelper));
     }
 }

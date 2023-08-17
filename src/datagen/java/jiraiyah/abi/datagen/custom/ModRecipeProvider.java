@@ -20,6 +20,13 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder
 {
+    /*private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(
+            ModBlocks.SAPPHIRE_ORE.get(),
+            ModBlocks.DEEP_SAPPHIRE_ORE.get(),
+            ModBlocks.END_SAPPHIRE_ORE.get(),
+            ModBlocks.NETHER_SAPPHIRE_ORE.get()
+            );*/
+
     public ModRecipeProvider(PackOutput pOutput)
     {
         super(pOutput);
@@ -43,6 +50,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter, getBlastingRecipeName(Items.LEATHER));
         //</editor-fold>
 
+        //<editor-fold desc="ARMOR">
+
         //<editor-fold desc="BRONZE ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.BRONZE_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.BRONZE)
@@ -51,6 +60,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(Reference.Names.HAS + Reference.Names.REINFORCED + Reference.Names.BRONZE,
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.BRONZE).build()))
+                //.unlockedBy(getHasName(ModItems.Reinforced.BRONZE.get()), has(ModItems.Reinforced.BRONZE.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.BRONZE_CHESTPLATE.get())
@@ -534,6 +544,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModTags.Items.Reinforced.TIN).build()))
                 .save(pWriter);
         //</editor-fold>
+
+        //</editor-fold>
+
+        /*oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.Gem.SAPPHIRE.get(),
+                0.25F, 100, "sapphire");
+        oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.Gem.SAPPHIRE.get(),
+                0.25F, 200, "sapphire");*/
     }
 
     //<editor-fold desc="VANILLA REPLACEMENT HELPER METHODS">
@@ -573,7 +590,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer)
                     .group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(pFinishedRecipeConsumer,
-                            Reference.Location(getItemName(pResult)) +
+                            Reference.MODID + ":" + getItemName(pResult) +
                                     pRecipeName + "_" + getItemName(itemlike));
         }
     }
@@ -583,7 +600,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                                                   RecipeCategory pPackedCategory, ItemLike pPacked)
     {
         nineBlockStorageRecipes(pFinishedRecipeConsumer, pUnpackedCategory, pUnpacked, pPackedCategory,
-                pPacked, getSimpleRecipeName(pPacked), (String)null, getSimpleRecipeName(pUnpacked), (String)null);
+                pPacked, getSimpleRecipeName(pPacked), null, getSimpleRecipeName(pUnpacked), null);
     }
 
     protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer,

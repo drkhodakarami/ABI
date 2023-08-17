@@ -1,5 +1,6 @@
 package jiraiyah.abi.datagen.custom;
 
+import jiraiyah.abi.Reference;
 import jiraiyah.abi.item.ModItems;
 import jiraiyah.abi.zlib.util.ModTags;
 import net.minecraft.core.HolderLookup;
@@ -11,14 +12,17 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends ItemTagsProvider
 {
-    public ModItemTagProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider, CompletableFuture<TagLookup<Block>> pBlockTags)
+    public ModItemTagProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider,
+                              CompletableFuture<TagLookup<Block>> pBlockTags, @Nullable ExistingFileHelper existingFileHelper)
     {
-        super(pOutput, pLookupProvider, pBlockTags);
+        super(pOutput, pLookupProvider, pBlockTags, Reference.MODID, existingFileHelper);
     }
 
     @Override
