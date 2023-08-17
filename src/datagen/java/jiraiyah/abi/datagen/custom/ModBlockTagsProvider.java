@@ -1,8 +1,10 @@
 package jiraiyah.abi.datagen.custom;
 
 import jiraiyah.abi.Reference;
+import jiraiyah.abi.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -21,11 +23,21 @@ public class ModBlockTagsProvider extends BlockTagsProvider
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider)
     {
-        /*this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(
-                        ModBlocks.SAPPHIRE_BLOCK.get(),
-                        ModBlocks.RUBY_BLOCK.get()
-                );*/
+                        ModBlocks.Gem.RUBY_BLOCK.get(),
+                        ModBlocks.Gem.SAPPHIRE_BLOCK.get(),
+
+                        ModBlocks.Ores.OVERWORLD_RUBY_ORE.get(),
+                        ModBlocks.Ores.DEEP_RUBY_ORE.get(),
+                        ModBlocks.Ores.END_RUBY_ORE.get(),
+                        ModBlocks.Ores.NETHER_RUBY_ORE.get(),
+
+                        ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE.get(),
+                        ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get(),
+                        ModBlocks.Ores.END_SAPPHIRE_ORE.get(),
+                        ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get()
+                );
 
         /*this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(
@@ -45,11 +57,21 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                         ModBlocks.RUBY_BLOCK.get()
                 );*/
 
-        /*this.tag(BlockTags.NEEDS_IRON_TOOL)
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(
-                        ModBlocks.SAPPHIRE_BLOCK.get(),
-                        ModBlocks.RUBY_BLOCK.get()
-                    );*/
+                        ModBlocks.Gem.RUBY_BLOCK.get(),
+                        ModBlocks.Gem.SAPPHIRE_BLOCK.get(),
+
+                        ModBlocks.Ores.OVERWORLD_RUBY_ORE.get(),
+                        ModBlocks.Ores.DEEP_RUBY_ORE.get(),
+                        ModBlocks.Ores.END_RUBY_ORE.get(),
+                        ModBlocks.Ores.NETHER_RUBY_ORE.get(),
+
+                        ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE.get(),
+                        ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get(),
+                        ModBlocks.Ores.END_SAPPHIRE_ORE.get(),
+                        ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get()
+                    );
 
         /*this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(

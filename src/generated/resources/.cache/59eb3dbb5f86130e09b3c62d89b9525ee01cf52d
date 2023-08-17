@@ -1,1 +1,11 @@
-// 1.20.1	2023-08-15T18:26:20.0542817	Loot Tables
+// 1.20.1	2023-08-17T23:55:47.1163642	Loot Tables
+1c8290aa0be3625ac1cd03343d57602cc973e569 data/abi/loot_tables/blocks/deepslate_ruby_ore.json
+8e6a0f268692c0819c784f635023c8e24824641f data/abi/loot_tables/blocks/deepslate_sapphire_ore.json
+c44019c9c62a7cf727ea621eacccc3b46e057f30 data/abi/loot_tables/blocks/end_ruby_ore.json
+507919d1349e8f9c3cbeaf5ccacb3358eb9fe6c8 data/abi/loot_tables/blocks/end_sapphire_ore.json
+e9d51cbc46ce11bd28d670b0239929bdcfa14f37 data/abi/loot_tables/blocks/nether_ruby_ore.json
+f11e8030f16e65a13b63e22f14b2fb8ddb06acb2 data/abi/loot_tables/blocks/nether_sapphire_ore.json
+849bdf8dcd93e3abef1b98864b4b0c828e82b216 data/abi/loot_tables/blocks/overworld_ruby_ore.json
+79b81ff88f9e10bb2b79189daff150ea03495b38 data/abi/loot_tables/blocks/overworld_sapphire_ore.json
+b0217ff8a801ce5be4f02bd9efc438b0e6d7cda1 data/abi/loot_tables/blocks/ruby_block.json
+562872038530922b1ed088ce268efda18df40c12 data/abi/loot_tables/blocks/sapphire_block.json

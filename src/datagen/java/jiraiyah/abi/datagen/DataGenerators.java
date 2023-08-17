@@ -41,3 +41,19 @@ public class DataGenerators
                 new ModItemModelProvider(packOutput, existingFileHelper));
     }
 }
+
+/*
+// in GatherDataEvent
+RegistrySetBuilder registrySetBuilder = new RegistrySetBuilder()
+        .add(ForgeRegistries.Keys.BIOME_MODIFIERS, context -> {
+            // create and register all your biome modifier instances to datagen
+            context.register(biomeModifierKey, new AddSpawnsBiomeModifier());
+        })
+        .add(//more registry sets like biomes or placedfeatures or whatever as needed);
+
+                DatapackBuiltinEntriesProvider dbep = new DatapackBuiltinEntriesProvider(
+                        event.getGenerator().packOutput(),
+                        event.getLookupProvider(),
+                        registrySetBuilder,
+                        Set.of(WorkshopsOfDoom.MODID));
+generator.addProvider(true, dbep);*/

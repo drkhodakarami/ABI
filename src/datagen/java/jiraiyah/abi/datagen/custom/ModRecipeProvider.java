@@ -1,6 +1,7 @@
 package jiraiyah.abi.datagen.custom;
 
 import jiraiyah.abi.Reference;
+import jiraiyah.abi.block.ModBlocks;
 import jiraiyah.abi.item.ModItems;
 import jiraiyah.abi.zlib.util.ModTags;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -13,6 +14,7 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -20,12 +22,21 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder
 {
-    /*private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(
-            ModBlocks.SAPPHIRE_ORE.get(),
-            ModBlocks.DEEP_SAPPHIRE_ORE.get(),
-            ModBlocks.END_SAPPHIRE_ORE.get(),
-            ModBlocks.NETHER_SAPPHIRE_ORE.get()
-            );*/
+    //<editor-fold desc="SMELTABLES LIST">
+    private static final List<ItemLike> RUBY_SMELTABLES = List.of(
+            ModBlocks.Ores.OVERWORLD_RUBY_ORE.get(),
+            ModBlocks.Ores.DEEP_RUBY_ORE.get(),
+            ModBlocks.Ores.END_RUBY_ORE.get(),
+            ModBlocks.Ores.NETHER_RUBY_ORE.get()
+    );
+
+    private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(
+            ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE.get(),
+            ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get(),
+            ModBlocks.Ores.END_SAPPHIRE_ORE.get(),
+            ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get()
+            );
+    //</editor-fold>
 
     public ModRecipeProvider(PackOutput pOutput)
     {
@@ -33,7 +44,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     @Override
-    protected void buildRecipes(Consumer<FinishedRecipe> pWriter)
+    protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter)
     {
         //<editor-fold desc="ROTTEN FLESH TO LEATHER">
         simpleCookingRecipe(pWriter, "smoking", RecipeSerializer.SMOKING_RECIPE,
@@ -547,15 +558,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //</editor-fold>
 
-        /*oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.Gem.SAPPHIRE.get(),
+        //<editor-fold desc="GEM & BLOCKS">
+        nineBlockStorageRecipes(pWriter, RecipeCategory.BUILDING_BLOCKS,
+                ModItems.Gem.RUBY.get(), RecipeCategory.MISC, ModBlocks.Gem.RUBY_BLOCK.get());
+
+        nineBlockStorageRecipes(pWriter, RecipeCategory.BUILDING_BLOCKS,
+                ModItems.Gem.SAPPHIRE.get(), RecipeCategory.MISC, ModBlocks.Gem.SAPPHIRE_BLOCK.get());
+        //</editor-fold>
+
+        //<editor-fold desc="SMELTING / BLASTING">
+
+        //<editor-fold desc="RUBY">
+        oreBlasting(pWriter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.Gem.RUBY.get(),
+                0.25F, 100, "ruby");
+        oreSmelting(pWriter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.Gem.RUBY.get(),
+                0.25F, 200, "ruby");
+        //</editor-fold>
+
+        //<editor-fold desc="SAPPHIRE">
+        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.Gem.SAPPHIRE.get(),
                 0.25F, 100, "sapphire");
         oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.Gem.SAPPHIRE.get(),
-                0.25F, 200, "sapphire");*/
+                0.25F, 200, "sapphire");
+        //</editor-fold>
+
+        //</editor-fold>
     }
 
     //<editor-fold desc="VANILLA REPLACEMENT HELPER METHODS">
-    protected static void simpleCookingRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, String pCookingMethod,
-                                              RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer,
+    protected static void simpleCookingRecipe(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer, String pCookingMethod,
+                                              @NotNull RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer,
                                               int pCookingTime, ItemLike pIngredient, ItemLike pResult,
                                               float pExperience)
     {
@@ -565,26 +597,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pFinishedRecipeConsumer,
                         Reference.Location(getItemName(pResult) + "_from_" + pCookingMethod));
     }
-    protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients,
-                                      RecipeCategory pCategory, ItemLike pResult, float pExperience,
-                                      int pCookingTIme, String pGroup)
+    protected static void oreSmelting(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients,
+                                      @NotNull RecipeCategory pCategory, @NotNull ItemLike pResult, float pExperience,
+                                      int pCookingTIme, @NotNull String pGroup)
     {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult,
                 pExperience, pCookingTIme, pGroup, "_from_smelting");
     }
 
-    protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients,
-                                      RecipeCategory pCategory, ItemLike pResult, float pExperience,
-                                      int pCookingTime, String pGroup)
+    protected static void oreBlasting(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients,
+                                      @NotNull RecipeCategory pCategory, @NotNull ItemLike pResult, float pExperience,
+                                      int pCookingTime, @NotNull String pGroup)
     {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult,
                 pExperience, pCookingTime, pGroup, "_from_blasting");
     }
 
-    protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer,
-                                     RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer,
-                                     List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
-                                     float pExperience, int pCookingTime, String pGroup, String pRecipeName)
+    protected static void oreCooking(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer,
+                                     @NotNull RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer,
+                                     List<ItemLike> pIngredients, @NotNull RecipeCategory pCategory, @NotNull ItemLike pResult,
+                                     float pExperience, int pCookingTime, @NotNull String pGroup, String pRecipeName)
     {
         for(ItemLike itemlike : pIngredients) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer)
@@ -595,17 +627,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         }
     }
 
-    protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer,
-                                                  RecipeCategory pUnpackedCategory, ItemLike pUnpacked,
-                                                  RecipeCategory pPackedCategory, ItemLike pPacked)
+    protected static void nineBlockStorageRecipes(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer,
+                                                  @NotNull RecipeCategory pUnpackedCategory, ItemLike pUnpacked,
+                                                  @NotNull RecipeCategory pPackedCategory, ItemLike pPacked)
     {
         nineBlockStorageRecipes(pFinishedRecipeConsumer, pUnpackedCategory, pUnpacked, pPackedCategory,
                 pPacked, getSimpleRecipeName(pPacked), null, getSimpleRecipeName(pUnpacked), null);
     }
 
-    protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer,
-                                                  RecipeCategory pUnpackedCategory, ItemLike pUnpacked,
-                                                  RecipeCategory pPackedCategory, ItemLike pPacked, String pPackedName,
+    protected static void nineBlockStorageRecipes(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer,
+                                                  @NotNull RecipeCategory pUnpackedCategory, ItemLike pUnpacked,
+                                                  @NotNull RecipeCategory pPackedCategory, ItemLike pPacked, String pPackedName,
                                                   @Nullable String pPackedGroup, String pUnpackedName,
                                                   @Nullable String pUnpackedGroup)
     {

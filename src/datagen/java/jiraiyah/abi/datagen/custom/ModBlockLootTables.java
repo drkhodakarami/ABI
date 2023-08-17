@@ -1,10 +1,12 @@
 package jiraiyah.abi.datagen.custom;
 
 import jiraiyah.abi.block.ModBlocks;
+import jiraiyah.abi.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -12,6 +14,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
 
@@ -25,15 +28,35 @@ public class ModBlockLootTables extends BlockLootSubProvider
     @Override
     protected void generate()
     {
-        //this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
+        //<editor-fold desc="ORES">
 
-        /*this.add(ModBlocks.SAPPHIRE_ORE.get(),
-                block -> createOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.Gem.SAPPHIRE, 2.0F, 4.0F));*/
+        //<editor-fold desc="RUBY">
+        this.add(ModBlocks.Ores.OVERWORLD_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
+        this.add(ModBlocks.Ores.DEEP_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
+        this.add(ModBlocks.Ores.END_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
+        this.add(ModBlocks.Ores.NETHER_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
+        //</editor-fold>
+
+        //<editor-fold desc="SAPPHIRE">
+        this.add(ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
+        this.add(ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
+        this.add(ModBlocks.Ores.END_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
+        this.add(ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
+        //</editor-fold>
+
+        //</editor-fold>
+
+        //<editor-fold desc="GEMS">
+        dropSelf(ModBlocks.Gem.RUBY_BLOCK.get());
+        dropSelf(ModBlocks.Gem.SAPPHIRE_BLOCK.get());
+        //</editor-fold>
+
+        /**/
     }
 
     //<editor-fold desc="HELPER METHODS">
     @Override
-    protected Iterable<Block> getKnownBlocks()
+    protected @NotNull Iterable<Block> getKnownBlocks()
     {
         return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
@@ -53,6 +76,22 @@ public class ModBlockLootTables extends BlockLootSubProvider
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(minCount, maxCount)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createSilkTouchDispatchTable(Block block, ItemLike item)
+    {
+        return createSilkTouchDispatchTable(block, this.applyExplosionDecay(block,
+                LootItem.lootTableItem(item)
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
+                        .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createSilkTouchDispatchTable(Block block, ItemLike item, float min, float max )
+    {
+        return createSilkTouchDispatchTable(block, this.applyExplosionDecay(block,
+                LootItem.lootTableItem(item)
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(min, max)))
+                        .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
     //</editor-fold>
 }

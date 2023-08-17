@@ -95,6 +95,9 @@ public class Reference
         public static final String HEAD = "head_";
         public static final String HAS = "has_";
 
+        public static final String BLOCK = "_block";
+        public static final String ORE = "_ore";
+        public static final String PLACED = "_placed";
         public static final String OVERWORLD = "overworld_";
         public static final String DEEPSLATE = "deepslate_";
         public static final String END = "end_";

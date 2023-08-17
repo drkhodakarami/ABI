@@ -1,0 +1,14 @@
+{
+  "values": [
+    "abi:ruby_block",
+    "abi:sapphire_block",
+    "abi:overworld_ruby_ore",
+    "abi:deepslate_ruby_ore",
+    "abi:end_ruby_ore",
+    "abi:nether_ruby_ore",
+    "abi:overworld_sapphire_ore",
+    "abi:deepslate_sapphire_ore",
+    "abi:end_sapphire_ore",
+    "abi:nether_sapphire_ore"
+  ]
+}

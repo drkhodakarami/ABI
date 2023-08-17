@@ -1,6 +1,5 @@
 package jiraiyah.abi.zlib.util;
 
-import com.google.common.collect.ImmutableMap;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
@@ -9,19 +8,22 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class ModArmorEffects extends ArmorItem
 {
-    private static  final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
-            (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.EMERALD,
-                            new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 3))
-                    .put(ModArmorMaterials.SAPPHIRE,
-                            new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 3))
-                    .put(ModArmorMaterials.RUBY,
-                            new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 3))
-                    .build();
+    private static final Map<ArmorMaterial, ArrayList<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP;
+
+    static
+    {
+        MATERIAL_TO_EFFECT_MAP = new HashMap<>();
+        addValues(ModArmorMaterials.EMERALD, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 3));
+        addValues(ModArmorMaterials.RUBY, new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 3));
+        addValues(ModArmorMaterials.SAPPHIRE, new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 3));
+        addValues(ModArmorMaterials.SAPPHIRE, new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 200, 3));
+    }
 
     public ModArmorEffects(ArmorMaterial pMaterial, Type pType, Properties pProperties)
     {
@@ -33,22 +35,24 @@ public class ModArmorEffects extends ArmorItem
     public void onArmorTick(ItemStack stack, Level level, Player player)
     {
         if(!level.isClientSide)
-            if (HasFullSuitOfArmorOn(player))
-                EvaluateArmorEffects(player);
+            if (hasFullSuitOfArmorOn(player))
+                evaluateArmorEffects(player);
     }
 
-    private void EvaluateArmorEffects(Player player)
+    private void evaluateArmorEffects(Player player)
     {
-        for(Map.Entry<ArmorMaterial, MobEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet())
+        for(HashMap.Entry<ArmorMaterial, ArrayList<MobEffectInstance>> entry : MATERIAL_TO_EFFECT_MAP.entrySet())
         {
             ArmorMaterial mapArmorMaterial = entry.getKey();
-            MobEffectInstance mapStatusEffect = entry.getValue();
-            if(HasCorrectArmorOn(mapArmorMaterial, player))
-                AddStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            entry.getValue().forEach((effect) ->
+            {
+                if(hasCorrectArmorOn(mapArmorMaterial, player))
+                    addStatusEffectForMaterial(player, mapArmorMaterial, effect);
+            });
         }
     }
 
-    private void AddStatusEffectForMaterial(Player player, ArmorMaterial mapArmorMaterial, MobEffectInstance mapStatusEffect)
+    private void addStatusEffectForMaterial(Player player, ArmorMaterial mapArmorMaterial, MobEffectInstance mapStatusEffect)
     {
         boolean hasPlayerEffect = player.hasEffect(mapStatusEffect.getEffect());
 
@@ -59,7 +63,7 @@ public class ModArmorEffects extends ArmorItem
         }
     }
 
-    private boolean HasFullSuitOfArmorOn(Player player)
+    private boolean hasFullSuitOfArmorOn(Player player)
     {
         ItemStack boots = player.getInventory().getArmor(0);
         ItemStack leggings = player.getInventory().getArmor(1);
@@ -70,7 +74,7 @@ public class ModArmorEffects extends ArmorItem
                 && !leggings.isEmpty() && !boots.isEmpty();
     }
 
-    private boolean HasCorrectArmorOn(ArmorMaterial material, Player player)
+    private boolean hasCorrectArmorOn(ArmorMaterial material, Player player)
     {
         for (ItemStack armorStack: player.getInventory().armor)
             if (!(armorStack.getItem() instanceof ArmorItem))
@@ -83,6 +87,20 @@ public class ModArmorEffects extends ArmorItem
 
         return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
+    }
+
+    private static void addValues(ArmorMaterial key, MobEffectInstance value) {
+        ArrayList tempList;
+        if (MATERIAL_TO_EFFECT_MAP.containsKey(key)) {
+            tempList = MATERIAL_TO_EFFECT_MAP.get(key);
+            if(tempList == null)
+                tempList = new ArrayList();
+            tempList.add(value);
+        } else {
+            tempList = new ArrayList();
+            tempList.add(value);
+        }
+        MATERIAL_TO_EFFECT_MAP.put(key,tempList);
     }
     //</editor-fold>
 }

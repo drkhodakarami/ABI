@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_nether",
+  "features": "abi:nether_sapphire_placed",
+  "step": "underground_ores"
+}

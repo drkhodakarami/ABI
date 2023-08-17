@@ -1,5 +1,6 @@
 package jiraiyah.abi;
 
+import jiraiyah.abi.block.ModBlocks;
 import jiraiyah.abi.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -695,5 +696,20 @@ public class CreativeTabs
                         output.accept(ModItems.Armor.TIN_CHESTPLATE.get());
                         output.accept(ModItems.Armor.TIN_LEGGINGS.get());
                         output.accept(ModItems.Armor.TIN_BOOTS.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> BLOCK = CREATIVE_MODE_TABS.register(
+            Reference.MODID + Reference.Names.BLOCK + "tab", () -> CreativeModeTab.builder()
+                    .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
+                    .withTabsBefore(CreativeTabs.ARMOR.getId())
+                    .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
+                    .icon(() -> ModBlocks.Ores.OVERWORLD_RUBY_ORE.get().asItem().getDefaultInstance())
+                    .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + Reference.Names.BLOCK + "tab"))
+                    .displayItems((parameters, output) ->
+                    {
+                        output.accept(ModBlocks.Ores.OVERWORLD_RUBY_ORE.get());
+                        output.accept(ModBlocks.Ores.DEEP_RUBY_ORE.get());
+                        output.accept(ModBlocks.Ores.END_RUBY_ORE.get());
+                        output.accept(ModBlocks.Ores.NETHER_RUBY_ORE.get());
                     }).build());
 }
