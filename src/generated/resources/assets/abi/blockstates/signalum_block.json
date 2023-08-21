@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "abi:block/signalum_block"
+    }
+  }
+}

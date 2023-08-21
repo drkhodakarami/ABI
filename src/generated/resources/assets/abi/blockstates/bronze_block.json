@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "abi:block/bronze_block"
+    }
+  }
+}

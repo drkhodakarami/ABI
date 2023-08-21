@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "abi:block/constantan_block"
+    }
+  }
+}

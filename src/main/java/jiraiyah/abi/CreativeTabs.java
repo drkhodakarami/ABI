@@ -441,6 +441,28 @@ public class CreativeTabs
                         output.accept(ModItems.Gem.QUARTZ_SHARD.get());
                         output.accept(ModItems.Gem.RUBY_SHARD.get());
                         output.accept(ModItems.Gem.SAPPHIRE_SHARD.get());
+
+                        output.accept(ModBlocks.Gem.RUBY_BLOCK.get());
+                        output.accept(ModBlocks.Gem.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.Gem.SLIME_BLOCK.get());
+
+                        output.accept(ModBlocks.Ingots.BRONZE_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.CONSTANTAN_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.ELECTRUM_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.ENDERITE_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.INVAR_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.LEAD_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.LUMIUM_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.RAW_LEAD_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.RAW_NICKEL_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.RAW_SILVER_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.RAW_TIN_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.SIGNALUM_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.SILVER_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.STEEL_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.SULFUR_BLOCK.get());
+                        output.accept(ModBlocks.Ingots.TIN_BLOCK.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TOOL = CREATIVE_MODE_TABS.register(
@@ -707,9 +729,16 @@ public class CreativeTabs
                     .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + Reference.Names.BLOCK + "tab"))
                     .displayItems((parameters, output) ->
                     {
+                        output.accept(ModBlocks.POTATO_BLOCK.get());
+
                         output.accept(ModBlocks.Ores.OVERWORLD_RUBY_ORE.get());
                         output.accept(ModBlocks.Ores.DEEP_RUBY_ORE.get());
                         output.accept(ModBlocks.Ores.END_RUBY_ORE.get());
                         output.accept(ModBlocks.Ores.NETHER_RUBY_ORE.get());
+
+                        output.accept(ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.Ores.END_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get());
                     }).build());
 }

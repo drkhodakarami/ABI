@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "abi:block/potato_block_bottom",
+    "side": "abi:block/potato_block_side",
+    "top": "abi:block/potato_block_top"
+  }
+}

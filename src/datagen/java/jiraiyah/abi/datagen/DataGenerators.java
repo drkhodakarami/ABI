@@ -3,13 +3,21 @@ package jiraiyah.abi.datagen;
 import jiraiyah.abi.Reference;
 import jiraiyah.abi.datagen.custom.*;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraftforge.common.Tags;
+import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.world.BiomeModifier;
+import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = Reference.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -47,13 +55,12 @@ public class DataGenerators
 RegistrySetBuilder registrySetBuilder = new RegistrySetBuilder()
         .add(ForgeRegistries.Keys.BIOME_MODIFIERS, context -> {
             // create and register all your biome modifier instances to datagen
-            context.register(biomeModifierKey, new AddSpawnsBiomeModifier());
-        })
-        .add(//more registry sets like biomes or placedfeatures or whatever as needed);
+            context.register(Tags.Biomes.IS_DESERT, new ForgeBiomeModifiers.AddSpawnsBiomeModifier( , ));
+        });
 
-                DatapackBuiltinEntriesProvider dbep = new DatapackBuiltinEntriesProvider(
-                        event.getGenerator().packOutput(),
-                        event.getLookupProvider(),
-                        registrySetBuilder,
-                        Set.of(WorkshopsOfDoom.MODID));
+DatapackBuiltinEntriesProvider dbep = new DatapackBuiltinEntriesProvider(
+        packOutput,
+        event.getLookupProvider(),
+        registrySetBuilder,
+        Set.of(Reference.MODID));
 generator.addProvider(true, dbep);*/

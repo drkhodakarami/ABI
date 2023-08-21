@@ -605,6 +605,40 @@
 
   "item.abi.head_wood_hammer": "Wood Hammer Head",
 
+  "block.abi.ruby_block": "Ruby Block",
+  "block.abi.sapphire_block": "Sapphire Block",
+  "block.abi.slime_block": "Slime Block",
+
+  "block.abi.bronze_block": "Bronze Block",
+  "block.abi.constantan_block": "Constantan Block",
+  "block.abi.electrum_block": "Electrum Block",
+  "block.abi.enderite_block": "Enderite Block",
+  "block.abi.invar_block": "Invar Block",
+  "block.abi.lead_block": "Lead Block",
+  "block.abi.lumium_block": "Lumium Block",
+  "block.abi.nickel_block": "Nickel Block",
+  "block.abi.raw_lead_block": "Raw Lead Block",
+  "block.abi.raw_nickel_block": "Raw Nickel Block",
+  "block.abi.raw_silver_block": "Raw Silver Block",
+  "block.abi.raw_tin_block": "Raw Tin Block",
+  "block.abi.signalum_block": "Signalum Block",
+  "block.abi.silver_block": "Silver Block",
+  "block.abi.steel_block": "Steel Block",
+  "block.abi.sulfur_block": "Sulfur Block",
+  "block.abi.tin_block": "Tin Block",
+
+  "block.abi.overworld_ruby_ore": "Ruby Ore",
+  "block.abi.deep_ruby_ore": "Ruby Ore",
+  "block.abi.end_ruby_ore": "Ruby Ore",
+  "block.abi.nether_ruby_ore": "Ruby Ore",
+
+  "block.abi.overworld_sapphire_ore": "Ruby Ore",
+  "block.abi.deep_sapphire_ore": "Ruby Ore",
+  "block.abi.end_sapphire_ore": "Ruby Ore",
+  "block.abi.nether_sapphire_ore": "Ruby Ore",
+
+  "block.abi.potato_block": "Potato Box",
+
   "tooltip.abi.augment.tooltip.normal": "",
   "tooltip.abi.augment.tooltip.shift": "",
   "tooltip.abi.cutter.tooltip.normal": "",

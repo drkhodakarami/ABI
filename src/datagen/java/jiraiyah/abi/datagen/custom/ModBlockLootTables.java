@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
@@ -30,6 +31,24 @@ public class ModBlockLootTables extends BlockLootSubProvider
     {
         //<editor-fold desc="ORES">
 
+        this.add(ModBlocks.Ores.OVERWORLD_LEAD_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.LEAD.get()));
+        this.add(ModBlocks.Ores.Deep_LEAD_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.LEAD.get()));
+
+        this.add(ModBlocks.Ores.OVERWORLD_NICKEL_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NICKEL.get()));
+        this.add(ModBlocks.Ores.Deep_NICKEL_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NICKEL.get()));
+
+        /*this.add(ModBlocks.Ores.OVERWORLD_NITER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NITER.get()));
+        this.add(ModBlocks.Ores.Deep_NITER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NITER.get()));*/
+
+        this.add(ModBlocks.Ores.OVERWORLD_SILVER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SILVER.get()));
+        this.add(ModBlocks.Ores.Deep_SILVER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SILVER.get()));
+
+        /*this.add(ModBlocks.Ores.OVERWORLD_SULFUR_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SULFUR.get()));
+        this.add(ModBlocks.Ores.Deep_SULFUR_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SULFUR.get()));*/
+
+        this.add(ModBlocks.Ores.OVERWORLD_TIN_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.TIN.get()));
+        this.add(ModBlocks.Ores.Deep_TIN_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.TIN.get()));
+
         //<editor-fold desc="RUBY">
         this.add(ModBlocks.Ores.OVERWORLD_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
         this.add(ModBlocks.Ores.DEEP_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
@@ -49,8 +68,30 @@ public class ModBlockLootTables extends BlockLootSubProvider
         //<editor-fold desc="GEMS">
         dropSelf(ModBlocks.Gem.RUBY_BLOCK.get());
         dropSelf(ModBlocks.Gem.SAPPHIRE_BLOCK.get());
+        dropSelf(ModBlocks.Gem.SLIME_BLOCK.get());
         //</editor-fold>
 
+        //<editor-fold desc="INGOTS">
+        dropSelf(ModBlocks.Ingots.BRONZE_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.CONSTANTAN_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.ELECTRUM_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.ENDERITE_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.INVAR_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.LEAD_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.LUMIUM_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.NICKEL_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.RAW_LEAD_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.RAW_NICKEL_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.RAW_SILVER_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.RAW_TIN_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.SIGNALUM_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.SILVER_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.STEEL_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.SULFUR_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.TIN_BLOCK.get());
+        //</editor-fold>
+
+        dropSelf(ModBlocks.POTATO_BLOCK.get());
         /**/
     }
 

@@ -132,6 +132,12 @@ public class Reference
         public static final String CAST_PLATE = "plate";
         public static final String CAST_ROD = "rod";
         public static final String CAST_SWORD = "sword";
+
+        public static final String LUMIUM = "lumium";
+        public static final String POTATO = "potato";
+        public static final String SIGNALUM = "signalum";
+        public static final String SLIME = "slime";
+        public static final String NITER = "niter";
     }
 
     public static class Tags
