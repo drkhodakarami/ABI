@@ -14,23 +14,46 @@ public class CreativeTabs
 {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Reference.MODID);
 
+    public static final RegistryObject<CreativeModeTab> CRYSTAL = CREATIVE_MODE_TABS.register(
+            Reference.MODID + "_" + Reference.Names.CRYSTAL + "tab", () -> CreativeModeTab.builder()
+                    .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
+                    .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
+                    .icon(() -> ModItems.Crystal.COBALT.get().getDefaultInstance())
+                    .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.DUST + "tab"))
+                    .displayItems((parameters, output) ->
+                    {
+                        output.accept(ModItems.Crystal.COBALT.get());
+                        output.accept(ModItems.Crystal.CYANIDE.get());
+                        output.accept(ModItems.Crystal.GLOWSTONE.get());
+                        output.accept(ModItems.Crystal.NITER.get());
+                        output.accept(ModItems.Crystal.URANIUM.get());
+                        output.accept(ModItems.Crystal.YELLORIUM.get());
+                    }).build());
+
     public static final RegistryObject<CreativeModeTab> DUST = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.DUST + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
+                    .withTabsBefore(CreativeTabs.CRYSTAL.getId())
                     .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
-                    .icon(() -> ModItems.Dust.ALUMITE.get().getDefaultInstance())
+                    .icon(() -> ModItems.Dust.BRONZE.get().getDefaultInstance())
                     .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.DUST + "tab"))
                     .displayItems((parameters, output) ->
                     {
                         output.accept(ModItems.Dust.ALUMINIUM.get());
                         output.accept(ModItems.Dust.ALUMINIUM_BRASS.get());
                         output.accept(ModItems.Dust.ALUMITE.get());
+                        output.accept(ModItems.Dust.AMETHYST_BRONZE.get());
+                        output.accept(ModItems.Dust.APATITE.get());
                         output.accept(ModItems.Dust.ARDITE.get());
                         output.accept(ModItems.Dust.BERYLLIUM.get());
                         output.accept(ModItems.Dust.BLUTONIUM.get());
                         output.accept(ModItems.Dust.BORON.get());
                         output.accept(ModItems.Dust.BRASS.get());
                         output.accept(ModItems.Dust.BRONZE.get());
+                        output.accept(ModItems.Dust.CHARCOAL.get());
+                        output.accept(ModItems.Dust.CINNABAR.get());
+                        output.accept(ModItems.Dust.CITRINE.get());
+                        output.accept(ModItems.Dust.COAL.get());
                         output.accept(ModItems.Dust.COBALT.get());
                         output.accept(ModItems.Dust.CONDUCTIVE_IRON.get());
                         output.accept(ModItems.Dust.CONSTANTAN.get());
@@ -40,31 +63,53 @@ public class CreativeTabs
                         output.accept(ModItems.Dust.DARK_STEEL.get());
                         output.accept(ModItems.Dust.DAWN_STONE.get());
                         output.accept(ModItems.Dust.DEMONIUM.get());
+                        output.accept(ModItems.Dust.DIAMOND.get());
                         output.accept(ModItems.Dust.DRACONIUM.get());
                         output.accept(ModItems.Dust.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Dust.ELECTRUM.get());
+                        output.accept(ModItems.Dust.EMERALD.get());
                         output.accept(ModItems.Dust.ENCHANTIUM.get());
                         output.accept(ModItems.Dust.END_STEEL.get());
                         output.accept(ModItems.Dust.ENDERITE.get());
                         output.accept(ModItems.Dust.ENERGETIC_SILVER.get());
                         output.accept(ModItems.Dust.GOLD.get());
                         output.accept(ModItems.Dust.GRAPHITE.get());
+                        output.accept(ModItems.Dust.HEPATIZON.get());
                         output.accept(ModItems.Dust.INVAR.get());
                         output.accept(ModItems.Dust.IRIDIUM.get());
                         output.accept(ModItems.Dust.IRON.get());
+                        output.accept(ModItems.Dust.LAPIS.get());
                         output.accept(ModItems.Dust.LEAD.get());
                         output.accept(ModItems.Dust.LITHIUM.get());
                         output.accept(ModItems.Dust.LUDICRITE.get());
+                        output.accept(ModItems.Dust.LUMIUM.get());
                         output.accept(ModItems.Dust.MAGNESIUM.get());
                         output.accept(ModItems.Dust.MANGANESE.get());
+                        output.accept(ModItems.Dust.MANYULLYN.get());
+                        output.accept(ModItems.Dust.NETHERITE.get());
                         output.accept(ModItems.Dust.NICKEL.get());
+                        output.accept(ModItems.Dust.NITER.get());
+                        output.accept(ModItems.Dust.OBSIDIAN.get());
+                        output.accept(ModItems.Dust.OSMIUM.get());
+                        output.accept(ModItems.Dust.PLATINUM.get());
+                        output.accept(ModItems.Dust.PRISMARINE.get());
+                        output.accept(ModItems.Dust.QUARTZ.get());
+                        output.accept(ModItems.Dust.ROSE_GOLD.get());
+                        output.accept(ModItems.Dust.RUBY.get());
+                        output.accept(ModItems.Dust.SAPPHIRE.get());
+                        output.accept(ModItems.Dust.SIGNALUM.get());
                         output.accept(ModItems.Dust.SILVER.get());
+                        output.accept(ModItems.Dust.SLIMESTEEL.get());
+                        output.accept(ModItems.Dust.SOULSTEEL.get());
                         output.accept(ModItems.Dust.STEEL.get());
+                        output.accept(ModItems.Dust.SULFUR.get());
                         output.accept(ModItems.Dust.TIN.get());
+                        output.accept(ModItems.Dust.URANIUM.get());
                         output.accept(ModItems.Dust.YELLORIUM.get());
+                        output.accept(ModItems.Dust.ZINC.get());
                     }).build());
 
-    public static final RegistryObject<CreativeModeTab> GEAR = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> GEAR = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.GEAR + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.DUST.getId())
@@ -113,9 +158,9 @@ public class CreativeTabs
                         output.accept(ModItems.Gear.STEEL.get());
                         output.accept(ModItems.Gear.TIN.get());
                         output.accept(ModItems.Gear.YELLORIUM.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> INGOT = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> INGOT = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.INGOT + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.GEAR.getId())
@@ -164,9 +209,9 @@ public class CreativeTabs
                         output.accept(ModItems.Ingot.STEEL.get());
                         output.accept(ModItems.Ingot.TIN.get());
                         output.accept(ModItems.Ingot.YELLORIUM.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> NUGGET = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> NUGGET = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.NUGGET + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.INGOT.getId())
@@ -215,9 +260,9 @@ public class CreativeTabs
                         output.accept(ModItems.Nugget.STEEL.get());
                         output.accept(ModItems.Nugget.TIN.get());
                         output.accept(ModItems.Nugget.YELLORIUM.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> PLATE = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> PLATE = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.PLATE + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.NUGGET.getId())
@@ -266,9 +311,9 @@ public class CreativeTabs
                         output.accept(ModItems.Plate.STEEL.get());
                         output.accept(ModItems.Plate.TIN.get());
                         output.accept(ModItems.Plate.YELLORIUM.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> RAW = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> RAW = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.RAW + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.PLATE.getId())
@@ -317,9 +362,9 @@ public class CreativeTabs
                         output.accept(ModItems.Raw.STEEL.get());
                         output.accept(ModItems.Raw.TIN.get());
                         output.accept(ModItems.Raw.YELLORIUM.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> REINFORCED = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> REINFORCED = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.REINFORCED + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.RAW.getId())
@@ -368,9 +413,9 @@ public class CreativeTabs
                         output.accept(ModItems.Reinforced.STEEL.get());
                         output.accept(ModItems.Reinforced.TIN.get());
                         output.accept(ModItems.Reinforced.YELLORIUM.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> ROD = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> ROD = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.ROD + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.REINFORCED.getId())
@@ -419,9 +464,9 @@ public class CreativeTabs
                         output.accept(ModItems.Rod.STEEL.get());
                         output.accept(ModItems.Rod.TIN.get());
                         output.accept(ModItems.Rod.YELLORIUM.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> GEM = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> GEM = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.GEM + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.ROD.getId())
@@ -463,9 +508,9 @@ public class CreativeTabs
                         output.accept(ModBlocks.Ingots.SULFUR_BLOCK.get());
                         output.accept(ModBlocks.Ingots.TIN_BLOCK.get());
 
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> TOOL = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> TOOL = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.TOOL + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.GEM.getId())
@@ -646,9 +691,9 @@ public class CreativeTabs
                         output.accept(ModItems.Head.SAPPHIRE_SWORD.get());
                         output.accept(ModItems.Head.SILVER_SWORD.get());
                         output.accept(ModItems.Head.TIN_SWORD.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> ARMOR = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> ARMOR = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.ARMOR + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.TOOL.getId())
@@ -718,9 +763,9 @@ public class CreativeTabs
                         output.accept(ModItems.Armor.TIN_CHESTPLATE.get());
                         output.accept(ModItems.Armor.TIN_LEGGINGS.get());
                         output.accept(ModItems.Armor.TIN_BOOTS.get());
-                    }).build());
+                    }).build());*/
 
-    public static final RegistryObject<CreativeModeTab> BLOCK = CREATIVE_MODE_TABS.register(
+    /*public static final RegistryObject<CreativeModeTab> BLOCK = CREATIVE_MODE_TABS.register(
             Reference.MODID + Reference.Names.BLOCK + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.ARMOR.getId())
@@ -740,5 +785,5 @@ public class CreativeTabs
                         output.accept(ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.Ores.END_SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get());
-                    }).build());
+                    }).build());*/
 }

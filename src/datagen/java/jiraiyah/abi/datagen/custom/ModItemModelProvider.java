@@ -22,14 +22,14 @@ public class ModItemModelProvider extends ItemModelProvider
     protected void registerModels()
     {
         //<editor-fold desc="ARMOR">
-        SimpleItem(ModItems.Armor.ENGINEER_HELMET, true);
+        /*SimpleItem(ModItems.Armor.ENGINEER_HELMET, true);
 
         SimpleItem(ModItems.Armor.AMETHYST_HELMET);
         SimpleItem(ModItems.Armor.AMETHYST_CHESTPLATE);
         SimpleItem(ModItems.Armor.AMETHYST_LEGGINGS);
-        SimpleItem(ModItems.Armor.AMETHYST_BOOTS);
+        SimpleItem(ModItems.Armor.AMETHYST_BOOTS);*/
 
-        SimpleItem(ModItems.Armor.BRONZE_HELMET);
+        /*SimpleItem(ModItems.Armor.BRONZE_HELMET);
         SimpleItem(ModItems.Armor.BRONZE_CHESTPLATE);
         SimpleItem(ModItems.Armor.BRONZE_LEGGINGS);
         SimpleItem(ModItems.Armor.BRONZE_BOOTS);
@@ -37,24 +37,24 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Armor.CONSTANTAN_HELMET);
         SimpleItem(ModItems.Armor.CONSTANTAN_CHESTPLATE);
         SimpleItem(ModItems.Armor.CONSTANTAN_LEGGINGS);
-        SimpleItem(ModItems.Armor.CONSTANTAN_BOOTS);
+        SimpleItem(ModItems.Armor.CONSTANTAN_BOOTS);*/
 
-        SimpleItem(ModItems.Armor.COPPER_HELMET);
+        /*SimpleItem(ModItems.Armor.COPPER_HELMET);
         SimpleItem(ModItems.Armor.COPPER_CHESTPLATE);
         SimpleItem(ModItems.Armor.COPPER_LEGGINGS);
-        SimpleItem(ModItems.Armor.COPPER_BOOTS);
+        SimpleItem(ModItems.Armor.COPPER_BOOTS);*/
 
-        SimpleItem(ModItems.Armor.ELECTRUM_HELMET);
+        /*SimpleItem(ModItems.Armor.ELECTRUM_HELMET);
         SimpleItem(ModItems.Armor.ELECTRUM_CHESTPLATE);
         SimpleItem(ModItems.Armor.ELECTRUM_LEGGINGS);
-        SimpleItem(ModItems.Armor.ELECTRUM_BOOTS);
+        SimpleItem(ModItems.Armor.ELECTRUM_BOOTS);*/
 
-        SimpleItem(ModItems.Armor.EMERALD_HELMET);
+        /*SimpleItem(ModItems.Armor.EMERALD_HELMET);
         SimpleItem(ModItems.Armor.EMERALD_CHESTPLATE);
         SimpleItem(ModItems.Armor.EMERALD_LEGGINGS);
-        SimpleItem(ModItems.Armor.EMERALD_BOOTS);
+        SimpleItem(ModItems.Armor.EMERALD_BOOTS);*/
 
-        SimpleItem(ModItems.Armor.INVAR_HELMET);
+        /*SimpleItem(ModItems.Armor.INVAR_HELMET);
         SimpleItem(ModItems.Armor.INVAR_CHESTPLATE);
         SimpleItem(ModItems.Armor.INVAR_LEGGINGS);
         SimpleItem(ModItems.Armor.INVAR_BOOTS);
@@ -87,19 +87,34 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Armor.TIN_HELMET);
         SimpleItem(ModItems.Armor.TIN_CHESTPLATE);
         SimpleItem(ModItems.Armor.TIN_LEGGINGS);
-        SimpleItem(ModItems.Armor.TIN_BOOTS);
+        SimpleItem(ModItems.Armor.TIN_BOOTS);*/
+        //</editor-fold>
+
+        //<editor-fold desc="CRYSTALS">
+        SimpleItem(ModItems.Crystal.COBALT);
+        SimpleItem(ModItems.Crystal.CYANIDE);
+        SimpleItem(ModItems.Crystal.GLOWSTONE);
+        SimpleItem(ModItems.Crystal.NITER);
+        SimpleItem(ModItems.Crystal.URANIUM);
+        SimpleItem(ModItems.Crystal.YELLORIUM);
         //</editor-fold>
 
         //<editor-fold desc="DUST">
         SimpleItem(ModItems.Dust.ALUMINIUM);
         SimpleItem(ModItems.Dust.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Dust.ALUMITE);
+        SimpleItem(ModItems.Dust.AMETHYST_BRONZE);
+        SimpleItem(ModItems.Dust.APATITE);
         SimpleItem(ModItems.Dust.ARDITE);
         SimpleItem(ModItems.Dust.BERYLLIUM);
         SimpleItem(ModItems.Dust.BLUTONIUM);
         SimpleItem(ModItems.Dust.BORON);
         SimpleItem(ModItems.Dust.BRASS);
         SimpleItem(ModItems.Dust.BRONZE);
+        SimpleItem(ModItems.Dust.CHARCOAL);
+        SimpleItem(ModItems.Dust.CINNABAR);
+        SimpleItem(ModItems.Dust.CITRINE);
+        SimpleItem(ModItems.Dust.COAL);
         SimpleItem(ModItems.Dust.COBALT);
         SimpleItem(ModItems.Dust.CONDUCTIVE_IRON);
         SimpleItem(ModItems.Dust.CONSTANTAN);
@@ -109,31 +124,53 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Dust.DARK_STEEL);
         SimpleItem(ModItems.Dust.DAWN_STONE);
         SimpleItem(ModItems.Dust.DEMONIUM);
+        SimpleItem(ModItems.Dust.DIAMOND);
         SimpleItem(ModItems.Dust.DRACONIUM);
         SimpleItem(ModItems.Dust.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Dust.ELECTRUM);
+        SimpleItem(ModItems.Dust.EMERALD);
         SimpleItem(ModItems.Dust.ENCHANTIUM);
         SimpleItem(ModItems.Dust.END_STEEL);
         SimpleItem(ModItems.Dust.ENDERITE);
         SimpleItem(ModItems.Dust.ENERGETIC_SILVER);
         SimpleItem(ModItems.Dust.GOLD);
         SimpleItem(ModItems.Dust.GRAPHITE);
+        SimpleItem(ModItems.Dust.HEPATIZON);
         SimpleItem(ModItems.Dust.INVAR);
         SimpleItem(ModItems.Dust.IRIDIUM);
         SimpleItem(ModItems.Dust.IRON);
+        SimpleItem(ModItems.Dust.LAPIS);
         SimpleItem(ModItems.Dust.LEAD);
         SimpleItem(ModItems.Dust.LITHIUM);
         SimpleItem(ModItems.Dust.LUDICRITE);
+        SimpleItem(ModItems.Dust.LUMIUM);
         SimpleItem(ModItems.Dust.MAGNESIUM);
         SimpleItem(ModItems.Dust.MANGANESE);
+        SimpleItem(ModItems.Dust.MANYULLYN);
+        SimpleItem(ModItems.Dust.NETHERITE);
         SimpleItem(ModItems.Dust.NICKEL);
-        SimpleItem(ModItems.Dust.STEEL);
+        SimpleItem(ModItems.Dust.NITER);
+        SimpleItem(ModItems.Dust.OBSIDIAN);
+        SimpleItem(ModItems.Dust.OSMIUM);
+        SimpleItem(ModItems.Dust.PLATINUM);
+        SimpleItem(ModItems.Dust.PRISMARINE);
+        SimpleItem(ModItems.Dust.QUARTZ);
+        SimpleItem(ModItems.Dust.ROSE_GOLD);
+        SimpleItem(ModItems.Dust.RUBY);
+        SimpleItem(ModItems.Dust.SAPPHIRE);
+        SimpleItem(ModItems.Dust.SIGNALUM);
         SimpleItem(ModItems.Dust.SILVER);
+        SimpleItem(ModItems.Dust.SLIMESTEEL);
+        SimpleItem(ModItems.Dust.SOULSTEEL);
+        SimpleItem(ModItems.Dust.STEEL);
+        SimpleItem(ModItems.Dust.SULFUR);
         SimpleItem(ModItems.Dust.TIN);
+        SimpleItem(ModItems.Dust.URANIUM);
         SimpleItem(ModItems.Dust.YELLORIUM);
+        SimpleItem(ModItems.Dust.ZINC);
         //</editor-fold>
 
-        //<editor-fold desc="GEAR">
+        /*//<editor-fold desc="GEAR">
         SimpleItem(ModItems.Gear.ALUMINIUM);
         SimpleItem(ModItems.Gear.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Gear.ALUMITE);
@@ -174,9 +211,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Gear.SILVER);
         SimpleItem(ModItems.Gear.TIN);
         SimpleItem(ModItems.Gear.YELLORIUM);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="INGOT">
+        /*//<editor-fold desc="INGOT">
         SimpleItem(ModItems.Ingot.ALUMINIUM);
         SimpleItem(ModItems.Ingot.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Ingot.ALUMITE);
@@ -214,9 +251,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Ingot.SILVER);
         SimpleItem(ModItems.Ingot.TIN);
         SimpleItem(ModItems.Ingot.YELLORIUM);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="NUGGET">
+        /*//<editor-fold desc="NUGGET">
         SimpleItem(ModItems.Nugget.ALUMINIUM);
         SimpleItem(ModItems.Nugget.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Nugget.ALUMITE);
@@ -255,9 +292,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Nugget.SILVER);
         SimpleItem(ModItems.Nugget.TIN);
         SimpleItem(ModItems.Nugget.YELLORIUM);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="PLATE">
+        /*//<editor-fold desc="PLATE">
         SimpleItem(ModItems.Plate.ALUMINIUM);
         SimpleItem(ModItems.Plate.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Plate.ALUMITE);
@@ -298,9 +335,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Plate.SILVER);
         SimpleItem(ModItems.Plate.TIN);
         SimpleItem(ModItems.Plate.YELLORIUM);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="RAW">
+        /*//<editor-fold desc="RAW">
         SimpleItem(ModItems.Raw.ALUMINIUM);
         SimpleItem(ModItems.Raw.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Raw.ALUMITE);
@@ -338,9 +375,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Raw.SILVER);
         SimpleItem(ModItems.Raw.TIN);
         SimpleItem(ModItems.Raw.YELLORIUM);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="REINFORCED">
+        /*//<editor-fold desc="REINFORCED">
         SimpleItem(ModItems.Reinforced.ALUMINIUM);
         SimpleItem(ModItems.Reinforced.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Reinforced.ALUMITE);
@@ -381,9 +418,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Reinforced.STEEL);
         SimpleItem(ModItems.Reinforced.TIN);
         SimpleItem(ModItems.Reinforced.YELLORIUM);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="ROD">
+        /*//<editor-fold desc="ROD">
         SimpleItem(ModItems.Rod.ALUMINIUM);
         SimpleItem(ModItems.Rod.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Rod.ALUMITE);
@@ -424,9 +461,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Rod.STEEL);
         SimpleItem(ModItems.Rod.TIN);
         SimpleItem(ModItems.Rod.YELLORIUM);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="GEMS">
+        /*//<editor-fold desc="GEMS">
         SimpleItem(ModItems.Gem.RUBY);
         SimpleItem(ModItems.Gem.SAPPHIRE);
 
@@ -435,9 +472,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Gem.QUARTZ_SHARD);
         SimpleItem(ModItems.Gem.RUBY_SHARD);
         SimpleItem(ModItems.Gem.SAPPHIRE_SHARD);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="TOOL">
+        /*//<editor-fold desc="TOOL">
         SimpleItem(ModItems.Tool.AUGMENT, true);
         SimpleItem(ModItems.Tool.CUTTER, true);
         SimpleItem(ModItems.Tool.DOWSING_ROD, true);
@@ -543,9 +580,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Tool.TIN_HAMMER, true);
 
         SimpleItem(ModItems.Tool.WOOD_HAMMER, true);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="CAST">
+        /*//<editor-fold desc="CAST">
         SimpleItem(ModItems.Cast.BLANK);
         SimpleItem(ModItems.Cast.BLANK_REINFORCED);
         SimpleItem(ModItems.Cast.GEAR);
@@ -554,9 +591,9 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Cast.HANDLE);
         SimpleItem(ModItems.Cast.INGOT);
         SimpleItem(ModItems.Cast.NUGGET);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="HEAD">
+        /*//<editor-fold desc="HEAD">
         SimpleItem(ModItems.Head.BRONZE_AXE);
         SimpleItem(ModItems.Head.BRONZE_HAMMER);
         SimpleItem(ModItems.Head.BRONZE_HOE);
@@ -652,7 +689,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Head.TIN_SWORD);
 
         SimpleItem(ModItems.Head.WOOD_HAMMER);
-        //</editor-fold>
+        //</editor-fold>*/
     }
 
     //<editor-fold desc="HELPER METHODS">
@@ -671,6 +708,11 @@ public class ModItemModelProvider extends ItemModelProvider
     private ItemModelBuilder SimpleItem(RegistryObject<Item> item, boolean handheld)
     {
         //<editor-fold desc="ITEM SPECIAL SUBFOLDERS">
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.CRYSTAL))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/crystal/" + item.getId().getPath()));
+
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.DUST))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",

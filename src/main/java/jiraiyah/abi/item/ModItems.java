@@ -1,10 +1,6 @@
 package jiraiyah.abi.item;
 
 import jiraiyah.abi.Reference;
-import jiraiyah.abi.item.custom.*;
-import jiraiyah.abi.zlib.util.ModArmorEffects;
-import jiraiyah.abi.zlib.util.ModArmorMaterials;
-import jiraiyah.abi.zlib.util.ModTiers;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,6 +9,220 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems
 {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MODID);
+
+    public static class Armor
+    {
+        /*public static final RegistryObject<Item> ENGINEER_HELMET = ITEMS.register(Reference.Names.ENGINEER + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()));*/
+
+        //<editor-fold desc="AMETHYST">
+        /*public static final RegistryObject<Item> AMETHYST_HELMET = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.AMETHYST, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> AMETHYST_CHESTPLATE = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> AMETHYST_LEGGINGS = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+        //</editor-fold>
+
+        //<editor-fold desc="BRONZE">
+        /*public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register(Reference.Names.BRONZE + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEMS.register(Reference.Names.BRONZE + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> BRONZE_LEGGINGS = ITEMS.register(Reference.Names.BRONZE + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register(Reference.Names.BRONZE + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+        //</editor-fold>
+
+        //<editor-fold desc="CONSTANTAN">
+        /*public static final RegistryObject<Item> CONSTANTAN_HELMET = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.CONSTANTAN, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> CONSTANTAN_CHESTPLATE = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.CONSTANTAN, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> CONSTANTAN_LEGGINGS = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.CONSTANTAN, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> CONSTANTAN_BOOTS = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.CONSTANTAN, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="COPPER">
+        /*public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register(Reference.Names.COPPER + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> COPPER_CHESTPLATE = ITEMS.register(Reference.Names.COPPER + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> COPPER_LEGGINGS = ITEMS.register(Reference.Names.COPPER + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register(Reference.Names.COPPER + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="ELECTRUM">
+        /*public static final RegistryObject<Item> ELECTRUM_HELMET = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.ELECTRUM, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> ELECTRUM_CHESTPLATE = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.ELECTRUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> ELECTRUM_LEGGINGS = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.ELECTRUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> ELECTRUM_BOOTS = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.ELECTRUM, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="EMERALD">
+        /*public static final RegistryObject<Item> EMERALD_HELMET = ITEMS.register(Reference.Names.EMERALD + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> EMERALD_CHESTPLATE = ITEMS.register(Reference.Names.EMERALD + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> EMERALD_LEGGINGS = ITEMS.register(Reference.Names.EMERALD + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> EMERALD_BOOTS = ITEMS.register(Reference.Names.EMERALD + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="INVAR">
+        /*public static final RegistryObject<Item> INVAR_HELMET = ITEMS.register(Reference.Names.INVAR + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.INVAR, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> INVAR_CHESTPLATE = ITEMS.register(Reference.Names.INVAR + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.INVAR, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> INVAR_LEGGINGS = ITEMS.register(Reference.Names.INVAR + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.INVAR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> INVAR_BOOTS = ITEMS.register(Reference.Names.INVAR + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.INVAR, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="LEAD">
+        /*public static final RegistryObject<Item> LEAD_HELMET = ITEMS.register(Reference.Names.LEAD + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.LEAD, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> LEAD_CHESTPLATE = ITEMS.register(Reference.Names.LEAD + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.LEAD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> LEAD_LEGGINGS = ITEMS.register(Reference.Names.LEAD + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.LEAD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> LEAD_BOOTS = ITEMS.register(Reference.Names.LEAD + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.LEAD, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="NICKEL">
+        /*public static final RegistryObject<Item> NICKEL_HELMET = ITEMS.register(Reference.Names.NICKEL + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.NICKEL, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> NICKEL_CHESTPLATE = ITEMS.register(Reference.Names.NICKEL + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.NICKEL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> NICKEL_LEGGINGS = ITEMS.register(Reference.Names.NICKEL + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.NICKEL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> NICKEL_BOOTS = ITEMS.register(Reference.Names.NICKEL + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.NICKEL, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="RUBY">
+        /*public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register(Reference.Names.RUBY + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register(Reference.Names.RUBY + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register(Reference.Names.RUBY + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register(Reference.Names.RUBY + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="SAPPHIRE">
+        /*public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+
+        //<editor-fold desc="SILVER">
+        /*public static final RegistryObject<Item> SILVER_HELMET = ITEMS.register(Reference.Names.SILVER + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.SILVER, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> SILVER_CHESTPLATE = ITEMS.register(Reference.Names.SILVER + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> SILVER_LEGGINGS = ITEMS.register(Reference.Names.SILVER + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> SILVER_BOOTS = ITEMS.register(Reference.Names.SILVER + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold
+
+        //<editor-fold desc="TIN">
+        /*public static final RegistryObject<Item> TIN_HELMET = ITEMS.register(Reference.Names.TIN + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.TIN, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> TIN_CHESTPLATE = ITEMS.register(Reference.Names.TIN + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.TIN, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> TIN_LEGGINGS = ITEMS.register(Reference.Names.TIN + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.TIN, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> TIN_BOOTS = ITEMS.register(Reference.Names.TIN + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.TIN, ArmorItem.Type.BOOTS, new Item.Properties()));*/
+
+        //</editor-fold>
+        public static void initialize(){}
+
+    }
+
+    /*public static class Cast
+    {
+        public static final RegistryObject<Item> BLANK = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_BLANK, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BLANK_REINFORCED = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_BLANK_REINFORCED, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GEAR = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_GEAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GEM = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_GEM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> HAMMER = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_HAMMER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> HANDLE = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_HANDLE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> INGOT = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_INGOT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> NUGGET = ITEMS.register(
+                Reference.Names.CAST + Reference.Names.CAST_NUGGET, () -> new Item(new Item.Properties()));
+
+        public static void initialize(){}
+    }*/
+
+    public static class Crystal
+    {
+        public static final RegistryObject<Item> COBALT = ITEMS.register(
+                Reference.Names.CRYSTAL + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CYANIDE = ITEMS.register(
+                Reference.Names.CRYSTAL + Reference.Names.CYANIDE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> GLOWSTONE = ITEMS.register(
+                Reference.Names.CRYSTAL + Reference.Names.GLOWSTONE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> NITER = ITEMS.register(
+                Reference.Names.CRYSTAL + Reference.Names.NITER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> URANIUM = ITEMS.register(
+                Reference.Names.CRYSTAL + Reference.Names.URANIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
+                Reference.Names.CRYSTAL + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
+
+        public static void initialize(){}
+    }
 
     public static class Dust
     {
@@ -24,6 +234,12 @@ public class ModItems
 
         public static final RegistryObject<Item> ALUMITE = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.ALUMITE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> AMETHYST_BRONZE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.AMETHYST_BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> APATITE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.APATITE, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> ARDITE = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.ARDITE, () -> new Item(new Item.Properties()));
@@ -42,6 +258,18 @@ public class ModItems
 
         public static final RegistryObject<Item> BRONZE = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.BRONZE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CHARCOAL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.CHARCOAL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CINNABAR = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.CINNABAR, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> CITRINE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.CITRINE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> COAL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.COAL, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> COBALT = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.COBALT, () -> new Item(new Item.Properties()));
@@ -70,6 +298,9 @@ public class ModItems
         public static final RegistryObject<Item> DEMONIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.DEMONIUM, () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> DIAMOND = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.DIAMOND, () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> DRACONIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.DRACONIUM, () -> new Item(new Item.Properties()));
 
@@ -78,6 +309,9 @@ public class ModItems
 
         public static final RegistryObject<Item> ELECTRUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.ELECTRUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> EMERALD = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.EMERALD, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> ENCHANTIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.ENCHANTIUM, () -> new Item(new Item.Properties()));
@@ -97,6 +331,9 @@ public class ModItems
         public static final RegistryObject<Item> GRAPHITE = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.GRAPHITE, () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> HEPATIZON = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.HEPATIZON, () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> INVAR = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.INVAR, () -> new Item(new Item.Properties()));
 
@@ -105,6 +342,9 @@ public class ModItems
 
         public static final RegistryObject<Item> IRON = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.IRON, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> LAPIS = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.LAPIS, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> LEAD = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.LEAD, () -> new Item(new Item.Properties()));
@@ -115,32 +355,85 @@ public class ModItems
         public static final RegistryObject<Item> LUDICRITE = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.LUDICRITE, () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> LUMIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.LUMIUM, () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> MAGNESIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.MAGNESIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> MANGANESE = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.MANGANESE, () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> MANYULLYN = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.MANYULLYN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> NETHERITE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.NETHERITE, () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> NICKEL = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.NICKEL, () -> new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> STEEL = ITEMS.register(
-                Reference.Names.DUST + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> NITER = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.NITER, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> OBSIDIAN = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.OBSIDIAN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> OSMIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.OSMIUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> PLATINUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.PLATINUM, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> PRISMARINE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.PRISMARINE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> QUARTZ = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.QUARTZ, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ROSE_GOLD = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.ROSE_GOLD, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> RUBY = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.RUBY, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> SAPPHIRE = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.SAPPHIRE, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> SIGNALUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.SIGNALUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> SILVER = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.SILVER, () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> SLIMESTEEL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.SLIMESTEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> SOULSTEEL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.SOULSTEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> STEEL = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.STEEL, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> SULFUR = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.SULFUR, () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> TIN = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.TIN, () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> URANIUM = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.URANIUM, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> YELLORIUM = ITEMS.register(
                 Reference.Names.DUST + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> ZINC = ITEMS.register(
+                Reference.Names.DUST + Reference.Names.ZINC, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
     }
 
-    public static class Gear
+    /*public static class Gear
     {
         public static final RegistryObject<Item> ALUMINIUM = ITEMS.register(
                 Reference.Names.GEAR + Reference.Names.ALUMINIUM, () -> new Item(new Item.Properties()));
@@ -263,9 +556,9 @@ public class ModItems
                 Reference.Names.GEAR + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
-    }
+    }*/
 
-    public static class Ingot
+    /*public static class Ingot
     {
         public static final RegistryObject<Item> ALUMINIUM = ITEMS.register(
                 Reference.Names.INGOT + Reference.Names.ALUMINIUM, () -> new Item(new Item.Properties()));
@@ -379,9 +672,9 @@ public class ModItems
                 Reference.Names.INGOT + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
-    }
+    }*/
 
-    public static class Nugget
+    /*public static class Nugget
     {
         public static final RegistryObject<Item> ALUMINIUM = ITEMS.register(
                 Reference.Names.NUGGET + Reference.Names.ALUMINIUM, () -> new Item(new Item.Properties()));
@@ -498,9 +791,9 @@ public class ModItems
                 Reference.Names.NUGGET + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
-    }
+    }*/
 
-    public static class Plate
+    /*public static class Plate
     {
         public static final RegistryObject<Item> ALUMINIUM = ITEMS.register(
                 Reference.Names.PLATE + Reference.Names.ALUMINIUM, () -> new Item(new Item.Properties()));
@@ -623,9 +916,9 @@ public class ModItems
                 Reference.Names.PLATE + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
-    }
+    }*/
 
-    public static class Raw
+    /*public static class Raw
     {
         public static final RegistryObject<Item> ALUMINIUM = ITEMS.register(
                 Reference.Names.RAW + Reference.Names.ALUMINIUM, () -> new Item(new Item.Properties()));
@@ -740,9 +1033,9 @@ public class ModItems
 
         public static void initialize()
         {}
-    }
+    }*/
 
-    public static class Reinforced
+    /*public static class Reinforced
     {
         public static final RegistryObject<Item> ALUMINIUM = ITEMS.register(
                 Reference.Names.REINFORCED + Reference.Names.ALUMINIUM, () -> new Item(new Item.Properties()));
@@ -865,9 +1158,9 @@ public class ModItems
                 Reference.Names.REINFORCED + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
-    }
+    }*/
 
-    public static class Rod
+    /*public static class Rod
     {
         public static final RegistryObject<Item> ALUMINIUM = ITEMS.register(
                 Reference.Names.ROD + Reference.Names.ALUMINIUM, () -> new Item(new Item.Properties()));
@@ -990,9 +1283,9 @@ public class ModItems
                 Reference.Names.ROD + Reference.Names.YELLORIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
-    }
+    }*/
 
-    public static class Tool
+    /*public static class Tool
     {
         public static final RegistryObject<Item> AUGMENT = ITEMS.register(
                 Reference.Names.TOOL + Reference.Names.AUGMENT, () -> new Augment(new Item.Properties()));
@@ -1220,9 +1513,9 @@ public class ModItems
                 () -> new HoeItem(Tiers.WOOD, 0, 0.0F, new Item.Properties()));
 
         public static void initialize(){}
-    }
+    }*/
 
-    public static class Gem
+    /*public static class Gem
     {
         public static final RegistryObject<Item> RUBY = ITEMS.register(
                 Reference.Names.GEM + Reference.Names.RUBY, () -> new Augment(new Item.Properties()));
@@ -1248,189 +1541,9 @@ public class ModItems
         // Emerald
 
         public static void initialize(){}
-    }
+    }*/
 
-    public static class Armor
-    {
-        public static final RegistryObject<Item> ENGINEER_HELMET = ITEMS.register(Reference.Names.ENGINEER + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()));
-
-        //<editor-fold desc="AMETHYST">
-        public static final RegistryObject<Item> AMETHYST_HELMET = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.AMETHYST, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> AMETHYST_CHESTPLATE = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> AMETHYST_LEGGINGS = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="BRONZE">
-        public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register(Reference.Names.BRONZE + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEMS.register(Reference.Names.BRONZE + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> BRONZE_LEGGINGS = ITEMS.register(Reference.Names.BRONZE + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register(Reference.Names.BRONZE + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="CONSTANTAN">
-        public static final RegistryObject<Item> CONSTANTAN_HELMET = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.CONSTANTAN, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> CONSTANTAN_CHESTPLATE = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.CONSTANTAN, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> CONSTANTAN_LEGGINGS = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.CONSTANTAN, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> CONSTANTAN_BOOTS = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.CONSTANTAN, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="COPPER">
-        public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register(Reference.Names.COPPER + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> COPPER_CHESTPLATE = ITEMS.register(Reference.Names.COPPER + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> COPPER_LEGGINGS = ITEMS.register(Reference.Names.COPPER + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register(Reference.Names.COPPER + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="ELECTRUM">
-        public static final RegistryObject<Item> ELECTRUM_HELMET = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.ELECTRUM, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> ELECTRUM_CHESTPLATE = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.ELECTRUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> ELECTRUM_LEGGINGS = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.ELECTRUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> ELECTRUM_BOOTS = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.ELECTRUM, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="EMERALD">
-        public static final RegistryObject<Item> EMERALD_HELMET = ITEMS.register(Reference.Names.EMERALD + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> EMERALD_CHESTPLATE = ITEMS.register(Reference.Names.EMERALD + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> EMERALD_LEGGINGS = ITEMS.register(Reference.Names.EMERALD + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> EMERALD_BOOTS = ITEMS.register(Reference.Names.EMERALD + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="INVAR">
-        public static final RegistryObject<Item> INVAR_HELMET = ITEMS.register(Reference.Names.INVAR + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.INVAR, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> INVAR_CHESTPLATE = ITEMS.register(Reference.Names.INVAR + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.INVAR, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> INVAR_LEGGINGS = ITEMS.register(Reference.Names.INVAR + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.INVAR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> INVAR_BOOTS = ITEMS.register(Reference.Names.INVAR + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.INVAR, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="LEAD">
-        public static final RegistryObject<Item> LEAD_HELMET = ITEMS.register(Reference.Names.LEAD + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.LEAD, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> LEAD_CHESTPLATE = ITEMS.register(Reference.Names.LEAD + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.LEAD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> LEAD_LEGGINGS = ITEMS.register(Reference.Names.LEAD + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.LEAD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> LEAD_BOOTS = ITEMS.register(Reference.Names.LEAD + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.LEAD, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="NICKEL">
-        public static final RegistryObject<Item> NICKEL_HELMET = ITEMS.register(Reference.Names.NICKEL + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.NICKEL, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> NICKEL_CHESTPLATE = ITEMS.register(Reference.Names.NICKEL + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.NICKEL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> NICKEL_LEGGINGS = ITEMS.register(Reference.Names.NICKEL + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.NICKEL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> NICKEL_BOOTS = ITEMS.register(Reference.Names.NICKEL + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.NICKEL, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="RUBY">
-        public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register(Reference.Names.RUBY + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register(Reference.Names.RUBY + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register(Reference.Names.RUBY + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register(Reference.Names.RUBY + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="SAPPHIRE">
-        public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="SILVER">
-        public static final RegistryObject<Item> SILVER_HELMET = ITEMS.register(Reference.Names.SILVER + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.SILVER, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> SILVER_CHESTPLATE = ITEMS.register(Reference.Names.SILVER + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> SILVER_LEGGINGS = ITEMS.register(Reference.Names.SILVER + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> SILVER_BOOTS = ITEMS.register(Reference.Names.SILVER + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        //<editor-fold desc="TIN">
-        public static final RegistryObject<Item> TIN_HELMET = ITEMS.register(Reference.Names.TIN + Reference.Names.HELMET,
-                () -> new ModArmorEffects(ModArmorMaterials.TIN, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> TIN_CHESTPLATE = ITEMS.register(Reference.Names.TIN + Reference.Names.CHEST_PLATE,
-                () -> new ArmorItem(ModArmorMaterials.TIN, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> TIN_LEGGINGS = ITEMS.register(Reference.Names.TIN + Reference.Names.LEGGINGS,
-                () -> new ArmorItem(ModArmorMaterials.TIN, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> TIN_BOOTS = ITEMS.register(Reference.Names.TIN + Reference.Names.BOOTS,
-                () -> new ArmorItem(ModArmorMaterials.TIN, ArmorItem.Type.BOOTS, new Item.Properties()));
-        //</editor-fold>
-
-        public static void initialize(){}
-    }
-
-    public static class Cast
-    {
-        public static final RegistryObject<Item> BLANK = ITEMS.register(
-                Reference.Names.CAST + Reference.Names.CAST_BLANK, () -> new Item(new Item.Properties()));
-
-        public static final RegistryObject<Item> BLANK_REINFORCED = ITEMS.register(
-                Reference.Names.CAST + Reference.Names.CAST_BLANK_REINFORCED, () -> new Item(new Item.Properties()));
-
-        public static final RegistryObject<Item> GEAR = ITEMS.register(
-                Reference.Names.CAST + Reference.Names.CAST_GEAR, () -> new Item(new Item.Properties()));
-
-        public static final RegistryObject<Item> GEM = ITEMS.register(
-                Reference.Names.CAST + Reference.Names.CAST_GEM, () -> new Item(new Item.Properties()));
-
-        public static final RegistryObject<Item> HAMMER = ITEMS.register(
-                Reference.Names.CAST + Reference.Names.CAST_HAMMER, () -> new Item(new Item.Properties()));
-
-        public static final RegistryObject<Item> HANDLE = ITEMS.register(
-                Reference.Names.CAST + Reference.Names.CAST_HANDLE, () -> new Item(new Item.Properties()));
-
-        public static final RegistryObject<Item> INGOT = ITEMS.register(
-                Reference.Names.CAST + Reference.Names.CAST_INGOT, () -> new Item(new Item.Properties()));
-
-        public static final RegistryObject<Item> NUGGET = ITEMS.register(
-                Reference.Names.CAST + Reference.Names.CAST_NUGGET, () -> new Item(new Item.Properties()));
-
-        public static void initialize(){}
-    }
-
-    public static class Head
+    /*public static class Head
     {
         //<editor-fold desc="BRONZE">
         public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register(
@@ -1691,22 +1804,23 @@ public class ModItems
                 Reference.Names.HEAD + Reference.Names.WOOD + Reference.Names.HAMMER, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
-    }
+    }*/
 
     public static void initialize()
     {
-        Dust.initialize();
-        Gear.initialize();
-        Ingot.initialize();
-        Nugget.initialize();
-        Plate.initialize();
-        Raw.initialize();
-        Reinforced.initialize();
-        Rod.initialize();
-        Gem.initialize();
-        Tool.initialize();
         Armor.initialize();
-        Cast.initialize();
-        Head.initialize();
+        //Cast.initialize();
+        Crystal.initialize();
+        Dust.initialize();
+        //Gear.initialize();
+        //Ingot.initialize();
+        //Nugget.initialize();
+        //Plate.initialize();
+        //Raw.initialize();
+        //Reinforced.initialize();
+        //Rod.initialize();
+        //Gem.initialize();
+        //Tool.initialize();
+        //Head.initialize();
     }
 }

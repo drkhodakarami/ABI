@@ -21,122 +21,122 @@ import java.util.function.Supplier;
 @SuppressWarnings("deprecation")
 public enum ModArmorMaterials implements ArmorMaterial
 {
-    AMETHYST("amethyst", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*AMETHYST("amethyst", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
         armor.put(ArmorItem.Type.LEGGINGS, 5);
         armor.put(ArmorItem.Type.CHESTPLATE, 6);
         armor.put(ArmorItem.Type.HELMET, 2);
     }),
             12, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F,
-            () -> Ingredient.of(Items.AMETHYST_SHARD)),
+            () -> Ingredient.of(Items.AMETHYST_SHARD)),*/
 
-    BRONZE("bronze", 16, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*BRONZE("bronze", 16, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
         armor.put(ArmorItem.Type.LEGGINGS, 5);
         armor.put(ArmorItem.Type.CHESTPLATE, 6);
         armor.put(ArmorItem.Type.HELMET, 2);
     }),
             18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Ingots.BRONZE)),
+            () -> Ingredient.of(ModTags.Items.Ingots.BRONZE)),*/
 
-    CONSTANTAN("constantan", 8, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*CONSTANTAN("constantan", 8, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 1);
         armor.put(ArmorItem.Type.LEGGINGS, 4);
         armor.put(ArmorItem.Type.CHESTPLATE, 4);
         armor.put(ArmorItem.Type.HELMET, 2);
     }),
             12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Ingots.CONSTANTAN)),
+            () -> Ingredient.of(ModTags.Items.Ingots.CONSTANTAN)),*/
 
-    COPPER("copper", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*COPPER("copper", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 1);
         armor.put(ArmorItem.Type.LEGGINGS, 3);
         armor.put(ArmorItem.Type.CHESTPLATE, 4);
         armor.put(ArmorItem.Type.HELMET, 1);
     }),
             11, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F,
-            () -> Ingredient.of(Tags.Items.INGOTS_COPPER)),
+            () -> Ingredient.of(Tags.Items.INGOTS_COPPER)),*/
 
-    ELECTRUM("electrum", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*ELECTRUM("electrum", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 1);
         armor.put(ArmorItem.Type.LEGGINGS, 3);
         armor.put(ArmorItem.Type.CHESTPLATE, 5);
         armor.put(ArmorItem.Type.HELMET, 2);
     }),
             30, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Ingots.ELECTRUM)),
+            () -> Ingredient.of(ModTags.Items.Ingots.ELECTRUM)),*/
 
-    EMERALD("emerald", 22,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*EMERALD("emerald", 22,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 3);
         armor.put(ArmorItem.Type.LEGGINGS, 5);
         armor.put(ArmorItem.Type.CHESTPLATE, 6);
         armor.put(ArmorItem.Type.HELMET, 3);
     }),
             32, SoundEvents.ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F,
-            () -> Ingredient.of(Items.EMERALD)),
+            () -> Ingredient.of(Items.EMERALD))*/
 
-    INVAR("invar", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*INVAR("invar", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
         armor.put(ArmorItem.Type.LEGGINGS, 5);
         armor.put(ArmorItem.Type.CHESTPLATE, 7);
         armor.put(ArmorItem.Type.HELMET, 2);
     }),
             12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Ingots.INVAR)),
+            () -> Ingredient.of(ModTags.Items.Ingots.INVAR)),*/
 
-    LEAD("lead", 12, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*LEAD("lead", 12, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
         armor.put(ArmorItem.Type.LEGGINGS, 4);
         armor.put(ArmorItem.Type.CHESTPLATE, 5);
         armor.put(ArmorItem.Type.HELMET, 2);
     }),
             18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Ingots.LEAD)),
+            () -> Ingredient.of(ModTags.Items.Ingots.LEAD)),*/
 
-    NICKEL("nickel", 14, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*NICKEL("nickel", 14, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
         armor.put(ArmorItem.Type.LEGGINGS, 5);
         armor.put(ArmorItem.Type.CHESTPLATE, 5);
         armor.put(ArmorItem.Type.HELMET, 2);
     }),
             14, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Ingots.NICKEL)),
+            () -> Ingredient.of(ModTags.Items.Ingots.NICKEL)),*/
 
-    RUBY("ruby", 28,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*RUBY("ruby", 28,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
         armor.put(ArmorItem.Type.LEGGINGS, 6);
         armor.put(ArmorItem.Type.CHESTPLATE, 7);
         armor.put(ArmorItem.Type.HELMET, 3);
     }),
             32, SoundEvents.ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Gems.RUBY)),
+            () -> Ingredient.of(ModTags.Items.Gems.RUBY)),*/
 
-    SAPPHIRE("sapphire", 28, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*SAPPHIRE("sapphire", 28, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
         armor.put(ArmorItem.Type.LEGGINGS, 6);
         armor.put(ArmorItem.Type.CHESTPLATE, 7);
         armor.put(ArmorItem.Type.HELMET, 3);
     }),
             32, SoundEvents.ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Gems.SAPPHIRE)),
+            () -> Ingredient.of(ModTags.Items.Gems.SAPPHIRE)),*/
 
-    SILVER("silver", 6,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*SILVER("silver", 6,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 1);
         armor.put(ArmorItem.Type.LEGGINGS, 3);
         armor.put(ArmorItem.Type.CHESTPLATE, 5);
         armor.put(ArmorItem.Type.HELMET, 2);
     }),
             32, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F,
-            () -> Ingredient.of(ModItems.Ingot.SILVER.get())),
+            () -> Ingredient.of(ModItems.Ingot.SILVER.get())),*/
 
-    TIN("tin", 8, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    /*TIN("tin", 8, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 1);
         armor.put(ArmorItem.Type.LEGGINGS, 3);
         armor.put(ArmorItem.Type.CHESTPLATE, 4);
         armor.put(ArmorItem.Type.HELMET, 1);
     }),
             20, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F,
-            () -> Ingredient.of(ModTags.Items.Ingots.TIN))
+            () -> Ingredient.of(ModTags.Items.Ingots.TIN))*/
     ;
 
     //<editor-fold desc="HELPER METHODS">

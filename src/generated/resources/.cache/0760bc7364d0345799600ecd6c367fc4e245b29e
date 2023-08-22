@@ -1,6 +1,1 @@
-// 1.20.1	2023-08-18T15:48:52.7829492	Tags for minecraft:block mod id abi
-85a7792a8a7f2428e66954cd6395787f2122510b data/forge/tags/blocks/needs_wood_tool.json
-720fed314a98e6669f275a576dfa682d003a17ea data/minecraft/tags/blocks/mineable/axe.json
-e85602589df2d2fe1d61bdc17c3b2340e684126e data/minecraft/tags/blocks/mineable/pickaxe.json
-c7aff84df44e2af4894ed5ce6fef5e39a2672583 data/minecraft/tags/blocks/mineable/shovel.json
-a4726dc47943a887deb5935596b78820d46fe412 data/minecraft/tags/blocks/needs_iron_tool.json
+// 1.20.1	2023-08-22T15:55:07.5163893	Tags for minecraft:block mod id abi

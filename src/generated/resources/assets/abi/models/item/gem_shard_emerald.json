@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "abi:item/gem/gem_shard_emerald"
-  }
-}

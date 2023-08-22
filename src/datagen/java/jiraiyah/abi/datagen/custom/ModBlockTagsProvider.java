@@ -24,7 +24,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider)
     {
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        /*this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(
                         ModBlocks.Gem.RUBY_BLOCK.get(),
                         ModBlocks.Gem.SAPPHIRE_BLOCK.get(),
@@ -76,12 +76,12 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                         ModBlocks.Ingots.STEEL_BLOCK.get(),
                         ModBlocks.Ingots.SULFUR_BLOCK.get(),
                         ModBlocks.Ingots.TIN_BLOCK.get()
-                );
+                );*/
 
-        this.tag(BlockTags.MINEABLE_WITH_AXE)
+        /*this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(
                         ModBlocks.POTATO_BLOCK.get()
-                );
+                );*/
 
         /*this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(
@@ -89,12 +89,12 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                         ModBlocks.RUBY_BLOCK.get()
                 );*/
 
-        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+        /*this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(
                         ModBlocks.Gem.SLIME_BLOCK.get()
-                );
+                );*/
 
-        this.tag(BlockTags.NEEDS_IRON_TOOL)
+        /*this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(
                         ModBlocks.Gem.RUBY_BLOCK.get(),
                         ModBlocks.Gem.SAPPHIRE_BLOCK.get(),
@@ -145,7 +145,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                         ModBlocks.Ingots.STEEL_BLOCK.get(),
                         ModBlocks.Ingots.SULFUR_BLOCK.get(),
                         ModBlocks.Ingots.TIN_BLOCK.get()
-                    );
+                    );*/
 
         /*this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(
@@ -171,10 +171,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                         ModBlocks.RUBY_BLOCK.get()
                 );*/
 
-        this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
+        /*this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
                 .add(
                         ModBlocks.POTATO_BLOCK.get(),
                         ModBlocks.Gem.SLIME_BLOCK.get()
-                );
+                );*/
     }
 }

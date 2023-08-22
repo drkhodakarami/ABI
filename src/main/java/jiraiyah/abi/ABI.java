@@ -71,8 +71,3 @@ public class ABI
         LOGGER.info(" **********************************************************");
     }
 }
-
-// TODO : Ore blocks
-// TODO : Gem blocks
-// TODO : ingot blocks
-// TODO : world gen for ore blocks

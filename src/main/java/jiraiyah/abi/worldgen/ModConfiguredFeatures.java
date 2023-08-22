@@ -20,34 +20,34 @@ import java.util.List;
 public class ModConfiguredFeatures
 {
     //<editor-fold desc="RUBY">
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY =
+    /*public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY =
             registerKey(Reference.Names.OVERWORLD + Reference.Names.RUBY + Reference.Names.ORE);
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_RUBY_ORE_KEY =
             registerKey(Reference.Names.END + Reference.Names.RUBY + Reference.Names.ORE);
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_RUBY_ORE_KEY =
-            registerKey(Reference.Names.NETHER + Reference.Names.RUBY + Reference.Names.ORE);
+            registerKey(Reference.Names.NETHER + Reference.Names.RUBY + Reference.Names.ORE);*/
     //</editor-fold>
 
     //<editor-fold desc="SAPPHIRE">
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY =
+    /*public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY =
             registerKey(Reference.Names.OVERWORLD + Reference.Names.SAPPHIRE + Reference.Names.ORE);
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_SAPPHIRE_ORE_KEY =
             registerKey(Reference.Names.END + Reference.Names.SAPPHIRE + Reference.Names.ORE);
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SAPPHIRE_ORE_KEY =
-            registerKey(Reference.Names.NETHER + Reference.Names.SAPPHIRE + Reference.Names.ORE);
+            registerKey(Reference.Names.NETHER + Reference.Names.SAPPHIRE + Reference.Names.ORE);*/
     //</editor-fold>
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context)
     {
-        RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        /*RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherrackReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
         RuleTest endstoneReplaceables = new BlockMatchTest(Blocks.END_STONE);
         RuleTest sandReplaceables = new BlockMatchTest(Blocks.SAND);
-        RuleTest redSandReplaceables = new BlockMatchTest(Blocks.RED_SAND);
+        RuleTest redSandReplaceables = new BlockMatchTest(Blocks.RED_SAND);*/
 
         //<editor-fold desc="RUBY ORE">
-        List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(
+        /*List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.Ores.OVERWORLD_RUBY_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepReplaceables, ModBlocks.Ores.DEEP_RUBY_ORE.get().defaultBlockState()));
 
@@ -60,11 +60,11 @@ public class ModConfiguredFeatures
 
         register(context, NETHER_RUBY_ORE_KEY, Feature.ORE,
                 new OreConfiguration(netherrackReplaceables,
-                        ModBlocks.Ores.NETHER_RUBY_ORE.get().defaultBlockState(), 9));
+                        ModBlocks.Ores.NETHER_RUBY_ORE.get().defaultBlockState(), 9));*/
         //</editor-fold>
 
         //<editor-fold desc="SAPPHIRE ORE">
-        List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(
+        /*List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepReplaceables, ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get().defaultBlockState()));
 
@@ -77,7 +77,7 @@ public class ModConfiguredFeatures
 
         register(context, NETHER_SAPPHIRE_ORE_KEY, Feature.ORE,
                 new OreConfiguration(netherrackReplaceables,
-                        ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get().defaultBlockState(), 9));
+                        ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get().defaultBlockState(), 9));*/
         //</editor-fold>
     }
 

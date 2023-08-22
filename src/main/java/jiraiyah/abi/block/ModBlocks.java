@@ -26,7 +26,7 @@ public class ModBlocks
                 Reference.Names.OVERWORLD + Reference.Names.COPPER + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE));*/
 
-        //<editor-fold desc="LEAD">
+        /*//<editor-fold desc="LEAD">
         public static final RegistryObject<Block> OVERWORLD_LEAD_ORE = registerBlock(
                 Reference.Names.OVERWORLD + Reference.Names.LEAD + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE));
@@ -34,9 +34,9 @@ public class ModBlocks
         public static final RegistryObject<Block> Deep_LEAD_ORE = registerBlock(
                 Reference.Names.DEEPSLATE + Reference.Names.LEAD + Reference.Names.ORE,
                 () -> getOre(Blocks.DEEPSLATE, SoundType.DEEPSLATE, 4.5F, 3.0F));
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="NICKEL">
+        /*//<editor-fold desc="NICKEL">
         public static final RegistryObject<Block> OVERWORLD_NICKEL_ORE = registerBlock(
                 Reference.Names.OVERWORLD + Reference.Names.NICKEL + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE));
@@ -44,9 +44,9 @@ public class ModBlocks
         public static final RegistryObject<Block> Deep_NICKEL_ORE = registerBlock(
                 Reference.Names.DEEPSLATE + Reference.Names.NICKEL + Reference.Names.ORE,
                 () -> getOre(Blocks.DEEPSLATE, SoundType.DEEPSLATE, 4.5F, 3.0F));
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="NITER">
+        /*//<editor-fold desc="NITER">
         public static final RegistryObject<Block> OVERWORLD_NITER_ORE = registerBlock(
                 Reference.Names.OVERWORLD + Reference.Names.NITER + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE, 0, 2));
@@ -54,9 +54,9 @@ public class ModBlocks
         public static final RegistryObject<Block> Deep_NITER_ORE = registerBlock(
                 Reference.Names.DEEPSLATE + Reference.Names.NITER + Reference.Names.ORE,
                 () -> getOre(Blocks.DEEPSLATE, SoundType.DEEPSLATE, 4.5F, 3.0F));
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="SILVER">
+        /*//<editor-fold desc="SILVER">
         public static final RegistryObject<Block> OVERWORLD_SILVER_ORE = registerBlock(
                 Reference.Names.OVERWORLD + Reference.Names.SILVER + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE));
@@ -64,9 +64,9 @@ public class ModBlocks
         public static final RegistryObject<Block> Deep_SILVER_ORE = registerBlock(
                 Reference.Names.DEEPSLATE + Reference.Names.SILVER + Reference.Names.ORE,
                 () -> getOre(Blocks.DEEPSLATE, SoundType.DEEPSLATE, 4.5F, 3.0F));
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="SULFUR">
+        /*//<editor-fold desc="SULFUR">
         public static final RegistryObject<Block> OVERWORLD_SULFUR_ORE = registerBlock(
                 Reference.Names.OVERWORLD + Reference.Names.SULFUR + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE, 0, 0));
@@ -78,9 +78,9 @@ public class ModBlocks
         public static final RegistryObject<Block> NETHER_SULFUR_ORE = registerBlock(
                 Reference.Names.NETHER + Reference.Names.SULFUR + Reference.Names.ORE,
                 () -> getOre(Blocks.NETHERRACK, SoundType.NETHER_ORE, 0, 2));
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="TIN">
+        /*//<editor-fold desc="TIN">
         public static final RegistryObject<Block> OVERWORLD_TIN_ORE = registerBlock(
                 Reference.Names.OVERWORLD + Reference.Names.TIN + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE));
@@ -88,9 +88,9 @@ public class ModBlocks
         public static final RegistryObject<Block> Deep_TIN_ORE = registerBlock(
                 Reference.Names.DEEPSLATE + Reference.Names.LEAD + Reference.Names.ORE,
                 () -> getOre(Blocks.DEEPSLATE, SoundType.DEEPSLATE, 4.5F, 3.0F));
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="RUBY">
+        /*//<editor-fold desc="RUBY">
         public static final RegistryObject<Block> OVERWORLD_RUBY_ORE = registerBlock(
                 Reference.Names.OVERWORLD + Reference.Names.RUBY + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE,  3, 7));
@@ -106,9 +106,9 @@ public class ModBlocks
         public static final RegistryObject<Block> NETHER_RUBY_ORE = registerBlock(
                 Reference.Names.NETHER + Reference.Names.RUBY + Reference.Names.ORE,
                 () -> getOre(Blocks.NETHERRACK, SoundType.NETHER_ORE, 3, 7));
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="SAPPHIRE">
+        /*//<editor-fold desc="SAPPHIRE">
         public static final RegistryObject<Block> OVERWORLD_SAPPHIRE_ORE = registerBlock(
                 Reference.Names.OVERWORLD + Reference.Names.SAPPHIRE + Reference.Names.ORE,
                 () -> getOre(Blocks.STONE, SoundType.STONE, 3, 7));
@@ -124,14 +124,14 @@ public class ModBlocks
         public static final RegistryObject<Block> NETHER_SAPPHIRE_ORE = registerBlock(
                 Reference.Names.NETHER + Reference.Names.SAPPHIRE + Reference.Names.ORE,
                 () -> getOre(Blocks.NETHERRACK, SoundType.NETHER_ORE, 3, 7));
-        //</editor-fold>
+        //</editor-fold>*/
 
         public static void initialize(){}
     }
 
     public static class Ingots
     {
-        public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock(Reference.Names.BRONZE + Reference.Names.BLOCK,
+        /*public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock(Reference.Names.BRONZE + Reference.Names.BLOCK,
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                         .sound(SoundType.METAL)));
 
@@ -197,14 +197,14 @@ public class ModBlocks
 
         public static final RegistryObject<Block> TIN_BLOCK = registerBlock(Reference.Names.TIN + Reference.Names.BLOCK,
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                        .sound(SoundType.METAL)));
+                        .sound(SoundType.METAL)));*/
 
         public static void initialize(){}
     }
 
     public static class Gem
     {
-        public static final RegistryObject<Block> RUBY_BLOCK = registerBlock(Reference.Names.RUBY + Reference.Names.BLOCK,
+        /*public static final RegistryObject<Block> RUBY_BLOCK = registerBlock(Reference.Names.RUBY + Reference.Names.BLOCK,
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                         .sound(SoundType.AMETHYST)));
 
@@ -214,15 +214,15 @@ public class ModBlocks
 
         public static final RegistryObject<Block> SLIME_BLOCK = registerBlock(Reference.Names.SLIME + Reference.Names.BLOCK,
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)
-                        .sound(SoundType.SLIME_BLOCK)));
+                        .sound(SoundType.SLIME_BLOCK)));*/
 
         public static void initialize(){}
     }
 
 
-    public static final RegistryObject<Block> POTATO_BLOCK = registerBlock(Reference.Names.POTATO + Reference.Names.BLOCK,
+    /*public static final RegistryObject<Block> POTATO_BLOCK = registerBlock(Reference.Names.POTATO + Reference.Names.BLOCK,
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
-                    .sound(SoundType.BAMBOO_WOOD)));
+                    .sound(SoundType.BAMBOO_WOOD)));*/
 
     public static void initialize()
     {

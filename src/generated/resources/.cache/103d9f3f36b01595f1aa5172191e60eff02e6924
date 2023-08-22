@@ -1,13 +1,1 @@
-// 1.20.1	2023-08-18T01:36:00.815033	Registries
-51a9d66e1ee2f60c008e5cebe72e901fc0e643a0 data/abi/worldgen/configured_feature/end_ruby_ore.json
-a7fdadff9007fa529a24b1a5b8c4325441b3ab25 data/abi/worldgen/configured_feature/end_sapphire_ore.json
-bc6f2cb4be9e8a0da708f071ab05c971f0b79df7 data/abi/worldgen/configured_feature/nether_ruby_ore.json
-85523f351a0e48175b1710a26206f99d99df5c81 data/abi/worldgen/configured_feature/nether_sapphire_ore.json
-bb2bdd71ae1e295eb0e909ee30688d5ea5663a76 data/abi/worldgen/configured_feature/overworld_ruby_ore.json
-8edcae10a8cd325453a0934cc0f62a13b594f31c data/abi/worldgen/configured_feature/overworld_sapphire_ore.json
-f0e263a7ddd98362aa51d87d265cb6f660781394 data/abi/worldgen/placed_feature/end_ruby_placed.json
-ca6669cd9a8ec8de0f4cbcd8836b04b9288612ba data/abi/worldgen/placed_feature/end_sapphire_placed.json
-1188054dacf3e4c665b96212361755b8e5dfee8e data/abi/worldgen/placed_feature/nether_ruby_placed.json
-a0aa4fcd0fa376248ddad35d00623ec5598bd3f7 data/abi/worldgen/placed_feature/nether_sapphire_placed.json
-f1473f5423ea16c4ce893de3f980ea1113a97b67 data/abi/worldgen/placed_feature/overworld_ruby_placed.json
-18dfe006a74e30013ea599a32a7219ae034cc3af data/abi/worldgen/placed_feature/overworld_sapphire_placed.json
+// 1.20.1	2023-08-22T15:55:07.5213861	Registries

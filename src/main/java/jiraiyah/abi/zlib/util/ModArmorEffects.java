@@ -19,10 +19,10 @@ public class ModArmorEffects extends ArmorItem
     static
     {
         MATERIAL_TO_EFFECT_MAP = new HashMap<>();
-        addValues(ModArmorMaterials.EMERALD, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 3));
-        addValues(ModArmorMaterials.RUBY, new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 3));
+        /*addValues(ModArmorMaterials.EMERALD, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 3));*/
+        /*addValues(ModArmorMaterials.RUBY, new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 3));
         addValues(ModArmorMaterials.SAPPHIRE, new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 3));
-        addValues(ModArmorMaterials.SAPPHIRE, new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 200, 3));
+        addValues(ModArmorMaterials.SAPPHIRE, new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 200, 3));*/
     }
 
     public ModArmorEffects(ArmorMaterial pMaterial, Type pType, Properties pProperties)

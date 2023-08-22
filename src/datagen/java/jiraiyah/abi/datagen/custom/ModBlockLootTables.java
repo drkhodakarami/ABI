@@ -31,48 +31,48 @@ public class ModBlockLootTables extends BlockLootSubProvider
     {
         //<editor-fold desc="ORES">
 
-        this.add(ModBlocks.Ores.OVERWORLD_LEAD_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.LEAD.get()));
+        /*this.add(ModBlocks.Ores.OVERWORLD_LEAD_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.LEAD.get()));
         this.add(ModBlocks.Ores.Deep_LEAD_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.LEAD.get()));
 
         this.add(ModBlocks.Ores.OVERWORLD_NICKEL_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NICKEL.get()));
-        this.add(ModBlocks.Ores.Deep_NICKEL_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NICKEL.get()));
+        this.add(ModBlocks.Ores.Deep_NICKEL_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NICKEL.get()));*/
 
         /*this.add(ModBlocks.Ores.OVERWORLD_NITER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NITER.get()));
         this.add(ModBlocks.Ores.Deep_NITER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.NITER.get()));*/
 
-        this.add(ModBlocks.Ores.OVERWORLD_SILVER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SILVER.get()));
-        this.add(ModBlocks.Ores.Deep_SILVER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SILVER.get()));
+        /*this.add(ModBlocks.Ores.OVERWORLD_SILVER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SILVER.get()));
+        this.add(ModBlocks.Ores.Deep_SILVER_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SILVER.get()));*/
 
         /*this.add(ModBlocks.Ores.OVERWORLD_SULFUR_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SULFUR.get()));
         this.add(ModBlocks.Ores.Deep_SULFUR_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.SULFUR.get()));*/
 
-        this.add(ModBlocks.Ores.OVERWORLD_TIN_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.TIN.get()));
-        this.add(ModBlocks.Ores.Deep_TIN_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.TIN.get()));
+        /*this.add(ModBlocks.Ores.OVERWORLD_TIN_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.TIN.get()));
+        this.add(ModBlocks.Ores.Deep_TIN_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Raw.TIN.get()));*/
 
         //<editor-fold desc="RUBY">
-        this.add(ModBlocks.Ores.OVERWORLD_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
+        /*this.add(ModBlocks.Ores.OVERWORLD_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
         this.add(ModBlocks.Ores.DEEP_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
         this.add(ModBlocks.Ores.END_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
-        this.add(ModBlocks.Ores.NETHER_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));
+        this.add(ModBlocks.Ores.NETHER_RUBY_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.RUBY.get()));*/
         //</editor-fold>
 
         //<editor-fold desc="SAPPHIRE">
-        this.add(ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
+        /*this.add(ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
         this.add(ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
         this.add(ModBlocks.Ores.END_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
-        this.add(ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));
+        this.add(ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get(), block -> createSilkTouchDispatchTable(block, ModItems.Gem.SAPPHIRE.get()));*/
         //</editor-fold>
 
         //</editor-fold>
 
         //<editor-fold desc="GEMS">
-        dropSelf(ModBlocks.Gem.RUBY_BLOCK.get());
+        /*dropSelf(ModBlocks.Gem.RUBY_BLOCK.get());
         dropSelf(ModBlocks.Gem.SAPPHIRE_BLOCK.get());
-        dropSelf(ModBlocks.Gem.SLIME_BLOCK.get());
+        dropSelf(ModBlocks.Gem.SLIME_BLOCK.get());*/
         //</editor-fold>
 
         //<editor-fold desc="INGOTS">
-        dropSelf(ModBlocks.Ingots.BRONZE_BLOCK.get());
+        /*dropSelf(ModBlocks.Ingots.BRONZE_BLOCK.get());
         dropSelf(ModBlocks.Ingots.CONSTANTAN_BLOCK.get());
         dropSelf(ModBlocks.Ingots.ELECTRUM_BLOCK.get());
         dropSelf(ModBlocks.Ingots.ENDERITE_BLOCK.get());
@@ -88,10 +88,10 @@ public class ModBlockLootTables extends BlockLootSubProvider
         dropSelf(ModBlocks.Ingots.SILVER_BLOCK.get());
         dropSelf(ModBlocks.Ingots.STEEL_BLOCK.get());
         dropSelf(ModBlocks.Ingots.SULFUR_BLOCK.get());
-        dropSelf(ModBlocks.Ingots.TIN_BLOCK.get());
+        dropSelf(ModBlocks.Ingots.TIN_BLOCK.get());*/
         //</editor-fold>
 
-        dropSelf(ModBlocks.POTATO_BLOCK.get());
+        //dropSelf(ModBlocks.POTATO_BLOCK.get());
         /**/
     }
 

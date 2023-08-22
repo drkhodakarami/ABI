@@ -23,7 +23,7 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder
 {
     //<editor-fold desc="SMELTABLES LIST">
-    private static final List<ItemLike> RUBY_SMELTABLES = List.of(
+    /*private static final List<ItemLike> RUBY_SMELTABLES = List.of(
             ModBlocks.Ores.OVERWORLD_RUBY_ORE.get(),
             ModBlocks.Ores.DEEP_RUBY_ORE.get(),
             ModBlocks.Ores.END_RUBY_ORE.get(),
@@ -35,7 +35,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.Ores.DEEP_SAPPHIRE_ORE.get(),
             ModBlocks.Ores.END_SAPPHIRE_ORE.get(),
             ModBlocks.Ores.NETHER_SAPPHIRE_ORE.get()
-            );
+            );*/
     //</editor-fold>
 
     public ModRecipeProvider(PackOutput pOutput)
@@ -63,7 +63,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //<editor-fold desc="ARMOR">
 
-        //<editor-fold desc="BRONZE ARMOR">
+        /*//<editor-fold desc="BRONZE ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.BRONZE_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.BRONZE)
                 .pattern("A A")
@@ -103,9 +103,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.BRONZE).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="CONSTANTAN ARMOR">
+        /*//<editor-fold desc="CONSTANTAN ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.CONSTANTAN_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.CONSTANTAN)
                 .pattern("A A")
@@ -144,9 +144,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.CONSTANTAN).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="COPPER ARMOR">
+        /*//<editor-fold desc="COPPER ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.COPPER_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.COPPER)
                 .pattern("A A")
@@ -185,9 +185,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.COPPER).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="ELECTRUM ARMOR">
+        /*//<editor-fold desc="ELECTRUM ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.ELECTRUM_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.ELECTRUM)
                 .pattern("A A")
@@ -226,10 +226,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.ELECTRUM).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
         //<editor-fold desc="EMERALD ARMOR">
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.EMERALD_BOOTS.get())
+        /*ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.EMERALD_BOOTS.get())
                 .define('A', Tags.Items.GEMS_EMERALD)
                 .pattern("A A")
                 .pattern("A A")
@@ -266,10 +266,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(Reference.Names.HAS + Reference.Names.EMERALD,
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(Tags.Items.GEMS_EMERALD).build()))
-                .save(pWriter);
+                .save(pWriter);*/
         //</editor-fold>
 
-        //<editor-fold desc="INVAR ARMOR">
+        /*//<editor-fold desc="INVAR ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.INVAR_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.INVAR)
                 .pattern("A A")
@@ -308,9 +308,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.INVAR).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="LEAD ARMOR">
+        /*//<editor-fold desc="LEAD ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.LEAD_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.LEAD)
                 .pattern("A A")
@@ -349,9 +349,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.LEAD).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="NICKEL ARMOR">
+        /*//<editor-fold desc="NICKEL ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.NICKEL_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.NICKEL)
                 .pattern("A A")
@@ -390,9 +390,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.NICKEL).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="RUBY ARMOR">
+        /*//<editor-fold desc="RUBY ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.RUBY_BOOTS.get())
                 .define('A', ModTags.Items.Gems.RUBY)
                 .pattern("A A")
@@ -431,9 +431,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Gems.RUBY).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="SAPPHIRE ARMOR">
+        /*//<editor-fold desc="SAPPHIRE ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SAPPHIRE_BOOTS.get())
                 .define('A', ModTags.Items.Gems.SAPPHIRE)
                 .pattern("A A")
@@ -472,9 +472,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Gems.SAPPHIRE).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="SILVER ARMOR">
+        /*//<editor-fold desc="SILVER ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.SILVER_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.SILVER)
                 .pattern("A A")
@@ -513,9 +513,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.SILVER).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="TIN ARMOR">
+        /*//<editor-fold desc="TIN ARMOR">
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Armor.TIN_BOOTS.get())
                 .define('A', ModTags.Items.Reinforced.TIN)
                 .pattern("A A")
@@ -554,19 +554,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.Reinforced.TIN).build()))
                 .save(pWriter);
-        //</editor-fold>
+        //</editor-fold>*/
 
         //</editor-fold>
 
-        //<editor-fold desc="GEM & BLOCKS">
+        /*//<editor-fold desc="GEM & BLOCKS">
         nineBlockStorageRecipes(pWriter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.Gem.RUBY.get(), RecipeCategory.MISC, ModBlocks.Gem.RUBY_BLOCK.get());
 
         nineBlockStorageRecipes(pWriter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.Gem.SAPPHIRE.get(), RecipeCategory.MISC, ModBlocks.Gem.SAPPHIRE_BLOCK.get());
-        //</editor-fold>
+        //</editor-fold>*/
 
-        //<editor-fold desc="SMELTING / BLASTING">
+        /*//<editor-fold desc="SMELTING / BLASTING">
 
         //<editor-fold desc="RUBY">
         oreBlasting(pWriter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.Gem.RUBY.get(),
@@ -582,7 +582,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 0.25F, 200, "sapphire");
         //</editor-fold>
 
-        //</editor-fold>
+        //</editor-fold>*/
     }
 
     //<editor-fold desc="VANILLA REPLACEMENT HELPER METHODS">

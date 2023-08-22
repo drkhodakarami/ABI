@@ -78,6 +78,7 @@ public class Reference
         public static final String TUNER_ACTIVE = "tuner_active";
         public static final String WRENCH = "wrench";
 
+        public static final String CRYSTAL = "crystal_";
         public static final String DUST = "dust_";
         public static final String FLUID = "fluid_";
         public static final String GEAR = "gear_";
@@ -139,6 +140,23 @@ public class Reference
         public static final String SLIME = "slime";
         public static final String NITER = "niter";
         public static final String AMETHYST = "amethyst";
+        public static final String GLOWSTONE = "glowstone";
+        public static final String URANIUM = "uranium";
+        public static final String APATITE = "apatite";
+        public static final String CHARCOAL = "charcoal";
+        public static final String CINNABAR = "cinnabar";
+        public static final String CITRINE = "citrine";
+        public static final String COAL = "coal";
+        public static final String HEPATIZON = "hepatizon";
+        public static final String MANYULLYN = "manyullyn";
+        public static final String OBSIDIAN = "obsidian";
+        public static final String OSMIUM = "osmium";
+        public static final String PLATINUM = "platinum";
+        public static final String ROSE_GOLD = "rose_gold";
+        public static final String SLIMESTEEL = "slimesteel";
+        public static final String SOULSTEEL = "soulsteel";
+        public static final String ZINC = "zinc";
+        public static final String AMETHYST_BRONZE = "amethyst_bronze";
     }
 
     public static class Tags
@@ -185,7 +203,6 @@ public class Reference
                 public static final String SEEDS = "seeds/";
                 public static final String STORAGE_BLOCKS = "storage_blocks/";
                 public static final String TOOLS = "tools/";
-                public static final String CASTS = "casts/";
             }
 
             public static final String ENTITY_TYPES = "entity_types/";
@@ -199,6 +216,8 @@ public class Reference
             public static final String IS_WET = "biome/is_wet/";
         }
 
+        public static final String CASTS = "casts/";
+        public static final String CRYSTAL = "crystals/";
         public static final String GEAR = "gears/";
         public static final String PLATE = "plates/";
         public static final String REINFORCED = "reinforced/";

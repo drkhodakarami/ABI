@@ -20,7 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider
     {
         //<editor-fold desc="ORES">
 
-        blockWithItem(ModBlocks.Ores.OVERWORLD_LEAD_ORE);
+        /*blockWithItem(ModBlocks.Ores.OVERWORLD_LEAD_ORE);
         blockWithItem(ModBlocks.Ores.Deep_LEAD_ORE);
 
         blockWithItem(ModBlocks.Ores.OVERWORLD_NICKEL_ORE);
@@ -47,12 +47,12 @@ public class ModBlockStateProvider extends BlockStateProvider
         blockWithItem(ModBlocks.Ores.OVERWORLD_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.Ores.DEEP_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.Ores.END_SAPPHIRE_ORE);
-        blockWithItem(ModBlocks.Ores.NETHER_SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.Ores.NETHER_SAPPHIRE_ORE);*/
 
         //</editor-fold>
 
         //<editor-fold desc="INGOTS">
-        blockWithItem(ModBlocks.Ingots.BRONZE_BLOCK);
+        /*blockWithItem(ModBlocks.Ingots.BRONZE_BLOCK);
         blockWithItem(ModBlocks.Ingots.CONSTANTAN_BLOCK);
         blockWithItem(ModBlocks.Ingots.ELECTRUM_BLOCK);
         blockWithItem(ModBlocks.Ingots.ENDERITE_BLOCK);
@@ -68,16 +68,16 @@ public class ModBlockStateProvider extends BlockStateProvider
         blockWithItem(ModBlocks.Ingots.SILVER_BLOCK);
         blockWithItem(ModBlocks.Ingots.STEEL_BLOCK);
         blockWithItem(ModBlocks.Ingots.SULFUR_BLOCK);
-        blockWithItem(ModBlocks.Ingots.TIN_BLOCK);
+        blockWithItem(ModBlocks.Ingots.TIN_BLOCK);*/
         //</editor-fold>
 
         //<editor-fold desc="GEMS">
-        blockWithItem(ModBlocks.Gem.RUBY_BLOCK);
+        /*blockWithItem(ModBlocks.Gem.RUBY_BLOCK);
         blockWithItem(ModBlocks.Gem.SAPPHIRE_BLOCK);
-        blockWithItem(ModBlocks.Gem.SLIME_BLOCK);
+        blockWithItem(ModBlocks.Gem.SLIME_BLOCK);*/
         //</editor-fold>
 
-        getVariantBuilder(ModBlocks.POTATO_BLOCK.get())
+        /*getVariantBuilder(ModBlocks.POTATO_BLOCK.get())
                 .partialState()
                 .modelForState()
                 .modelFile(models().cubeBottomTop(Reference.Names.POTATO + Reference.Names.BLOCK,
@@ -90,7 +90,7 @@ public class ModBlockStateProvider extends BlockStateProvider
                         Reference.Location("block/potato_block_side"),
                         Reference.Location("block/potato_block_bottom"),
                         Reference.Location("block/potato_block_top")
-                ));
+                ));*/
     }
 
     //<editor-fold desc="HELPER METHODS">
