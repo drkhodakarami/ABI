@@ -24,6 +24,11 @@ public class ModItemModelProvider extends ItemModelProvider
         //<editor-fold desc="ARMOR">
         SimpleItem(ModItems.Armor.ENGINEER_HELMET, true);
 
+        SimpleItem(ModItems.Armor.AMETHYST_HELMET);
+        SimpleItem(ModItems.Armor.AMETHYST_CHESTPLATE);
+        SimpleItem(ModItems.Armor.AMETHYST_LEGGINGS);
+        SimpleItem(ModItems.Armor.AMETHYST_BOOTS);
+
         SimpleItem(ModItems.Armor.BRONZE_HELMET);
         SimpleItem(ModItems.Armor.BRONZE_CHESTPLATE);
         SimpleItem(ModItems.Armor.BRONZE_LEGGINGS);
