@@ -138,6 +138,7 @@ public class Reference
         public static final String SIGNALUM = "signalum";
         public static final String SLIME = "slime";
         public static final String NITER = "niter";
+        public static final String AMETHYST = "amethyst";
     }
 
     public static class Tags

@@ -1255,6 +1255,17 @@ public class ModItems
         public static final RegistryObject<Item> ENGINEER_HELMET = ITEMS.register(Reference.Names.ENGINEER + Reference.Names.HELMET,
                 () -> new ModArmorEffects(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()));
 
+        //<editor-fold desc="AMETHYST">
+        public static final RegistryObject<Item> AMETHYST_HELMET = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.HELMET,
+                () -> new ModArmorEffects(ModArmorMaterials.AMETHYST, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> AMETHYST_CHESTPLATE = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.CHEST_PLATE,
+                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> AMETHYST_LEGGINGS = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.LEGGINGS,
+                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register(Reference.Names.AMETHYST + Reference.Names.BOOTS,
+                () -> new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS, new Item.Properties()));
+        //</editor-fold>
+
         //<editor-fold desc="BRONZE">
         public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register(Reference.Names.BRONZE + Reference.Names.HELMET,
                 () -> new ModArmorEffects(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new Item.Properties()));

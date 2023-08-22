@@ -21,6 +21,15 @@ import java.util.function.Supplier;
 @SuppressWarnings("deprecation")
 public enum ModArmorMaterials implements ArmorMaterial
 {
+    AMETHYST("amethyst", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+        armor.put(ArmorItem.Type.BOOTS, 2);
+        armor.put(ArmorItem.Type.LEGGINGS, 5);
+        armor.put(ArmorItem.Type.CHESTPLATE, 6);
+        armor.put(ArmorItem.Type.HELMET, 2);
+    }),
+            12, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F,
+            () -> Ingredient.of(Items.AMETHYST_SHARD)),
+
     BRONZE("bronze", 16, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
         armor.put(ArmorItem.Type.LEGGINGS, 5);
