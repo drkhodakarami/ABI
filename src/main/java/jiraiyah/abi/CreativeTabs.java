@@ -19,7 +19,7 @@ public class CreativeTabs
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
                     .icon(() -> ModItems.Crystal.COBALT.get().getDefaultInstance())
-                    .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.DUST + "tab"))
+                    .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.CRYSTAL + "tab"))
                     .displayItems((parameters, output) ->
                     {
                         output.accept(ModItems.Crystal.COBALT.get());
@@ -109,7 +109,7 @@ public class CreativeTabs
                         output.accept(ModItems.Dust.ZINC.get());
                     }).build());
 
-    /*public static final RegistryObject<CreativeModeTab> GEAR = CREATIVE_MODE_TABS.register(
+    public static final RegistryObject<CreativeModeTab> GEAR = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.GEAR + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.DUST.getId())
@@ -121,6 +121,7 @@ public class CreativeTabs
                         output.accept(ModItems.Gear.ALUMINIUM.get());
                         output.accept(ModItems.Gear.ALUMINIUM_BRASS.get());
                         output.accept(ModItems.Gear.ALUMITE.get());
+                        output.accept(ModItems.Gear.AMETHYST_BRONZE.get());
                         output.accept(ModItems.Gear.ARDITE.get());
                         output.accept(ModItems.Gear.BERYLLIUM.get());
                         output.accept(ModItems.Gear.BLUTONIUM.get());
@@ -136,29 +137,54 @@ public class CreativeTabs
                         output.accept(ModItems.Gear.DARK_STEEL.get());
                         output.accept(ModItems.Gear.DAWN_STONE.get());
                         output.accept(ModItems.Gear.DEMONIUM.get());
+                        output.accept(ModItems.Gear.DIAMOND.get());
                         output.accept(ModItems.Gear.DRACONIUM.get());
                         output.accept(ModItems.Gear.ELECTRICAL_STEEL.get());
                         output.accept(ModItems.Gear.ELECTRUM.get());
+                        output.accept(ModItems.Gear.EMERALD.get());
                         output.accept(ModItems.Gear.ENCHANTIUM.get());
                         output.accept(ModItems.Gear.END_STEEL.get());
                         output.accept(ModItems.Gear.ENDERITE.get());
                         output.accept(ModItems.Gear.ENERGETIC_SILVER.get());
+                        output.accept(ModItems.Gear.GLOWSTONE.get());
                         output.accept(ModItems.Gear.GOLD.get());
                         output.accept(ModItems.Gear.GRAPHITE.get());
+                        output.accept(ModItems.Gear.HEPATIZON.get());
                         output.accept(ModItems.Gear.INVAR.get());
                         output.accept(ModItems.Gear.IRIDIUM.get());
                         output.accept(ModItems.Gear.IRON.get());
+                        output.accept(ModItems.Gear.LAPIS.get());
                         output.accept(ModItems.Gear.LEAD.get());
                         output.accept(ModItems.Gear.LITHIUM.get());
                         output.accept(ModItems.Gear.LUDICRITE.get());
+                        output.accept(ModItems.Gear.LUMIUM.get());
                         output.accept(ModItems.Gear.MAGNESIUM.get());
                         output.accept(ModItems.Gear.MANGANESE.get());
+                        output.accept(ModItems.Gear.MANYULLYN.get());
+                        output.accept(ModItems.Gear.NETHERITE.get());
                         output.accept(ModItems.Gear.NICKEL.get());
+                        output.accept(ModItems.Gear.NITER.get());
+                        output.accept(ModItems.Gear.OBSIDIAN.get());
+                        output.accept(ModItems.Gear.OSMIUM.get());
+                        output.accept(ModItems.Gear.PLATINUM.get());
+                        output.accept(ModItems.Gear.PRISMARINE.get());
+                        output.accept(ModItems.Gear.QUARTZ.get());
+                        output.accept(ModItems.Gear.ROSE_GOLD.get());
+                        output.accept(ModItems.Gear.RUBY.get());
+                        output.accept(ModItems.Gear.SAPPHIRE.get());
+                        output.accept(ModItems.Gear.SIGNALUM.get());
                         output.accept(ModItems.Gear.SILVER.get());
+                        output.accept(ModItems.Gear.SLIMESTEEL.get());
+                        output.accept(ModItems.Gear.SOULSTEEL.get());
                         output.accept(ModItems.Gear.STEEL.get());
+                        output.accept(ModItems.Gear.STONE.get());
+                        output.accept(ModItems.Gear.SULFUR.get());
                         output.accept(ModItems.Gear.TIN.get());
+                        output.accept(ModItems.Gear.URANIUM.get());
+                        output.accept(ModItems.Gear.WOOD.get());
                         output.accept(ModItems.Gear.YELLORIUM.get());
-                    }).build());*/
+                        output.accept(ModItems.Gear.ZINC.get());
+                    }).build());
 
     /*public static final RegistryObject<CreativeModeTab> INGOT = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.INGOT + "tab", () -> CreativeModeTab.builder()

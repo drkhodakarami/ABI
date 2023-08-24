@@ -3,16 +3,45 @@ package jiraiyah.abi.datagen.custom;
 import jiraiyah.abi.Reference;
 import jiraiyah.abi.item.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.ItemModelGenerators;
+import net.minecraft.data.models.model.ModelLocationUtils;
+import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.armortrim.TrimMaterial;
+import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.LinkedHashMap;
+
 public class ModItemModelProvider extends ItemModelProvider
 {
+    private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();
+
+    static
+    {
+        trimMaterials.put(TrimMaterials.QUARTZ, 0.1F);
+        trimMaterials.put(TrimMaterials.IRON, 0.2F);
+        trimMaterials.put(TrimMaterials.NETHERITE, 0.3F);
+        trimMaterials.put(TrimMaterials.REDSTONE, 0.4F);
+        trimMaterials.put(TrimMaterials.COPPER, 0.5F);
+        trimMaterials.put(TrimMaterials.GOLD, 0.6F);
+        trimMaterials.put(TrimMaterials.EMERALD, 0.7F);
+        trimMaterials.put(TrimMaterials.DIAMOND, 0.8F);
+        trimMaterials.put(TrimMaterials.LAPIS, 0.9F);
+        trimMaterials.put(TrimMaterials.AMETHYST, 1.0F);
+    }
+
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper)
     {
         super(output, Reference.MODID, existingFileHelper);
@@ -170,10 +199,11 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Dust.ZINC);
         //</editor-fold>
 
-        /*//<editor-fold desc="GEAR">
+        //<editor-fold desc="GEAR">
         SimpleItem(ModItems.Gear.ALUMINIUM);
         SimpleItem(ModItems.Gear.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Gear.ALUMITE);
+        SimpleItem(ModItems.Gear.AMETHYST_BRONZE);
         SimpleItem(ModItems.Gear.ARDITE);
         SimpleItem(ModItems.Gear.BERYLLIUM);
         SimpleItem(ModItems.Gear.BLUTONIUM);
@@ -189,29 +219,54 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Gear.DARK_STEEL);
         SimpleItem(ModItems.Gear.DAWN_STONE);
         SimpleItem(ModItems.Gear.DEMONIUM);
+        SimpleItem(ModItems.Gear.DIAMOND);
         SimpleItem(ModItems.Gear.DRACONIUM);
         SimpleItem(ModItems.Gear.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Gear.ELECTRUM);
+        SimpleItem(ModItems.Gear.EMERALD);
         SimpleItem(ModItems.Gear.ENCHANTIUM);
         SimpleItem(ModItems.Gear.END_STEEL);
         SimpleItem(ModItems.Gear.ENDERITE);
         SimpleItem(ModItems.Gear.ENERGETIC_SILVER);
+        SimpleItem(ModItems.Gear.GLOWSTONE);
         SimpleItem(ModItems.Gear.GOLD);
         SimpleItem(ModItems.Gear.GRAPHITE);
+        SimpleItem(ModItems.Gear.HEPATIZON);
         SimpleItem(ModItems.Gear.INVAR);
         SimpleItem(ModItems.Gear.IRIDIUM);
         SimpleItem(ModItems.Gear.IRON);
+        SimpleItem(ModItems.Gear.LAPIS);
         SimpleItem(ModItems.Gear.LEAD);
         SimpleItem(ModItems.Gear.LITHIUM);
         SimpleItem(ModItems.Gear.LUDICRITE);
+        SimpleItem(ModItems.Gear.LUMIUM);
         SimpleItem(ModItems.Gear.MAGNESIUM);
         SimpleItem(ModItems.Gear.MANGANESE);
+        SimpleItem(ModItems.Gear.MANYULLYN);
+        SimpleItem(ModItems.Gear.NETHERITE);
         SimpleItem(ModItems.Gear.NICKEL);
-        SimpleItem(ModItems.Gear.STEEL);
+        SimpleItem(ModItems.Gear.NITER);
+        SimpleItem(ModItems.Gear.OBSIDIAN);
+        SimpleItem(ModItems.Gear.OSMIUM);
+        SimpleItem(ModItems.Gear.PLATINUM);
+        SimpleItem(ModItems.Gear.PRISMARINE);
+        SimpleItem(ModItems.Gear.QUARTZ);
+        SimpleItem(ModItems.Gear.ROSE_GOLD);
+        SimpleItem(ModItems.Gear.RUBY);
+        SimpleItem(ModItems.Gear.SAPPHIRE);
+        SimpleItem(ModItems.Gear.SIGNALUM);
         SimpleItem(ModItems.Gear.SILVER);
+        SimpleItem(ModItems.Gear.SLIMESTEEL);
+        SimpleItem(ModItems.Gear.SOULSTEEL);
+        SimpleItem(ModItems.Gear.STEEL);
+        SimpleItem(ModItems.Gear.STONE);
+        SimpleItem(ModItems.Gear.SULFUR);
         SimpleItem(ModItems.Gear.TIN);
+        SimpleItem(ModItems.Gear.URANIUM);
+        SimpleItem(ModItems.Gear.WOOD);
         SimpleItem(ModItems.Gear.YELLORIUM);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Gear.ZINC);
+        //</editor-fold>
 
         /*//<editor-fold desc="INGOT">
         SimpleItem(ModItems.Ingot.ALUMINIUM);
@@ -690,6 +745,8 @@ public class ModItemModelProvider extends ItemModelProvider
 
         SimpleItem(ModItems.Head.WOOD_HAMMER);
         //</editor-fold>*/
+
+        //trimmedArmorItem(ModItems.Armor.SAPPHIRE_HELMET);
     }
 
     //<editor-fold desc="HELPER METHODS">
@@ -804,6 +861,54 @@ public class ModItemModelProvider extends ItemModelProvider
         return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                 .texture("layer0",
                         Reference.Location("item/" + item.getId().getPath()));
+    }
+
+    // Shoutout to El_Redstoniano for making this
+    private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
+        final String MOD_ID = Reference.MODID; // Change this to your mod id
+
+        if(itemRegistryObject.get() instanceof ArmorItem armorItem) {
+            trimMaterials.entrySet().forEach(entry ->
+            {
+
+                ResourceKey<TrimMaterial> trimMaterial = entry.getKey();
+                float trimValue = entry.getValue();
+
+                String armorType = switch (armorItem.getEquipmentSlot()) {
+                    case HEAD -> "helmet";
+                    case CHEST -> "chestplate";
+                    case LEGS -> "leggings";
+                    case FEET -> "boots";
+                    default -> "";
+                };
+
+                String armorItemPath = "item/" + armorItem;
+                String trimPath = "trims/items/" + armorType + "_trim_" + trimMaterial.location().getPath();
+                String currentTrimName = armorItemPath + "_" + trimMaterial.location().getPath() + "_trim";
+                ResourceLocation armorItemResLoc = new ResourceLocation(MOD_ID, armorItemPath);
+                ResourceLocation trimResLoc = new ResourceLocation(trimPath); // minecraft namespace
+                ResourceLocation trimNameResLoc = new ResourceLocation(MOD_ID, currentTrimName);
+
+                // This is used for making the ExistingFileHelper acknowledge that this texture exist, so this will
+                // avoid an IllegalArgumentException
+                this.existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
+
+                // Trimmed armorItem files
+                getBuilder(currentTrimName)
+                        .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                        .texture("layer0", armorItemResLoc)
+                        .texture("layer1", trimResLoc);
+
+                // Non-trimmed armorItem file (normal variant)
+                this.withExistingParent(itemRegistryObject.getId().getPath(),
+                                mcLoc("item/generated"))
+                        .override()
+                        .model(new ModelFile.UncheckedModelFile(trimNameResLoc))
+                        .predicate(mcLoc("trim_type"), trimValue).end()
+                        .texture("layer0",
+                                Reference.Location("item/armor/" + itemRegistryObject.getId().getPath()));
+            });
+        }
     }
     //</editor-fold>
 }

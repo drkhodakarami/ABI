@@ -17,6 +17,8 @@ public class ModTags
 
         //public static final TagKey<Item> DUSTS_IRON = ItemTags.create(new ResourceLocation("forge", "dusts/iron"));
 
+        public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = tag("need_sapphire_tool");
+
         private static TagKey<Block> tag(String name)
         {
             return BlockTags.create(Reference.Location(name));
@@ -140,11 +142,12 @@ public class ModTags
             public static final TagKey<Item> ZINC = forgeTag(Reference.Tags.Forge.Items.DUST + Reference.Names.ZINC);
         }
 
-        /*public static class Gears
+        public static class Gears
         {
             public static final TagKey<Item> ALUMINIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.ALUMINIUM);
             public static final TagKey<Item> ALUMINIUM_BRASS = forgeTag(Reference.Tags.GEAR + Reference.Names.ALUMINIUM_BRASS);
             public static final TagKey<Item> ALUMITE = forgeTag(Reference.Tags.GEAR + Reference.Names.ALUMITE);
+            public static final TagKey<Item> AMETHYST_BRONZE = forgeTag(Reference.Tags.GEAR + Reference.Names.AMETHYST_BRONZE);
             public static final TagKey<Item> ARDITE = forgeTag(Reference.Tags.GEAR + Reference.Names.ARDITE);
             public static final TagKey<Item> BERYLLIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.BERYLLIUM);
             public static final TagKey<Item> BLUTONIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.BLUTONIUM);
@@ -160,29 +163,54 @@ public class ModTags
             public static final TagKey<Item> DARK_STEEL = forgeTag(Reference.Tags.GEAR + Reference.Names.DARK_STEEL);
             public static final TagKey<Item> DAWN_STONE = forgeTag(Reference.Tags.GEAR + Reference.Names.DAWN_STONE);
             public static final TagKey<Item> DEMONIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.DEMONIUM);
+            public static final TagKey<Item> DIAMOND = forgeTag(Reference.Tags.GEAR + Reference.Names.DIAMOND);
             public static final TagKey<Item> DRACONIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.DRACONIUM);
             public static final TagKey<Item> ELECTRICAL_STEEL = forgeTag(Reference.Tags.GEAR + Reference.Names.ELECTRICAL_STEEL);
             public static final TagKey<Item> ELECTRUM = forgeTag(Reference.Tags.GEAR + Reference.Names.ELECTRUM);
+            public static final TagKey<Item> EMERALD = forgeTag(Reference.Tags.GEAR + Reference.Names.EMERALD);
             public static final TagKey<Item> ENCHANTIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.ENCHANTIUM);
             public static final TagKey<Item> END_STEEL = forgeTag(Reference.Tags.GEAR + Reference.Names.END_STEEL);
             public static final TagKey<Item> ENDERITE = forgeTag(Reference.Tags.GEAR + Reference.Names.ENDERITE);
             public static final TagKey<Item> ENERGETIC_SILVER = forgeTag(Reference.Tags.GEAR + Reference.Names.ENERGETIC_SILVER);
+            public static final TagKey<Item> GLOWSTONE = forgeTag(Reference.Tags.GEAR + Reference.Names.GLOWSTONE);
             public static final TagKey<Item> GOLD = forgeTag(Reference.Tags.GEAR + Reference.Names.GOLD);
             public static final TagKey<Item> GRAPHITE = forgeTag(Reference.Tags.GEAR + Reference.Names.GRAPHITE);
+            public static final TagKey<Item> HEPATIZON = forgeTag(Reference.Tags.GEAR + Reference.Names.HEPATIZON);
             public static final TagKey<Item> INVAR = forgeTag(Reference.Tags.GEAR + Reference.Names.INVAR);
             public static final TagKey<Item> IRIDIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.IRIDIUM);
             public static final TagKey<Item> IRON = forgeTag(Reference.Tags.GEAR + Reference.Names.IRON);
+            public static final TagKey<Item> LAPIS = forgeTag(Reference.Tags.GEAR + Reference.Names.LAPIS);
             public static final TagKey<Item> LEAD = forgeTag(Reference.Tags.GEAR + Reference.Names.LEAD);
             public static final TagKey<Item> LITHIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.LITHIUM);
             public static final TagKey<Item> LUDICRITE = forgeTag(Reference.Tags.GEAR + Reference.Names.LUDICRITE);
+            public static final TagKey<Item> LUMIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.LUMIUM);
             public static final TagKey<Item> MAGNESIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.MAGNESIUM);
             public static final TagKey<Item> MANGANESE = forgeTag(Reference.Tags.GEAR + Reference.Names.MANGANESE);
+            public static final TagKey<Item> MANYULLYN = forgeTag(Reference.Tags.GEAR + Reference.Names.MANYULLYN);
+            public static final TagKey<Item> NETHERITE = forgeTag(Reference.Tags.GEAR + Reference.Names.NETHERITE);
             public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.GEAR + Reference.Names.NICKEL);
+            public static final TagKey<Item> NITER = forgeTag(Reference.Tags.GEAR + Reference.Names.NITER);
+            public static final TagKey<Item> OBSIDIAN = forgeTag(Reference.Tags.GEAR + Reference.Names.OBSIDIAN);
+            public static final TagKey<Item> OSMIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.OSMIUM);
+            public static final TagKey<Item> PLATINUM = forgeTag(Reference.Tags.GEAR + Reference.Names.PLATINUM);
+            public static final TagKey<Item> PRISMARINE = forgeTag(Reference.Tags.GEAR + Reference.Names.PRISMARINE);
+            public static final TagKey<Item> QUARTZ = forgeTag(Reference.Tags.GEAR + Reference.Names.QUARTZ);
+            public static final TagKey<Item> ROSE_GOLD = forgeTag(Reference.Tags.GEAR + Reference.Names.ROSE_GOLD);
+            public static final TagKey<Item> RUBY = forgeTag(Reference.Tags.GEAR + Reference.Names.RUBY);
+            public static final TagKey<Item> SAPPHIRE = forgeTag(Reference.Tags.GEAR + Reference.Names.SAPPHIRE);
+            public static final TagKey<Item> SIGNALUM = forgeTag(Reference.Tags.GEAR + Reference.Names.SIGNALUM);
             public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.GEAR + Reference.Names.SILVER);
+            public static final TagKey<Item> SLIMESTEEL = forgeTag(Reference.Tags.GEAR + Reference.Names.SLIMESTEEL);
+            public static final TagKey<Item> SOULSTEEL = forgeTag(Reference.Tags.GEAR + Reference.Names.SOULSTEEL);
             public static final TagKey<Item> STEEL = forgeTag(Reference.Tags.GEAR + Reference.Names.STEEL);
+            public static final TagKey<Item> STONE = forgeTag(Reference.Tags.GEAR + Reference.Names.STONE);
+            public static final TagKey<Item> SULFUR = forgeTag(Reference.Tags.GEAR + Reference.Names.SULFUR);
             public static final TagKey<Item> TIN = forgeTag(Reference.Tags.GEAR + Reference.Names.TIN);
+            public static final TagKey<Item> URANIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.URANIUM);
+            public static final TagKey<Item> WOOD = forgeTag(Reference.Tags.GEAR + Reference.Names.WOOD);
             public static final TagKey<Item> YELLORIUM = forgeTag(Reference.Tags.GEAR + Reference.Names.YELLORIUM);
-        }*/
+            public static final TagKey<Item> ZINC = forgeTag(Reference.Tags.GEAR + Reference.Names.ZINC);
+        }
 
         /*public static class Ingots
         {

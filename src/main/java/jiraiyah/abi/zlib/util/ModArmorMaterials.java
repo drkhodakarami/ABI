@@ -21,14 +21,8 @@ import java.util.function.Supplier;
 @SuppressWarnings("deprecation")
 public enum ModArmorMaterials implements ArmorMaterial
 {
-    /*AMETHYST("amethyst", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
-        armor.put(ArmorItem.Type.BOOTS, 2);
-        armor.put(ArmorItem.Type.LEGGINGS, 5);
-        armor.put(ArmorItem.Type.CHESTPLATE, 6);
-        armor.put(ArmorItem.Type.HELMET, 2);
-    }),
-            12, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F,
-            () -> Ingredient.of(Items.AMETHYST_SHARD)),*/
+    AMETHYST("amethyst", 7, new int[] {2, 5, 6, 2},12,
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> Ingredient.of(Items.AMETHYST_SHARD))
 
     /*BRONZE("bronze", 16, Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 2);
@@ -142,28 +136,24 @@ public enum ModArmorMaterials implements ArmorMaterial
     //<editor-fold desc="HELPER METHODS">
     public static final StringRepresentable.EnumCodec<ArmorMaterials> CODEC = StringRepresentable.fromEnum(ArmorMaterials::values);
 
-    private static final EnumMap<ArmorItem.Type, Integer> HEALTH_FUNCTION_FOR_TYPE = Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
-        armor.put(ArmorItem.Type.BOOTS, 13);
-        armor.put(ArmorItem.Type.LEGGINGS, 15);
-        armor.put(ArmorItem.Type.CHESTPLATE, 16);
-        armor.put(ArmorItem.Type.HELMET, 11);
-    });
+    private static final int[] BASE_DURABILITY = {11, 16, 15, 13};
+
     private final String name;
     private final int durabilityMultiplier;
-    private final EnumMap<ArmorItem.Type, Integer> protectionFunctionForType;
+    private final int[] protectionAmount;
     private final int enchantmentValue;
     private final SoundEvent sound;
     private final float toughness;
     private final float knockbackResistance;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    ModArmorMaterials(String pName, int pDurabilityMultiplier, EnumMap<ArmorItem.Type, Integer> pProtectionFunctionForType,
+    ModArmorMaterials(String pName, int pDurabilityMultiplier, int[] pProtectionAmount,
                       int pEnchantmentValue, SoundEvent pSound, float pToughness, float pKnockbackResistance,
                       Supplier<Ingredient> pRepairIngredient)
     {
         this.name = pName;
         this.durabilityMultiplier = pDurabilityMultiplier;
-        this.protectionFunctionForType = pProtectionFunctionForType;
+        this.protectionAmount = pProtectionAmount;
         this.enchantmentValue = pEnchantmentValue;
         this.sound = pSound;
         this.toughness = pToughness;
@@ -174,13 +164,13 @@ public enum ModArmorMaterials implements ArmorMaterial
     @Override
     public int getDurabilityForType(ArmorItem.@NotNull Type pType)
     {
-        return HEALTH_FUNCTION_FOR_TYPE.get(pType) * this.durabilityMultiplier;
+        return BASE_DURABILITY[pType.ordinal()] * this.durabilityMultiplier;
     }
 
     @Override
     public int getDefenseForType(ArmorItem.@NotNull Type pType)
     {
-        return this.protectionFunctionForType.get(pType);
+        return this.protectionAmount[pType.ordinal()];
     }
 
     @Override
@@ -217,11 +207,6 @@ public enum ModArmorMaterials implements ArmorMaterial
     public float getKnockbackResistance()
     {
         return this.knockbackResistance;
-    }
-
-    public String getSerializedName()
-    {
-        return this.name;
     }
     //</editor-fold>
 }

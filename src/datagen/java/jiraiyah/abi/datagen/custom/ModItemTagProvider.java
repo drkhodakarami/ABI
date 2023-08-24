@@ -31,6 +31,12 @@ public class ModItemTagProvider extends ItemTagsProvider
     {
         //copy(ModTags.Blocks.RUBY_ORE, ModTags.Items.RUBY_ORE);
 
+        /*tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.SAPPHIRE_HELMET.get(),
+                        ModItems.Armor.SAPPHIRE_CHESTPLATE.get(),
+                        ModItems.Armor.SAPPHIRE_LEGGINGS.get(),
+                        ModItems.Armor.SAPPHIRE_BOOTS.get());*/
+
         //<editor-fold desc="CRYSTALS">
         tag(ModTags.Items.Crystals.COBALT).add(ModItems.Crystal.COBALT.get());
         tag(ModTags.Items.Crystals.CYANIDE).add(ModItems.Crystal.CYANIDE.get());
@@ -189,10 +195,11 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.DUSTS).addTags(ModTags.Items.Dusts.ZINC);
         //</editor-fold>
 
-        /*//<editor-fold desc="GEARS">
+        //<editor-fold desc="GEARS">
         tag(ModTags.Items.Gears.ALUMINIUM).add(ModItems.Gear.ALUMINIUM.get());
         tag(ModTags.Items.Gears.ALUMINIUM_BRASS).add(ModItems.Gear.ALUMINIUM_BRASS.get());
         tag(ModTags.Items.Gears.ALUMITE).add(ModItems.Gear.ALUMITE.get());
+        tag(ModTags.Items.Gears.AMETHYST_BRONZE).add(ModItems.Gear.AMETHYST_BRONZE.get());
         tag(ModTags.Items.Gears.ARDITE).add(ModItems.Gear.ARDITE.get());
         tag(ModTags.Items.Gears.BERYLLIUM).add(ModItems.Gear.BERYLLIUM.get());
         tag(ModTags.Items.Gears.BLUTONIUM).add(ModItems.Gear.BLUTONIUM.get());
@@ -208,34 +215,60 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Gears.DARK_STEEL).add(ModItems.Gear.DARK_STEEL.get());
         tag(ModTags.Items.Gears.DAWN_STONE).add(ModItems.Gear.DAWN_STONE.get());
         tag(ModTags.Items.Gears.DEMONIUM).add(ModItems.Gear.DEMONIUM.get());
+        tag(ModTags.Items.Gears.DIAMOND).add(ModItems.Gear.DIAMOND.get());
         tag(ModTags.Items.Gears.DRACONIUM).add(ModItems.Gear.DRACONIUM.get());
         tag(ModTags.Items.Gears.ELECTRICAL_STEEL).add(ModItems.Gear.ELECTRICAL_STEEL.get());
         tag(ModTags.Items.Gears.ELECTRUM).add(ModItems.Gear.ELECTRUM.get());
+        tag(ModTags.Items.Gears.EMERALD).add(ModItems.Gear.EMERALD.get());
         tag(ModTags.Items.Gears.ENCHANTIUM).add(ModItems.Gear.ENCHANTIUM.get());
         tag(ModTags.Items.Gears.END_STEEL).add(ModItems.Gear.END_STEEL.get());
         tag(ModTags.Items.Gears.ENDERITE).add(ModItems.Gear.ENDERITE.get());
         tag(ModTags.Items.Gears.ENERGETIC_SILVER).add(ModItems.Gear.ENERGETIC_SILVER.get());
+        tag(ModTags.Items.Gears.GLOWSTONE).add(ModItems.Gear.GLOWSTONE.get());
         tag(ModTags.Items.Gears.GOLD).add(ModItems.Gear.GOLD.get());
         tag(ModTags.Items.Gears.GRAPHITE).add(ModItems.Gear.GRAPHITE.get());
+        tag(ModTags.Items.Gears.HEPATIZON).add(ModItems.Gear.HEPATIZON.get());
         tag(ModTags.Items.Gears.INVAR).add(ModItems.Gear.INVAR.get());
         tag(ModTags.Items.Gears.IRIDIUM).add(ModItems.Gear.IRIDIUM.get());
         tag(ModTags.Items.Gears.IRON).add(ModItems.Gear.IRON.get());
+        tag(ModTags.Items.Gears.LAPIS).add(ModItems.Gear.LAPIS.get());
         tag(ModTags.Items.Gears.LEAD).add(ModItems.Gear.LEAD.get());
         tag(ModTags.Items.Gears.LITHIUM).add(ModItems.Gear.LITHIUM.get());
         tag(ModTags.Items.Gears.LUDICRITE).add(ModItems.Gear.LUDICRITE.get());
+        tag(ModTags.Items.Gears.LUMIUM).add(ModItems.Gear.LUMIUM.get());
         tag(ModTags.Items.Gears.MAGNESIUM).add(ModItems.Gear.MAGNESIUM.get());
         tag(ModTags.Items.Gears.MANGANESE).add(ModItems.Gear.MANGANESE.get());
+        tag(ModTags.Items.Gears.MANYULLYN).add(ModItems.Gear.MANYULLYN.get());
+        tag(ModTags.Items.Gears.NETHERITE).add(ModItems.Gear.NETHERITE.get());
         tag(ModTags.Items.Gears.NICKEL).add(ModItems.Gear.NICKEL.get());
+        tag(ModTags.Items.Gears.NITER).add(ModItems.Gear.NITER.get());
+        tag(ModTags.Items.Gears.OBSIDIAN).add(ModItems.Gear.OBSIDIAN.get());
+        tag(ModTags.Items.Gears.OSMIUM).add(ModItems.Gear.OSMIUM.get());
+        tag(ModTags.Items.Gears.PLATINUM).add(ModItems.Gear.PLATINUM.get());
+        tag(ModTags.Items.Gears.PRISMARINE).add(ModItems.Gear.PRISMARINE.get());
+        tag(ModTags.Items.Gears.QUARTZ).add(ModItems.Gear.QUARTZ.get());
+        tag(ModTags.Items.Gears.ROSE_GOLD).add(ModItems.Gear.ROSE_GOLD.get());
+        tag(ModTags.Items.Gears.RUBY).add(ModItems.Gear.RUBY.get());
+        tag(ModTags.Items.Gears.SAPPHIRE).add(ModItems.Gear.SAPPHIRE.get());
+        tag(ModTags.Items.Gears.SIGNALUM).add(ModItems.Gear.SIGNALUM.get());
         tag(ModTags.Items.Gears.SILVER).add(ModItems.Gear.SILVER.get());
+        tag(ModTags.Items.Gears.SLIMESTEEL).add(ModItems.Gear.SLIMESTEEL.get());
+        tag(ModTags.Items.Gears.SOULSTEEL).add(ModItems.Gear.SOULSTEEL.get());
         tag(ModTags.Items.Gears.STEEL).add(ModItems.Gear.STEEL.get());
+        tag(ModTags.Items.Gears.STONE).add(ModItems.Gear.STONE.get());
+        tag(ModTags.Items.Gears.SULFUR).add(ModItems.Gear.SULFUR.get());
         tag(ModTags.Items.Gears.TIN).add(ModItems.Gear.TIN.get());
+        tag(ModTags.Items.Gears.URANIUM).add(ModItems.Gear.URANIUM.get());
+        tag(ModTags.Items.Gears.WOOD).add(ModItems.Gear.WOOD.get());
         tag(ModTags.Items.Gears.YELLORIUM).add(ModItems.Gear.YELLORIUM.get());
+        tag(ModTags.Items.Gears.ZINC).add(ModItems.Gear.ZINC.get());
 
         TagKey<Item> gears = tag("gears");
 
         tag(gears).addTags(ModTags.Items.Gears.ALUMINIUM);
         tag(gears).addTags(ModTags.Items.Gears.ALUMINIUM_BRASS);
         tag(gears).addTags(ModTags.Items.Gears.ALUMITE);
+        tag(gears).addTags(ModTags.Items.Gears.AMETHYST_BRONZE);
         tag(gears).addTags(ModTags.Items.Gears.ARDITE);
         tag(gears).addTags(ModTags.Items.Gears.BERYLLIUM);
         tag(gears).addTags(ModTags.Items.Gears.BLUTONIUM);
@@ -250,30 +283,55 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(gears).addTags(ModTags.Items.Gears.CYANIDE);
         tag(gears).addTags(ModTags.Items.Gears.DARK_STEEL);
         tag(gears).addTags(ModTags.Items.Gears.DAWN_STONE);
+        tag(gears).addTags(ModTags.Items.Gears.DIAMOND);
         tag(gears).addTags(ModTags.Items.Gears.DEMONIUM);
         tag(gears).addTags(ModTags.Items.Gears.DRACONIUM);
         tag(gears).addTags(ModTags.Items.Gears.ELECTRICAL_STEEL);
         tag(gears).addTags(ModTags.Items.Gears.ELECTRUM);
+        tag(gears).addTags(ModTags.Items.Gears.EMERALD);
         tag(gears).addTags(ModTags.Items.Gears.ENCHANTIUM);
         tag(gears).addTags(ModTags.Items.Gears.END_STEEL);
         tag(gears).addTags(ModTags.Items.Gears.ENDERITE);
         tag(gears).addTags(ModTags.Items.Gears.ENERGETIC_SILVER);
+        tag(gears).addTags(ModTags.Items.Gears.GLOWSTONE);
         tag(gears).addTags(ModTags.Items.Gears.GOLD);
         tag(gears).addTags(ModTags.Items.Gears.GRAPHITE);
+        tag(gears).addTags(ModTags.Items.Gears.HEPATIZON);
         tag(gears).addTags(ModTags.Items.Gears.INVAR);
         tag(gears).addTags(ModTags.Items.Gears.IRIDIUM);
         tag(gears).addTags(ModTags.Items.Gears.IRON);
+        tag(gears).addTags(ModTags.Items.Gears.LAPIS);
         tag(gears).addTags(ModTags.Items.Gears.LEAD);
         tag(gears).addTags(ModTags.Items.Gears.LITHIUM);
         tag(gears).addTags(ModTags.Items.Gears.LUDICRITE);
+        tag(gears).addTags(ModTags.Items.Gears.LUMIUM);
         tag(gears).addTags(ModTags.Items.Gears.MAGNESIUM);
         tag(gears).addTags(ModTags.Items.Gears.MANGANESE);
+        tag(gears).addTags(ModTags.Items.Gears.MANYULLYN);
+        tag(gears).addTags(ModTags.Items.Gears.NETHERITE);
         tag(gears).addTags(ModTags.Items.Gears.NICKEL);
+        tag(gears).addTags(ModTags.Items.Gears.NITER);
+        tag(gears).addTags(ModTags.Items.Gears.OBSIDIAN);
+        tag(gears).addTags(ModTags.Items.Gears.OSMIUM);
+        tag(gears).addTags(ModTags.Items.Gears.PLATINUM);
+        tag(gears).addTags(ModTags.Items.Gears.PRISMARINE);
+        tag(gears).addTags(ModTags.Items.Gears.QUARTZ);
+        tag(gears).addTags(ModTags.Items.Gears.ROSE_GOLD);
+        tag(gears).addTags(ModTags.Items.Gears.RUBY);
+        tag(gears).addTags(ModTags.Items.Gears.SAPPHIRE);
+        tag(gears).addTags(ModTags.Items.Gears.SIGNALUM);
         tag(gears).addTags(ModTags.Items.Gears.SILVER);
+        tag(gears).addTags(ModTags.Items.Gears.SLIMESTEEL);
+        tag(gears).addTags(ModTags.Items.Gears.SOULSTEEL);
         tag(gears).addTags(ModTags.Items.Gears.STEEL);
+        tag(gears).addTags(ModTags.Items.Gears.STONE);
+        tag(gears).addTags(ModTags.Items.Gears.SULFUR);
         tag(gears).addTags(ModTags.Items.Gears.TIN);
+        tag(gears).addTags(ModTags.Items.Gears.URANIUM);
+        tag(gears).addTags(ModTags.Items.Gears.WOOD);
         tag(gears).addTags(ModTags.Items.Gears.YELLORIUM);
-        //</editor-fold>*/
+        tag(gears).addTags(ModTags.Items.Gears.ZINC);
+        //</editor-fold>
 
         /*//<editor-fold desc="INGOTS">
         tag(ModTags.Items.Ingots.ALUMINIUM).add(ModItems.Ingot.ALUMINIUM.get());
@@ -829,7 +887,7 @@ public class ModItemTagProvider extends ItemTagsProvider
     }
 
     //<editor-fold desc="HELPER METHODS">
-    private static TagKey<Item> tag(String name)
+    private static @NotNull TagKey<Item> tag(String name)
     {
         return ItemTags.create(new ResourceLocation("forge", name));
     }
