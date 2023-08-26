@@ -3,15 +3,10 @@ package jiraiyah.abi.datagen.custom;
 import jiraiyah.abi.Reference;
 import jiraiyah.abi.item.ModItems;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.models.ItemModelGenerators;
-import net.minecraft.data.models.model.ModelLocationUtils;
-import net.minecraft.data.models.model.ModelTemplates;
-import net.minecraft.data.models.model.TextureMapping;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
@@ -268,23 +263,21 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Gear.ZINC);
         //</editor-fold>
 
-        /*//<editor-fold desc="INGOT">
+        //<editor-fold desc="INGOT">
         SimpleItem(ModItems.Ingot.ALUMINIUM);
         SimpleItem(ModItems.Ingot.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Ingot.ALUMITE);
+        SimpleItem(ModItems.Ingot.AMETHYST_BRONZE);
         SimpleItem(ModItems.Ingot.ARDITE);
         SimpleItem(ModItems.Ingot.BERYLLIUM);
         SimpleItem(ModItems.Ingot.BLUTONIUM);
         SimpleItem(ModItems.Ingot.BORON);
         SimpleItem(ModItems.Ingot.BRASS);
         SimpleItem(ModItems.Ingot.BRONZE);
-        SimpleItem(ModItems.Ingot.COBALT);
         SimpleItem(ModItems.Ingot.CONDUCTIVE_IRON);
         SimpleItem(ModItems.Ingot.CONSTANTAN);
         SimpleItem(ModItems.Ingot.CRUDE_STEEL);
-        SimpleItem(ModItems.Ingot.CYANIDE);
         SimpleItem(ModItems.Ingot.DARK_STEEL);
-        SimpleItem(ModItems.Ingot.DAWN_STONE);
         SimpleItem(ModItems.Ingot.DEMONIUM);
         SimpleItem(ModItems.Ingot.DRACONIUM);
         SimpleItem(ModItems.Ingot.ELECTRICAL_STEEL);
@@ -293,25 +286,36 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Ingot.END_STEEL);
         SimpleItem(ModItems.Ingot.ENDERITE);
         SimpleItem(ModItems.Ingot.ENERGETIC_SILVER);
-        SimpleItem(ModItems.Ingot.GRAPHITE);
+        SimpleItem(ModItems.Ingot.GLOWSTONE);
+        SimpleItem(ModItems.Ingot.HEPATIZON);
         SimpleItem(ModItems.Ingot.INVAR);
         SimpleItem(ModItems.Ingot.IRIDIUM);
         SimpleItem(ModItems.Ingot.LEAD);
         SimpleItem(ModItems.Ingot.LITHIUM);
         SimpleItem(ModItems.Ingot.LUDICRITE);
-        SimpleItem(ModItems.Ingot.MAGNESIUM);
-        SimpleItem(ModItems.Ingot.MANGANESE);
+        SimpleItem(ModItems.Ingot.LUMIUM);
+        SimpleItem(ModItems.Ingot.MANYULLYN);
         SimpleItem(ModItems.Ingot.NICKEL);
-        SimpleItem(ModItems.Ingot.STEEL);
+        SimpleItem(ModItems.Ingot.OBSIDIAN);
+        SimpleItem(ModItems.Ingot.OSMIUM);
+        SimpleItem(ModItems.Ingot.PLATINUM);
+        SimpleItem(ModItems.Ingot.ROSE_GOLD);
+        SimpleItem(ModItems.Ingot.SIGNALUM);
         SimpleItem(ModItems.Ingot.SILVER);
+        SimpleItem(ModItems.Ingot.SLIMESTEEL);
+        SimpleItem(ModItems.Ingot.SOULSTEEL);
+        SimpleItem(ModItems.Ingot.STEEL);
         SimpleItem(ModItems.Ingot.TIN);
+        SimpleItem(ModItems.Ingot.URANIUM);
         SimpleItem(ModItems.Ingot.YELLORIUM);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Ingot.ZINC);
+        //</editor-fold>
 
-        /*//<editor-fold desc="NUGGET">
+        //<editor-fold desc="NUGGET">
         SimpleItem(ModItems.Nugget.ALUMINIUM);
         SimpleItem(ModItems.Nugget.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Nugget.ALUMITE);
+        SimpleItem(ModItems.Nugget.AMETHYST_BRONZE);
         SimpleItem(ModItems.Nugget.ARDITE);
         SimpleItem(ModItems.Nugget.BERYLLIUM);
         SimpleItem(ModItems.Nugget.BLUTONIUM);
@@ -327,27 +331,44 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Nugget.DARK_STEEL);
         SimpleItem(ModItems.Nugget.DAWN_STONE);
         SimpleItem(ModItems.Nugget.DEMONIUM);
+        SimpleItem(ModItems.Nugget.DIAMOND);
         SimpleItem(ModItems.Nugget.DRACONIUM);
         SimpleItem(ModItems.Nugget.ELECTRICAL_STEEL);
         SimpleItem(ModItems.Nugget.ELECTRUM);
+        SimpleItem(ModItems.Nugget.EMERALD);
         SimpleItem(ModItems.Nugget.ENCHANTIUM);
         SimpleItem(ModItems.Nugget.END_STEEL);
         SimpleItem(ModItems.Nugget.ENDERITE);
         SimpleItem(ModItems.Nugget.ENERGETIC_SILVER);
+        SimpleItem(ModItems.Nugget.GLOWSTONE);
         SimpleItem(ModItems.Nugget.GRAPHITE);
+        SimpleItem(ModItems.Nugget.HEPATIZON);
         SimpleItem(ModItems.Nugget.INVAR);
         SimpleItem(ModItems.Nugget.IRIDIUM);
         SimpleItem(ModItems.Nugget.LEAD);
         SimpleItem(ModItems.Nugget.LITHIUM);
         SimpleItem(ModItems.Nugget.LUDICRITE);
+        SimpleItem(ModItems.Nugget.LUMIUM);
         SimpleItem(ModItems.Nugget.MAGNESIUM);
         SimpleItem(ModItems.Nugget.MANGANESE);
+        SimpleItem(ModItems.Nugget.MANYULLYN);
+        SimpleItem(ModItems.Nugget.NETHERITE);
         SimpleItem(ModItems.Nugget.NICKEL);
-        SimpleItem(ModItems.Nugget.STEEL);
+        SimpleItem(ModItems.Nugget.NITER);
+        SimpleItem(ModItems.Nugget.OBSIDIAN);
+        SimpleItem(ModItems.Nugget.OSMIUM);
+        SimpleItem(ModItems.Nugget.PLATINUM);
+        SimpleItem(ModItems.Nugget.ROSE_GOLD);
+        SimpleItem(ModItems.Nugget.SIGNALUM);
         SimpleItem(ModItems.Nugget.SILVER);
+        SimpleItem(ModItems.Nugget.SLIMESTEEL);
+        SimpleItem(ModItems.Nugget.SOULSTEEL);
+        SimpleItem(ModItems.Nugget.STEEL);
         SimpleItem(ModItems.Nugget.TIN);
+        SimpleItem(ModItems.Nugget.URANIUM);
         SimpleItem(ModItems.Nugget.YELLORIUM);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Nugget.ZINC);
+        //</editor-fold>
 
         /*//<editor-fold desc="PLATE">
         SimpleItem(ModItems.Plate.ALUMINIUM);
@@ -392,45 +413,17 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Plate.YELLORIUM);
         //</editor-fold>*/
 
-        /*//<editor-fold desc="RAW">
+        //<editor-fold desc="RAW">
         SimpleItem(ModItems.Raw.ALUMINIUM);
-        SimpleItem(ModItems.Raw.ALUMINIUM_BRASS);
-        SimpleItem(ModItems.Raw.ALUMITE);
-        SimpleItem(ModItems.Raw.ARDITE);
-        SimpleItem(ModItems.Raw.BERYLLIUM);
-        SimpleItem(ModItems.Raw.BLUTONIUM);
-        SimpleItem(ModItems.Raw.BORON);
-        SimpleItem(ModItems.Raw.BRASS);
-        SimpleItem(ModItems.Raw.BRONZE);
-        SimpleItem(ModItems.Raw.COBALT);
-        SimpleItem(ModItems.Raw.CONDUCTIVE_IRON);
-        SimpleItem(ModItems.Raw.CONSTANTAN);
-        SimpleItem(ModItems.Raw.CRUDE_STEEL);
-        SimpleItem(ModItems.Raw.CYANIDE);
-        SimpleItem(ModItems.Raw.DARK_STEEL);
-        SimpleItem(ModItems.Raw.DAWN_STONE);
-        SimpleItem(ModItems.Raw.DEMONIUM);
-        SimpleItem(ModItems.Raw.DRACONIUM);
-        SimpleItem(ModItems.Raw.ELECTRICAL_STEEL);
-        SimpleItem(ModItems.Raw.ELECTRUM);
-        SimpleItem(ModItems.Raw.ENCHANTIUM);
-        SimpleItem(ModItems.Raw.END_STEEL);
-        SimpleItem(ModItems.Raw.ENDERITE);
-        SimpleItem(ModItems.Raw.ENERGETIC_SILVER);
-        SimpleItem(ModItems.Raw.GRAPHITE);
-        SimpleItem(ModItems.Raw.INVAR);
-        SimpleItem(ModItems.Raw.IRIDIUM);
         SimpleItem(ModItems.Raw.LEAD);
-        SimpleItem(ModItems.Raw.LITHIUM);
-        SimpleItem(ModItems.Raw.LUDICRITE);
-        SimpleItem(ModItems.Raw.MAGNESIUM);
-        SimpleItem(ModItems.Raw.MANGANESE);
         SimpleItem(ModItems.Raw.NICKEL);
-        SimpleItem(ModItems.Raw.STEEL);
+        SimpleItem(ModItems.Raw.OSMIUM);
+        SimpleItem(ModItems.Raw.PLATINUM);
         SimpleItem(ModItems.Raw.SILVER);
         SimpleItem(ModItems.Raw.TIN);
-        SimpleItem(ModItems.Raw.YELLORIUM);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Raw.URANIUM);
+        SimpleItem(ModItems.Raw.ZINC);
+        //</editor-fold>
 
         /*//<editor-fold desc="REINFORCED">
         SimpleItem(ModItems.Reinforced.ALUMINIUM);
@@ -518,16 +511,25 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Rod.YELLORIUM);
         //</editor-fold>*/
 
-        /*//<editor-fold desc="GEMS">
+        //<editor-fold desc="GEMS">
+        SimpleItem(ModItems.Gem.APATITE);
+        SimpleItem(ModItems.Gem.CINNABAR);
+        SimpleItem(ModItems.Gem.CITRINE);
+        SimpleItem(ModItems.Gem.PERIDOT);
+        SimpleItem(ModItems.Gem.RED_GARNET);
         SimpleItem(ModItems.Gem.RUBY);
         SimpleItem(ModItems.Gem.SAPPHIRE);
+        SimpleItem(ModItems.Gem.SILKY_JEWEL);
+        SimpleItem(ModItems.Gem.SOUL);
+        SimpleItem(ModItems.Gem.YELLOW_GARNET);
 
-        SimpleItem(ModItems.Gem.DIAMOND_SHARD);
-        SimpleItem(ModItems.Gem.EMERALD_SHARD);
-        SimpleItem(ModItems.Gem.QUARTZ_SHARD);
-        SimpleItem(ModItems.Gem.RUBY_SHARD);
-        SimpleItem(ModItems.Gem.SAPPHIRE_SHARD);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Shard.DIAMOND);
+        SimpleItem(ModItems.Shard.EMERALD);
+        SimpleItem(ModItems.Shard.QUARTZ);
+        SimpleItem(ModItems.Shard.RUBY);
+        SimpleItem(ModItems.Shard.SAPPHIRE);
+        SimpleItem(ModItems.Shard.URANIUM);
+        //</editor-fold>
 
         /*//<editor-fold desc="TOOL">
         SimpleItem(ModItems.Tool.AUGMENT, true);
@@ -834,7 +836,13 @@ public class ModItemModelProvider extends ItemModelProvider
                     .texture("layer0",
                             Reference.Location("item/tool/" + item.getId().getPath()));
 
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.GEM))
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.SHARD))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/shard/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.GEM) ||
+        !item.getId().getPath().toLowerCase().contains(Reference.Names.SHARD))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/gem/" + item.getId().getPath()));
@@ -863,7 +871,7 @@ public class ModItemModelProvider extends ItemModelProvider
                         Reference.Location("item/" + item.getId().getPath()));
     }
 
-    // Shoutout to El_Redstoniano for making this
+    // Shout out to El_Redstoniano for making this
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = Reference.MODID; // Change this to your mod id
 

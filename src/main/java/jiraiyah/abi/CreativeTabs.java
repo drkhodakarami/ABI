@@ -28,6 +28,24 @@ public class CreativeTabs
                         output.accept(ModItems.Crystal.NITER.get());
                         output.accept(ModItems.Crystal.URANIUM.get());
                         output.accept(ModItems.Crystal.YELLORIUM.get());
+
+                        output.accept(ModItems.Gem.APATITE.get());
+                        output.accept(ModItems.Gem.CINNABAR.get());
+                        output.accept(ModItems.Gem.CITRINE.get());
+                        output.accept(ModItems.Gem.PERIDOT.get());
+                        output.accept(ModItems.Gem.RED_GARNET.get());
+                        output.accept(ModItems.Gem.RUBY.get());
+                        output.accept(ModItems.Gem.SAPPHIRE.get());
+                        output.accept(ModItems.Gem.SILKY_JEWEL.get());
+                        output.accept(ModItems.Gem.SOUL.get());
+                        output.accept(ModItems.Gem.YELLOW_GARNET.get());
+
+                        output.accept(ModItems.Shard.DIAMOND.get());
+                        output.accept(ModItems.Shard.EMERALD.get());
+                        output.accept(ModItems.Shard.QUARTZ.get());
+                        output.accept(ModItems.Shard.RUBY.get());
+                        output.accept(ModItems.Shard.SAPPHIRE.get());
+                        output.accept(ModItems.Shard.URANIUM.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> DUST = CREATIVE_MODE_TABS.register(
@@ -107,6 +125,63 @@ public class CreativeTabs
                         output.accept(ModItems.Dust.URANIUM.get());
                         output.accept(ModItems.Dust.YELLORIUM.get());
                         output.accept(ModItems.Dust.ZINC.get());
+
+                        output.accept(ModItems.Nugget.ALUMINIUM.get());
+                        output.accept(ModItems.Nugget.ALUMINIUM_BRASS.get());
+                        output.accept(ModItems.Nugget.ALUMITE.get());
+                        output.accept(ModItems.Nugget.AMETHYST_BRONZE.get());
+                        output.accept(ModItems.Nugget.ARDITE.get());
+                        output.accept(ModItems.Nugget.BERYLLIUM.get());
+                        output.accept(ModItems.Nugget.BLUTONIUM.get());
+                        output.accept(ModItems.Nugget.BORON.get());
+                        output.accept(ModItems.Nugget.BRASS.get());
+                        output.accept(ModItems.Nugget.BRONZE.get());
+                        output.accept(ModItems.Nugget.COBALT.get());
+                        output.accept(ModItems.Nugget.CONDUCTIVE_IRON.get());
+                        output.accept(ModItems.Nugget.CONSTANTAN.get());
+                        output.accept(ModItems.Nugget.COPPER.get());
+                        output.accept(ModItems.Nugget.CRUDE_STEEL.get());
+                        output.accept(ModItems.Nugget.CYANIDE.get());
+                        output.accept(ModItems.Nugget.DARK_STEEL.get());
+                        output.accept(ModItems.Nugget.DAWN_STONE.get());
+                        output.accept(ModItems.Nugget.DEMONIUM.get());
+                        output.accept(ModItems.Nugget.DIAMOND.get());
+                        output.accept(ModItems.Nugget.DRACONIUM.get());
+                        output.accept(ModItems.Nugget.ELECTRICAL_STEEL.get());
+                        output.accept(ModItems.Nugget.ELECTRUM.get());
+                        output.accept(ModItems.Nugget.EMERALD.get());
+                        output.accept(ModItems.Nugget.ENCHANTIUM.get());
+                        output.accept(ModItems.Nugget.END_STEEL.get());
+                        output.accept(ModItems.Nugget.ENDERITE.get());
+                        output.accept(ModItems.Nugget.ENERGETIC_SILVER.get());
+                        output.accept(ModItems.Nugget.GLOWSTONE.get());
+                        output.accept(ModItems.Nugget.GRAPHITE.get());
+                        output.accept(ModItems.Nugget.HEPATIZON.get());
+                        output.accept(ModItems.Nugget.INVAR.get());
+                        output.accept(ModItems.Nugget.IRIDIUM.get());
+                        output.accept(ModItems.Nugget.LEAD.get());
+                        output.accept(ModItems.Nugget.LITHIUM.get());
+                        output.accept(ModItems.Nugget.LUDICRITE.get());
+                        output.accept(ModItems.Nugget.LUMIUM.get());
+                        output.accept(ModItems.Nugget.MAGNESIUM.get());
+                        output.accept(ModItems.Nugget.MANGANESE.get());
+                        output.accept(ModItems.Nugget.MANYULLYN.get());
+                        output.accept(ModItems.Nugget.NETHERITE.get());
+                        output.accept(ModItems.Nugget.NICKEL.get());
+                        output.accept(ModItems.Nugget.NITER.get());
+                        output.accept(ModItems.Nugget.OBSIDIAN.get());
+                        output.accept(ModItems.Nugget.OSMIUM.get());
+                        output.accept(ModItems.Nugget.PLATINUM.get());
+                        output.accept(ModItems.Nugget.ROSE_GOLD.get());
+                        output.accept(ModItems.Nugget.SIGNALUM.get());
+                        output.accept(ModItems.Nugget.SILVER.get());
+                        output.accept(ModItems.Nugget.SLIMESTEEL.get());
+                        output.accept(ModItems.Nugget.SOULSTEEL.get());
+                        output.accept(ModItems.Nugget.STEEL.get());
+                        output.accept(ModItems.Nugget.TIN.get());
+                        output.accept(ModItems.Nugget.URANIUM.get());
+                        output.accept(ModItems.Nugget.YELLORIUM.get());
+                        output.accept(ModItems.Nugget.ZINC.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> GEAR = CREATIVE_MODE_TABS.register(
@@ -186,32 +261,29 @@ public class CreativeTabs
                         output.accept(ModItems.Gear.ZINC.get());
                     }).build());
 
-    /*public static final RegistryObject<CreativeModeTab> INGOT = CREATIVE_MODE_TABS.register(
+    public static final RegistryObject<CreativeModeTab> INGOT = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.INGOT + "tab", () -> CreativeModeTab.builder()
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.GEAR.getId())
                     .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
-                    .icon(() -> ModItems.Ingot.ALUMITE.get().getDefaultInstance())
+                    .icon(() -> ModItems.Ingot.ENCHANTIUM.get().getDefaultInstance())
                     .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.INGOT + "tab"))
                     .displayItems((parameters, output) ->
                     {
                         output.accept(ModItems.Ingot.ALUMINIUM.get());
                         output.accept(ModItems.Ingot.ALUMINIUM_BRASS.get());
                         output.accept(ModItems.Ingot.ALUMITE.get());
+                        output.accept(ModItems.Ingot.AMETHYST_BRONZE.get());
                         output.accept(ModItems.Ingot.ARDITE.get());
                         output.accept(ModItems.Ingot.BERYLLIUM.get());
                         output.accept(ModItems.Ingot.BLUTONIUM.get());
                         output.accept(ModItems.Ingot.BORON.get());
                         output.accept(ModItems.Ingot.BRASS.get());
                         output.accept(ModItems.Ingot.BRONZE.get());
-                        output.accept(ModItems.Ingot.COBALT.get());
                         output.accept(ModItems.Ingot.CONDUCTIVE_IRON.get());
                         output.accept(ModItems.Ingot.CONSTANTAN.get());
-                        output.accept(Items.COPPER_INGOT);
                         output.accept(ModItems.Ingot.CRUDE_STEEL.get());
-                        output.accept(ModItems.Ingot.CYANIDE.get());
                         output.accept(ModItems.Ingot.DARK_STEEL.get());
-                        output.accept(ModItems.Ingot.DAWN_STONE.get());
                         output.accept(ModItems.Ingot.DEMONIUM.get());
                         output.accept(ModItems.Ingot.DRACONIUM.get());
                         output.accept(ModItems.Ingot.ELECTRICAL_STEEL.get());
@@ -220,73 +292,40 @@ public class CreativeTabs
                         output.accept(ModItems.Ingot.END_STEEL.get());
                         output.accept(ModItems.Ingot.ENDERITE.get());
                         output.accept(ModItems.Ingot.ENERGETIC_SILVER.get());
-                        output.accept(Items.GOLD_INGOT);
-                        output.accept(ModItems.Ingot.GRAPHITE.get());
+                        output.accept(ModItems.Ingot.GLOWSTONE.get());
+                        output.accept(ModItems.Ingot.HEPATIZON.get());
                         output.accept(ModItems.Ingot.INVAR.get());
                         output.accept(ModItems.Ingot.IRIDIUM.get());
-                        output.accept(Items.IRON_INGOT);
                         output.accept(ModItems.Ingot.LEAD.get());
                         output.accept(ModItems.Ingot.LITHIUM.get());
                         output.accept(ModItems.Ingot.LUDICRITE.get());
-                        output.accept(ModItems.Ingot.MAGNESIUM.get());
-                        output.accept(ModItems.Ingot.MANGANESE.get());
+                        output.accept(ModItems.Ingot.LUMIUM.get());
+                        output.accept(ModItems.Ingot.MANYULLYN.get());
                         output.accept(ModItems.Ingot.NICKEL.get());
+                        output.accept(ModItems.Ingot.OBSIDIAN.get());
+                        output.accept(ModItems.Ingot.OSMIUM.get());
+                        output.accept(ModItems.Ingot.PLATINUM.get());
+                        output.accept(ModItems.Ingot.ROSE_GOLD.get());
+                        output.accept(ModItems.Ingot.SIGNALUM.get());
                         output.accept(ModItems.Ingot.SILVER.get());
+                        output.accept(ModItems.Ingot.SLIMESTEEL.get());
+                        output.accept(ModItems.Ingot.SOULSTEEL.get());
                         output.accept(ModItems.Ingot.STEEL.get());
                         output.accept(ModItems.Ingot.TIN.get());
+                        output.accept(ModItems.Ingot.URANIUM.get());
                         output.accept(ModItems.Ingot.YELLORIUM.get());
-                    }).build());*/
+                        output.accept(ModItems.Ingot.ZINC.get());
 
-    /*public static final RegistryObject<CreativeModeTab> NUGGET = CREATIVE_MODE_TABS.register(
-            Reference.MODID + "_" + Reference.Names.NUGGET + "tab", () -> CreativeModeTab.builder()
-                    .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
-                    .withTabsBefore(CreativeTabs.INGOT.getId())
-                    .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
-                    .icon(() -> ModItems.Nugget.ALUMITE.get().getDefaultInstance())
-                    .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.NUGGET + "tab"))
-                    .displayItems((parameters, output) ->
-                    {
-                        output.accept(ModItems.Nugget.ALUMINIUM.get());
-                        output.accept(ModItems.Nugget.ALUMINIUM_BRASS.get());
-                        output.accept(ModItems.Nugget.ALUMITE.get());
-                        output.accept(ModItems.Nugget.ARDITE.get());
-                        output.accept(ModItems.Nugget.BERYLLIUM.get());
-                        output.accept(ModItems.Nugget.BLUTONIUM.get());
-                        output.accept(ModItems.Nugget.BORON.get());
-                        output.accept(ModItems.Nugget.BRASS.get());
-                        output.accept(ModItems.Nugget.BRONZE.get());
-                        output.accept(ModItems.Nugget.COBALT.get());
-                        output.accept(ModItems.Nugget.CONDUCTIVE_IRON.get());
-                        output.accept(ModItems.Nugget.CONSTANTAN.get());
-                        output.accept(ModItems.Nugget.COPPER.get());
-                        output.accept(ModItems.Nugget.CRUDE_STEEL.get());
-                        output.accept(ModItems.Nugget.CYANIDE.get());
-                        output.accept(ModItems.Nugget.DARK_STEEL.get());
-                        output.accept(ModItems.Nugget.DAWN_STONE.get());
-                        output.accept(ModItems.Nugget.DEMONIUM.get());
-                        output.accept(ModItems.Nugget.DRACONIUM.get());
-                        output.accept(ModItems.Nugget.ELECTRICAL_STEEL.get());
-                        output.accept(ModItems.Nugget.ELECTRUM.get());
-                        output.accept(ModItems.Nugget.ENCHANTIUM.get());
-                        output.accept(ModItems.Nugget.END_STEEL.get());
-                        output.accept(ModItems.Nugget.ENDERITE.get());
-                        output.accept(ModItems.Nugget.ENERGETIC_SILVER.get());
-                        output.accept(Items.GOLD_NUGGET);
-                        output.accept(ModItems.Nugget.GRAPHITE.get());
-                        output.accept(ModItems.Nugget.INVAR.get());
-                        output.accept(ModItems.Nugget.IRIDIUM.get());
-                        output.accept(Items.IRON_NUGGET);
-                        output.accept(ModItems.Nugget.LEAD.get());
-                        output.accept(ModItems.Nugget.LITHIUM.get());
-                        output.accept(ModItems.Nugget.LUDICRITE.get());
-                        output.accept(ModItems.Nugget.MAGNESIUM.get());
-                        output.accept(ModItems.Nugget.MANGANESE.get());
-                        output.accept(ModItems.Nugget.NICKEL.get());
-                        output.accept(ModItems.Nugget.SILVER.get());
-                        output.accept(ModItems.Nugget.STEEL.get());
-                        output.accept(ModItems.Nugget.TIN.get());
-                        output.accept(ModItems.Nugget.YELLORIUM.get());
-                    }).build());*/
+                        output.accept(ModItems.Raw.ALUMINIUM.get());
+                        output.accept(ModItems.Raw.LEAD.get());
+                        output.accept(ModItems.Raw.NICKEL.get());
+                        output.accept(ModItems.Raw.OSMIUM.get());
+                        output.accept(ModItems.Raw.PLATINUM.get());
+                        output.accept(ModItems.Raw.SILVER.get());
+                        output.accept(ModItems.Raw.TIN.get());
+                        output.accept(ModItems.Raw.URANIUM.get());
+                        output.accept(ModItems.Raw.ZINC.get());
+                    }).build());
 
     /*public static final RegistryObject<CreativeModeTab> PLATE = CREATIVE_MODE_TABS.register(
             Reference.MODID + "_" + Reference.Names.PLATE + "tab", () -> CreativeModeTab.builder()
@@ -337,57 +376,6 @@ public class CreativeTabs
                         output.accept(ModItems.Plate.STEEL.get());
                         output.accept(ModItems.Plate.TIN.get());
                         output.accept(ModItems.Plate.YELLORIUM.get());
-                    }).build());*/
-
-    /*public static final RegistryObject<CreativeModeTab> RAW = CREATIVE_MODE_TABS.register(
-            Reference.MODID + "_" + Reference.Names.RAW + "tab", () -> CreativeModeTab.builder()
-                    .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
-                    .withTabsBefore(CreativeTabs.PLATE.getId())
-                    .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
-                    .icon(() -> ModItems.Raw.ALUMITE.get().getDefaultInstance())
-                    .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.RAW + "tab"))
-                    .displayItems((parameters, output) ->
-                    {
-                        output.accept(ModItems.Raw.ALUMINIUM.get());
-                        output.accept(ModItems.Raw.ALUMINIUM_BRASS.get());
-                        output.accept(ModItems.Raw.ALUMITE.get());
-                        output.accept(ModItems.Raw.ARDITE.get());
-                        output.accept(ModItems.Raw.BERYLLIUM.get());
-                        output.accept(ModItems.Raw.BLUTONIUM.get());
-                        output.accept(ModItems.Raw.BORON.get());
-                        output.accept(ModItems.Raw.BRASS.get());
-                        output.accept(ModItems.Raw.BRONZE.get());
-                        output.accept(ModItems.Raw.COBALT.get());
-                        output.accept(ModItems.Raw.CONDUCTIVE_IRON.get());
-                        output.accept(ModItems.Raw.CONSTANTAN.get());
-                        output.accept(Items.RAW_COPPER);
-                        output.accept(ModItems.Raw.CRUDE_STEEL.get());
-                        output.accept(ModItems.Raw.CYANIDE.get());
-                        output.accept(ModItems.Raw.DARK_STEEL.get());
-                        output.accept(ModItems.Raw.DAWN_STONE.get());
-                        output.accept(ModItems.Raw.DEMONIUM.get());
-                        output.accept(ModItems.Raw.DRACONIUM.get());
-                        output.accept(ModItems.Raw.ELECTRICAL_STEEL.get());
-                        output.accept(ModItems.Raw.ELECTRUM.get());
-                        output.accept(ModItems.Raw.ENCHANTIUM.get());
-                        output.accept(ModItems.Raw.END_STEEL.get());
-                        output.accept(ModItems.Raw.ENDERITE.get());
-                        output.accept(ModItems.Raw.ENERGETIC_SILVER.get());
-                        output.accept(Items.RAW_GOLD);
-                        output.accept(ModItems.Raw.GRAPHITE.get());
-                        output.accept(ModItems.Raw.INVAR.get());
-                        output.accept(ModItems.Raw.IRIDIUM.get());
-                        output.accept(Items.RAW_IRON);
-                        output.accept(ModItems.Raw.LEAD.get());
-                        output.accept(ModItems.Raw.LITHIUM.get());
-                        output.accept(ModItems.Raw.LUDICRITE.get());
-                        output.accept(ModItems.Raw.MAGNESIUM.get());
-                        output.accept(ModItems.Raw.MANGANESE.get());
-                        output.accept(ModItems.Raw.NICKEL.get());
-                        output.accept(ModItems.Raw.SILVER.get());
-                        output.accept(ModItems.Raw.STEEL.get());
-                        output.accept(ModItems.Raw.TIN.get());
-                        output.accept(ModItems.Raw.YELLORIUM.get());
                     }).build());*/
 
     /*public static final RegistryObject<CreativeModeTab> REINFORCED = CREATIVE_MODE_TABS.register(
@@ -490,50 +478,6 @@ public class CreativeTabs
                         output.accept(ModItems.Rod.STEEL.get());
                         output.accept(ModItems.Rod.TIN.get());
                         output.accept(ModItems.Rod.YELLORIUM.get());
-                    }).build());*/
-
-    /*public static final RegistryObject<CreativeModeTab> GEM = CREATIVE_MODE_TABS.register(
-            Reference.MODID + "_" + Reference.Names.GEM + "tab", () -> CreativeModeTab.builder()
-                    .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
-                    .withTabsBefore(CreativeTabs.ROD.getId())
-                    .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
-                    .icon(() -> ModItems.Gem.RUBY.get().getDefaultInstance())
-                    .title(Component.translatable(Reference.Names.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.GEM + "tab"))
-                    .displayItems((parameters, output) ->
-                    {
-                        output.accept(Items.DIAMOND);
-                        output.accept(Items.EMERALD);
-                        output.accept(ModItems.Gem.RUBY.get());
-                        output.accept(ModItems.Gem.SAPPHIRE.get());
-                        output.accept(Items.QUARTZ);
-                        output.accept(ModItems.Gem.DIAMOND_SHARD.get());
-                        output.accept(ModItems.Gem.EMERALD_SHARD.get());
-                        output.accept(Items.PRISMARINE_SHARD);
-                        output.accept(ModItems.Gem.QUARTZ_SHARD.get());
-                        output.accept(ModItems.Gem.RUBY_SHARD.get());
-                        output.accept(ModItems.Gem.SAPPHIRE_SHARD.get());
-
-                        output.accept(ModBlocks.Gem.RUBY_BLOCK.get());
-                        output.accept(ModBlocks.Gem.SAPPHIRE_BLOCK.get());
-                        output.accept(ModBlocks.Gem.SLIME_BLOCK.get());
-
-                        output.accept(ModBlocks.Ingots.BRONZE_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.CONSTANTAN_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.ELECTRUM_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.ENDERITE_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.INVAR_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.LEAD_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.LUMIUM_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.RAW_LEAD_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.RAW_NICKEL_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.RAW_SILVER_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.RAW_TIN_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.SIGNALUM_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.SILVER_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.STEEL_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.SULFUR_BLOCK.get());
-                        output.accept(ModBlocks.Ingots.TIN_BLOCK.get());
-
                     }).build());*/
 
     /*public static final RegistryObject<CreativeModeTab> TOOL = CREATIVE_MODE_TABS.register(

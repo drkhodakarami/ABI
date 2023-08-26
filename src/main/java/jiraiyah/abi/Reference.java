@@ -157,6 +157,11 @@ public class Reference
         public static final String SOULSTEEL = "soulsteel";
         public static final String ZINC = "zinc";
         public static final String AMETHYST_BRONZE = "amethyst_bronze";
+        public static final String PERIDOT = "peridot";
+        public static final String RED_GARNET = "red_garnet";
+        public static final String SILKY_JEWEL = "silky_jewel";
+        public static final String SOUL = "soul";
+        public static final String YELLOW_GARNET = "yellow_garnet";
     }
 
     public static class Tags
@@ -203,6 +208,7 @@ public class Reference
                 public static final String SEEDS = "seeds/";
                 public static final String STORAGE_BLOCKS = "storage_blocks/";
                 public static final String TOOLS = "tools/";
+                public static final String SHARDS = "shards/";
             }
 
             public static final String ENTITY_TYPES = "entity_types/";

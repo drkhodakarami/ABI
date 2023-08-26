@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#forge:shards/diamond",
+    "#forge:shards/emerald",
+    "#forge:shards/quartz",
+    "#forge:shards/ruby",
+    "#forge:shards/sapphire",
+    "#forge:shards/uranium"
+  ]
+}

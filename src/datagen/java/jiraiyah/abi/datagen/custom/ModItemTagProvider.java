@@ -33,6 +33,7 @@ public class ModItemTagProvider extends ItemTagsProvider
 
         /*tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.Armor.SAPPHIRE_HELMET.get(),
+
                         ModItems.Armor.SAPPHIRE_CHESTPLATE.get(),
                         ModItems.Armor.SAPPHIRE_LEGGINGS.get(),
                         ModItems.Armor.SAPPHIRE_BOOTS.get());*/
@@ -333,23 +334,21 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(gears).addTags(ModTags.Items.Gears.ZINC);
         //</editor-fold>
 
-        /*//<editor-fold desc="INGOTS">
+        //<editor-fold desc="INGOTS">
         tag(ModTags.Items.Ingots.ALUMINIUM).add(ModItems.Ingot.ALUMINIUM.get());
         tag(ModTags.Items.Ingots.ALUMINIUM_BRASS).add(ModItems.Ingot.ALUMINIUM_BRASS.get());
         tag(ModTags.Items.Ingots.ALUMITE).add(ModItems.Ingot.ALUMITE.get());
+        tag(ModTags.Items.Ingots.AMETHYST_BRONZE).add(ModItems.Ingot.AMETHYST_BRONZE.get());
         tag(ModTags.Items.Ingots.ARDITE).add(ModItems.Ingot.ARDITE.get());
         tag(ModTags.Items.Ingots.BERYLLIUM).add(ModItems.Ingot.BERYLLIUM.get());
         tag(ModTags.Items.Ingots.BLUTONIUM).add(ModItems.Ingot.BLUTONIUM.get());
         tag(ModTags.Items.Ingots.BORON).add(ModItems.Ingot.BORON.get());
         tag(ModTags.Items.Ingots.BRASS).add(ModItems.Ingot.BRASS.get());
         tag(ModTags.Items.Ingots.BRONZE).add(ModItems.Ingot.BRONZE.get());
-        tag(ModTags.Items.Ingots.COBALT).add(ModItems.Ingot.COBALT.get());
         tag(ModTags.Items.Ingots.CONDUCTIVE_IRON).add(ModItems.Ingot.CONDUCTIVE_IRON.get());
         tag(ModTags.Items.Ingots.CONSTANTAN).add(ModItems.Ingot.CONSTANTAN.get());
         tag(ModTags.Items.Ingots.CRUDE_STEEL).add(ModItems.Ingot.CRUDE_STEEL.get());
-        tag(ModTags.Items.Ingots.CYANIDE).add(ModItems.Ingot.CYANIDE.get());
         tag(ModTags.Items.Ingots.DARK_STEEL).add(ModItems.Ingot.DARK_STEEL.get());
-        tag(ModTags.Items.Ingots.DAWN_STONE).add(ModItems.Ingot.DAWN_STONE.get());
         tag(ModTags.Items.Ingots.DEMONIUM).add(ModItems.Ingot.DEMONIUM.get());
         tag(ModTags.Items.Ingots.DRACONIUM).add(ModItems.Ingot.DRACONIUM.get());
         tag(ModTags.Items.Ingots.ELECTRICAL_STEEL).add(ModItems.Ingot.ELECTRICAL_STEEL.get());
@@ -358,36 +357,44 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Ingots.END_STEEL).add(ModItems.Ingot.END_STEEL.get());
         tag(ModTags.Items.Ingots.ENDERITE).add(ModItems.Ingot.ENDERITE.get());
         tag(ModTags.Items.Ingots.ENERGETIC_SILVER).add(ModItems.Ingot.ENERGETIC_SILVER.get());
-        tag(ModTags.Items.Ingots.GRAPHITE).add(ModItems.Ingot.GRAPHITE.get());
+        tag(ModTags.Items.Ingots.GLOWSTONE).add(ModItems.Ingot.GLOWSTONE.get());
+        tag(ModTags.Items.Ingots.HEPATIZON).add(ModItems.Ingot.HEPATIZON.get());
         tag(ModTags.Items.Ingots.INVAR).add(ModItems.Ingot.INVAR.get());
         tag(ModTags.Items.Ingots.IRIDIUM).add(ModItems.Ingot.IRIDIUM.get());
         tag(ModTags.Items.Ingots.LEAD).add(ModItems.Ingot.LEAD.get());
         tag(ModTags.Items.Ingots.LITHIUM).add(ModItems.Ingot.LITHIUM.get());
         tag(ModTags.Items.Ingots.LUDICRITE).add(ModItems.Ingot.LUDICRITE.get());
-        tag(ModTags.Items.Ingots.MAGNESIUM).add(ModItems.Ingot.MAGNESIUM.get());
-        tag(ModTags.Items.Ingots.MANGANESE).add(ModItems.Ingot.MANGANESE.get());
+        tag(ModTags.Items.Ingots.LUMIUM).add(ModItems.Ingot.LUMIUM.get());
+        tag(ModTags.Items.Ingots.MANYULLYN).add(ModItems.Ingot.MANYULLYN.get());
         tag(ModTags.Items.Ingots.NICKEL).add(ModItems.Ingot.NICKEL.get());
+        tag(ModTags.Items.Ingots.OBSIDIAN).add(ModItems.Ingot.OBSIDIAN.get());
+        tag(ModTags.Items.Ingots.OSMIUM).add(ModItems.Ingot.OSMIUM.get());
+        tag(ModTags.Items.Ingots.PLATINUM).add(ModItems.Ingot.PLATINUM.get());
+        tag(ModTags.Items.Ingots.ROSE_GOLD).add(ModItems.Ingot.ROSE_GOLD.get());
+        tag(ModTags.Items.Ingots.SIGNALUM).add(ModItems.Ingot.SIGNALUM.get());
         tag(ModTags.Items.Ingots.SILVER).add(ModItems.Ingot.SILVER.get());
+        tag(ModTags.Items.Ingots.SLIMESTEEL).add(ModItems.Ingot.SLIMESTEEL.get());
+        tag(ModTags.Items.Ingots.SOULSTEEL).add(ModItems.Ingot.SOULSTEEL.get());
         tag(ModTags.Items.Ingots.STEEL).add(ModItems.Ingot.STEEL.get());
         tag(ModTags.Items.Ingots.TIN).add(ModItems.Ingot.TIN.get());
+        tag(ModTags.Items.Ingots.URANIUM).add(ModItems.Ingot.URANIUM.get());
         tag(ModTags.Items.Ingots.YELLORIUM).add(ModItems.Ingot.YELLORIUM.get());
+        tag(ModTags.Items.Ingots.ZINC).add(ModItems.Ingot.ZINC.get());
 
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ALUMINIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ALUMINIUM_BRASS);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ALUMITE);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.AMETHYST_BRONZE);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ARDITE);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.BERYLLIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.BLUTONIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.BORON);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.BRASS);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.BRONZE);
-        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.COBALT);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.CONDUCTIVE_IRON);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.CONSTANTAN);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.CRUDE_STEEL);
-        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.CYANIDE);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.DARK_STEEL);
-        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.DAWN_STONE);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.DEMONIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.DRACONIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ELECTRICAL_STEEL);
@@ -396,25 +403,36 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.END_STEEL);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ENDERITE);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ENERGETIC_SILVER);
-        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.GRAPHITE);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.GLOWSTONE);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.HEPATIZON);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.INVAR);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.IRIDIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.LEAD);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.LITHIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.LUDICRITE);
-        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.MAGNESIUM);
-        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.MANGANESE);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.LUMIUM);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.MANYULLYN);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.NICKEL);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.OBSIDIAN);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.OSMIUM);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.PLATINUM);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ROSE_GOLD);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.SIGNALUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.SILVER);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.SLIMESTEEL);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.SOULSTEEL);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.STEEL);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.TIN);
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.URANIUM);
         tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.YELLORIUM);
-        //</editor-fold>*/
+        tag(Tags.Items.INGOTS).addTags(ModTags.Items.Ingots.ZINC);
+        //</editor-fold>
 
-        /*//<editor-fold desc="NUGGETS">
+        //<editor-fold desc="NUGGETS">
         tag(ModTags.Items.Nuggets.ALUMINIUM).add(ModItems.Nugget.ALUMINIUM.get());
         tag(ModTags.Items.Nuggets.ALUMINIUM_BRASS).add(ModItems.Nugget.ALUMINIUM_BRASS.get());
         tag(ModTags.Items.Nuggets.ALUMITE).add(ModItems.Nugget.ALUMITE.get());
+        tag(ModTags.Items.Nuggets.AMETHYST_BRONZE).add(ModItems.Nugget.AMETHYST_BRONZE.get());
         tag(ModTags.Items.Nuggets.ARDITE).add(ModItems.Nugget.ARDITE.get());
         tag(ModTags.Items.Nuggets.BERYLLIUM).add(ModItems.Nugget.BERYLLIUM.get());
         tag(ModTags.Items.Nuggets.BLUTONIUM).add(ModItems.Nugget.BLUTONIUM.get());
@@ -430,30 +448,48 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Nuggets.DARK_STEEL).add(ModItems.Nugget.DARK_STEEL.get());
         tag(ModTags.Items.Nuggets.DAWN_STONE).add(ModItems.Nugget.DAWN_STONE.get());
         tag(ModTags.Items.Nuggets.DEMONIUM).add(ModItems.Nugget.DEMONIUM.get());
+        tag(ModTags.Items.Nuggets.DIAMOND).add(ModItems.Nugget.DIAMOND.get());
         tag(ModTags.Items.Nuggets.DRACONIUM).add(ModItems.Nugget.DRACONIUM.get());
         tag(ModTags.Items.Nuggets.ELECTRICAL_STEEL).add(ModItems.Nugget.ELECTRICAL_STEEL.get());
         tag(ModTags.Items.Nuggets.ELECTRUM).add(ModItems.Nugget.ELECTRUM.get());
+        tag(ModTags.Items.Nuggets.EMERALD).add(ModItems.Nugget.EMERALD.get());
         tag(ModTags.Items.Nuggets.ENCHANTIUM).add(ModItems.Nugget.ENCHANTIUM.get());
         tag(ModTags.Items.Nuggets.END_STEEL).add(ModItems.Nugget.END_STEEL.get());
         tag(ModTags.Items.Nuggets.ENDERITE).add(ModItems.Nugget.ENDERITE.get());
         tag(ModTags.Items.Nuggets.ENERGETIC_SILVER).add(ModItems.Nugget.ENERGETIC_SILVER.get());
+        tag(ModTags.Items.Nuggets.GLOWSTONE).add(ModItems.Nugget.GLOWSTONE.get());
         tag(ModTags.Items.Nuggets.GRAPHITE).add(ModItems.Nugget.GRAPHITE.get());
+        tag(ModTags.Items.Nuggets.HEPATIZON).add(ModItems.Nugget.HEPATIZON.get());
         tag(ModTags.Items.Nuggets.INVAR).add(ModItems.Nugget.INVAR.get());
         tag(ModTags.Items.Nuggets.IRIDIUM).add(ModItems.Nugget.IRIDIUM.get());
         tag(ModTags.Items.Nuggets.LEAD).add(ModItems.Nugget.LEAD.get());
         tag(ModTags.Items.Nuggets.LITHIUM).add(ModItems.Nugget.LITHIUM.get());
         tag(ModTags.Items.Nuggets.LUDICRITE).add(ModItems.Nugget.LUDICRITE.get());
+        tag(ModTags.Items.Nuggets.LUMIUM).add(ModItems.Nugget.LUMIUM.get());
         tag(ModTags.Items.Nuggets.MAGNESIUM).add(ModItems.Nugget.MAGNESIUM.get());
         tag(ModTags.Items.Nuggets.MANGANESE).add(ModItems.Nugget.MANGANESE.get());
+        tag(ModTags.Items.Nuggets.MANYULLYN).add(ModItems.Nugget.MANYULLYN.get());
+        tag(ModTags.Items.Nuggets.NETHERITE).add(ModItems.Nugget.NETHERITE.get());
         tag(ModTags.Items.Nuggets.NICKEL).add(ModItems.Nugget.NICKEL.get());
+        tag(ModTags.Items.Nuggets.NITER).add(ModItems.Nugget.NITER.get());
+        tag(ModTags.Items.Nuggets.OBSIDIAN).add(ModItems.Nugget.OBSIDIAN.get());
+        tag(ModTags.Items.Nuggets.OSMIUM).add(ModItems.Nugget.OSMIUM.get());
+        tag(ModTags.Items.Nuggets.PLATINUM).add(ModItems.Nugget.PLATINUM.get());
+        tag(ModTags.Items.Nuggets.ROSE_GOLD).add(ModItems.Nugget.ROSE_GOLD.get());
+        tag(ModTags.Items.Nuggets.SIGNALUM).add(ModItems.Nugget.SIGNALUM.get());
         tag(ModTags.Items.Nuggets.SILVER).add(ModItems.Nugget.SILVER.get());
+        tag(ModTags.Items.Nuggets.SLIMESTEEL).add(ModItems.Nugget.SLIMESTEEL.get());
+        tag(ModTags.Items.Nuggets.SOULSTEEL).add(ModItems.Nugget.SOULSTEEL.get());
         tag(ModTags.Items.Nuggets.STEEL).add(ModItems.Nugget.STEEL.get());
         tag(ModTags.Items.Nuggets.TIN).add(ModItems.Nugget.TIN.get());
+        tag(ModTags.Items.Nuggets.URANIUM).add(ModItems.Nugget.URANIUM.get());
         tag(ModTags.Items.Nuggets.YELLORIUM).add(ModItems.Nugget.YELLORIUM.get());
+        tag(ModTags.Items.Nuggets.ZINC).add(ModItems.Nugget.ZINC.get());
 
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ALUMINIUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ALUMINIUM_BRASS);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ALUMITE);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.AMETHYST_BRONZE);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ARDITE);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.BERYLLIUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.BLUTONIUM);
@@ -469,14 +505,18 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.DARK_STEEL);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.DAWN_STONE);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.DEMONIUM);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.DIAMOND);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.DRACONIUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ELECTRICAL_STEEL);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ELECTRUM);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.EMERALD);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ENCHANTIUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.END_STEEL);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ENDERITE);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ENERGETIC_SILVER);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.GLOWSTONE);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.GRAPHITE);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.HEPATIZON);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.INVAR);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.IRIDIUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.LEAD);
@@ -484,12 +524,24 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.LUDICRITE);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.MAGNESIUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.MANGANESE);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.MANYULLYN);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.NETHERITE);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.NICKEL);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.NITER);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.OBSIDIAN);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.OSMIUM);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.PLATINUM);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ROSE_GOLD);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.SIGNALUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.SILVER);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.SLIMESTEEL);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.SOULSTEEL);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.STEEL);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.TIN);
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.URANIUM);
         tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.YELLORIUM);
-        //</editor-fold>*/
+        tag(Tags.Items.NUGGETS).addTags(ModTags.Items.Nuggets.ZINC);
+        //</editor-fold>
 
         /*//<editor-fold desc="PLATES">
         tag(ModTags.Items.Plates.ALUMINIUM).add(ModItems.Plate.ALUMINIUM.get());
@@ -577,83 +629,27 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(plates).addTags(ModTags.Items.Plates.YELLORIUM);
         //</editor-fold>*/
 
-        /*//<editor-fold desc="RAW">
+        //<editor-fold desc="RAW">
         tag(ModTags.Items.Raw.ALUMINIUM).add(ModItems.Raw.ALUMINIUM.get());
-        tag(ModTags.Items.Raw.ALUMINIUM_BRASS).add(ModItems.Raw.ALUMINIUM_BRASS.get());
-        tag(ModTags.Items.Raw.ALUMITE).add(ModItems.Raw.ALUMITE.get());
-        tag(ModTags.Items.Raw.ARDITE).add(ModItems.Raw.ARDITE.get());
-        tag(ModTags.Items.Raw.BERYLLIUM).add(ModItems.Raw.BERYLLIUM.get());
-        tag(ModTags.Items.Raw.BLUTONIUM).add(ModItems.Raw.BLUTONIUM.get());
-        tag(ModTags.Items.Raw.BORON).add(ModItems.Raw.BORON.get());
-        tag(ModTags.Items.Raw.BRASS).add(ModItems.Raw.BRASS.get());
-        tag(ModTags.Items.Raw.BRONZE).add(ModItems.Raw.BRONZE.get());
-        tag(ModTags.Items.Raw.COBALT).add(ModItems.Raw.COBALT.get());
-        tag(ModTags.Items.Raw.CONDUCTIVE_IRON).add(ModItems.Raw.CONDUCTIVE_IRON.get());
-        tag(ModTags.Items.Raw.CONSTANTAN).add(ModItems.Raw.CONSTANTAN.get());
-        tag(ModTags.Items.Raw.CRUDE_STEEL).add(ModItems.Raw.CRUDE_STEEL.get());
-        tag(ModTags.Items.Raw.CYANIDE).add(ModItems.Raw.CYANIDE.get());
-        tag(ModTags.Items.Raw.DARK_STEEL).add(ModItems.Raw.DARK_STEEL.get());
-        tag(ModTags.Items.Raw.DAWN_STONE).add(ModItems.Raw.DAWN_STONE.get());
-        tag(ModTags.Items.Raw.DEMONIUM).add(ModItems.Raw.DEMONIUM.get());
-        tag(ModTags.Items.Raw.DRACONIUM).add(ModItems.Raw.DRACONIUM.get());
-        tag(ModTags.Items.Raw.ELECTRICAL_STEEL).add(ModItems.Raw.ELECTRICAL_STEEL.get());
-        tag(ModTags.Items.Raw.ELECTRUM).add(ModItems.Raw.ELECTRUM.get());
-        tag(ModTags.Items.Raw.ENCHANTIUM).add(ModItems.Raw.ENCHANTIUM.get());
-        tag(ModTags.Items.Raw.END_STEEL).add(ModItems.Raw.END_STEEL.get());
-        tag(ModTags.Items.Raw.ENDERITE).add(ModItems.Raw.ENDERITE.get());
-        tag(ModTags.Items.Raw.ENERGETIC_SILVER).add(ModItems.Raw.ENERGETIC_SILVER.get());
-        tag(ModTags.Items.Raw.GRAPHITE).add(ModItems.Raw.GRAPHITE.get());
-        tag(ModTags.Items.Raw.INVAR).add(ModItems.Raw.INVAR.get());
-        tag(ModTags.Items.Raw.IRIDIUM).add(ModItems.Raw.IRIDIUM.get());
         tag(ModTags.Items.Raw.LEAD).add(ModItems.Raw.LEAD.get());
-        tag(ModTags.Items.Raw.LITHIUM).add(ModItems.Raw.LITHIUM.get());
-        tag(ModTags.Items.Raw.LUDICRITE).add(ModItems.Raw.LUDICRITE.get());
-        tag(ModTags.Items.Raw.MAGNESIUM).add(ModItems.Raw.MAGNESIUM.get());
-        tag(ModTags.Items.Raw.MANGANESE).add(ModItems.Raw.MANGANESE.get());
         tag(ModTags.Items.Raw.NICKEL).add(ModItems.Raw.NICKEL.get());
+        tag(ModTags.Items.Raw.OSMIUM).add(ModItems.Raw.OSMIUM.get());
+        tag(ModTags.Items.Raw.PLATINUM).add(ModItems.Raw.PLATINUM.get());
         tag(ModTags.Items.Raw.SILVER).add(ModItems.Raw.SILVER.get());
-        tag(ModTags.Items.Raw.STEEL).add(ModItems.Raw.STEEL.get());
         tag(ModTags.Items.Raw.TIN).add(ModItems.Raw.TIN.get());
-        tag(ModTags.Items.Raw.YELLORIUM).add(ModItems.Raw.YELLORIUM.get());
+        tag(ModTags.Items.Raw.URANIUM).add(ModItems.Raw.URANIUM.get());
+        tag(ModTags.Items.Raw.ZINC).add(ModItems.Raw.ZINC.get());
 
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ALUMINIUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ALUMINIUM_BRASS);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ALUMITE);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ARDITE);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.BERYLLIUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.BLUTONIUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.BORON);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.BRASS);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.BRONZE);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.COBALT);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.CONDUCTIVE_IRON);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.CONSTANTAN);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.CRUDE_STEEL);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.CYANIDE);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.DARK_STEEL);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.DAWN_STONE);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.DEMONIUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.DRACONIUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ELECTRICAL_STEEL);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ELECTRUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ENCHANTIUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.END_STEEL);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ENDERITE);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ENERGETIC_SILVER);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.GRAPHITE);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.INVAR);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.IRIDIUM);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.LEAD);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.LITHIUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.LUDICRITE);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.MAGNESIUM);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.MANGANESE);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.NICKEL);
+        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.OSMIUM);
+        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.PLATINUM);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.SILVER);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.STEEL);
         tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.TIN);
-        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.YELLORIUM);
-        //</editor-fold>*/
+        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.URANIUM);
+        tag(Tags.Items.RAW_MATERIALS).addTags(ModTags.Items.Raw.ZINC);
+        //</editor-fold>
 
         /*//<editor-fold desc="REINFORCED">
         tag(ModTags.Items.Reinforced.ALUMINIUM).add(ModItems.Reinforced.ALUMINIUM.get());
@@ -843,25 +839,45 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(Tags.Items.TOOLS).addTags(ModTags.Items.Tool.WRENCH);
         //</editor-fold>*/
 
-        /*//<editor-fold desc="GEMS">
+        //<editor-fold desc="GEMS">
+        tag(ModTags.Items.Gems.APATITE).add(ModItems.Gem.APATITE.get());
+        tag(ModTags.Items.Gems.CINNABAR).add(ModItems.Gem.CINNABAR.get());
+        tag(ModTags.Items.Gems.CITRINE).add(ModItems.Gem.CITRINE.get());
+        tag(ModTags.Items.Gems.PERIDOT).add(ModItems.Gem.PERIDOT.get());
+        tag(ModTags.Items.Gems.RED_GARNET).add(ModItems.Gem.RED_GARNET.get());
         tag(ModTags.Items.Gems.RUBY).add(ModItems.Gem.RUBY.get());
         tag(ModTags.Items.Gems.SAPPHIRE).add(ModItems.Gem.SAPPHIRE.get());
-        tag(ModTags.Items.Gems.Shards.SAPPHIRE).add(ModItems.Gem.SAPPHIRE.get());
-        tag(ModTags.Items.Gems.Shards.DIAMOND).add(ModItems.Gem.DIAMOND_SHARD.get());
-        tag(ModTags.Items.Gems.Shards.EMERALD).add(ModItems.Gem.EMERALD_SHARD.get());
-        tag(ModTags.Items.Gems.Shards.QUARTZ).add(ModItems.Gem.QUARTZ_SHARD.get());
-        tag(ModTags.Items.Gems.Shards.RUBY).add(ModItems.Gem.RUBY_SHARD.get());
-        tag(ModTags.Items.Gems.Shards.SAPPHIRE).add(ModItems.Gem.SAPPHIRE_SHARD.get());
+        tag(ModTags.Items.Gems.SILKY_JEWEL).add(ModItems.Gem.SILKY_JEWEL.get());
+        tag(ModTags.Items.Gems.SOUL).add(ModItems.Gem.SOUL.get());
+        tag(ModTags.Items.Gems.YELLOW_GARNET).add(ModItems.Gem.YELLOW_GARNET.get());
 
+        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.APATITE);
+        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.CINNABAR);
+        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.CITRINE);
+        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.PERIDOT);
+        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.RED_GARNET);
         tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.RUBY);
         tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.SAPPHIRE);
-        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.SAPPHIRE);
-        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.DIAMOND);
-        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.EMERALD);
-        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.QUARTZ);
-        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.RUBY);
-        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.Shards.SAPPHIRE);
-        //</editor-fold>*/
+        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.SILKY_JEWEL);
+        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.SOUL);
+        tag(Tags.Items.GEMS).addTags(ModTags.Items.Gems.YELLOW_GARNET);
+        //</editor-fold>
+
+        tag(ModTags.Items.Shards.DIAMOND).add(ModItems.Shard.DIAMOND.get());
+        tag(ModTags.Items.Shards.EMERALD).add(ModItems.Shard.EMERALD.get());
+        tag(ModTags.Items.Shards.QUARTZ).add(ModItems.Shard.QUARTZ.get());
+        tag(ModTags.Items.Shards.RUBY).add(ModItems.Shard.RUBY.get());
+        tag(ModTags.Items.Shards.SAPPHIRE).add(ModItems.Shard.SAPPHIRE.get());
+        tag(ModTags.Items.Shards.URANIUM).add(ModItems.Shard.URANIUM.get());
+
+        TagKey<Item> shards = tag("shards");
+
+        tag(shards).addTags(ModTags.Items.Shards.DIAMOND);
+        tag(shards).addTags(ModTags.Items.Shards.EMERALD);
+        tag(shards).addTags(ModTags.Items.Shards.QUARTZ);
+        tag(shards).addTags(ModTags.Items.Shards.RUBY);
+        tag(shards).addTags(ModTags.Items.Shards.SAPPHIRE);
+        tag(shards).addTags(ModTags.Items.Shards.URANIUM);
 
         /*//<editor-fold desc="CASTS">
         tag(ModTags.Items.Casts.BLANK).add(ModItems.Cast.BLANK.get());
