@@ -370,24 +370,22 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Nugget.ZINC);
         //</editor-fold>
 
-        /*//<editor-fold desc="PLATE">
+        //<editor-fold desc="PLATE">
         SimpleItem(ModItems.Plate.ALUMINIUM);
         SimpleItem(ModItems.Plate.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Plate.ALUMITE);
+        SimpleItem(ModItems.Plate.AMETHYST_BRONZE);
         SimpleItem(ModItems.Plate.ARDITE);
         SimpleItem(ModItems.Plate.BERYLLIUM);
         SimpleItem(ModItems.Plate.BLUTONIUM);
         SimpleItem(ModItems.Plate.BORON);
         SimpleItem(ModItems.Plate.BRASS);
         SimpleItem(ModItems.Plate.BRONZE);
-        SimpleItem(ModItems.Plate.COBALT);
         SimpleItem(ModItems.Plate.CONDUCTIVE_IRON);
         SimpleItem(ModItems.Plate.CONSTANTAN);
         SimpleItem(ModItems.Plate.COPPER);
         SimpleItem(ModItems.Plate.CRUDE_STEEL);
-        SimpleItem(ModItems.Plate.CYANIDE);
         SimpleItem(ModItems.Plate.DARK_STEEL);
-        SimpleItem(ModItems.Plate.DAWN_STONE);
         SimpleItem(ModItems.Plate.DEMONIUM);
         SimpleItem(ModItems.Plate.DRACONIUM);
         SimpleItem(ModItems.Plate.ELECTRICAL_STEEL);
@@ -397,21 +395,29 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Plate.ENDERITE);
         SimpleItem(ModItems.Plate.ENERGETIC_SILVER);
         SimpleItem(ModItems.Plate.GOLD);
-        SimpleItem(ModItems.Plate.GRAPHITE);
+        SimpleItem(ModItems.Plate.HEPATIZON);
         SimpleItem(ModItems.Plate.INVAR);
         SimpleItem(ModItems.Plate.IRIDIUM);
         SimpleItem(ModItems.Plate.IRON);
         SimpleItem(ModItems.Plate.LEAD);
         SimpleItem(ModItems.Plate.LITHIUM);
         SimpleItem(ModItems.Plate.LUDICRITE);
-        SimpleItem(ModItems.Plate.MAGNESIUM);
-        SimpleItem(ModItems.Plate.MANGANESE);
+        SimpleItem(ModItems.Plate.LUMIUM);
+        SimpleItem(ModItems.Plate.MANYULLYN);
+        SimpleItem(ModItems.Plate.NETHERITE);
         SimpleItem(ModItems.Plate.NICKEL);
-        SimpleItem(ModItems.Plate.STEEL);
+        SimpleItem(ModItems.Plate.OSMIUM);
+        SimpleItem(ModItems.Plate.PLATINUM);
+        SimpleItem(ModItems.Plate.ROSE_GOLD);
+        SimpleItem(ModItems.Plate.SIGNALUM);
         SimpleItem(ModItems.Plate.SILVER);
+        SimpleItem(ModItems.Plate.SLIMESTEEL);
+        SimpleItem(ModItems.Plate.SOULSTEEL);
+        SimpleItem(ModItems.Plate.STEEL);
         SimpleItem(ModItems.Plate.TIN);
-        SimpleItem(ModItems.Plate.YELLORIUM);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Plate.URANIUM);
+        SimpleItem(ModItems.Plate.ZINC);
+        //</editor-fold>
 
         //<editor-fold desc="RAW">
         SimpleItem(ModItems.Raw.ALUMINIUM);
@@ -425,53 +431,11 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Raw.ZINC);
         //</editor-fold>
 
-        /*//<editor-fold desc="REINFORCED">
-        SimpleItem(ModItems.Reinforced.ALUMINIUM);
-        SimpleItem(ModItems.Reinforced.ALUMINIUM_BRASS);
-        SimpleItem(ModItems.Reinforced.ALUMITE);
-        SimpleItem(ModItems.Reinforced.ARDITE);
-        SimpleItem(ModItems.Reinforced.BERYLLIUM);
-        SimpleItem(ModItems.Reinforced.BLUTONIUM);
-        SimpleItem(ModItems.Reinforced.BORON);
-        SimpleItem(ModItems.Reinforced.BRASS);
-        SimpleItem(ModItems.Reinforced.BRONZE);
-        SimpleItem(ModItems.Reinforced.COBALT);
-        SimpleItem(ModItems.Reinforced.CONDUCTIVE_IRON);
-        SimpleItem(ModItems.Reinforced.CONSTANTAN);
-        SimpleItem(ModItems.Reinforced.COPPER);
-        SimpleItem(ModItems.Reinforced.CRUDE_STEEL);
-        SimpleItem(ModItems.Reinforced.CYANIDE);
-        SimpleItem(ModItems.Reinforced.DARK_STEEL);
-        SimpleItem(ModItems.Reinforced.DAWN_STONE);
-        SimpleItem(ModItems.Reinforced.DEMONIUM);
-        SimpleItem(ModItems.Reinforced.DRACONIUM);
-        SimpleItem(ModItems.Reinforced.ELECTRICAL_STEEL);
-        SimpleItem(ModItems.Reinforced.ELECTRUM);
-        SimpleItem(ModItems.Reinforced.ENCHANTIUM);
-        SimpleItem(ModItems.Reinforced.END_STEEL);
-        SimpleItem(ModItems.Reinforced.ENDERITE);
-        SimpleItem(ModItems.Reinforced.ENERGETIC_SILVER);
-        SimpleItem(ModItems.Reinforced.GOLD);
-        SimpleItem(ModItems.Reinforced.GRAPHITE);
-        SimpleItem(ModItems.Reinforced.INVAR);
-        SimpleItem(ModItems.Reinforced.IRIDIUM);
-        SimpleItem(ModItems.Reinforced.IRON);
-        SimpleItem(ModItems.Reinforced.LEAD);
-        SimpleItem(ModItems.Reinforced.LITHIUM);
-        SimpleItem(ModItems.Reinforced.LUDICRITE);
-        SimpleItem(ModItems.Reinforced.MAGNESIUM);
-        SimpleItem(ModItems.Reinforced.MANGANESE);
-        SimpleItem(ModItems.Reinforced.NICKEL);
-        SimpleItem(ModItems.Reinforced.SILVER);
-        SimpleItem(ModItems.Reinforced.STEEL);
-        SimpleItem(ModItems.Reinforced.TIN);
-        SimpleItem(ModItems.Reinforced.YELLORIUM);
-        //</editor-fold>*/
-
-        /*//<editor-fold desc="ROD">
+        //<editor-fold desc="ROD">
         SimpleItem(ModItems.Rod.ALUMINIUM);
         SimpleItem(ModItems.Rod.ALUMINIUM_BRASS);
         SimpleItem(ModItems.Rod.ALUMITE);
+        SimpleItem(ModItems.Rod.AMETHYST_BRONZE);
         SimpleItem(ModItems.Rod.ARDITE);
         SimpleItem(ModItems.Rod.BERYLLIUM);
         SimpleItem(ModItems.Rod.BLUTONIUM);
@@ -483,9 +447,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Rod.CONSTANTAN);
         SimpleItem(ModItems.Rod.COPPER);
         SimpleItem(ModItems.Rod.CRUDE_STEEL);
-        SimpleItem(ModItems.Rod.CYANIDE);
         SimpleItem(ModItems.Rod.DARK_STEEL);
-        SimpleItem(ModItems.Rod.DAWN_STONE);
         SimpleItem(ModItems.Rod.DEMONIUM);
         SimpleItem(ModItems.Rod.DRACONIUM);
         SimpleItem(ModItems.Rod.ELECTRICAL_STEEL);
@@ -494,22 +456,34 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Rod.END_STEEL);
         SimpleItem(ModItems.Rod.ENDERITE);
         SimpleItem(ModItems.Rod.ENERGETIC_SILVER);
+        SimpleItem(ModItems.Rod.GLOWSTONE);
         SimpleItem(ModItems.Rod.GOLD);
         SimpleItem(ModItems.Rod.GRAPHITE);
+        SimpleItem(ModItems.Rod.HEPATIZON);
         SimpleItem(ModItems.Rod.INVAR);
         SimpleItem(ModItems.Rod.IRIDIUM);
         SimpleItem(ModItems.Rod.IRON);
         SimpleItem(ModItems.Rod.LEAD);
         SimpleItem(ModItems.Rod.LITHIUM);
         SimpleItem(ModItems.Rod.LUDICRITE);
+        SimpleItem(ModItems.Rod.LUMIUM);
         SimpleItem(ModItems.Rod.MAGNESIUM);
-        SimpleItem(ModItems.Rod.MANGANESE);
+        SimpleItem(ModItems.Rod.MANYULLYN);
         SimpleItem(ModItems.Rod.NICKEL);
+        SimpleItem(ModItems.Rod.OBSIDIAN);
+        SimpleItem(ModItems.Rod.OSMIUM);
+        SimpleItem(ModItems.Rod.PLATINUM);
+        SimpleItem(ModItems.Rod.ROSE_GOLD);
+        SimpleItem(ModItems.Rod.SIGNALUM);
         SimpleItem(ModItems.Rod.SILVER);
+        SimpleItem(ModItems.Rod.SLIMESTEEL);
+        SimpleItem(ModItems.Rod.SOULSTEEL);
         SimpleItem(ModItems.Rod.STEEL);
         SimpleItem(ModItems.Rod.TIN);
+        SimpleItem(ModItems.Rod.URANIUM);
         SimpleItem(ModItems.Rod.YELLORIUM);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Rod.ZINC);
+        //</editor-fold>
 
         //<editor-fold desc="GEMS">
         SimpleItem(ModItems.Gem.APATITE);
@@ -639,16 +613,24 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Tool.WOOD_HAMMER, true);
         //</editor-fold>*/
 
-        /*//<editor-fold desc="CAST">
+        //<editor-fold desc="CAST">
+        SimpleItem(ModItems.Cast.AXE);
+        SimpleItem(ModItems.Cast.BINDING);
         SimpleItem(ModItems.Cast.BLANK);
-        SimpleItem(ModItems.Cast.BLANK_REINFORCED);
         SimpleItem(ModItems.Cast.GEAR);
         SimpleItem(ModItems.Cast.GEM);
         SimpleItem(ModItems.Cast.HAMMER);
         SimpleItem(ModItems.Cast.HANDLE);
+        SimpleItem(ModItems.Cast.HOE);
         SimpleItem(ModItems.Cast.INGOT);
         SimpleItem(ModItems.Cast.NUGGET);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Cast.PICKAXE);
+        SimpleItem(ModItems.Cast.PLATE);
+        SimpleItem(ModItems.Cast.ROD);
+        SimpleItem(ModItems.Cast.SHOVEL);
+        SimpleItem(ModItems.Cast.SWORD);
+        SimpleItem(ModItems.Cast.WIRE);
+        //</editor-fold>
 
         /*//<editor-fold desc="HEAD">
         SimpleItem(ModItems.Head.BRONZE_AXE);
@@ -767,103 +749,98 @@ public class ModItemModelProvider extends ItemModelProvider
     private ItemModelBuilder SimpleItem(RegistryObject<Item> item, boolean handheld)
     {
         //<editor-fold desc="ITEM SPECIAL SUBFOLDERS">
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.CRYSTAL))
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CRYSTAL))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/crystal/" + item.getId().getPath()));
 
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.DUST))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/dust/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.GEAR))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/gear/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.INGOT))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/ingot/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.NUGGET))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/nugget/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.PLATE))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/plate/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.RAW))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/raw/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.REINFORCED))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/reinforced/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.ROD))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/rod/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.TOOL) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.BOW) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.SWORD) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.AXE) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.PICKAXE) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.SHOVEL) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.HOE) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.HAMMER) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD)))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/tool/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.SHARD))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/shard/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.GEM) ||
-        !item.getId().getPath().toLowerCase().contains(Reference.Names.SHARD))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/gem/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.HELMET) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.CHEST_PLATE) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.LEGGINGS) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.BOOTS))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/armor/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.CAST))
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/cast/" + item.getId().getPath()));
 
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.HEAD))
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/tool/head/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.DUST))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/dust/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.GEAR))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/gear/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.INGOT))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/ingot/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.NUGGET))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/nugget/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.PLATE))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/plate/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.RAW))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/raw/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.ROD))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/rod/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.TOOL) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.BOW) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.SWORD) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.AXE) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.PICKAXE) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.SHOVEL) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.HOE) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
+           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.HAMMER) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
+                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/tool/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.SHARD))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/shard/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.GEM) ||
+        !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.SHARD))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/gem/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.HELMET) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.CHEST_PLATE) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.LEGGINGS) ||
+           item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.BOOTS))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/armor/" + item.getId().getPath()));
         //</editor-fold>
 
         return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))

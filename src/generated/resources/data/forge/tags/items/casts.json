@@ -1,0 +1,20 @@
+{
+  "values": [
+    "#forge:casts/axe",
+    "#forge:casts/binding",
+    "#forge:casts/blank",
+    "#forge:casts/gear",
+    "#forge:casts/gem",
+    "#forge:casts/hammer",
+    "#forge:casts/handle",
+    "#forge:casts/hoe",
+    "#forge:casts/ingot",
+    "#forge:casts/nugget",
+    "#forge:casts/pickaxe",
+    "#forge:casts/plate",
+    "#forge:casts/rod",
+    "#forge:casts/shovel",
+    "#forge:casts/sword",
+    "#forge:casts/wire"
+  ]
+}
