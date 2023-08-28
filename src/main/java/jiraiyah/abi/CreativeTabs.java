@@ -441,7 +441,7 @@ public class CreativeTabs
                     .withTabsAfter(CreativeModeTabs.COLORED_BLOCKS)
                     .withTabsBefore(CreativeTabs.PLATE.getId())
                     .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
-                    .icon(() -> ModItems.Cast.GEAR.get().getDefaultInstance())
+                    .icon(() -> ModItems.Tool.COPPER_HAMMER.get().getDefaultInstance())
                     .title(Component.translatable(Reference.Names.Prefix.CREATIVE_TAB + Reference.MODID + "_" + Reference.Names.Prefix.TOOL + "tab"))
                     .displayItems((parameters, output) ->
                     {
@@ -462,22 +462,16 @@ public class CreativeTabs
                         output.accept(ModItems.Cast.ROD.get());
                         output.accept(ModItems.Cast.WIRE.get());
 
-                        /*output.accept(ModItems.Tool.AUGMENT.get());
-                        output.accept(ModItems.Tool.CUTTER.get());
-                        output.accept(ModItems.Tool.DOWSING_ROD.get());
-                        output.accept(ModItems.Tool.KNIFE.get());
-                        output.accept(ModItems.Tool.SPANNER.get());
-                        output.accept(ModItems.Tool.TUNER.get());
-                        output.accept(ModItems.Tool.WRENCH.get());
-
                         output.accept(ModItems.Tool.RUBY_BOW.get());
                         output.accept(ModItems.Tool.SAPPHIRE_BOW.get());
 
                         output.accept(ModItems.Tool.BRONZE_AXE.get());
+                        output.accept(ModItems.Tool.CITRINE_AXE.get());
                         output.accept(ModItems.Tool.CONSTANTAN_AXE.get());
                         output.accept(ModItems.Tool.COPPER_AXE.get());
                         output.accept(ModItems.Tool.ELECTRUM_AXE.get());
                         output.accept(ModItems.Tool.EMERALD_AXE.get());
+                        output.accept(ModItems.Tool.ENDERITE_AXE.get());
                         output.accept(ModItems.Tool.INVAR_AXE.get());
                         output.accept(ModItems.Tool.LEAD_AXE.get());
                         output.accept(ModItems.Tool.NICKEL_AXE.get());
@@ -487,10 +481,12 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.TIN_AXE.get());
 
                         output.accept(ModItems.Tool.BRONZE_HAMMER.get());
+                        output.accept(ModItems.Tool.CITRINE_HAMMER.get());
                         output.accept(ModItems.Tool.CONSTANTAN_HAMMER.get());
                         output.accept(ModItems.Tool.COPPER_HAMMER.get());
                         output.accept(ModItems.Tool.ELECTRUM_HAMMER.get());
                         output.accept(ModItems.Tool.EMERALD_HAMMER.get());
+                        output.accept(ModItems.Tool.ENDERITE_HAMMER.get());
                         output.accept(ModItems.Tool.INVAR_HAMMER.get());
                         output.accept(ModItems.Tool.LEAD_HAMMER.get());
                         output.accept(ModItems.Tool.NICKEL_HAMMER.get());
@@ -500,10 +496,12 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.TIN_HAMMER.get());
 
                         output.accept(ModItems.Tool.BRONZE_HOE.get());
+                        output.accept(ModItems.Tool.CITRINE_HOE.get());
                         output.accept(ModItems.Tool.CONSTANTAN_HOE.get());
                         output.accept(ModItems.Tool.COPPER_HOE.get());
                         output.accept(ModItems.Tool.ELECTRUM_HOE.get());
                         output.accept(ModItems.Tool.EMERALD_HOE.get());
+                        output.accept(ModItems.Tool.ENDERITE_HOE.get());
                         output.accept(ModItems.Tool.INVAR_HOE.get());
                         output.accept(ModItems.Tool.LEAD_HOE.get());
                         output.accept(ModItems.Tool.NICKEL_HOE.get());
@@ -513,10 +511,12 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.TIN_HOE.get());
 
                         output.accept(ModItems.Tool.BRONZE_PICKAXE.get());
+                        output.accept(ModItems.Tool.CITRINE_PICKAXE.get());
                         output.accept(ModItems.Tool.CONSTANTAN_PICKAXE.get());
                         output.accept(ModItems.Tool.COPPER_PICKAXE.get());
                         output.accept(ModItems.Tool.ELECTRUM_PICKAXE.get());
                         output.accept(ModItems.Tool.EMERALD_PICKAXE.get());
+                        output.accept(ModItems.Tool.ENDERITE_PICKAXE.get());
                         output.accept(ModItems.Tool.INVAR_PICKAXE.get());
                         output.accept(ModItems.Tool.LEAD_PICKAXE.get());
                         output.accept(ModItems.Tool.NICKEL_PICKAXE.get());
@@ -526,10 +526,12 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.TIN_PICKAXE.get());
 
                         output.accept(ModItems.Tool.BRONZE_SHOVEL.get());
+                        output.accept(ModItems.Tool.CITRINE_SHOVEL.get());
                         output.accept(ModItems.Tool.CONSTANTAN_SHOVEL.get());
                         output.accept(ModItems.Tool.COPPER_SHOVEL.get());
                         output.accept(ModItems.Tool.ELECTRUM_SHOVEL.get());
                         output.accept(ModItems.Tool.EMERALD_SHOVEL.get());
+                        output.accept(ModItems.Tool.ENDERITE_SHOVEL.get());
                         output.accept(ModItems.Tool.INVAR_SHOVEL.get());
                         output.accept(ModItems.Tool.LEAD_SHOVEL.get());
                         output.accept(ModItems.Tool.NICKEL_SHOVEL.get());
@@ -539,10 +541,12 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.TIN_SHOVEL.get());
 
                         output.accept(ModItems.Tool.BRONZE_SWORD.get());
+                        output.accept(ModItems.Tool.CITRINE_SWORD.get());
                         output.accept(ModItems.Tool.CONSTANTAN_SWORD.get());
                         output.accept(ModItems.Tool.COPPER_SWORD.get());
                         output.accept(ModItems.Tool.ELECTRUM_SWORD.get());
                         output.accept(ModItems.Tool.EMERALD_SWORD.get());
+                        output.accept(ModItems.Tool.ENDERITE_SWORD.get());
                         output.accept(ModItems.Tool.INVAR_SWORD.get());
                         output.accept(ModItems.Tool.LEAD_SWORD.get());
                         output.accept(ModItems.Tool.NICKEL_SWORD.get());
@@ -551,7 +555,7 @@ public class CreativeTabs
                         output.accept(ModItems.Tool.SILVER_SWORD.get());
                         output.accept(ModItems.Tool.TIN_SWORD.get());
 
-                        output.accept(ModItems.Head.BRONZE_AXE.get());
+                        /*output.accept(ModItems.Head.BRONZE_AXE.get());
                         output.accept(ModItems.Head.CONSTANTAN_AXE.get());
                         output.accept(ModItems.Head.COPPER_AXE.get());
                         output.accept(ModItems.Head.ELECTRUM_AXE.get());

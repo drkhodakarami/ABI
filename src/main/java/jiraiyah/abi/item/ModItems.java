@@ -1,7 +1,8 @@
 package jiraiyah.abi.item;
 
 import jiraiyah.abi.Reference;
-import jiraiyah.abi.item.custom.Augment;
+import jiraiyah.abi.item.custom.*;
+import jiraiyah.abi.zlib.util.ModTiers;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -1308,267 +1309,278 @@ public class ModItems
         public static void initialize(){}
     }
 
-    /*public static class Tool
+    public static class Tool
     {
-        public static final RegistryObject<Item> AUGMENT = ITEMS.register(
-                Reference.Names.TOOL + Reference.Names.AUGMENT, () -> new Augment(new Item.Properties()));
-
-        public static final RegistryObject<Item> CUTTER = ITEMS.register(
-                Reference.Names.TOOL + Reference.Names.CUTTER, () -> new Cutter(new Item.Properties()));
-
-        public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register(
-                Reference.Names.TOOL + Reference.Names.DOWSING, () -> new DowsingRod(new Item.Properties()));
-
-        public static final RegistryObject<Item> KNIFE = ITEMS.register(
-                Reference.Names.TOOL + Reference.Names.KNIFE, () -> new Knife(new Item.Properties()));
-
-        public static final RegistryObject<Item> SPANNER = ITEMS.register(
-                Reference.Names.TOOL + Reference.Names.SPANNER, () -> new Spanner(new Item.Properties()));
-
-        public static final RegistryObject<Item> TUNER = ITEMS.register(
-                Reference.Names.TOOL + Reference.Names.TUNER, () -> new Tuner(new Item.Properties()));
-
-        public static final RegistryObject<Item> WRENCH = ITEMS.register(
-                Reference.Names.TOOL + Reference.Names.WRENCH, () -> new Wrench(new Item.Properties()));
-
         //<editor-fold desc="BRONZE TOOLS">
-        public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register(Reference.Names.BRONZE + Reference.Names.SWORD,
+        public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register(Reference.Names.Material.BRONZE + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.BRONZE, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register(Reference.Names.BRONZE + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register(Reference.Names.Material.BRONZE + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.BRONZE, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register(Reference.Names.BRONZE + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.BRONZE, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register(Reference.Names.BRONZE + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.BRONZE, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register(Reference.Names.BRONZE + Reference.Names.HOE,
+        public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register(Reference.Names.Material.BRONZE + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.BRONZE, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register(Reference.Names.Material.BRONZE + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.BRONZE, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register(Reference.Names.Material.BRONZE + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.BRONZE, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> BRONZE_HAMMER = ITEMS.register(Reference.Names.BRONZE + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> BRONZE_HAMMER = ITEMS.register(Reference.Names.Material.BRONZE + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.BRONZE, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
+        //<editor-fold desc="CITRINE TOOLS">
+        public static final RegistryObject<Item> CITRINE_SWORD = ITEMS.register(Reference.Names.Material.CITRINE + Reference.Names.Suffix.SWORD,
+                () -> new SwordItem(ModTiers.CITRINE, 3, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> CITRINE_PICKAXE = ITEMS.register(Reference.Names.Material.CITRINE + Reference.Names.Suffix.PICKAXE,
+                () -> new PickaxeItem(ModTiers.CITRINE, 1, -2.8F, new Item.Properties()));
+        public static final RegistryObject<Item> CITRINE_SHOVEL = ITEMS.register(Reference.Names.Material.CITRINE + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.CITRINE, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> CITRINE_AXE = ITEMS.register(Reference.Names.Material.CITRINE + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.CITRINE, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> CITRINE_HOE = ITEMS.register(Reference.Names.Material.CITRINE + Reference.Names.Suffix.HOE,
+                () -> new HoeItem(ModTiers.CITRINE, 0, 0.0F, new Item.Properties()));
+        public static final RegistryObject<Item> CITRINE_HAMMER = ITEMS.register(Reference.Names.Material.CITRINE + Reference.Names.Suffix.HAMMER,
+                () -> new HoeItem(ModTiers.CITRINE, 0, 0.0F, new Item.Properties()));
+        //</editor-fold>
+
         //<editor-fold desc="CONSTANTAN TOOLS">
-        public static final RegistryObject<Item> CONSTANTAN_SWORD = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.SWORD,
+        public static final RegistryObject<Item> CONSTANTAN_SWORD = ITEMS.register(Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.CONSTANTAN, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> CONSTANTAN_PICKAXE = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> CONSTANTAN_PICKAXE = ITEMS.register(Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.CONSTANTAN, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> CONSTANTAN_SHOVEL = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.CONSTANTAN, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> CONSTANTAN_AXE = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.CONSTANTAN, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> CONSTANTAN_HOE = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.HOE,
+        public static final RegistryObject<Item> CONSTANTAN_SHOVEL = ITEMS.register(Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.CONSTANTAN, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> CONSTANTAN_AXE = ITEMS.register(Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.CONSTANTAN, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> CONSTANTAN_HOE = ITEMS.register(Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.CONSTANTAN, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> CONSTANTAN_HAMMER = ITEMS.register(Reference.Names.CONSTANTAN + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> CONSTANTAN_HAMMER = ITEMS.register(Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.CONSTANTAN, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
         //<editor-fold desc="COPPER TOOLS">
-        public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register(Reference.Names.COPPER + Reference.Names.SWORD,
+        public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register(Reference.Names.Material.COPPER + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.COPPER, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register(Reference.Names.COPPER + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register(Reference.Names.Material.COPPER + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.COPPER, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register(Reference.Names.COPPER + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.COPPER, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> COPPER_AXE = ITEMS.register(Reference.Names.COPPER + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.COPPER, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> COPPER_HOE = ITEMS.register(Reference.Names.COPPER + Reference.Names.HOE,
+        public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register(Reference.Names.Material.COPPER + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.COPPER, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> COPPER_AXE = ITEMS.register(Reference.Names.Material.COPPER + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.COPPER, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> COPPER_HOE = ITEMS.register(Reference.Names.Material.COPPER + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.COPPER, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> COPPER_HAMMER = ITEMS.register(Reference.Names.COPPER + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> COPPER_HAMMER = ITEMS.register(Reference.Names.Material.COPPER + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.COPPER, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
         //<editor-fold desc="ELECTRUM TOOLS">
-        public static final RegistryObject<Item> ELECTRUM_SWORD = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.SWORD,
+        public static final RegistryObject<Item> ELECTRUM_SWORD = ITEMS.register(Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.ELECTRUM, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> ELECTRUM_PICKAXE = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> ELECTRUM_PICKAXE = ITEMS.register(Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.ELECTRUM, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> ELECTRUM_SHOVEL = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.ELECTRUM, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> ELECTRUM_AXE = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.ELECTRUM, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> ELECTRUM_HOE = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.HOE,
+        public static final RegistryObject<Item> ELECTRUM_SHOVEL = ITEMS.register(Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.ELECTRUM, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> ELECTRUM_AXE = ITEMS.register(Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.ELECTRUM, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> ELECTRUM_HOE = ITEMS.register(Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.ELECTRUM, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> ELECTRUM_HAMMER = ITEMS.register(Reference.Names.ELECTRUM + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> ELECTRUM_HAMMER = ITEMS.register(Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.ELECTRUM, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
         //<editor-fold desc="EMERALD TOOLS">
-        public static final RegistryObject<Item> EMERALD_SWORD = ITEMS.register(Reference.Names.EMERALD + Reference.Names.SWORD,
+        public static final RegistryObject<Item> EMERALD_SWORD = ITEMS.register(Reference.Names.Material.EMERALD + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.EMERALD, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> EMERALD_PICKAXE = ITEMS.register(Reference.Names.EMERALD + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> EMERALD_PICKAXE = ITEMS.register(Reference.Names.Material.EMERALD + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.EMERALD, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> EMERALD_SHOVEL = ITEMS.register(Reference.Names.EMERALD + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.EMERALD, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> EMERALD_AXE = ITEMS.register(Reference.Names.EMERALD + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.EMERALD, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> EMERALD_HOE = ITEMS.register(Reference.Names.EMERALD + Reference.Names.HOE,
+        public static final RegistryObject<Item> EMERALD_SHOVEL = ITEMS.register(Reference.Names.Material.EMERALD + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.EMERALD, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> EMERALD_AXE = ITEMS.register(Reference.Names.Material.EMERALD + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.EMERALD, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> EMERALD_HOE = ITEMS.register(Reference.Names.Material.EMERALD + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.EMERALD, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> EMERALD_HAMMER = ITEMS.register(Reference.Names.EMERALD + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> EMERALD_HAMMER = ITEMS.register(Reference.Names.Material.EMERALD + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.EMERALD, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
+        //<editor-fold desc="ENDERITE TOOLS">
+        public static final RegistryObject<Item> ENDERITE_SWORD = ITEMS.register(Reference.Names.Material.ENDERITE + Reference.Names.Suffix.SWORD,
+                () -> new SwordItem(ModTiers.ENDERITE, 3, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> ENDERITE_PICKAXE = ITEMS.register(Reference.Names.Material.ENDERITE + Reference.Names.Suffix.PICKAXE,
+                () -> new PickaxeItem(ModTiers.ENDERITE, 1, -2.8F, new Item.Properties()));
+        public static final RegistryObject<Item> ENDERITE_SHOVEL = ITEMS.register(Reference.Names.Material.ENDERITE + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.ENDERITE, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> ENDERITE_AXE = ITEMS.register(Reference.Names.Material.ENDERITE + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.ENDERITE, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> ENDERITE_HOE = ITEMS.register(Reference.Names.Material.ENDERITE + Reference.Names.Suffix.HOE,
+                () -> new HoeItem(ModTiers.ENDERITE, 0, 0.0F, new Item.Properties()));
+        public static final RegistryObject<Item> ENDERITE_HAMMER = ITEMS.register(Reference.Names.Material.ENDERITE + Reference.Names.Suffix.HAMMER,
+                () -> new HoeItem(ModTiers.ENDERITE, 0, 0.0F, new Item.Properties()));
+        //</editor-fold>
+
         //<editor-fold desc="INVAR TOOLS">
-        public static final RegistryObject<Item> INVAR_SWORD = ITEMS.register(Reference.Names.INVAR + Reference.Names.SWORD,
+        public static final RegistryObject<Item> INVAR_SWORD = ITEMS.register(Reference.Names.Material.INVAR + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.INVAR, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> INVAR_PICKAXE = ITEMS.register(Reference.Names.INVAR + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> INVAR_PICKAXE = ITEMS.register(Reference.Names.Material.INVAR + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.INVAR, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> INVAR_SHOVEL = ITEMS.register(Reference.Names.INVAR + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.INVAR, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> INVAR_AXE = ITEMS.register(Reference.Names.INVAR + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.INVAR, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> INVAR_HOE = ITEMS.register(Reference.Names.INVAR + Reference.Names.HOE,
+        public static final RegistryObject<Item> INVAR_SHOVEL = ITEMS.register(Reference.Names.Material.INVAR + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.INVAR, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> INVAR_AXE = ITEMS.register(Reference.Names.Material.INVAR + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.INVAR, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> INVAR_HOE = ITEMS.register(Reference.Names.Material.INVAR + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.INVAR, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> INVAR_HAMMER = ITEMS.register(Reference.Names.INVAR + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> INVAR_HAMMER = ITEMS.register(Reference.Names.Material.INVAR + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.INVAR, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
         //<editor-fold desc="LEAD TOOLS">
-        public static final RegistryObject<Item> LEAD_SWORD = ITEMS.register(Reference.Names.LEAD + Reference.Names.SWORD,
+        public static final RegistryObject<Item> LEAD_SWORD = ITEMS.register(Reference.Names.Material.LEAD + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.LEAD, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> LEAD_PICKAXE = ITEMS.register(Reference.Names.LEAD + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> LEAD_PICKAXE = ITEMS.register(Reference.Names.Material.LEAD + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.LEAD, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> LEAD_SHOVEL = ITEMS.register(Reference.Names.LEAD + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.LEAD, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> LEAD_AXE = ITEMS.register(Reference.Names.LEAD + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.LEAD, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> LEAD_HOE = ITEMS.register(Reference.Names.LEAD + Reference.Names.HOE,
+        public static final RegistryObject<Item> LEAD_SHOVEL = ITEMS.register(Reference.Names.Material.LEAD + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.LEAD, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> LEAD_AXE = ITEMS.register(Reference.Names.Material.LEAD + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.LEAD, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> LEAD_HOE = ITEMS.register(Reference.Names.Material.LEAD + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.LEAD, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> LEAD_HAMMER = ITEMS.register(Reference.Names.LEAD + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> LEAD_HAMMER = ITEMS.register(Reference.Names.Material.LEAD + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.LEAD, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
         //<editor-fold desc="NICKEL TOOLS">
-        public static final RegistryObject<Item> NICKEL_SWORD = ITEMS.register(Reference.Names.NICKEL + Reference.Names.SWORD,
+        public static final RegistryObject<Item> NICKEL_SWORD = ITEMS.register(Reference.Names.Material.NICKEL + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.NICKEL, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> NICKEL_PICKAXE = ITEMS.register(Reference.Names.NICKEL + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> NICKEL_PICKAXE = ITEMS.register(Reference.Names.Material.NICKEL + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.NICKEL, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> NICKEL_SHOVEL = ITEMS.register(Reference.Names.NICKEL + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.NICKEL, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> NICKEL_AXE = ITEMS.register(Reference.Names.NICKEL + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.NICKEL, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> NICKEL_HOE = ITEMS.register(Reference.Names.NICKEL + Reference.Names.HOE,
+        public static final RegistryObject<Item> NICKEL_SHOVEL = ITEMS.register(Reference.Names.Material.NICKEL + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.NICKEL, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> NICKEL_AXE = ITEMS.register(Reference.Names.Material.NICKEL + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.NICKEL, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> NICKEL_HOE = ITEMS.register(Reference.Names.Material.NICKEL + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.NICKEL, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> NICKEL_HAMMER = ITEMS.register(Reference.Names.NICKEL + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> NICKEL_HAMMER = ITEMS.register(Reference.Names.Material.NICKEL + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.NICKEL, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
         //<editor-fold desc="RUBY TOOLS">
-        public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register(Reference.Names.RUBY + Reference.Names.SWORD,
+        public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register(Reference.Names.Material.RUBY + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.RUBY, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register(Reference.Names.RUBY + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register(Reference.Names.Material.RUBY + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.RUBY, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register(Reference.Names.RUBY + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.RUBY, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_AXE = ITEMS.register(Reference.Names.RUBY + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.RUBY, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_HOE = ITEMS.register(Reference.Names.RUBY + Reference.Names.HOE,
+        public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register(Reference.Names.Material.RUBY + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.RUBY, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_AXE = ITEMS.register(Reference.Names.Material.RUBY + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.RUBY, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> RUBY_HOE = ITEMS.register(Reference.Names.Material.RUBY + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.RUBY, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_HAMMER = ITEMS.register(Reference.Names.RUBY + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> RUBY_HAMMER = ITEMS.register(Reference.Names.Material.RUBY + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.RUBY, 0, 0.0F, new Item.Properties()));
 
-        public static final RegistryObject<Item> RUBY_BOW = ITEMS.register(Reference.Names.RUBY + Reference.Names.BOW,
+        public static final RegistryObject<Item> RUBY_BOW = ITEMS.register(Reference.Names.Material.RUBY + Reference.Names.Suffix.BOW,
                 () -> new RubyBow(new Item.Properties().durability(500)));
         //</editor-fold>
 
         //<editor-fold desc="SAPPHIRE TOOLS">
-        public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.SWORD,
+        public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register(Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.SAPPHIRE, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register(Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.SAPPHIRE, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> SAPPHIRE_SHOVEL = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.SAPPHIRE, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.SAPPHIRE, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.HOE,
+        public static final RegistryObject<Item> SAPPHIRE_SHOVEL = ITEMS.register(Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.SAPPHIRE, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register(Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.SAPPHIRE, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register(Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.SAPPHIRE, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> SAPPHIRE_HAMMER = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> SAPPHIRE_HAMMER = ITEMS.register(Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.SAPPHIRE, 0, 0.0F, new Item.Properties()));
 
-        public static final RegistryObject<Item> SAPPHIRE_BOW = ITEMS.register(Reference.Names.SAPPHIRE + Reference.Names.BOW,
+        public static final RegistryObject<Item> SAPPHIRE_BOW = ITEMS.register(Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.BOW,
                 () -> new SapphireBow(new Item.Properties().durability(500)));
         //</editor-fold>
 
         //<editor-fold desc="SILVER TOOLS">
-        public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register(Reference.Names.SILVER + Reference.Names.SWORD,
+        public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register(Reference.Names.Material.SILVER + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.SILVER, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register(Reference.Names.SILVER + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register(Reference.Names.Material.SILVER + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.SILVER, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> SILVER_SHOVEL = ITEMS.register(Reference.Names.SILVER + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.SILVER, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> SILVER_AXE = ITEMS.register(Reference.Names.SILVER + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.SILVER, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> SILVER_HOE = ITEMS.register(Reference.Names.SILVER + Reference.Names.HOE,
+        public static final RegistryObject<Item> SILVER_SHOVEL = ITEMS.register(Reference.Names.Material.SILVER + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.SILVER, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> SILVER_AXE = ITEMS.register(Reference.Names.Material.SILVER + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.SILVER, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> SILVER_HOE = ITEMS.register(Reference.Names.Material.SILVER + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.SILVER, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> SILVER_HAMMER = ITEMS.register(Reference.Names.SILVER + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> SILVER_HAMMER = ITEMS.register(Reference.Names.Material.SILVER + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.SILVER, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
         //<editor-fold desc="TIN TOOLS">
-        public static final RegistryObject<Item> TIN_SWORD = ITEMS.register(Reference.Names.TIN + Reference.Names.SWORD,
+        public static final RegistryObject<Item> TIN_SWORD = ITEMS.register(Reference.Names.Material.TIN + Reference.Names.Suffix.SWORD,
                 () -> new SwordItem(ModTiers.TIN, 3, -2.4F, new Item.Properties()));
-        public static final RegistryObject<Item> TIN_PICKAXE = ITEMS.register(Reference.Names.TIN + Reference.Names.PICKAXE,
+        public static final RegistryObject<Item> TIN_PICKAXE = ITEMS.register(Reference.Names.Material.TIN + Reference.Names.Suffix.PICKAXE,
                 () -> new PickaxeItem(ModTiers.TIN, 1, -2.8F, new Item.Properties()));
-        public static final RegistryObject<Item> TIN_SHOVEL = ITEMS.register(Reference.Names.TIN + Reference.Names.SHOVEL,
-                () -> new ShovelItem(ModTiers.TIN, 1, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> TIN_AXE = ITEMS.register(Reference.Names.TIN + Reference.Names.AXE,
-                () -> new AxeItem(ModTiers.TIN, 6, -3.0F, new Item.Properties()));
-        public static final RegistryObject<Item> TIN_HOE = ITEMS.register(Reference.Names.TIN + Reference.Names.HOE,
+        public static final RegistryObject<Item> TIN_SHOVEL = ITEMS.register(Reference.Names.Material.TIN + Reference.Names.Suffix.SHOVEL,
+                () -> new ShovelItem(ModTiers.TIN, 1.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> TIN_AXE = ITEMS.register(Reference.Names.Material.TIN + Reference.Names.Suffix.AXE,
+                () -> new AxeItem(ModTiers.TIN, 6.0F, -3.0F, new Item.Properties()));
+        public static final RegistryObject<Item> TIN_HOE = ITEMS.register(Reference.Names.Material.TIN + Reference.Names.Suffix.HOE,
                 () -> new HoeItem(ModTiers.TIN, 0, 0.0F, new Item.Properties()));
-        public static final RegistryObject<Item> TIN_HAMMER = ITEMS.register(Reference.Names.TIN + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> TIN_HAMMER = ITEMS.register(Reference.Names.Material.TIN + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(ModTiers.TIN, 0, 0.0F, new Item.Properties()));
         //</editor-fold>
 
-        public static final RegistryObject<Item> DIAMOND_HAMMER = ITEMS.register(Reference.Names.DIAMOND + Reference.Names.HAMMER,
+        //<editor-fold desc="VANILLA HAMMERS">
+        public static final RegistryObject<Item> DIAMOND_HAMMER = ITEMS.register(Reference.Names.Material.DIAMOND + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(Tiers.DIAMOND, 0, 0.0F, new Item.Properties()));
 
-        public static final RegistryObject<Item> GOLD_HAMMER = ITEMS.register(Reference.Names.GOLD + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> GOLD_HAMMER = ITEMS.register(Reference.Names.Material.GOLD + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(Tiers.GOLD, 0, 0.0F, new Item.Properties()));
 
-        public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register(Reference.Names.IRON + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register(Reference.Names.Material.IRON + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(Tiers.IRON, 0, 0.0F, new Item.Properties()));
 
-        public static final RegistryObject<Item> NETHERITE_HAMMER = ITEMS.register(Reference.Names.NETHERITE + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> NETHERITE_HAMMER = ITEMS.register(Reference.Names.Material.NETHERITE + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(Tiers.NETHERITE, 0, 0.0F, new Item.Properties()));
 
-        public static final RegistryObject<Item> STONE_HAMMER = ITEMS.register(Reference.Names.STONE + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> STONE_HAMMER = ITEMS.register(Reference.Names.Material.STONE + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(Tiers.STONE, 0, 0.0F, new Item.Properties()));
 
-        public static final RegistryObject<Item> WOOD_HAMMER = ITEMS.register(Reference.Names.WOOD + Reference.Names.HAMMER,
+        public static final RegistryObject<Item> WOOD_HAMMER = ITEMS.register(Reference.Names.Material.WOOD + Reference.Names.Suffix.HAMMER,
                 () -> new HoeItem(Tiers.WOOD, 0, 0.0F, new Item.Properties()));
+        //</editor-fold>
 
         public static void initialize(){}
-    }*/
+    }
 
     public static class Gem
     {
         public static final RegistryObject<Item> APATITE = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.APATITE, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.APATITE, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> CINNABAR = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.CINNABAR, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.CINNABAR, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> CITRINE = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.CITRINE, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.CITRINE, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> PERIDOT = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.PERIDOT, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.PERIDOT, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> RED_GARNET = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.RED_GARNET, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.RED_GARNET, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> RUBY = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.RUBY, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.RUBY, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> SAPPHIRE = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.SAPPHIRE, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.SAPPHIRE, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> SILKY_JEWEL = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.SILKY_JEWEL, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.SILKY_JEWEL, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> SOUL = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.SOUL, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.SOUL, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> YELLOW_GARNET = ITEMS.register(
-                Reference.Names.Prefix.GEM + Reference.Names.Material.YELLOW_GARNET, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.GEM + Reference.Names.Material.YELLOW_GARNET, () -> new Item(new Item.Properties()));
 
         public static void initialize() {}
     }
@@ -1576,22 +1588,22 @@ public class ModItems
     public static class Shard
     {
         public static final RegistryObject<Item> DIAMOND = ITEMS.register(
-                Reference.Names.Prefix.SHARD + Reference.Names.Material.DIAMOND, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.SHARD + Reference.Names.Material.DIAMOND, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> EMERALD = ITEMS.register(
-                Reference.Names.Prefix.SHARD + Reference.Names.Material.EMERALD, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.SHARD + Reference.Names.Material.EMERALD, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> QUARTZ = ITEMS.register(
-                Reference.Names.Prefix.SHARD + Reference.Names.Material.QUARTZ, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.SHARD + Reference.Names.Material.QUARTZ, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> RUBY = ITEMS.register(
-                Reference.Names.Prefix.SHARD + Reference.Names.Material.RUBY, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.SHARD + Reference.Names.Material.RUBY, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> SAPPHIRE = ITEMS.register(
-                Reference.Names.Prefix.SHARD + Reference.Names.Material.SAPPHIRE, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.SHARD + Reference.Names.Material.SAPPHIRE, () -> new Item(new Item.Properties()));
 
         public static final RegistryObject<Item> URANIUM = ITEMS.register(
-                Reference.Names.Prefix.SHARD + Reference.Names.Material.URANIUM, () -> new Augment(new Item.Properties()));
+                Reference.Names.Prefix.SHARD + Reference.Names.Material.URANIUM, () -> new Item(new Item.Properties()));
 
         public static void initialize(){}
     }
@@ -1873,7 +1885,7 @@ public class ModItems
         Rod.initialize();
         Gem.initialize();
         Shard.initialize();
-        //Tool.initialize();
+        Tool.initialize();
         //Head.initialize();
     }
 }

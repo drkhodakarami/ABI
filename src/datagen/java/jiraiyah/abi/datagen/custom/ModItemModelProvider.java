@@ -505,21 +505,20 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Shard.URANIUM);
         //</editor-fold>
 
-        /*//<editor-fold desc="TOOL">
-        SimpleItem(ModItems.Tool.AUGMENT, true);
-        SimpleItem(ModItems.Tool.CUTTER, true);
-        SimpleItem(ModItems.Tool.DOWSING_ROD, true);
-        SimpleItem(ModItems.Tool.KNIFE, true);
-        SimpleItem(ModItems.Tool.SPANNER, true);
-        SimpleItem(ModItems.Tool.TUNER, true);
-        SimpleItem(ModItems.Tool.WRENCH, true);
-
+        //<editor-fold desc="TOOL">
         SimpleItem(ModItems.Tool.BRONZE_SWORD, true);
         SimpleItem(ModItems.Tool.BRONZE_PICKAXE, true);
         SimpleItem(ModItems.Tool.BRONZE_SHOVEL, true);
         SimpleItem(ModItems.Tool.BRONZE_AXE, true);
         SimpleItem(ModItems.Tool.BRONZE_HOE, true);
         SimpleItem(ModItems.Tool.BRONZE_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.CITRINE_SWORD, true);
+        SimpleItem(ModItems.Tool.CITRINE_PICKAXE, true);
+        SimpleItem(ModItems.Tool.CITRINE_SHOVEL, true);
+        SimpleItem(ModItems.Tool.CITRINE_AXE, true);
+        SimpleItem(ModItems.Tool.CITRINE_HOE, true);
+        SimpleItem(ModItems.Tool.CITRINE_HAMMER, true);
 
         SimpleItem(ModItems.Tool.CONSTANTAN_SWORD, true);
         SimpleItem(ModItems.Tool.CONSTANTAN_PICKAXE, true);
@@ -550,6 +549,13 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Tool.EMERALD_AXE, true);
         SimpleItem(ModItems.Tool.EMERALD_HOE, true);
         SimpleItem(ModItems.Tool.EMERALD_HAMMER, true);
+
+        SimpleItem(ModItems.Tool.ENDERITE_SWORD, true);
+        SimpleItem(ModItems.Tool.ENDERITE_PICKAXE, true);
+        SimpleItem(ModItems.Tool.ENDERITE_SHOVEL, true);
+        SimpleItem(ModItems.Tool.ENDERITE_AXE, true);
+        SimpleItem(ModItems.Tool.ENDERITE_HOE, true);
+        SimpleItem(ModItems.Tool.ENDERITE_HAMMER, true);
 
         SimpleItem(ModItems.Tool.GOLD_HAMMER, true);
 
@@ -611,7 +617,7 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Tool.TIN_HAMMER, true);
 
         SimpleItem(ModItems.Tool.WOOD_HAMMER, true);
-        //</editor-fold>*/
+        //</editor-fold>
 
         //<editor-fold desc="CAST">
         SimpleItem(ModItems.Cast.AXE);

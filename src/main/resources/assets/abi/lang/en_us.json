@@ -396,16 +396,6 @@
   "item.abi.shard_sapphire": "Sapphire Shard",
   "item.abi.shard_uranium": "Uranium Shard",
 
-  "item.abi.tool_augment": "Augment",
-  "item.abi.tool_cutter": "Cutter",
-  "item.abi.tool_dowsing_rod": "Dowsing Rod",
-  "item.abi.tool_knife": "Knife",
-  "item.abi.tool_spanner": "Spanner",
-  "item.abi.tool_tuner": "Tuner",
-  "item.abi.tool_wrench": "Wrench",
-
-  "item.abi.engineer_helmet": "Engineer Helmet",
-
   "item.abi.bronze_helmet": "Bronze Helmet",
   "item.abi.bronze_chestplate": "Bronze Chest Plate",
   "item.abi.bronze_leggings": "Bronze Leggings",
@@ -505,6 +495,13 @@
   "item.abi.emerald_shovel": "Emerald Shovel",
   "item.abi.emerald_hoe": "Emerald Hoe",
   "item.abi.emerald_hammer": "Emerald Hammer",
+
+  "item.abi.enderite_sword": "Enderite Sword",
+  "item.abi.enderite_axe": "Enderite Axe",
+  "item.abi.enderite_pickaxe": "Enderite Pickaxe",
+  "item.abi.enderite_shovel": "Enderite Shovel",
+  "item.abi.enderite_hoe": "Enderite Hoe",
+  "item.abi.enderite_hammer": "Enderite Hammer",
 
   "item.abi.gold_hammer": "Gold Hammer",
 
@@ -691,22 +688,5 @@
   "block.abi.end_sapphire_ore": "Ruby Ore",
   "block.abi.nether_sapphire_ore": "Ruby Ore",
 
-  "block.abi.potato_block": "Potato Box",
-
-  "tooltip.abi.augment.tooltip.normal": "",
-  "tooltip.abi.augment.tooltip.shift": "",
-  "tooltip.abi.cutter.tooltip.normal": "",
-  "tooltip.abi.cutter.tooltip.shift": "",
-  "tooltip.abi.dowsing.rod.tooltip.normal": "",
-  "tooltip.abi.dowsing.rod.tooltip.shift": "",
-  "tooltip.abi.engineer.helmet.tooltip.normal": "",
-  "tooltip.abi.engineer.helmet.tooltip.shift": "",
-  "tooltip.abi.knife.tooltip.normal": "",
-  "tooltip.abi.knife.tooltip.shift": "",
-  "tooltip.abi.spanner.tooltip.normal": "",
-  "tooltip.abi.spanner.tooltip.shift": "",
-  "tooltip.abi.tuner.tooltip.normal": "",
-  "tooltip.abi.tuner.tooltip.shift": "",
-  "tooltip.abi.wrench.tooltip.normal": "",
-  "tooltip.abi.wrench.tooltip.shift": ""
+  "block.abi.potato_block": "Potato Box"
 }
