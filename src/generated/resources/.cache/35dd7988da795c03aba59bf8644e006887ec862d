@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-27T16:51:06.255888	Item Models: abi
+// 1.20.1	2023-08-28T09:16:15.2105463	Item Models: abi
 d0069595fc021e7a93e24273485b67f89d7a2300 assets/abi/models/item/bronze_axe.json
 f797200075fc64fc91a3a3ee607b82fb1b1eaa1d assets/abi/models/item/bronze_hammer.json
 6abfc16f21e2a10f61061c93e8c729119d4f7aee assets/abi/models/item/bronze_hoe.json
@@ -21,6 +21,12 @@ f18fcb5a920aa4deee4274915dadc5a93dd4bcf2 assets/abi/models/item/cast_rod.json
 88c2538491bd4ff39f28cc80f613d911b21c26cf assets/abi/models/item/cast_shovel.json
 bf2d316ad2f75f475d43df3750af25af787cc4a2 assets/abi/models/item/cast_sword.json
 768e4d8d9c352f2800789b0d55d8ec1f60605df7 assets/abi/models/item/cast_wire.json
+6db17a21d468036276484d62fc131877366c57ed assets/abi/models/item/citrine_axe.json
+61041e111a67df36212a8391a5e15eb88d43a9ff assets/abi/models/item/citrine_hammer.json
+7fa1c97646520a55478d29151865aadfea6e54a0 assets/abi/models/item/citrine_hoe.json
+9cf36c76c263368741a664fb55a3c2ebb16410c8 assets/abi/models/item/citrine_pickaxe.json
+bf5cf14903321b2109ff6fe60a0630b3bb001cd3 assets/abi/models/item/citrine_shovel.json
+59d3fd77943e23fced762048aedf2c98577b1ca4 assets/abi/models/item/citrine_sword.json
 089def689227abc054852e517abe0f18b1091ecf assets/abi/models/item/constantan_axe.json
 9b079ceb23552093674abc82f7bf7f5245727caa assets/abi/models/item/constantan_hammer.json
 f8062fdd4b8ebc6c7f941d9fea09fe3b488c33b6 assets/abi/models/item/constantan_hoe.json
@@ -120,6 +126,12 @@ de3d11164ad3344532c01b3a756ec4e651e3df54 assets/abi/models/item/emerald_hoe.json
 1ca6934b91aa259675b63e9af804f7b3ca51ebb3 assets/abi/models/item/emerald_pickaxe.json
 fe94af98f4504e8c908ff6e7aef7417f056468d1 assets/abi/models/item/emerald_shovel.json
 0013ea0b1649124a416e1c9c666a14a325abb88c assets/abi/models/item/emerald_sword.json
+2fd69c9f2b9335432c747e84d851cc28e3e02cad assets/abi/models/item/enderite_axe.json
+d10bc8a07f2d91ed03c91ad39c80b2fd0b61d661 assets/abi/models/item/enderite_hammer.json
+21b565e901ba869c9fcac97b4aa69ba8940b7ac3 assets/abi/models/item/enderite_hoe.json
+a4dab20f24221e339e76d8a4143942f170480d21 assets/abi/models/item/enderite_pickaxe.json
+8300272131e4e298a4d68d5b99dc5cb2c5079e87 assets/abi/models/item/enderite_shovel.json
+fa7210ec2895ef7e3cca97af6ccb9035714b148b assets/abi/models/item/enderite_sword.json
 680d274e370f624de6b87e46b71b29b20ba30f6d assets/abi/models/item/gear_aluminium.json
 1181bc6eaaae5fa6d9a5fa4829f70aef6976d4db assets/abi/models/item/gear_aluminium_brass.json
 1a65d8cf2523e70c56c00b1ac9899f59f7dfb0d8 assets/abi/models/item/gear_alumite.json
