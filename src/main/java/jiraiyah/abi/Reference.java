@@ -221,6 +221,8 @@ public class Reference
                 public static final String STORAGE_BLOCKS = "storage_blocks/";
                 public static final String TOOLS = "tools/";
                 public static final String SHARDS = "shards/";
+                public static final String HEADS = "tool_heads/";
+                public static final String HEADS_PREFIX = "tool_heads_";
             }
 
             public static final String ENTITY_TYPES = "entity_types/";

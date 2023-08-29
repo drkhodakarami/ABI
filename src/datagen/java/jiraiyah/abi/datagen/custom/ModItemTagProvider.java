@@ -763,23 +763,649 @@ public class ModItemTagProvider extends ItemTagsProvider
         tag(ModTags.Items.Raw.ALL).addTags(ModTags.Items.Rod.ZINC);
         //</editor-fold>
 
-        /*//<editor-fold desc="TOOL">
-        tag(ModTags.Items.Tool.AUGMENT).add(ModItems.Tool.AUGMENT.get());
-        tag(ModTags.Items.Tool.CUTTER).add(ModItems.Tool.CUTTER.get());
-        tag(ModTags.Items.Tool.DOWSING_ROD).add(ModItems.Tool.DOWSING_ROD.get());
-        tag(ModTags.Items.Tool.KNIFE).add(ModItems.Tool.KNIFE.get());
-        tag(ModTags.Items.Tool.SPANNER).add(ModItems.Tool.SPANNER.get());
-        tag(ModTags.Items.Tool.TUNER).add(ModItems.Tool.TUNER.get());
-        tag(ModTags.Items.Tool.WRENCH).add(ModItems.Tool.WRENCH.get());
+        //<editor-fold desc="HEAD">
 
-        tag(Tags.Items.TOOLS).addTags(ModTags.Items.Tool.AUGMENT);
-        tag(Tags.Items.TOOLS).addTags(ModTags.Items.Tool.CUTTER);
-        tag(Tags.Items.TOOLS).addTags(ModTags.Items.Tool.DOWSING_ROD);
-        tag(Tags.Items.TOOLS).addTags(ModTags.Items.Tool.KNIFE);
-        tag(Tags.Items.TOOLS).addTags(ModTags.Items.Tool.SPANNER);
-        tag(Tags.Items.TOOLS).addTags(ModTags.Items.Tool.TUNER);
-        tag(Tags.Items.TOOLS).addTags(ModTags.Items.Tool.WRENCH);
-        //</editor-fold>*/
+        //<editor-fold desc="BRONZE">
+        tag(ModTags.Items.Head.BRONZE).add(ModItems.Head.BRONZE_AXE.get());
+        tag(ModTags.Items.Head.BRONZE_AXE).add(ModItems.Head.BRONZE_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.BRONZE_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.BRONZE_AXE.get());
+
+        tag(ModTags.Items.Head.BRONZE).add(ModItems.Head.BRONZE_HAMMER.get());
+        tag(ModTags.Items.Head.BRONZE_HAMMER).add(ModItems.Head.BRONZE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.BRONZE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.BRONZE_HAMMER.get());
+
+        tag(ModTags.Items.Head.BRONZE).add(ModItems.Head.BRONZE_HOE.get());
+        tag(ModTags.Items.Head.BRONZE_HOE).add(ModItems.Head.BRONZE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.BRONZE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.BRONZE_HOE.get());
+
+        tag(ModTags.Items.Head.BRONZE).add(ModItems.Head.BRONZE_PICKAXE.get());
+        tag(ModTags.Items.Head.BRONZE_PICKAXE).add(ModItems.Head.BRONZE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.BRONZE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.BRONZE_PICKAXE.get());
+
+        tag(ModTags.Items.Head.BRONZE).add(ModItems.Head.BRONZE_SHOVEL.get());
+        tag(ModTags.Items.Head.BRONZE_SHOVEL).add(ModItems.Head.BRONZE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.BRONZE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.BRONZE_SHOVEL.get());
+
+        tag(ModTags.Items.Head.BRONZE).add(ModItems.Head.BRONZE_SWORD.get());
+        tag(ModTags.Items.Head.BRONZE_SWORD).add(ModItems.Head.BRONZE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.BRONZE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.BRONZE_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="CITRINE">
+        tag(ModTags.Items.Head.CITRINE).add(ModItems.Head.CITRINE_AXE.get());
+        tag(ModTags.Items.Head.CITRINE_AXE).add(ModItems.Head.CITRINE_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CITRINE_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.CITRINE_AXE.get());
+
+        tag(ModTags.Items.Head.CITRINE).add(ModItems.Head.CITRINE_HAMMER.get());
+        tag(ModTags.Items.Head.CITRINE_HAMMER).add(ModItems.Head.CITRINE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CITRINE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.CITRINE_HAMMER.get());
+
+        tag(ModTags.Items.Head.CITRINE).add(ModItems.Head.CITRINE_HOE.get());
+        tag(ModTags.Items.Head.CITRINE_HOE).add(ModItems.Head.CITRINE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CITRINE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.CITRINE_HOE.get());
+
+        tag(ModTags.Items.Head.CITRINE).add(ModItems.Head.CITRINE_PICKAXE.get());
+        tag(ModTags.Items.Head.CITRINE_PICKAXE).add(ModItems.Head.CITRINE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CITRINE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.CITRINE_PICKAXE.get());
+
+        tag(ModTags.Items.Head.CITRINE).add(ModItems.Head.CITRINE_SHOVEL.get());
+        tag(ModTags.Items.Head.CITRINE_SHOVEL).add(ModItems.Head.CITRINE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CITRINE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.CITRINE_SHOVEL.get());
+
+        tag(ModTags.Items.Head.CITRINE).add(ModItems.Head.CITRINE_SWORD.get());
+        tag(ModTags.Items.Head.CITRINE_SWORD).add(ModItems.Head.CITRINE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CITRINE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.CITRINE_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="CONSTANTAN">
+        tag(ModTags.Items.Head.CONSTANTAN).add(ModItems.Head.CONSTANTAN_AXE.get());
+        tag(ModTags.Items.Head.CONSTANTAN_AXE).add(ModItems.Head.CONSTANTAN_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CONSTANTAN_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.CONSTANTAN_AXE.get());
+
+        tag(ModTags.Items.Head.CONSTANTAN).add(ModItems.Head.CONSTANTAN_HAMMER.get());
+        tag(ModTags.Items.Head.CONSTANTAN_HAMMER).add(ModItems.Head.CONSTANTAN_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CONSTANTAN_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.CONSTANTAN_HAMMER.get());
+
+        tag(ModTags.Items.Head.CONSTANTAN).add(ModItems.Head.CONSTANTAN_HOE.get());
+        tag(ModTags.Items.Head.CONSTANTAN_HOE).add(ModItems.Head.CONSTANTAN_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CONSTANTAN_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.CONSTANTAN_HOE.get());
+
+        tag(ModTags.Items.Head.CONSTANTAN).add(ModItems.Head.CONSTANTAN_PICKAXE.get());
+        tag(ModTags.Items.Head.CONSTANTAN_PICKAXE).add(ModItems.Head.CONSTANTAN_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CONSTANTAN_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.CONSTANTAN_PICKAXE.get());
+
+        tag(ModTags.Items.Head.CONSTANTAN).add(ModItems.Head.CONSTANTAN_SHOVEL.get());
+        tag(ModTags.Items.Head.CONSTANTAN_SHOVEL).add(ModItems.Head.CONSTANTAN_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CONSTANTAN_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.CONSTANTAN_SHOVEL.get());
+
+        tag(ModTags.Items.Head.CONSTANTAN).add(ModItems.Head.CONSTANTAN_SWORD.get());
+        tag(ModTags.Items.Head.CONSTANTAN_SWORD).add(ModItems.Head.CONSTANTAN_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.CONSTANTAN_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.CONSTANTAN_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="COPPER">
+        tag(ModTags.Items.Head.COPPER).add(ModItems.Head.COPPER_AXE.get());
+        tag(ModTags.Items.Head.COPPER_AXE).add(ModItems.Head.COPPER_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.COPPER_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.COPPER_AXE.get());
+
+        tag(ModTags.Items.Head.COPPER).add(ModItems.Head.COPPER_HAMMER.get());
+        tag(ModTags.Items.Head.COPPER_HAMMER).add(ModItems.Head.COPPER_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.COPPER_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.COPPER_HAMMER.get());
+
+        tag(ModTags.Items.Head.COPPER).add(ModItems.Head.COPPER_HOE.get());
+        tag(ModTags.Items.Head.COPPER_HOE).add(ModItems.Head.COPPER_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.COPPER_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.COPPER_HOE.get());
+
+        tag(ModTags.Items.Head.COPPER).add(ModItems.Head.COPPER_PICKAXE.get());
+        tag(ModTags.Items.Head.COPPER_PICKAXE).add(ModItems.Head.COPPER_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.COPPER_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.COPPER_PICKAXE.get());
+
+        tag(ModTags.Items.Head.COPPER).add(ModItems.Head.COPPER_SHOVEL.get());
+        tag(ModTags.Items.Head.COPPER_SHOVEL).add(ModItems.Head.COPPER_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.COPPER_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.COPPER_SHOVEL.get());
+
+        tag(ModTags.Items.Head.COPPER).add(ModItems.Head.COPPER_SWORD.get());
+        tag(ModTags.Items.Head.COPPER_SWORD).add(ModItems.Head.COPPER_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.COPPER_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.COPPER_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="DIAMOND">
+        tag(ModTags.Items.Head.DIAMOND).add(ModItems.Head.DIAMOND_AXE.get());
+        tag(ModTags.Items.Head.DIAMOND_AXE).add(ModItems.Head.DIAMOND_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.DIAMOND_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.DIAMOND_AXE.get());
+
+        tag(ModTags.Items.Head.DIAMOND).add(ModItems.Head.DIAMOND_HAMMER.get());
+        tag(ModTags.Items.Head.DIAMOND_HAMMER).add(ModItems.Head.DIAMOND_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.DIAMOND_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.DIAMOND_HAMMER.get());
+
+        tag(ModTags.Items.Head.DIAMOND).add(ModItems.Head.DIAMOND_HOE.get());
+        tag(ModTags.Items.Head.DIAMOND_HOE).add(ModItems.Head.DIAMOND_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.DIAMOND_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.DIAMOND_HOE.get());
+
+        tag(ModTags.Items.Head.DIAMOND).add(ModItems.Head.DIAMOND_PICKAXE.get());
+        tag(ModTags.Items.Head.DIAMOND_PICKAXE).add(ModItems.Head.DIAMOND_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.DIAMOND_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.DIAMOND_PICKAXE.get());
+
+        tag(ModTags.Items.Head.DIAMOND).add(ModItems.Head.DIAMOND_SHOVEL.get());
+        tag(ModTags.Items.Head.DIAMOND_SHOVEL).add(ModItems.Head.DIAMOND_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.DIAMOND_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.DIAMOND_SHOVEL.get());
+
+        tag(ModTags.Items.Head.DIAMOND).add(ModItems.Head.DIAMOND_SWORD.get());
+        tag(ModTags.Items.Head.DIAMOND_SWORD).add(ModItems.Head.DIAMOND_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.DIAMOND_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.DIAMOND_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="ELECTRUM">
+        tag(ModTags.Items.Head.ELECTRUM).add(ModItems.Head.ELECTRUM_AXE.get());
+        tag(ModTags.Items.Head.ELECTRUM_AXE).add(ModItems.Head.ELECTRUM_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ELECTRUM_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.ELECTRUM_AXE.get());
+
+        tag(ModTags.Items.Head.ELECTRUM).add(ModItems.Head.ELECTRUM_HAMMER.get());
+        tag(ModTags.Items.Head.ELECTRUM_HAMMER).add(ModItems.Head.ELECTRUM_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ELECTRUM_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.ELECTRUM_HAMMER.get());
+
+        tag(ModTags.Items.Head.ELECTRUM).add(ModItems.Head.ELECTRUM_HOE.get());
+        tag(ModTags.Items.Head.ELECTRUM_HOE).add(ModItems.Head.ELECTRUM_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ELECTRUM_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.ELECTRUM_HOE.get());
+
+        tag(ModTags.Items.Head.ELECTRUM).add(ModItems.Head.ELECTRUM_PICKAXE.get());
+        tag(ModTags.Items.Head.ELECTRUM_PICKAXE).add(ModItems.Head.ELECTRUM_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ELECTRUM_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.ELECTRUM_PICKAXE.get());
+
+        tag(ModTags.Items.Head.ELECTRUM).add(ModItems.Head.ELECTRUM_SHOVEL.get());
+        tag(ModTags.Items.Head.ELECTRUM_SHOVEL).add(ModItems.Head.ELECTRUM_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ELECTRUM_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.ELECTRUM_SHOVEL.get());
+
+        tag(ModTags.Items.Head.ELECTRUM).add(ModItems.Head.ELECTRUM_SWORD.get());
+        tag(ModTags.Items.Head.ELECTRUM_SWORD).add(ModItems.Head.ELECTRUM_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ELECTRUM_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.ELECTRUM_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="EMERALD">
+        tag(ModTags.Items.Head.EMERALD).add(ModItems.Head.EMERALD_AXE.get());
+        tag(ModTags.Items.Head.EMERALD_AXE).add(ModItems.Head.EMERALD_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.EMERALD_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.EMERALD_AXE.get());
+
+        tag(ModTags.Items.Head.EMERALD).add(ModItems.Head.EMERALD_HAMMER.get());
+        tag(ModTags.Items.Head.EMERALD_HAMMER).add(ModItems.Head.EMERALD_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.EMERALD_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.EMERALD_HAMMER.get());
+
+        tag(ModTags.Items.Head.EMERALD).add(ModItems.Head.EMERALD_HOE.get());
+        tag(ModTags.Items.Head.EMERALD_HOE).add(ModItems.Head.EMERALD_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.EMERALD_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.EMERALD_HOE.get());
+
+        tag(ModTags.Items.Head.EMERALD).add(ModItems.Head.EMERALD_PICKAXE.get());
+        tag(ModTags.Items.Head.EMERALD_PICKAXE).add(ModItems.Head.EMERALD_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.EMERALD_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.EMERALD_PICKAXE.get());
+
+        tag(ModTags.Items.Head.EMERALD).add(ModItems.Head.EMERALD_SHOVEL.get());
+        tag(ModTags.Items.Head.EMERALD_SHOVEL).add(ModItems.Head.EMERALD_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.EMERALD_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.EMERALD_SHOVEL.get());
+
+        tag(ModTags.Items.Head.EMERALD).add(ModItems.Head.EMERALD_SWORD.get());
+        tag(ModTags.Items.Head.EMERALD_SWORD).add(ModItems.Head.EMERALD_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.EMERALD_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.EMERALD_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="ENDERITE">
+        tag(ModTags.Items.Head.ENDERITE).add(ModItems.Head.ENDERITE_AXE.get());
+        tag(ModTags.Items.Head.ENDERITE_AXE).add(ModItems.Head.ENDERITE_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ENDERITE_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.ENDERITE_AXE.get());
+
+        tag(ModTags.Items.Head.ENDERITE).add(ModItems.Head.ENDERITE_HAMMER.get());
+        tag(ModTags.Items.Head.ENDERITE_HAMMER).add(ModItems.Head.ENDERITE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ENDERITE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.ENDERITE_HAMMER.get());
+
+        tag(ModTags.Items.Head.ENDERITE).add(ModItems.Head.ENDERITE_HOE.get());
+        tag(ModTags.Items.Head.ENDERITE_HOE).add(ModItems.Head.ENDERITE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ENDERITE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.ENDERITE_HOE.get());
+
+        tag(ModTags.Items.Head.ENDERITE).add(ModItems.Head.ENDERITE_PICKAXE.get());
+        tag(ModTags.Items.Head.ENDERITE_PICKAXE).add(ModItems.Head.ENDERITE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ENDERITE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.ENDERITE_PICKAXE.get());
+
+        tag(ModTags.Items.Head.ENDERITE).add(ModItems.Head.ENDERITE_SHOVEL.get());
+        tag(ModTags.Items.Head.ENDERITE_SHOVEL).add(ModItems.Head.ENDERITE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ENDERITE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.ENDERITE_SHOVEL.get());
+
+        tag(ModTags.Items.Head.ENDERITE).add(ModItems.Head.ENDERITE_SWORD.get());
+        tag(ModTags.Items.Head.ENDERITE_SWORD).add(ModItems.Head.ENDERITE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.ENDERITE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.ENDERITE_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="GOLD">
+        tag(ModTags.Items.Head.GOLD).add(ModItems.Head.GOLD_AXE.get());
+        tag(ModTags.Items.Head.GOLD_AXE).add(ModItems.Head.GOLD_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.GOLD_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.GOLD_AXE.get());
+
+        tag(ModTags.Items.Head.GOLD).add(ModItems.Head.GOLD_HAMMER.get());
+        tag(ModTags.Items.Head.GOLD_HAMMER).add(ModItems.Head.GOLD_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.GOLD_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.GOLD_HAMMER.get());
+
+        tag(ModTags.Items.Head.GOLD).add(ModItems.Head.GOLD_HOE.get());
+        tag(ModTags.Items.Head.GOLD_HOE).add(ModItems.Head.GOLD_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.GOLD_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.GOLD_HOE.get());
+
+        tag(ModTags.Items.Head.GOLD).add(ModItems.Head.GOLD_PICKAXE.get());
+        tag(ModTags.Items.Head.GOLD_PICKAXE).add(ModItems.Head.GOLD_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.GOLD_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.GOLD_PICKAXE.get());
+
+        tag(ModTags.Items.Head.GOLD).add(ModItems.Head.GOLD_SHOVEL.get());
+        tag(ModTags.Items.Head.GOLD_SHOVEL).add(ModItems.Head.GOLD_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.GOLD_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.GOLD_SHOVEL.get());
+
+        tag(ModTags.Items.Head.GOLD).add(ModItems.Head.GOLD_SWORD.get());
+        tag(ModTags.Items.Head.GOLD_SWORD).add(ModItems.Head.GOLD_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.GOLD_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.GOLD_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="INVAR">
+        tag(ModTags.Items.Head.INVAR).add(ModItems.Head.INVAR_AXE.get());
+        tag(ModTags.Items.Head.INVAR_AXE).add(ModItems.Head.INVAR_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.INVAR_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.INVAR_AXE.get());
+
+        tag(ModTags.Items.Head.INVAR).add(ModItems.Head.INVAR_HAMMER.get());
+        tag(ModTags.Items.Head.INVAR_HAMMER).add(ModItems.Head.INVAR_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.INVAR_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.INVAR_HAMMER.get());
+
+        tag(ModTags.Items.Head.INVAR).add(ModItems.Head.INVAR_HOE.get());
+        tag(ModTags.Items.Head.INVAR_HOE).add(ModItems.Head.INVAR_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.INVAR_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.INVAR_HOE.get());
+
+        tag(ModTags.Items.Head.INVAR).add(ModItems.Head.INVAR_PICKAXE.get());
+        tag(ModTags.Items.Head.INVAR_PICKAXE).add(ModItems.Head.INVAR_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.INVAR_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.INVAR_PICKAXE.get());
+
+        tag(ModTags.Items.Head.INVAR).add(ModItems.Head.INVAR_SHOVEL.get());
+        tag(ModTags.Items.Head.INVAR_SHOVEL).add(ModItems.Head.INVAR_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.INVAR_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.INVAR_SHOVEL.get());
+
+        tag(ModTags.Items.Head.INVAR).add(ModItems.Head.INVAR_SWORD.get());
+        tag(ModTags.Items.Head.INVAR_SWORD).add(ModItems.Head.INVAR_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.INVAR_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.INVAR_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="IRON">
+        tag(ModTags.Items.Head.IRON).add(ModItems.Head.IRON_AXE.get());
+        tag(ModTags.Items.Head.IRON_AXE).add(ModItems.Head.IRON_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.IRON_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.IRON_AXE.get());
+
+        tag(ModTags.Items.Head.IRON).add(ModItems.Head.IRON_HAMMER.get());
+        tag(ModTags.Items.Head.IRON_HAMMER).add(ModItems.Head.IRON_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.IRON_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.IRON_HAMMER.get());
+
+        tag(ModTags.Items.Head.IRON).add(ModItems.Head.IRON_HOE.get());
+        tag(ModTags.Items.Head.IRON_HOE).add(ModItems.Head.IRON_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.IRON_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.IRON_HOE.get());
+
+        tag(ModTags.Items.Head.IRON).add(ModItems.Head.IRON_PICKAXE.get());
+        tag(ModTags.Items.Head.IRON_PICKAXE).add(ModItems.Head.IRON_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.IRON_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.IRON_PICKAXE.get());
+
+        tag(ModTags.Items.Head.IRON).add(ModItems.Head.IRON_SHOVEL.get());
+        tag(ModTags.Items.Head.IRON_SHOVEL).add(ModItems.Head.IRON_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.IRON_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.IRON_SHOVEL.get());
+
+        tag(ModTags.Items.Head.IRON).add(ModItems.Head.IRON_SWORD.get());
+        tag(ModTags.Items.Head.IRON_SWORD).add(ModItems.Head.IRON_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.IRON_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.IRON_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="LEAD">
+        tag(ModTags.Items.Head.LEAD).add(ModItems.Head.LEAD_AXE.get());
+        tag(ModTags.Items.Head.LEAD_AXE).add(ModItems.Head.LEAD_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.LEAD_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.LEAD_AXE.get());
+
+        tag(ModTags.Items.Head.LEAD).add(ModItems.Head.LEAD_HAMMER.get());
+        tag(ModTags.Items.Head.LEAD_HAMMER).add(ModItems.Head.LEAD_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.LEAD_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.LEAD_HAMMER.get());
+
+        tag(ModTags.Items.Head.LEAD).add(ModItems.Head.LEAD_HOE.get());
+        tag(ModTags.Items.Head.LEAD_HOE).add(ModItems.Head.LEAD_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.LEAD_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.LEAD_HOE.get());
+
+        tag(ModTags.Items.Head.LEAD).add(ModItems.Head.LEAD_PICKAXE.get());
+        tag(ModTags.Items.Head.LEAD_PICKAXE).add(ModItems.Head.LEAD_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.LEAD_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.LEAD_PICKAXE.get());
+
+        tag(ModTags.Items.Head.LEAD).add(ModItems.Head.LEAD_SHOVEL.get());
+        tag(ModTags.Items.Head.LEAD_SHOVEL).add(ModItems.Head.LEAD_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.LEAD_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.LEAD_SHOVEL.get());
+
+        tag(ModTags.Items.Head.LEAD).add(ModItems.Head.LEAD_SWORD.get());
+        tag(ModTags.Items.Head.LEAD_SWORD).add(ModItems.Head.LEAD_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.LEAD_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.LEAD_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="NETHERITE">
+        tag(ModTags.Items.Head.NETHERITE).add(ModItems.Head.NETHERITE_AXE.get());
+        tag(ModTags.Items.Head.NETHERITE_AXE).add(ModItems.Head.NETHERITE_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NETHERITE_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.NETHERITE_AXE.get());
+
+        tag(ModTags.Items.Head.NETHERITE).add(ModItems.Head.NETHERITE_HAMMER.get());
+        tag(ModTags.Items.Head.NETHERITE_HAMMER).add(ModItems.Head.NETHERITE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NETHERITE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.NETHERITE_HAMMER.get());
+
+        tag(ModTags.Items.Head.NETHERITE).add(ModItems.Head.NETHERITE_HOE.get());
+        tag(ModTags.Items.Head.NETHERITE_HOE).add(ModItems.Head.NETHERITE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NETHERITE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.NETHERITE_HOE.get());
+
+        tag(ModTags.Items.Head.NETHERITE).add(ModItems.Head.NETHERITE_PICKAXE.get());
+        tag(ModTags.Items.Head.NETHERITE_PICKAXE).add(ModItems.Head.NETHERITE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NETHERITE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.NETHERITE_PICKAXE.get());
+
+        tag(ModTags.Items.Head.NETHERITE).add(ModItems.Head.NETHERITE_SHOVEL.get());
+        tag(ModTags.Items.Head.NETHERITE_SHOVEL).add(ModItems.Head.NETHERITE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NETHERITE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.NETHERITE_SHOVEL.get());
+
+        tag(ModTags.Items.Head.NETHERITE).add(ModItems.Head.NETHERITE_SWORD.get());
+        tag(ModTags.Items.Head.NETHERITE_SWORD).add(ModItems.Head.NETHERITE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NETHERITE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.NETHERITE_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="NICKEL">
+        tag(ModTags.Items.Head.NICKEL).add(ModItems.Head.NICKEL_AXE.get());
+        tag(ModTags.Items.Head.NICKEL_AXE).add(ModItems.Head.NICKEL_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NICKEL_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.NICKEL_AXE.get());
+
+        tag(ModTags.Items.Head.NICKEL).add(ModItems.Head.NICKEL_HAMMER.get());
+        tag(ModTags.Items.Head.NICKEL_HAMMER).add(ModItems.Head.NICKEL_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NICKEL_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.NICKEL_HAMMER.get());
+
+        tag(ModTags.Items.Head.NICKEL).add(ModItems.Head.NICKEL_HOE.get());
+        tag(ModTags.Items.Head.NICKEL_HOE).add(ModItems.Head.NICKEL_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NICKEL_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.NICKEL_HOE.get());
+
+        tag(ModTags.Items.Head.NICKEL).add(ModItems.Head.NICKEL_PICKAXE.get());
+        tag(ModTags.Items.Head.NICKEL_PICKAXE).add(ModItems.Head.NICKEL_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NICKEL_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.NICKEL_PICKAXE.get());
+
+        tag(ModTags.Items.Head.NICKEL).add(ModItems.Head.NICKEL_SHOVEL.get());
+        tag(ModTags.Items.Head.NICKEL_SHOVEL).add(ModItems.Head.NICKEL_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NICKEL_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.NICKEL_SHOVEL.get());
+
+        tag(ModTags.Items.Head.NICKEL).add(ModItems.Head.NICKEL_SWORD.get());
+        tag(ModTags.Items.Head.NICKEL_SWORD).add(ModItems.Head.NICKEL_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.NICKEL_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.NICKEL_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="RUBY">
+        tag(ModTags.Items.Head.RUBY).add(ModItems.Head.RUBY_AXE.get());
+        tag(ModTags.Items.Head.RUBY_AXE).add(ModItems.Head.RUBY_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.RUBY_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.RUBY_AXE.get());
+
+        tag(ModTags.Items.Head.RUBY).add(ModItems.Head.RUBY_HAMMER.get());
+        tag(ModTags.Items.Head.RUBY_HAMMER).add(ModItems.Head.RUBY_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.RUBY_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.RUBY_HAMMER.get());
+
+        tag(ModTags.Items.Head.RUBY).add(ModItems.Head.RUBY_HOE.get());
+        tag(ModTags.Items.Head.RUBY_HOE).add(ModItems.Head.RUBY_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.RUBY_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.RUBY_HOE.get());
+
+        tag(ModTags.Items.Head.RUBY).add(ModItems.Head.RUBY_PICKAXE.get());
+        tag(ModTags.Items.Head.RUBY_PICKAXE).add(ModItems.Head.RUBY_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.RUBY_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.RUBY_PICKAXE.get());
+
+        tag(ModTags.Items.Head.RUBY).add(ModItems.Head.RUBY_SHOVEL.get());
+        tag(ModTags.Items.Head.RUBY_SHOVEL).add(ModItems.Head.RUBY_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.RUBY_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.RUBY_SHOVEL.get());
+
+        tag(ModTags.Items.Head.RUBY).add(ModItems.Head.RUBY_SWORD.get());
+        tag(ModTags.Items.Head.RUBY_SWORD).add(ModItems.Head.RUBY_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.RUBY_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.RUBY_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="SAPPHIRE">
+        tag(ModTags.Items.Head.SAPPHIRE).add(ModItems.Head.SAPPHIRE_AXE.get());
+        tag(ModTags.Items.Head.SAPPHIRE_AXE).add(ModItems.Head.SAPPHIRE_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SAPPHIRE_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.SAPPHIRE_AXE.get());
+
+        tag(ModTags.Items.Head.SAPPHIRE).add(ModItems.Head.SAPPHIRE_HAMMER.get());
+        tag(ModTags.Items.Head.SAPPHIRE_HAMMER).add(ModItems.Head.SAPPHIRE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SAPPHIRE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.SAPPHIRE_HAMMER.get());
+
+        tag(ModTags.Items.Head.SAPPHIRE).add(ModItems.Head.SAPPHIRE_HOE.get());
+        tag(ModTags.Items.Head.SAPPHIRE_HOE).add(ModItems.Head.SAPPHIRE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SAPPHIRE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.SAPPHIRE_HOE.get());
+
+        tag(ModTags.Items.Head.SAPPHIRE).add(ModItems.Head.SAPPHIRE_PICKAXE.get());
+        tag(ModTags.Items.Head.SAPPHIRE_PICKAXE).add(ModItems.Head.SAPPHIRE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SAPPHIRE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.SAPPHIRE_PICKAXE.get());
+
+        tag(ModTags.Items.Head.SAPPHIRE).add(ModItems.Head.SAPPHIRE_SHOVEL.get());
+        tag(ModTags.Items.Head.SAPPHIRE_SHOVEL).add(ModItems.Head.SAPPHIRE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SAPPHIRE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.SAPPHIRE_SHOVEL.get());
+
+        tag(ModTags.Items.Head.SAPPHIRE).add(ModItems.Head.SAPPHIRE_SWORD.get());
+        tag(ModTags.Items.Head.SAPPHIRE_SWORD).add(ModItems.Head.SAPPHIRE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SAPPHIRE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.SAPPHIRE_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="SILVER">
+        tag(ModTags.Items.Head.SILVER).add(ModItems.Head.SILVER_AXE.get());
+        tag(ModTags.Items.Head.SILVER_AXE).add(ModItems.Head.SILVER_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SILVER_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.SILVER_AXE.get());
+
+        tag(ModTags.Items.Head.SILVER).add(ModItems.Head.SILVER_HAMMER.get());
+        tag(ModTags.Items.Head.SILVER_HAMMER).add(ModItems.Head.SILVER_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SILVER_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.SILVER_HAMMER.get());
+
+        tag(ModTags.Items.Head.SILVER).add(ModItems.Head.SILVER_HOE.get());
+        tag(ModTags.Items.Head.SILVER_HOE).add(ModItems.Head.SILVER_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SILVER_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.SILVER_HOE.get());
+
+        tag(ModTags.Items.Head.SILVER).add(ModItems.Head.SILVER_PICKAXE.get());
+        tag(ModTags.Items.Head.SILVER_PICKAXE).add(ModItems.Head.SILVER_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SILVER_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.SILVER_PICKAXE.get());
+
+        tag(ModTags.Items.Head.SILVER).add(ModItems.Head.SILVER_SHOVEL.get());
+        tag(ModTags.Items.Head.SILVER_SHOVEL).add(ModItems.Head.SILVER_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SILVER_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.SILVER_SHOVEL.get());
+
+        tag(ModTags.Items.Head.SILVER).add(ModItems.Head.SILVER_SWORD.get());
+        tag(ModTags.Items.Head.SILVER_SWORD).add(ModItems.Head.SILVER_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.SILVER_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.SILVER_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="STONE">
+        tag(ModTags.Items.Head.STONE).add(ModItems.Head.STONE_AXE.get());
+        tag(ModTags.Items.Head.STONE_AXE).add(ModItems.Head.STONE_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.STONE_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.STONE_AXE.get());
+
+        tag(ModTags.Items.Head.STONE).add(ModItems.Head.STONE_HAMMER.get());
+        tag(ModTags.Items.Head.STONE_HAMMER).add(ModItems.Head.STONE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.STONE_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.STONE_HAMMER.get());
+
+        tag(ModTags.Items.Head.STONE).add(ModItems.Head.STONE_HOE.get());
+        tag(ModTags.Items.Head.STONE_HOE).add(ModItems.Head.STONE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.STONE_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.STONE_HOE.get());
+
+        tag(ModTags.Items.Head.STONE).add(ModItems.Head.STONE_PICKAXE.get());
+        tag(ModTags.Items.Head.STONE_PICKAXE).add(ModItems.Head.STONE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.STONE_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.STONE_PICKAXE.get());
+
+        tag(ModTags.Items.Head.STONE).add(ModItems.Head.STONE_SHOVEL.get());
+        tag(ModTags.Items.Head.STONE_SHOVEL).add(ModItems.Head.STONE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.STONE_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.STONE_SHOVEL.get());
+
+        tag(ModTags.Items.Head.STONE).add(ModItems.Head.STONE_SWORD.get());
+        tag(ModTags.Items.Head.STONE_SWORD).add(ModItems.Head.STONE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.STONE_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.STONE_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="TIN">
+        tag(ModTags.Items.Head.TIN).add(ModItems.Head.TIN_AXE.get());
+        tag(ModTags.Items.Head.TIN_AXE).add(ModItems.Head.TIN_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.TIN_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.TIN_AXE.get());
+
+        tag(ModTags.Items.Head.TIN).add(ModItems.Head.TIN_HAMMER.get());
+        tag(ModTags.Items.Head.TIN_HAMMER).add(ModItems.Head.TIN_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.TIN_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.TIN_HAMMER.get());
+
+        tag(ModTags.Items.Head.TIN).add(ModItems.Head.TIN_HOE.get());
+        tag(ModTags.Items.Head.TIN_HOE).add(ModItems.Head.TIN_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.TIN_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.TIN_HOE.get());
+
+        tag(ModTags.Items.Head.TIN).add(ModItems.Head.TIN_PICKAXE.get());
+        tag(ModTags.Items.Head.TIN_PICKAXE).add(ModItems.Head.TIN_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.TIN_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.TIN_PICKAXE.get());
+
+        tag(ModTags.Items.Head.TIN).add(ModItems.Head.TIN_SHOVEL.get());
+        tag(ModTags.Items.Head.TIN_SHOVEL).add(ModItems.Head.TIN_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.TIN_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.TIN_SHOVEL.get());
+
+        tag(ModTags.Items.Head.TIN).add(ModItems.Head.TIN_SWORD.get());
+        tag(ModTags.Items.Head.TIN_SWORD).add(ModItems.Head.TIN_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.TIN_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.TIN_SWORD.get());
+        //</editor-fold>
+
+        //<editor-fold desc="WOOD">
+        tag(ModTags.Items.Head.WOOD).add(ModItems.Head.WOOD_AXE.get());
+        tag(ModTags.Items.Head.WOOD_AXE).add(ModItems.Head.WOOD_AXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.WOOD_AXE.get());
+        tag(ModTags.Items.Head.ALL_AXE).add(ModItems.Head.WOOD_AXE.get());
+
+        tag(ModTags.Items.Head.WOOD).add(ModItems.Head.WOOD_HAMMER.get());
+        tag(ModTags.Items.Head.WOOD_HAMMER).add(ModItems.Head.WOOD_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.WOOD_HAMMER.get());
+        tag(ModTags.Items.Head.ALL_HAMMER).add(ModItems.Head.WOOD_HAMMER.get());
+
+        tag(ModTags.Items.Head.WOOD).add(ModItems.Head.WOOD_HOE.get());
+        tag(ModTags.Items.Head.WOOD_HOE).add(ModItems.Head.WOOD_HOE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.WOOD_HOE.get());
+        tag(ModTags.Items.Head.ALL_HOE).add(ModItems.Head.WOOD_HOE.get());
+
+        tag(ModTags.Items.Head.WOOD).add(ModItems.Head.WOOD_PICKAXE.get());
+        tag(ModTags.Items.Head.WOOD_PICKAXE).add(ModItems.Head.WOOD_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.WOOD_PICKAXE.get());
+        tag(ModTags.Items.Head.ALL_PICKAXE).add(ModItems.Head.WOOD_PICKAXE.get());
+
+        tag(ModTags.Items.Head.WOOD).add(ModItems.Head.WOOD_SHOVEL.get());
+        tag(ModTags.Items.Head.WOOD_SHOVEL).add(ModItems.Head.WOOD_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.WOOD_SHOVEL.get());
+        tag(ModTags.Items.Head.ALL_SHOVEL).add(ModItems.Head.WOOD_SHOVEL.get());
+
+        tag(ModTags.Items.Head.WOOD).add(ModItems.Head.WOOD_SWORD.get());
+        tag(ModTags.Items.Head.WOOD_SWORD).add(ModItems.Head.WOOD_SWORD.get());
+        tag(ModTags.Items.Head.ALL_HEADS).add(ModItems.Head.WOOD_SWORD.get());
+        tag(ModTags.Items.Head.ALL_SWORD).add(ModItems.Head.WOOD_SWORD.get());
+        //</editor-fold>
+
+        //</editor-fold>
 
         //<editor-fold desc="GEMS">
         tag(ModTags.Items.Gems.APATITE).add(ModItems.Gem.APATITE.get());

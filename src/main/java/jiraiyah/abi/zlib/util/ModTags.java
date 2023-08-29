@@ -465,16 +465,336 @@ public class ModTags
             public static final TagKey<Item> ALL = forgeTag("rods");
         }
 
-        /*public static class Tool
+        public static class Head
         {
-            public static final TagKey<Item> AUGMENT = forgeTag(Reference.Tags.Forge.Items.TOOLS + Reference.Names.AUGMENT);
-            public static final TagKey<Item> CUTTER = forgeTag(Reference.Tags.Forge.Items.TOOLS + Reference.Names.CUTTER);
-            public static final TagKey<Item> DOWSING_ROD = forgeTag(Reference.Tags.Forge.Items.TOOLS + Reference.Names.DOWSING);
-            public static final TagKey<Item> KNIFE = forgeTag(Reference.Tags.Forge.Items.TOOLS + Reference.Names.KNIFE);
-            public static final TagKey<Item> SPANNER = forgeTag(Reference.Tags.Forge.Items.TOOLS + Reference.Names.SPANNER);
-            public static final TagKey<Item> TUNER = forgeTag(Reference.Tags.Forge.Items.TOOLS + Reference.Names.TUNER);
-            public static final TagKey<Item> WRENCH = forgeTag(Reference.Tags.Forge.Items.TOOLS + Reference.Names.WRENCH);
-        }*/
+            //<editor-fold desc="BRONZE">
+            public static final TagKey<Item> BRONZE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.BRONZE);
+            public static final TagKey<Item> BRONZE_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.BRONZE + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> BRONZE_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.BRONZE + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> BRONZE_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.BRONZE + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> BRONZE_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.BRONZE + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> BRONZE_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.BRONZE + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> BRONZE_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.BRONZE + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="CITRINE">
+            public static final TagKey<Item> CITRINE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.CITRINE);
+            public static final TagKey<Item> CITRINE_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CITRINE + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> CITRINE_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CITRINE + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> CITRINE_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CITRINE + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> CITRINE_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CITRINE + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> CITRINE_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CITRINE + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> CITRINE_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CITRINE + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="CONSTANTAN">
+            public static final TagKey<Item> CONSTANTAN = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.CONSTANTAN);
+            public static final TagKey<Item> CONSTANTAN_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> CONSTANTAN_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> CONSTANTAN_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> CONSTANTAN_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> CONSTANTAN_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> CONSTANTAN_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.CONSTANTAN + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="COPPER">
+            public static final TagKey<Item> COPPER = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.COPPER);
+            public static final TagKey<Item> COPPER_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.COPPER + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> COPPER_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.COPPER + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> COPPER_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.COPPER + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> COPPER_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.COPPER + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> COPPER_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.COPPER + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> COPPER_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.COPPER + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="DIAMOND">
+            public static final TagKey<Item> DIAMOND = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.DIAMOND);
+            public static final TagKey<Item> DIAMOND_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.DIAMOND + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> DIAMOND_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.DIAMOND + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> DIAMOND_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.DIAMOND + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> DIAMOND_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.DIAMOND + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> DIAMOND_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.DIAMOND + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> DIAMOND_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.DIAMOND + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="ELECTRUM">
+            public static final TagKey<Item> ELECTRUM = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.ELECTRUM);
+            public static final TagKey<Item> ELECTRUM_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> ELECTRUM_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> ELECTRUM_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> ELECTRUM_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> ELECTRUM_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> ELECTRUM_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ELECTRUM + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="EMERALD">
+            public static final TagKey<Item> EMERALD = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.EMERALD);
+            public static final TagKey<Item> EMERALD_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.EMERALD + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> EMERALD_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.EMERALD + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> EMERALD_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.EMERALD + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> EMERALD_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.EMERALD + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> EMERALD_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.EMERALD + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> EMERALD_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.EMERALD + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="ENDERITE">
+            public static final TagKey<Item> ENDERITE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.ENDERITE);
+            public static final TagKey<Item> ENDERITE_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ENDERITE + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> ENDERITE_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ENDERITE + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> ENDERITE_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ENDERITE + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> ENDERITE_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ENDERITE + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> ENDERITE_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ENDERITE + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> ENDERITE_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.ENDERITE + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="GOLD">
+            public static final TagKey<Item> GOLD = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.GOLD);
+            public static final TagKey<Item> GOLD_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.GOLD + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> GOLD_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.GOLD + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> GOLD_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.GOLD + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> GOLD_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.GOLD + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> GOLD_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.GOLD + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> GOLD_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.GOLD + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="INVAR">
+            public static final TagKey<Item> INVAR = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.INVAR);
+            public static final TagKey<Item> INVAR_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.INVAR + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> INVAR_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.INVAR + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> INVAR_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.INVAR + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> INVAR_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.INVAR + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> INVAR_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.INVAR + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> INVAR_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.INVAR + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="IRON">
+            public static final TagKey<Item> IRON = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.IRON);
+            public static final TagKey<Item> IRON_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.IRON + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> IRON_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.IRON + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> IRON_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.IRON + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> IRON_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.IRON + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> IRON_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.IRON + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> IRON_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.IRON + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="LEAD">
+            public static final TagKey<Item> LEAD = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.LEAD);
+            public static final TagKey<Item> LEAD_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.LEAD + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> LEAD_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.LEAD + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> LEAD_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.LEAD + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> LEAD_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.LEAD + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> LEAD_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.LEAD + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> LEAD_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.LEAD + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="NETHERITE">
+            public static final TagKey<Item> NETHERITE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.NETHERITE);
+            public static final TagKey<Item> NETHERITE_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NETHERITE + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> NETHERITE_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NETHERITE + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> NETHERITE_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NETHERITE + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> NETHERITE_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NETHERITE + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> NETHERITE_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NETHERITE + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> NETHERITE_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NETHERITE + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="NICKEL">
+            public static final TagKey<Item> NICKEL = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.NICKEL);
+            public static final TagKey<Item> NICKEL_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NICKEL + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> NICKEL_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NICKEL + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> NICKEL_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NICKEL + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> NICKEL_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NICKEL + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> NICKEL_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NICKEL + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> NICKEL_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.NICKEL + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="RUBY">
+            public static final TagKey<Item> RUBY = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.RUBY);
+            public static final TagKey<Item> RUBY_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.RUBY + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> RUBY_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.RUBY + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> RUBY_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.RUBY + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> RUBY_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.RUBY + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> RUBY_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.RUBY + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> RUBY_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.RUBY + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="SAPPHIRE">
+            public static final TagKey<Item> SAPPHIRE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.SAPPHIRE);
+            public static final TagKey<Item> SAPPHIRE_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> SAPPHIRE_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> SAPPHIRE_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> SAPPHIRE_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> SAPPHIRE_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> SAPPHIRE_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SAPPHIRE + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="SILVER">
+            public static final TagKey<Item> SILVER = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.SILVER);
+            public static final TagKey<Item> SILVER_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SILVER + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> SILVER_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SILVER + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> SILVER_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SILVER + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> SILVER_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SILVER + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> SILVER_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SILVER + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> SILVER_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.SILVER + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="STONE">
+            public static final TagKey<Item> STONE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.STONE);
+            public static final TagKey<Item> STONE_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.STONE + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> STONE_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.STONE + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> STONE_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.STONE + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> STONE_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.STONE + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> STONE_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.STONE + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> STONE_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.STONE + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="TIN">
+            public static final TagKey<Item> TIN = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.TIN);
+            public static final TagKey<Item> TIN_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.TIN + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> TIN_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.TIN + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> TIN_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.TIN + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> TIN_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.TIN + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> TIN_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.TIN + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> TIN_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.TIN + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            //<editor-fold desc="WOOD">
+            public static final TagKey<Item> WOOD = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + Reference.Names.Material.WOOD);
+            public static final TagKey<Item> WOOD_AXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.WOOD + Reference.Names.Suffix.AXE);
+            public static final TagKey<Item> WOOD_HAMMER =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.WOOD + Reference.Names.Suffix.HAMMER);
+            public static final TagKey<Item> WOOD_HOE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.WOOD + Reference.Names.Suffix.HOE);
+            public static final TagKey<Item> WOOD_PICKAXE =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.WOOD + Reference.Names.Suffix.PICKAXE);
+            public static final TagKey<Item> WOOD_SHOVEL =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.WOOD + Reference.Names.Suffix.SHOVEL);
+            public static final TagKey<Item> WOOD_SWORD =
+                    forgeTag(Reference.Tags.Forge.Items.HEADS + Reference.Names.Material.WOOD + Reference.Names.Suffix.SWORD);
+            //</editor-fold>
+
+            public static final TagKey<Item> ALL_HEADS = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + "all");
+            public static final TagKey<Item> ALL_AXE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + "axe");
+            public static final TagKey<Item> ALL_HAMMER = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + "hammer");
+            public static final TagKey<Item> ALL_HOE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + "hoe");
+            public static final TagKey<Item> ALL_PICKAXE = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + "pickaxe");
+            public static final TagKey<Item> ALL_SHOVEL = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + "shovel");
+            public static final TagKey<Item> ALL_SWORD = forgeTag(Reference.Tags.Forge.Items.HEADS_PREFIX + "sword");
+        }
 
         public static class Gems
         {

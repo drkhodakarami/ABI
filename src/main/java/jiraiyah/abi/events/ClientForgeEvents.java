@@ -13,7 +13,7 @@ public class ClientForgeEvents
     @SubscribeEvent
     public static void onComputeFovModifierEvent(ComputeFovModifierEvent event)
     {
-        /*if (event.getPlayer().isUsingItem() &&
+        if (event.getPlayer().isUsingItem() &&
                 (event.getPlayer().getUseItem().getItem() == ModItems.Tool.RUBY_BOW.get() ||
                         event.getPlayer().getUseItem().getItem() == ModItems.Tool.SAPPHIRE_BOW.get())) {
             float fovModifier = 1f;
@@ -26,6 +26,6 @@ public class ClientForgeEvents
             }
             fovModifier *= 1.0F - deltaTicks * 0.15F;
             event.setNewFovModifier(fovModifier);
-        }*/
+        }
     }
 }

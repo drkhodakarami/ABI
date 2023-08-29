@@ -45,73 +45,77 @@ public class ModItemModelProvider extends ItemModelProvider
     @Override
     protected void registerModels()
     {
+        //SimpleItem(ModItems.Armor.ENGINEER_HELMET, true);
         //<editor-fold desc="ARMOR">
-        /*SimpleItem(ModItems.Armor.ENGINEER_HELMET, true);
+        trimmedArmorItem(ModItems.Armor.AMETHYST_HELMET);
+        trimmedArmorItem(ModItems.Armor.AMETHYST_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.AMETHYST_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.AMETHYST_BOOTS);
 
-        SimpleItem(ModItems.Armor.AMETHYST_HELMET);
-        SimpleItem(ModItems.Armor.AMETHYST_CHESTPLATE);
-        SimpleItem(ModItems.Armor.AMETHYST_LEGGINGS);
-        SimpleItem(ModItems.Armor.AMETHYST_BOOTS);*/
+        trimmedArmorItem(ModItems.Armor.BRONZE_HELMET);
+        trimmedArmorItem(ModItems.Armor.BRONZE_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.BRONZE_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.BRONZE_BOOTS);
 
-        /*SimpleItem(ModItems.Armor.BRONZE_HELMET);
-        SimpleItem(ModItems.Armor.BRONZE_CHESTPLATE);
-        SimpleItem(ModItems.Armor.BRONZE_LEGGINGS);
-        SimpleItem(ModItems.Armor.BRONZE_BOOTS);
+        trimmedArmorItem(ModItems.Armor.CITRINE_HELMET);
+        trimmedArmorItem(ModItems.Armor.CITRINE_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.CITRINE_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.CITRINE_BOOTS);
 
-        SimpleItem(ModItems.Armor.CONSTANTAN_HELMET);
-        SimpleItem(ModItems.Armor.CONSTANTAN_CHESTPLATE);
-        SimpleItem(ModItems.Armor.CONSTANTAN_LEGGINGS);
-        SimpleItem(ModItems.Armor.CONSTANTAN_BOOTS);*/
+        trimmedArmorItem(ModItems.Armor.CONSTANTAN_HELMET);
+        trimmedArmorItem(ModItems.Armor.CONSTANTAN_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.CONSTANTAN_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.CONSTANTAN_BOOTS);
 
-        /*SimpleItem(ModItems.Armor.COPPER_HELMET);
-        SimpleItem(ModItems.Armor.COPPER_CHESTPLATE);
-        SimpleItem(ModItems.Armor.COPPER_LEGGINGS);
-        SimpleItem(ModItems.Armor.COPPER_BOOTS);*/
+        trimmedArmorItem(ModItems.Armor.COPPER_HELMET);
+        trimmedArmorItem(ModItems.Armor.COPPER_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.COPPER_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.COPPER_BOOTS);
 
-        /*SimpleItem(ModItems.Armor.ELECTRUM_HELMET);
-        SimpleItem(ModItems.Armor.ELECTRUM_CHESTPLATE);
-        SimpleItem(ModItems.Armor.ELECTRUM_LEGGINGS);
-        SimpleItem(ModItems.Armor.ELECTRUM_BOOTS);*/
+        trimmedArmorItem(ModItems.Armor.ELECTRUM_HELMET);
+        trimmedArmorItem(ModItems.Armor.ELECTRUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.ELECTRUM_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.ELECTRUM_BOOTS);
 
-        /*SimpleItem(ModItems.Armor.EMERALD_HELMET);
-        SimpleItem(ModItems.Armor.EMERALD_CHESTPLATE);
-        SimpleItem(ModItems.Armor.EMERALD_LEGGINGS);
-        SimpleItem(ModItems.Armor.EMERALD_BOOTS);*/
+        trimmedArmorItem(ModItems.Armor.EMERALD_HELMET);
+        trimmedArmorItem(ModItems.Armor.EMERALD_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.EMERALD_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.EMERALD_BOOTS);
 
-        /*SimpleItem(ModItems.Armor.INVAR_HELMET);
-        SimpleItem(ModItems.Armor.INVAR_CHESTPLATE);
-        SimpleItem(ModItems.Armor.INVAR_LEGGINGS);
-        SimpleItem(ModItems.Armor.INVAR_BOOTS);
+        trimmedArmorItem(ModItems.Armor.INVAR_HELMET);
+        trimmedArmorItem(ModItems.Armor.INVAR_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.INVAR_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.INVAR_BOOTS);
 
-        SimpleItem(ModItems.Armor.LEAD_HELMET);
-        SimpleItem(ModItems.Armor.LEAD_CHESTPLATE);
-        SimpleItem(ModItems.Armor.LEAD_LEGGINGS);
-        SimpleItem(ModItems.Armor.LEAD_BOOTS);
+        trimmedArmorItem(ModItems.Armor.LEAD_HELMET);
+        trimmedArmorItem(ModItems.Armor.LEAD_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.LEAD_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.LEAD_BOOTS);
 
-        SimpleItem(ModItems.Armor.NICKEL_HELMET);
-        SimpleItem(ModItems.Armor.NICKEL_CHESTPLATE);
-        SimpleItem(ModItems.Armor.NICKEL_LEGGINGS);
-        SimpleItem(ModItems.Armor.NICKEL_BOOTS);
+        trimmedArmorItem(ModItems.Armor.NICKEL_HELMET);
+        trimmedArmorItem(ModItems.Armor.NICKEL_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.NICKEL_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.NICKEL_BOOTS);
 
-        SimpleItem(ModItems.Armor.RUBY_HELMET);
-        SimpleItem(ModItems.Armor.RUBY_CHESTPLATE);
-        SimpleItem(ModItems.Armor.RUBY_LEGGINGS);
-        SimpleItem(ModItems.Armor.RUBY_BOOTS);
+        trimmedArmorItem(ModItems.Armor.RUBY_HELMET);
+        trimmedArmorItem(ModItems.Armor.RUBY_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.RUBY_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.RUBY_BOOTS);
 
-        SimpleItem(ModItems.Armor.SAPPHIRE_HELMET);
-        SimpleItem(ModItems.Armor.SAPPHIRE_CHESTPLATE);
-        SimpleItem(ModItems.Armor.SAPPHIRE_LEGGINGS);
-        SimpleItem(ModItems.Armor.SAPPHIRE_BOOTS);
+        trimmedArmorItem(ModItems.Armor.SAPPHIRE_HELMET);
+        trimmedArmorItem(ModItems.Armor.SAPPHIRE_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.SAPPHIRE_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.SAPPHIRE_BOOTS);
 
-        SimpleItem(ModItems.Armor.SILVER_HELMET);
-        SimpleItem(ModItems.Armor.SILVER_CHESTPLATE);
-        SimpleItem(ModItems.Armor.SILVER_LEGGINGS);
-        SimpleItem(ModItems.Armor.SILVER_BOOTS);
+        trimmedArmorItem(ModItems.Armor.SILVER_HELMET);
+        trimmedArmorItem(ModItems.Armor.SILVER_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.SILVER_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.SILVER_BOOTS);
 
-        SimpleItem(ModItems.Armor.TIN_HELMET);
-        SimpleItem(ModItems.Armor.TIN_CHESTPLATE);
-        SimpleItem(ModItems.Armor.TIN_LEGGINGS);
-        SimpleItem(ModItems.Armor.TIN_BOOTS);*/
+        trimmedArmorItem(ModItems.Armor.TIN_HELMET);
+        trimmedArmorItem(ModItems.Armor.TIN_CHESTPLATE);
+        trimmedArmorItem(ModItems.Armor.TIN_LEGGINGS);
+        trimmedArmorItem(ModItems.Armor.TIN_BOOTS);
         //</editor-fold>
 
         //<editor-fold desc="CRYSTALS">
@@ -638,13 +642,20 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Cast.WIRE);
         //</editor-fold>
 
-        /*//<editor-fold desc="HEAD">
+        //<editor-fold desc="HEAD">
         SimpleItem(ModItems.Head.BRONZE_AXE);
         SimpleItem(ModItems.Head.BRONZE_HAMMER);
         SimpleItem(ModItems.Head.BRONZE_HOE);
         SimpleItem(ModItems.Head.BRONZE_PICKAXE);
         SimpleItem(ModItems.Head.BRONZE_SHOVEL);
         SimpleItem(ModItems.Head.BRONZE_SWORD);
+
+        SimpleItem(ModItems.Head.CITRINE_AXE);
+        SimpleItem(ModItems.Head.CITRINE_HAMMER);
+        SimpleItem(ModItems.Head.CITRINE_HOE);
+        SimpleItem(ModItems.Head.CITRINE_PICKAXE);
+        SimpleItem(ModItems.Head.CITRINE_SHOVEL);
+        SimpleItem(ModItems.Head.CITRINE_SWORD);
 
         SimpleItem(ModItems.Head.CONSTANTAN_AXE);
         SimpleItem(ModItems.Head.CONSTANTAN_HAMMER);
@@ -660,7 +671,12 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Head.COPPER_SHOVEL);
         SimpleItem(ModItems.Head.COPPER_SWORD);
 
+        SimpleItem(ModItems.Head.DIAMOND_AXE);
         SimpleItem(ModItems.Head.DIAMOND_HAMMER);
+        SimpleItem(ModItems.Head.DIAMOND_HOE);
+        SimpleItem(ModItems.Head.DIAMOND_PICKAXE);
+        SimpleItem(ModItems.Head.DIAMOND_SHOVEL);
+        SimpleItem(ModItems.Head.DIAMOND_SWORD);
 
         SimpleItem(ModItems.Head.ELECTRUM_AXE);
         SimpleItem(ModItems.Head.ELECTRUM_HAMMER);
@@ -676,7 +692,19 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Head.EMERALD_SHOVEL);
         SimpleItem(ModItems.Head.EMERALD_SWORD);
 
+        SimpleItem(ModItems.Head.ENDERITE_AXE);
+        SimpleItem(ModItems.Head.ENDERITE_HAMMER);
+        SimpleItem(ModItems.Head.ENDERITE_HOE);
+        SimpleItem(ModItems.Head.ENDERITE_PICKAXE);
+        SimpleItem(ModItems.Head.ENDERITE_SHOVEL);
+        SimpleItem(ModItems.Head.ENDERITE_SWORD);
+
+        SimpleItem(ModItems.Head.GOLD_AXE);
         SimpleItem(ModItems.Head.GOLD_HAMMER);
+        SimpleItem(ModItems.Head.GOLD_HOE);
+        SimpleItem(ModItems.Head.GOLD_PICKAXE);
+        SimpleItem(ModItems.Head.GOLD_SHOVEL);
+        SimpleItem(ModItems.Head.GOLD_SWORD);
 
         SimpleItem(ModItems.Head.INVAR_AXE);
         SimpleItem(ModItems.Head.INVAR_HAMMER);
@@ -685,7 +713,12 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Head.INVAR_SHOVEL);
         SimpleItem(ModItems.Head.INVAR_SWORD);
 
+        SimpleItem(ModItems.Head.IRON_AXE);
         SimpleItem(ModItems.Head.IRON_HAMMER);
+        SimpleItem(ModItems.Head.IRON_HOE);
+        SimpleItem(ModItems.Head.IRON_PICKAXE);
+        SimpleItem(ModItems.Head.IRON_SHOVEL);
+        SimpleItem(ModItems.Head.IRON_SWORD);
 
         SimpleItem(ModItems.Head.LEAD_AXE);
         SimpleItem(ModItems.Head.LEAD_HAMMER);
@@ -694,7 +727,12 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Head.LEAD_SHOVEL);
         SimpleItem(ModItems.Head.LEAD_SWORD);
 
+        SimpleItem(ModItems.Head.NETHERITE_AXE);
         SimpleItem(ModItems.Head.NETHERITE_HAMMER);
+        SimpleItem(ModItems.Head.NETHERITE_HOE);
+        SimpleItem(ModItems.Head.NETHERITE_PICKAXE);
+        SimpleItem(ModItems.Head.NETHERITE_SHOVEL);
+        SimpleItem(ModItems.Head.NETHERITE_SWORD);
 
         SimpleItem(ModItems.Head.NICKEL_AXE);
         SimpleItem(ModItems.Head.NICKEL_HAMMER);
@@ -724,7 +762,12 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Head.SILVER_SHOVEL);
         SimpleItem(ModItems.Head.SILVER_SWORD);
 
+        SimpleItem(ModItems.Head.STONE_AXE);
         SimpleItem(ModItems.Head.STONE_HAMMER);
+        SimpleItem(ModItems.Head.STONE_HOE);
+        SimpleItem(ModItems.Head.STONE_PICKAXE);
+        SimpleItem(ModItems.Head.STONE_SHOVEL);
+        SimpleItem(ModItems.Head.STONE_SWORD);
 
         SimpleItem(ModItems.Head.TIN_AXE);
         SimpleItem(ModItems.Head.TIN_HAMMER);
@@ -733,8 +776,13 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Head.TIN_SHOVEL);
         SimpleItem(ModItems.Head.TIN_SWORD);
 
+        SimpleItem(ModItems.Head.WOOD_AXE);
         SimpleItem(ModItems.Head.WOOD_HAMMER);
-        //</editor-fold>*/
+        SimpleItem(ModItems.Head.WOOD_HOE);
+        SimpleItem(ModItems.Head.WOOD_PICKAXE);
+        SimpleItem(ModItems.Head.WOOD_SHOVEL);
+        SimpleItem(ModItems.Head.WOOD_SWORD);
+        //</editor-fold>
 
         //trimmedArmorItem(ModItems.Armor.SAPPHIRE_HELMET);
     }
@@ -764,6 +812,16 @@ public class ModItemModelProvider extends ItemModelProvider
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/cast/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.SHARD))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/shard/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.GEM))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/gem/" + item.getId().getPath()));
 
         if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
@@ -805,48 +863,15 @@ public class ModItemModelProvider extends ItemModelProvider
                     .texture("layer0",
                             Reference.Location("item/rod/" + item.getId().getPath()));
 
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.TOOL) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.BOW) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.SWORD) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.AXE) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.PICKAXE) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.SHOVEL) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.HOE) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)) ||
-           (item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.HAMMER) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.CAST) &&
-                   !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.HEAD)))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/tool/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.SHARD))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/shard/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.GEM) ||
-        !item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.SHARD))
-            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
-                    .texture("layer0",
-                            Reference.Location("item/gem/" + item.getId().getPath()));
-
-        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.HELMET) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.CHEST_PLATE) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.LEGGINGS) ||
-           item.getId().getPath().toLowerCase().contains(Reference.Names.Suffix.BOOTS))
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.ARMOR))
             return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
                     .texture("layer0",
                             Reference.Location("item/armor/" + item.getId().getPath()));
+
+        if(item.getId().getPath().toLowerCase().contains(Reference.Names.Prefix.TOOL))
+            return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
+                    .texture("layer0",
+                            Reference.Location("item/tool/" + item.getId().getPath()));
         //</editor-fold>
 
         return withExistingParent(item.getId().getPath(), new ResourceLocation(handheld ? "item/handheld" : "item/generated"))
@@ -855,10 +880,12 @@ public class ModItemModelProvider extends ItemModelProvider
     }
 
     // Shout out to El_Redstoniano for making this
-    private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
-        final String MOD_ID = Reference.MODID; // Change this to your mod id
+    private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject)
+    {
+        final String MOD_ID = Reference.MODID; // <<<<<< CHANGE THIS TO YOUR MOD ID
 
-        if(itemRegistryObject.get() instanceof ArmorItem armorItem) {
+        if(itemRegistryObject.get() instanceof ArmorItem armorItem)
+        {
             trimMaterials.entrySet().forEach(entry ->
             {
 
@@ -872,11 +899,11 @@ public class ModItemModelProvider extends ItemModelProvider
                     case FEET -> "boots";
                     default -> "";
                 };
-
                 String armorItemPath = "item/" + armorItem;
+                String armorItemTexturePath = "item/armor/" + armorItem; // <<<<<< CHANGE THE PATH TO ARMOR TEXTURES
                 String trimPath = "trims/items/" + armorType + "_trim_" + trimMaterial.location().getPath();
                 String currentTrimName = armorItemPath + "_" + trimMaterial.location().getPath() + "_trim";
-                ResourceLocation armorItemResLoc = new ResourceLocation(MOD_ID, armorItemPath);
+                ResourceLocation armorItemResLoc = new ResourceLocation(MOD_ID, armorItemTexturePath);
                 ResourceLocation trimResLoc = new ResourceLocation(trimPath); // minecraft namespace
                 ResourceLocation trimNameResLoc = new ResourceLocation(MOD_ID, currentTrimName);
 

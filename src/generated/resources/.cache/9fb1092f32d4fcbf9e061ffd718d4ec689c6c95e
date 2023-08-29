@@ -1,9 +1,0 @@
-// 1.20.1	2023-08-22T15:55:07.520386	Recipes
-71f15a327a136f09e1701ec43c7d64969441fa3a data/abi/advancements/recipes/food/leather_from_campfire_cooking.json
-7a8279875d0abfdafe90d73b834f0a3fe87a2eb1 data/abi/advancements/recipes/food/leather_from_smoking.json
-16d4eedcc8a912520b335ae0e81fb1a3e6e45e76 data/abi/recipes/leather_from_campfire_cooking.json
-e7bf458cf6c27e2e5661ec2425ec55b7c4771984 data/abi/recipes/leather_from_smoking.json
-2ee4054bea815ecba6ba2932f491ad990def9deb data/minecraft/advancements/recipes/misc/leather.json
-4929e88f7b24d52fb9544705745279dbcc30877a data/minecraft/advancements/recipes/misc/leather_from_blasting.json
-300f330abe4e8948dcb3c948a7f7ae87d6fd6d72 data/minecraft/recipes/leather.json
-ed4192dc9134977d08496d63d5192f173b52d307 data/minecraft/recipes/leather_from_blasting.json
