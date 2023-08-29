@@ -1,0 +1,24 @@
+{
+  "values": [
+    "abi:head_bronze_pickaxe",
+    "abi:head_citrine_pickaxe",
+    "abi:head_constantan_pickaxe",
+    "abi:head_copper_pickaxe",
+    "abi:head_diamond_pickaxe",
+    "abi:head_electrum_pickaxe",
+    "abi:head_emerald_pickaxe",
+    "abi:head_enderite_pickaxe",
+    "abi:head_gold_pickaxe",
+    "abi:head_invar_pickaxe",
+    "abi:head_iron_pickaxe",
+    "abi:head_lead_pickaxe",
+    "abi:head_netherite_pickaxe",
+    "abi:head_nickel_pickaxe",
+    "abi:head_ruby_pickaxe",
+    "abi:head_sapphire_pickaxe",
+    "abi:head_silver_pickaxe",
+    "abi:head_stone_pickaxe",
+    "abi:head_tin_pickaxe",
+    "abi:head_wood_pickaxe"
+  ]
+}

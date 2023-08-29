@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "abi:item/tool/tool_copper_shovel"
+  }
+}

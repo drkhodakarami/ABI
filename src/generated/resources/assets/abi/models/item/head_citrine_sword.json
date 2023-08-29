@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "abi:item/tool/head/head_citrine_sword"
+  }
+}

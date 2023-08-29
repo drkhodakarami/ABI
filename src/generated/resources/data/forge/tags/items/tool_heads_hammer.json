@@ -1,0 +1,24 @@
+{
+  "values": [
+    "abi:head_bronze_hammer",
+    "abi:head_citrine_hammer",
+    "abi:head_constantan_hammer",
+    "abi:head_copper_hammer",
+    "abi:head_diamond_hammer",
+    "abi:head_electrum_hammer",
+    "abi:head_emerald_hammer",
+    "abi:head_enderite_hammer",
+    "abi:head_gold_hammer",
+    "abi:head_invar_hammer",
+    "abi:head_iron_hammer",
+    "abi:head_lead_hammer",
+    "abi:head_netherite_hammer",
+    "abi:head_nickel_hammer",
+    "abi:head_ruby_hammer",
+    "abi:head_sapphire_hammer",
+    "abi:head_silver_hammer",
+    "abi:head_stone_hammer",
+    "abi:head_tin_hammer",
+    "abi:head_wood_hammer"
+  ]
+}

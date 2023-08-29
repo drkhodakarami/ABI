@@ -1,0 +1,10 @@
+{
+  "values": [
+    "abi:head_electrum_axe",
+    "abi:head_electrum_hammer",
+    "abi:head_electrum_hoe",
+    "abi:head_electrum_pickaxe",
+    "abi:head_electrum_shovel",
+    "abi:head_electrum_sword"
+  ]
+}
