@@ -31,12 +31,91 @@ public class ModItemTagProvider extends ItemTagsProvider
     {
         //copy(ModTags.Blocks.RUBY_ORE, ModTags.Items.RUBY_ORE);
 
-        /*tag(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.Armor.SAPPHIRE_HELMET.get(),
+        //<editor-fold desc="TRIMMABLE ARMOR">
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.AMETHYST_HELMET.get(),
+                        ModItems.Armor.AMETHYST_CHESTPLATE.get(),
+                        ModItems.Armor.AMETHYST_LEGGINGS.get(),
+                        ModItems.Armor.AMETHYST_BOOTS.get());
 
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.BRONZE_HELMET.get(),
+                        ModItems.Armor.BRONZE_LEGGINGS.get(),
+                        ModItems.Armor.BRONZE_CHESTPLATE.get(),
+                        ModItems.Armor.BRONZE_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.CITRINE_HELMET.get(),
+                        ModItems.Armor.CITRINE_CHESTPLATE.get(),
+                        ModItems.Armor.CITRINE_LEGGINGS.get(),
+                        ModItems.Armor.CITRINE_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.CONSTANTAN_HELMET.get(),
+                        ModItems.Armor.CONSTANTAN_CHESTPLATE.get(),
+                        ModItems.Armor.CONSTANTAN_LEGGINGS.get(),
+                        ModItems.Armor.CONSTANTAN_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.COPPER_HELMET.get(),
+                        ModItems.Armor.COPPER_CHESTPLATE.get(),
+                        ModItems.Armor.COPPER_LEGGINGS.get(),
+                        ModItems.Armor.COPPER_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.ELECTRUM_HELMET.get(),
+                        ModItems.Armor.ELECTRUM_CHESTPLATE.get(),
+                        ModItems.Armor.ELECTRUM_LEGGINGS.get(),
+                        ModItems.Armor.ELECTRUM_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.EMERALD_HELMET.get(),
+                        ModItems.Armor.EMERALD_CHESTPLATE.get(),
+                        ModItems.Armor.EMERALD_LEGGINGS.get(),
+                        ModItems.Armor.EMERALD_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.INVAR_HELMET.get(),
+                        ModItems.Armor.INVAR_CHESTPLATE.get(),
+                        ModItems.Armor.INVAR_LEGGINGS.get(),
+                        ModItems.Armor.INVAR_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.LEAD_HELMET.get(),
+                        ModItems.Armor.LEAD_CHESTPLATE.get(),
+                        ModItems.Armor.LEAD_LEGGINGS.get(),
+                        ModItems.Armor.LEAD_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.NICKEL_HELMET.get(),
+                        ModItems.Armor.NICKEL_CHESTPLATE.get(),
+                        ModItems.Armor.NICKEL_LEGGINGS.get(),
+                        ModItems.Armor.NICKEL_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.RUBY_HELMET.get(),
+                        ModItems.Armor.RUBY_CHESTPLATE.get(),
+                        ModItems.Armor.RUBY_LEGGINGS.get(),
+                        ModItems.Armor.RUBY_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.SAPPHIRE_HELMET.get(),
                         ModItems.Armor.SAPPHIRE_CHESTPLATE.get(),
                         ModItems.Armor.SAPPHIRE_LEGGINGS.get(),
-                        ModItems.Armor.SAPPHIRE_BOOTS.get());*/
+                        ModItems.Armor.SAPPHIRE_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.SILVER_HELMET.get(),
+                        ModItems.Armor.SILVER_CHESTPLATE.get(),
+                        ModItems.Armor.SILVER_LEGGINGS.get(),
+                        ModItems.Armor.SILVER_BOOTS.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Armor.TIN_HELMET.get(),
+                        ModItems.Armor.TIN_CHESTPLATE.get(),
+                        ModItems.Armor.TIN_LEGGINGS.get(),
+                        ModItems.Armor.TIN_BOOTS.get());
+        //</editor-fold>
 
         //<editor-fold desc="CRYSTALS">
         tag(ModTags.Items.Crystals.COBALT).add(ModItems.Crystal.COBALT.get());

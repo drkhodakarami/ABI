@@ -783,8 +783,6 @@ public class ModItemModelProvider extends ItemModelProvider
         SimpleItem(ModItems.Head.WOOD_SHOVEL);
         SimpleItem(ModItems.Head.WOOD_SWORD);
         //</editor-fold>
-
-        //trimmedArmorItem(ModItems.Armor.SAPPHIRE_HELMET);
     }
 
     //<editor-fold desc="HELPER METHODS">
